@@ -2,7 +2,8 @@
 
 echo "Testing chat-bot from $GITHUB_REPOSITORY with:"
 echo " - format: [$INPUT_FORMAT]"
-echo $GITHUB_REPOSITORY | cut -d '/' -f 2
+
+repo=$GITHUB_REPOSITORY | cut -d '/' -f 2
 
 if [ "$INPUT_FORMAT" = "conga" ]; then
     ext=".xmi"
@@ -10,7 +11,7 @@ else
     ext=".zip"
 fi
 
-INPUT_FILES="$GITHUB_REPOSITORY_OWNER$ext"
+INPUT_FILES="$repo$ext"
 
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
