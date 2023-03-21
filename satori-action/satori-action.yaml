@@ -5,6 +5,8 @@ inputs:
     description: 'Files to be checked'
     required: true
     default: 'A test'
+  repository:
+    default: ${{ github.repository }}
 runs:
   using: 'docker'
   image: 'Dockerfile'

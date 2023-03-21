@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-echo "Running action with:"
+echo "Testing chat-bot action with:"
 echo "  - format: [$INPUT_FORMAT]"
 echo "  - files: [$INPUT_FILES]"
 
@@ -15,9 +15,9 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
 	echo "More than two intents with INP > 2"
 	exit 1
     fi
-elif [ "$INPUT_FORMAT" = "dialogflow" ]; then
+elif [ "$INPUT_FORMAT" = "Dialogflow" ]; then
     echo "::debug::{Running CONGA with $INPUT_FILES}"
-    java -jar /CongaReverse.jar $INPUT_FILES Dialogflow
+    java -jar /CongaReverse.jar $INPUT_FILES $INPUT_FORMAT
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
