@@ -2,7 +2,7 @@
 
 echo "Testing chat-bot from $GITHUB_REPOSITORY with:"
 echo " - format: [$INPUT_FORMAT]"
-INPUT_FILES=$GITHUB_REPOSITORY_OWNER+".zip"
+INPUT_FILES=$GITHUB_REPOSITORY_OWNER".zip"
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
 
