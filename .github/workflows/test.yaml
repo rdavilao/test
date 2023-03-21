@@ -18,7 +18,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      -name: Zip all project for converse
+      -uses: zip ${{ github.respository }}.zip ./* -r
+
       - uses: ./satori-action/.
         with:
           format: "dialogflow"
-          files: "test-files/hotel-booking.zip"
+          files: ${{ github.respository }}.zip
