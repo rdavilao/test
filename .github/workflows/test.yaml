@@ -23,13 +23,13 @@ jobs:
         run: zip ${{ github.actor }}.zip ./* -r
 
       - name: Upload zip for converse job
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with: 
           name: ${{ github.actor }}-chatbot
           path: ${{ github.actor }}.zip
 
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: ${{ github.actor }}-chatbot
 
