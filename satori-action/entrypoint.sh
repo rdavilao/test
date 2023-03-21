@@ -3,8 +3,8 @@
 echo "Testing chat-bot from $GITHUB_REPOSITORY with:"
 echo " - format: [$INPUT_FORMAT]"
 
-XMI_OUTPUT="${GITHUB_REPOSITORY_OWNER/.zip/.xmi}"
-METRICS_OUTPUT="${GITHUB_REPOSITORY_OWNER/.zip/.metrics.json}"
+XMI_OUTPUT="${GITHUB_REPOSITORY_OWNER.zip/.zip/.xmi}"
+METRICS_OUTPUT="${GITHUB_REPOSITORY_OWNER.zip/.zip/.metrics.json}"
 
 ls
 
@@ -26,10 +26,6 @@ fi
 echo "::group::Metrics"
 echo "Information about metrics"
 echo "::endgroup::"
-
-echo "TEST-FILES"
-ls test-files
-
 
 #echo "$GITHUB_STEP_SUMMARY"
 echo "Expected file"
