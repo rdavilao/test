@@ -6,6 +6,8 @@ echo " - format: [$INPUT_FORMAT]"
 XMI_OUTPUT="${GITHUB_REPOSITORY_OWNER/.zip/.xmi}"
 METRICS_OUTPUT="${GITHUB_REPOSITORY_OWNER/.zip/.metrics.json}"
 
+ls
+
 if [ "$INPUT_FORMAT" = "conga" ]; then
 #  echo `ls /`
     java -jar /AsymobJSON.jar $GITHUB_REPOSITORY_OWNER.xmi | tee /tmp/output.txt
