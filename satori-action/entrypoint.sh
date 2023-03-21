@@ -2,9 +2,7 @@
 
 echo "Testing chat-bot from $GITHUB_REPOSITORY with:"
 echo " - format: [$INPUT_FORMAT]"
-echo "PRUEBA 1 $GITHUB_REPOSITORY_BASENAME"
-echo "PRUEBA 2 $GITHUB_REPOSITORY_NAME"
-echo "PRUEBA 1 $GITHUB_REPOSITORY"
+echo $GITHUB_REPOSITORY | cut -d '/' -f 2
 
 if [ "$INPUT_FORMAT" = "conga" ]; then
     ext=".xmi"
