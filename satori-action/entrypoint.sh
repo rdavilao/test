@@ -2,7 +2,7 @@
 
 echo "Testing chat-bot from [$INPUT_OWNER] with:"
 echo "  - format: [$INPUT_FORMAT]"
-echo "  - files: [$INPUT_FILES]"
+echo "  - files: [$OWNER]"
 
 echo "CONTENIDO: "
 ls
