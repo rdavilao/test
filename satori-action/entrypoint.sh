@@ -5,7 +5,7 @@ echo "  - format: [$INPUT_FORMAT]"
 echo "  - files: [$INPUT_FILES]"
 
 echo "CONTENIDO: "
-ls /usr/bin/git
+ls
 
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
