@@ -19,8 +19,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Zip all project for converse
+      - name: Zip all project
         run: zip ${{ github.respository }}.zip ./* -r
+
+      - name: Upload zip for converse job
+        uses: actions/upload-artifact@v2
+        with: 
+          name: ${{ github.respository }}-chatbot
+          path: ${{ github.respository }}.zip
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: ${{ github.respository }}-chatbot
 
       - uses: ./satori-action/.
         with:
