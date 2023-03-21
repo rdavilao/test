@@ -4,6 +4,9 @@ echo "Testing chat-bot from [$INPUT_REPOSITORY] with:"
 echo "  - format: [$INPUT_FORMAT]"
 echo "  - files: [$INPUT_FILES]"
 
+echo "CONTENIDO: "
+ls /home/runner/work/test/test
+
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
 
