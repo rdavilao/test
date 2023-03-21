@@ -3,7 +3,7 @@
 echo "Testing chat-bot from $GITHUB_REPOSITORY with:"
 echo " - format: [$INPUT_FORMAT]"
 
-repo=$GITHUB_REPOSITORY | cut -d'/' -f 2
+repo=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
 
 echo "REPO: $repo"
 
