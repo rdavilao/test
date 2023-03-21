@@ -1,8 +1,7 @@
 #!/bin/bash 
 
-echo "Testing chat-bot from [$GITHUB_REPOSITORY_OWNER] with:"
-echo " - format: [$GITHUB_EVENT_INPUTS_OWNER]"
-echo "  - files: [${{}}]"
+echo "Testing chat-bot from [$GITHUB_REPOSITORY] with:"
+echo " - format: [$INPUT_FORMAT]"
 
 echo "CONTENIDO: "
 ls
