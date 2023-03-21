@@ -5,6 +5,8 @@ echo " - format: [$INPUT_FORMAT]"
 
 repo=$GITHUB_REPOSITORY | cut -d '/' -f 2
 
+echo "REPO: $repo"
+
 if [ "$INPUT_FORMAT" = "conga" ]; then
     INPUT_FILES=$repo.xmi
 else
@@ -14,7 +16,7 @@ fi
 
 ls
 
-echo $INPUT_FILES
+echo "INPUT: $INPUT_FILES"
 
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
