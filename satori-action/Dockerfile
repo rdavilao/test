@@ -6,4 +6,5 @@ ADD https://github.com/SaraPerezSoler/CONGA/releases/download/0.1/CongaReverse.j
 ADD https://github.com/ASYM0B/tool/releases/download/v0.2/AsymobJSON.jar /
 COPY entrypoint.sh /entrypoint.sh
 COPY python/metrics_to_html.py /metrics_to_html.py
+RUN ["chmod", "+x", "/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
