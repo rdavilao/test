@@ -7,7 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Zip all project
+        run: zip ${{ github.actor }}.zip ./* -r
+
       - uses: ./satori-action/.
         with:
           format: "Dialogflow"
-          files: ${{ github.actor }}.zip
