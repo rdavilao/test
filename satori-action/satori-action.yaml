@@ -13,3 +13,4 @@ runs:
   args:
     - xxyy
     - ${{ inputs.files }}
+    - ${{ inputs.repository }}

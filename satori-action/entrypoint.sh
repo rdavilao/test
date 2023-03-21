@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-echo "Testing chat-bot action with:"
+echo "Testing chat-bot from [$INPUT_REPOSITORY] with:"
 echo "  - format: [$INPUT_FORMAT]"
 echo "  - files: [$INPUT_FILES]"
 
