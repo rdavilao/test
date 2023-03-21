@@ -18,7 +18,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
     fi
 elif [ "$INPUT_FORMAT" = "Dialogflow" ]; then
     echo "::debug::{Running CONGA with $GITHUB_REPOSITORY_OWNER}"
-    java -jar /CongaReverse.jar $GITHUB_REPOSITORY_OWNER.zip $INPUT_FORMAT
+    java -jar /CongaReverse.jar rdavilao.zip $INPUT_FORMAT
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
