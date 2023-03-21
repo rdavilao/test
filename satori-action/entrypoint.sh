@@ -1,29 +1,26 @@
 #!/bin/bash 
 
-echo " ver - files: [$INPUT_FILES]"
-ar="rdavilao.zip"
-
-echo "Testing chat-bot from [$INPUT_REPOSITORY] with:"
+echo "Testing chat-bot from [$INPUT_OWNER] with:"
 echo "  - format: [$INPUT_FORMAT]"
-echo "  - files: [$ar]"
+echo "  - files: [$INPUT_FILES]"
 
 echo "CONTENIDO: "
 ls
 
-XMI_OUTPUT="${ar/.zip/.xmi}"
-METRICS_OUTPUT="${ar/.zip/.metrics.json}"
+XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
+METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
 
 if [ "$INPUT_FORMAT" = "conga" ]; then
 #  echo `ls /`
-    java -jar /AsymobJSON.jar $ar | tee /tmp/output.txt
+    java -jar /AsymobJSON.jar $INPUT_FILES | tee /tmp/output.txt
     COUNT=`grep "INP = 0" /tmp/output.txt | wc --lines`
     if [ $COUNT -gt 2 ]; then
 	echo "More than two intents with INP > 2"
 	exit 1
     fi
 elif [ "$INPUT_FORMAT" = "Dialogflow" ]; then
-    echo "::debug::{Running CONGA with $ar"
-    java -jar /CongaReverse.jar $ar $INPUT_FORMAT
+    echo "::debug::{Running CONGA with $INPUT_FILES}"
+    java -jar /CongaReverse.jar $INPUT_FILES $INPUT_FORMAT
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
