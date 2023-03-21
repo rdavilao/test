@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Zip all project for converse
-      - uses: zip ${{ github.respository }}.zip ./* -r
+        run: zip ${{ github.respository }}.zip ./* -r
 
       - uses: ./satori-action/.
         with:
