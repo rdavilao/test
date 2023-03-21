@@ -9,10 +9,12 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
     INPUT_FILES=$repo.xmi
 else
     INPUT_FILES=$repo.zip
-    zip -r $INPUT_FORMAT .
+    zip -r $INPUT_FILES .
 fi
 
 ls
+
+echo $INPUT_FILES
 
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
