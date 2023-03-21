@@ -2,11 +2,17 @@
 
 echo "Testing chat-bot from $GITHUB_REPOSITORY with:"
 echo " - format: [$INPUT_FORMAT]"
-INPUT_FILES=$GITHUB_REPOSITORY_OWNER".zip"
+
+if [ "$INPUT_FORMAT" = "conga"]; then
+    ext=".xmi"
+else
+    ext=".zip"
+fi
+
+INPUT_FILES="$GITHUB_REPOSITORY_OWNER$ext"
+
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
-
-ls
 
 if [ "$INPUT_FORMAT" = "conga" ]; then
 #  echo `ls /`
