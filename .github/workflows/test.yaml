@@ -13,3 +13,4 @@ jobs:
       - uses: ./satori-action/.
         with:
           format: "Dialogflow"
+          owner: "rdavilao"
