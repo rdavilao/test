@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 echo " ver - files: [$INPUT_FILES]"
-ar = "rdavilao.zip"
+ar="rdavilao.zip"
 
 echo "Testing chat-bot from [$INPUT_REPOSITORY] with:"
 echo "  - format: [$INPUT_FORMAT]"
