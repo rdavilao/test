@@ -3,7 +3,7 @@ description: 'Apply several techniques to check the quality of your chatbot'
 inputs:
   owner:
     description: 'Username of the repository owner's'
-    default: ${{ github.repository_owner }}
+    default: 'valor'
   files: 
     description: 'Files to be checked'
     required: true
