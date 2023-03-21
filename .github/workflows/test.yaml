@@ -8,18 +8,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Zip all project
-        run: zip ${{ github.actor }}.zip ./* -r
-
-      - name: Upload zip for converse job
-        uses: actions/upload-artifact@v3
-        with: 
-          name: ${{ github.actor }}-chatbot
-          path: ${{ github.actor }}.zip
-
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: ${{ github.actor }}-chatbot
+        run: zip ${{ github.actor }}.zip ./* -r      
 
       - uses: ./satori-action/.
         with:
