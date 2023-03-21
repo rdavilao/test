@@ -3,20 +3,20 @@
 echo "Testing chat-bot from $GITHUB_REPOSITORY with:"
 echo " - format: [$INPUT_FORMAT]"
 
-XMI_OUTPUT="${GITHUB_REPOSITORY_NAME/.zip/.xmi}"
-METRICS_OUTPUT="${GITHUB_REPOSITORY_NAME/.zip/.metrics.json}"
+XMI_OUTPUT="${GITHUB_REPOSITORY_OWNER/.zip/.xmi}"
+METRICS_OUTPUT="${GITHUB_REPOSITORY_OWNER/.zip/.metrics.json}"
 
 if [ "$INPUT_FORMAT" = "conga" ]; then
 #  echo `ls /`
-    java -jar /AsymobJSON.jar $GITHUB_REPOSITORY_NAME.xmi | tee /tmp/output.txt
+    java -jar /AsymobJSON.jar $GITHUB_REPOSITORY_OWNER.xmi | tee /tmp/output.txt
     COUNT=`grep "INP = 0" /tmp/output.txt | wc --lines`
     if [ $COUNT -gt 2 ]; then
 	echo "More than two intents with INP > 2"
 	exit 1
     fi
 elif [ "$INPUT_FORMAT" = "Dialogflow" ]; then
-    echo "::debug::{Running CONGA with $GITHUB_REPOSITORY_NAME}"
-    java -jar /CongaReverse.jar $GITHUB_REPOSITORY_NAME.zip $INPUT_FORMAT
+    echo "::debug::{Running CONGA with $GITHUB_REPOSITORY_OWNER}"
+    java -jar /CongaReverse.jar $GITHUB_REPOSITORY_OWNER.zip $INPUT_FORMAT
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
