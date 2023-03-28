@@ -2,7 +2,7 @@
 
 COLOR_GREEN='\033[0;32m'
 COLOR_RED='\033[0;31m'
-BYELLOW='\033[1;33m'
+BYELLOW='\033[0;33m'
 NC='\033[0m'
 
 echo "Testing chat-bot from ${BYELLOW}$GITHUB_REPOSITORY${NC} with:"
