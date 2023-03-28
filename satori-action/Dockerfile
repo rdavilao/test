@@ -8,4 +8,4 @@ ADD https://github.com/ASYM0B/tool/releases/download/v0.2/AsymobJSON.jar /
 COPY entrypoint.sh /entrypoint.sh
 COPY python/metrics_to_html.py /metrics_to_html.py
 RUN ["chmod", "+x", "/entrypoint.sh"]
-ENTRYPOINT ["sh -c","/entrypoint.sh"]
+ENTRYPOINT ["sh", "-c","/entrypoint.sh"]
