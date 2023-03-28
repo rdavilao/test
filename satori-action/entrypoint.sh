@@ -1,7 +1,7 @@
 #!/bin/bash 
 
-COLOR_GREEN='\033[0;32m'
-COLOR_RED='\033[0;31m'
+BGREEN='\033[1;32m'
+BRED='\033[1;31m'
 BYELLOW='\033[1;33m'
 NC='\033[0m'
 
@@ -35,9 +35,9 @@ else
     XMI_FILE=./$repo.xmi
 
     if test -f "$XMI_FILE"; then    
-        echo -e "${COLOR_GREEN}Archivo $XMI_FILE ha sido creado exitosamente${NC}"
+        echo -e "${BGREEN}Archivo $XMI_FILE ha sido creado exitosamente${NC}"
     else
-        echo -e "${COLOR_RED}Hubo un error al generar el archivo $XMI_FILE${NC}"
+        echo -e "${BRED}Hubo un error al generar el archivo $XMI_FILE${NC}"
         exit 1
     fi
 
