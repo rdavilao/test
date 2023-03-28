@@ -2,7 +2,7 @@ name: 'Chatbot quality assurance'
 description: 'Apply several techniques to check the quality of your chatbot'
 inputs:
   format:
-    description: 'Tecnología del chatbot utilizada.'
+    description: 'Chatbot technology used.'
     required: true    
   repository:
     description: 'Repository name with owner.'
@@ -12,4 +12,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    -${{ inputs.format }}
+    - ${{ inputs.format }}
