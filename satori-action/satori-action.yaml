@@ -2,10 +2,10 @@ name: 'Chatbot quality assurance'
 description: 'Apply several techniques to check the quality of your chatbot'
 inputs:
   format:
-    description: 'Chatbot technology used.'
+    description: 'Chatbot technology used'
     required: true    
   repository:
-    description: 'Repository name with owner.'
+    description: 'Repository name with owner'
     required: true
     default: ${{ github.repository }}  
 runs:
