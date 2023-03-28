@@ -23,9 +23,16 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
 	echo "More than two intents with INP > 2"
 	exit 1
     fi
-elif [ "$INPUT_FORMAT" = "Dialogflow" ]; then
+else
     echo "::debug::{Running CONGA with $INPUT_FILES}"
     java -jar /CongaReverse.jar $INPUT_FILES $INPUT_FORMAT
+
+    XMI_FILE=./$repo.xmi
+
+    if test -f "$XMI_FILE"; then
+        echo "$XMI_FILES existe"
+    fi
+
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
@@ -47,6 +54,4 @@ python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
 #python
 
 #jq '."Global Metrics".ENT' $METRICS_OUTPUT
-
-
 exit 0
