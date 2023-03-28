@@ -5,8 +5,6 @@ jobs:
   check-chatbot:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
       - uses: ./satori-action/.
         with:
           format: "Dialogflow"
