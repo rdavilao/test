@@ -2,11 +2,11 @@
 
 COLOR_GREEN='\033[0;32m'
 COLOR_RED='\033[0;31m'
-BYELLOW='\033[0;33m'
+BYELLOW='\033[1;33m'
 NC='\033[0m'
 
-echo "Testing chat-bot from ${BYELLOW}$GITHUB_REPOSITORY${NC} with:"
-echo " - format: ${BYELLOW}[$INPUT_FORMAT]${NC}"
+echo -e "Testing chat-bot from ${BYELLOW}$GITHUB_REPOSITORY${NC} with:"
+echo -e " - format: ${BYELLOW}[$INPUT_FORMAT]${NC}"
 
 repo=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
 
