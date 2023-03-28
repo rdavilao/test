@@ -30,8 +30,9 @@ else
     XMI_FILE=./$repo.xmi
 
     if test -f "$XMI_FILE"; then
+        echo  '<pre>';        
         echo "Archivo $XMI_FILE ha sido creado exitosamente"
-        exit 1
+        echo  '</pre>' ;
     else
         echo "Hubo un error al generar el archivo $XMI_FILE"
         exit 1
