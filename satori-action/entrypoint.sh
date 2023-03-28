@@ -30,7 +30,11 @@ else
     XMI_FILE=./$repo.xmi
 
     if test -f "$XMI_FILE"; then
-        echo "$XMI_FILE existe"
+        echo "Archivo $XMI_FILE ha sido creado exitosamente"
+        exit 1
+    else
+        echo "Hubo un error al generar el archivo $XMI_FILE"
+        exit 1
     fi
 
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
