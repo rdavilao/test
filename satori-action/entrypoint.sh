@@ -5,7 +5,7 @@ BRED='\033[1;31m'
 BYELLOW='\033[1;33m'
 NC='\033[0m'
 
-if [ "$INPUT_FORMAT" = "Error" ]; then
+if [ "$INPUT_FORMAT" = "" ]; then
     echo -e "${BRED}Format must be specified${NC}"
     exit 1
 fi

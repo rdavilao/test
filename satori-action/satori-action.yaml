@@ -4,7 +4,6 @@ inputs:
   format:
     description: 'Chatbot technology used'
     required: true
-    default: 'Error'
   repository:
     description: 'Repository name with owner'
     required: true
