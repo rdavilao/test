@@ -16,7 +16,6 @@ if __name__ == '__main__':
         data = json.load(f)
         print("# Chatbot conversation flow")
         print("![](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt99pCCKT4ZDIm7g0000)")
-        print("<img src='1.jpg' alt='Girl in a jacket'>")
         print("# Chatbot Metrics")
         print("<table>", file=output)
         global_metrics = data["Global Metrics"]
