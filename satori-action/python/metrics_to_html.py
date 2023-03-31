@@ -14,9 +14,9 @@ if __name__ == '__main__':
     
     with open(args.filename, 'r') as f:
         data = json.load(f)
-        print("<h1>Chatbot conversation flow:</h1>")
-        print("<img style='display: block; margin-left: auto; margin-right: auto;' src='https://randomuser.me/api/portraits/lego/1.jpg' width='300' height='300'>")
-        print("<h1>Chatbot Metrics:</h1>")
+        print("# Chatbot conversation flow")
+        print("![](https://randomuser.me/api/portraits/lego/1.jpg)")
+        print("# Chatbot Metrics")
         print("<table>", file=output)
         global_metrics = data["Global Metrics"]
         for key in global_metrics:
