@@ -14,7 +14,9 @@ if __name__ == '__main__':
     
     with open(args.filename, 'r') as f:
         data = json.load(f)
-
+        print("# Chatbot conversation flow")
+        print("![](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt99pCCKT4ZDIm7g0000)")
+        print("# Chatbot Metrics")
         print("<table>", file=output)
         global_metrics = data["Global Metrics"]
         for key in global_metrics:
