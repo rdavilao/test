@@ -40,4 +40,4 @@ if __name__ == '__main__':
             print("</tr>", file=output)
         print("</table>", file=output)
     
-    print("<h4>For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html' target='_blank'>asymob</a></h4>")
+    print("<h4>For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html' target='_blank' rel='noopener noreferrer'>asymob</a></h4>")
