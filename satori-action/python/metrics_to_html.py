@@ -14,6 +14,7 @@ if __name__ == '__main__':
     
     with open(args.filename, 'r') as f:
         data = json.load(f)
+        print("<center>")
         print("# Chatbot conversation flow")
         print("![](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt99pCCKT4ZDIm7g0000)")
         print("# Chatbot Metrics")
@@ -41,3 +42,4 @@ if __name__ == '__main__':
         print("</table>", file=output)
     
     print("<h4>For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html' target='_blank' rel='noopener noreferrer'>asymob</a></h4>")
+    print("</center>")
