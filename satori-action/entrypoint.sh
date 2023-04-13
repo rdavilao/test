@@ -54,6 +54,9 @@ echo "::group::Metrics"
 echo "Information about metrics"
 echo "::endgroup::"
 
+mkdiir img
+cp 1.jpg img/2.jpg
+
 #echo "$GITHUB_STEP_SUMMARY"
 echo "Expected file"
 echo $METRICS_OUTPUT
