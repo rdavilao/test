@@ -21,8 +21,8 @@ if __name__ == '__main__':
         print("<thead>")
         print("<tr>")        
         print("<th>Name</th>")
-        print("<th>Value</th>"
-        print("<th>Result</th>"))
+        print("<th>Value</th>")
+        print("<th>Result</th>")
         print("</tr>")
         print("</thead>")
 
@@ -38,7 +38,7 @@ if __name__ == '__main__':
             print(global_metrics[key], file=output)
             print("</td>", file=output)
             
-            print("<td>✅</td>", file=output)
+            print("<td>✅</td>")
         
             print("</tr>", file=output)
         print("</table>", file=output)
