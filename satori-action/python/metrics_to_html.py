@@ -32,3 +32,5 @@ if __name__ == '__main__':
         
             print("</tr>", file=output)
         print("</table>", file=output)
+    
+    print("<p>For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a></p>")
