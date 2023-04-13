@@ -62,7 +62,6 @@ echo $METRICS_OUTPUT
 #python3 --version
 #cat /metrics_to_html.py
 python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
-echo "<h1>Prueba</h1>" >> "${GITHUB_STEP_SUMMARY}"
 #echo "xxxx" >> "${GITHUB_STEP_SUMMARY}"
 
 #python

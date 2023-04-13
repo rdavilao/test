@@ -18,6 +18,13 @@ if __name__ == '__main__':
         print("![](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuNBAJrBGjLDmpCbCJbMmKiX8pSd9vt99pCCKT4ZDIm7g0000)")
         print("# Chatbot Metrics")
         print("<table>", file=output)
+        print("<thead>")
+        print("<tr>")        
+        print("<th>Name</th>")
+        print("<th>Value</th>")
+        print("</tr>")
+        print("</thead>")
+
         global_metrics = data["Global Metrics"]
         for key in global_metrics:
             print("<tr>", file=output)
@@ -33,4 +40,4 @@ if __name__ == '__main__':
             print("</tr>", file=output)
         print("</table>", file=output)
     
-    print("<p>For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a></p>")
+    print("<h3>For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a></h3>")
