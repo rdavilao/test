@@ -80,6 +80,8 @@ echo "****" >> "${GITHUB_STEP_SUMMARY}"
 
 
 #Making table about metrics
+echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
+
 echo "| Name | Value | Result |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 echo " ENT | $gM_ENT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
