@@ -61,7 +61,7 @@ json=$(cat $METRICS_OUTPUT | jq '.')
 
 valor=$(echo $json | jq -r '.BotName')
 
-echo "$valor"
+echo "Valor: $valor"
 
 echo "::group::Metrics"
 echo "Information about metrics"
