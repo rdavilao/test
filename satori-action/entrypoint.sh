@@ -76,6 +76,13 @@ gM_CPOP=$(echo "$globalMetrics" | jq '.CPOP')
 echo "# Chatbot conversation flow" >> "${GITHUB_STEP_SUMMARY}"
 echo "![$repo conversation flow](http://www.plantuml.com/plantuml/png/$imgEncoded)" >> "${GITHUB_STEP_SUMMARY}"
 echo "#### This diagram is built thanks to:  <a href='https://plantuml.com/'>PlantUML</a>" >> "${GITHUB_STEP_SUMMARY}"
+echo "****" >> "${GITHUB_STEP_SUMMARY}"
+
+echo "| Name | Value | Result |" >> "${GITHUB_STEP_SUMMARY}"
+echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
+echo " ENT | $gM_ENT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+
+echo "****" >> "${GITHUB_STEP_SUMMARY}"
 
 #Making table about metrics
 echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
