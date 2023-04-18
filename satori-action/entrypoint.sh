@@ -5,6 +5,47 @@ BRED='\033[1;31m'
 BYELLOW='\033[1;33m'
 NC='\033[0m'
 
+gM_ENT_MAX=10
+gM_ENT_MIN=0
+gM_INT_MAX=10
+gM_INT_MIN=0
+gM_NL_MAX=10
+gM_NL_MIN=0
+gM_FLOW_MAX=10
+gM_FLOW_MIN=0
+gM_PATH_MAX=10
+gM_PATH_MIN=0
+gM_LPE_MAX=10
+gM_LPE_MIN=0
+gM_SPL_MAX=10
+gM_SPL_MIN=0
+gM_WL_MAX=10
+gM_WL_MIN=0
+gM_CL_MAX=10
+gM_CL_MIN=0
+gM_FPATH_MAX=10
+gM_FPATH_MIN=0
+gM_FACT_MAX=10
+gM_FACT_MIN=0
+gM_TPI_MAX=10
+gM_TPI_MIN=0
+gM_WPTP_MAX=10
+gM_WPTP_MIN=0
+gM_PPTP_MAX=10
+gM_PPTP_MIN=0
+gM_CPOP_MAX=10
+gM_CPOP_MIN=0
+
+function verifyMetric {
+    if test -e metrics.json; then
+        return 1
+    else
+        return 0
+    fi
+}
+
+echo "Ver: $(verifyMetric)"
+
 if [ "$INPUT_FORMAT" = "" ]; then
     echo -e "${BRED}Format must be specified${NC}"
     exit 1
