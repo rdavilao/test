@@ -54,24 +54,6 @@ else
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
 
-#Making table about metrics
-echo "# Chatbot conversation flow" >> "${GITHUB_STEP_SUMMARY}"
-echo "![$repo conversation flow](http://www.plantuml.com/plantuml/png/$imgEncoded)" >> "${GITHUB_STEP_SUMMARY}"
-
-echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
-
-echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
-
-echo "<table>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<thead>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<tr>" >> "${GITHUB_STEP_SUMMARY}"       
-echo "<th>Name</th>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<th>Value</th>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<th>Result</th>" >> "${GITHUB_STEP_SUMMARY}"
-echo "</tr>" >> "${GITHUB_STEP_SUMMARY}"
-echo "</thead>" >> "${GITHUB_STEP_SUMMARY}"
-echo "</table>" >> "${GITHUB_STEP_SUMMARY}"
-
 globalMetrics=$(jq -r '.["Global Metrics"]' $METRICS_OUTPUT)
 
 gM_ENT=$(echo "$globalMetrics" | jq '.ENT')
@@ -90,9 +72,31 @@ gM_WPTP=$(echo "$globalMetrics" | jq '.WPTP')
 gM_PPTP=$(echo "$globalMetrics" | jq '.PPTP')
 gM_CPOP=$(echo "$globalMetrics" | jq '.CPOP')
 
-echo "Global metrics: $globalMetrics"
+#Making chatbot conversation flow
+echo "# Chatbot conversation flow" >> "${GITHUB_STEP_SUMMARY}"
+echo "![$repo conversation flow](http://www.plantuml.com/plantuml/png/$imgEncoded)" >> "${GITHUB_STEP_SUMMARY}"
+echo "#### This diagram is built thanks to:  <a href='https://plantuml.com/'>PlantUML</a>" >> "${GITHUB_STEP_SUMMARY}"
 
-echo "ENT: $ENT"
+#Making table about metrics
+echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
+
+echo "<table>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<thead>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<tr>" >> "${GITHUB_STEP_SUMMARY}"       
+echo "<th>Name</th>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<th>Value</th>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<th>Result</th>" >> "${GITHUB_STEP_SUMMARY}"
+echo "</tr>" >> "${GITHUB_STEP_SUMMARY}"
+echo "</thead>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<tr>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<td>ENT" >> "${GITHUB_STEP_SUMMARY}"
+echo "</td>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<td>$gM_ENT" >> "${GITHUB_STEP_SUMMARY}"
+echo "</td>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<td>✅" >> "${GITHUB_STEP_SUMMARY}"
+echo "</td>" >> "${GITHUB_STEP_SUMMARY}"
+echo "</tr>" >> "${GITHUB_STEP_SUMMARY}"
+echo "</table>" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
 echo "Information about metrics"
