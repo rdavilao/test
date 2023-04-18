@@ -56,9 +56,11 @@ fi
 
 json=$(cat $METRICS_OUTPUT | jq '.')
 
-valor=$(echo $json | jq -r '.BotName')
+globalMetrics=$(echo $json | jq -r '.Global Metrics')
 
-echo "Valor: $valor"
+ENT=$(echo $globalMetrics | jq -r '.ENT')
+
+echo "Valor: $ENT"
 
 echo "::group::Metrics"
 echo "Information about metrics"
