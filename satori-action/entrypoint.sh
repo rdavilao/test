@@ -56,8 +56,11 @@ fi
 
 globalMetrics=$(jq -r '.["Global Metrics"]' $METRICS_OUTPUT)
 
+ENT=$(echo "$globalMetrics" | jq '.ENT')
 
 echo "Global metrics: $globalMetrics"
+
+echo "ENT: $ENT"
 
 echo "::group::Metrics"
 echo "Information about metrics"
