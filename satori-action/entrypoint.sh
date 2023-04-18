@@ -78,32 +78,27 @@ echo "![$repo conversation flow](http://www.plantuml.com/plantuml/png/$imgEncode
 echo "#### This diagram is built thanks to:  <a href='https://plantuml.com/'>PlantUML</a>" >> "${GITHUB_STEP_SUMMARY}"
 echo "****" >> "${GITHUB_STEP_SUMMARY}"
 
+
+#Making table about metrics
 echo "| Name | Value | Result |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 echo " ENT | $gM_ENT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " INT | $gM_INT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " NL | $gM_NL | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " FLOW | $gM_FLOW | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " PATH | $gM_PATH | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " LPE | $gM_LPE | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " SPL | $gM_SPL | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " WL | $gM_WL | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " CL | $gM_CL | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " FPATH | $gM_FPATH | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " FACT | $gM_FACT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " TPI | $gM_TPI | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " WPTP | $gM_WPTP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " PPTP | $gM_PPTP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+echo " CPOP | $gM_CPOP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
 
-echo "****" >> "${GITHUB_STEP_SUMMARY}"
-
-#Making table about metrics
-echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
-
-echo "<table>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<thead>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<tr>" >> "${GITHUB_STEP_SUMMARY}"       
-echo "<th>Name</th>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<th>Value</th>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<th>Result</th>" >> "${GITHUB_STEP_SUMMARY}"
-echo "</tr>" >> "${GITHUB_STEP_SUMMARY}"
-echo "</thead>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<tr>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<td>ENT" >> "${GITHUB_STEP_SUMMARY}"
-echo "</td>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<td>$gM_ENT" >> "${GITHUB_STEP_SUMMARY}"
-echo "</td>" >> "${GITHUB_STEP_SUMMARY}"
-echo "<td>✅" >> "${GITHUB_STEP_SUMMARY}"
-echo "</td>" >> "${GITHUB_STEP_SUMMARY}"
-echo "</tr>" >> "${GITHUB_STEP_SUMMARY}"
-echo "</table>" >> "${GITHUB_STEP_SUMMARY}"
+echo "#### For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a>" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
 echo "Information about metrics"
@@ -115,7 +110,7 @@ echo $METRICS_OUTPUT
 
 #python3 --version
 #cat /metrics_to_html.py
-python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
+#python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
 #echo "xxxx" >> "${GITHUB_STEP_SUMMARY}"
 
 #python
