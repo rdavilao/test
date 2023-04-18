@@ -37,10 +37,13 @@ gM_CPOP_MAX=10
 gM_CPOP_MIN=0
 
 function verifyMetric {
+    local res="Hola"
     if test -e metrics.json; then
-        return 1
+        res="SI HAY"
+        return "$res"
     else
-        return 0
+        res="NO"
+        return "$res"
     fi
 }
 
