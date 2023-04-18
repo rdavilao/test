@@ -54,9 +54,41 @@ else
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
 
+#Making table about metrics
+echo "# Chatbot conversation flow" >> "${GITHUB_STEP_SUMMARY}"
+echo "![$repo conversation flow](http://www.plantuml.com/plantuml/png/$imgEncoded)" >> "${GITHUB_STEP_SUMMARY}"
+
+echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
+
+echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
+
+echo "<table>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<thead>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<tr>" >> "${GITHUB_STEP_SUMMARY}"       
+echo "<th>Name</th>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<th>Value</th>" >> "${GITHUB_STEP_SUMMARY}"
+echo "<th>Result</th>" >> "${GITHUB_STEP_SUMMARY}"
+echo "</tr>" >> "${GITHUB_STEP_SUMMARY}"
+echo "</thead>" >> "${GITHUB_STEP_SUMMARY}"
+echo "</table>" >> "${GITHUB_STEP_SUMMARY}"
+
 globalMetrics=$(jq -r '.["Global Metrics"]' $METRICS_OUTPUT)
 
-ENT=$(echo "$globalMetrics" | jq '.ENT')
+gM_ENT=$(echo "$globalMetrics" | jq '.ENT')
+gM_INT=$(echo "$globalMetrics" | jq '.INT')
+gM_NL=$(echo "$globalMetrics" | jq '.NL')
+gM_FLOW=$(echo "$globalMetrics" | jq '.FLOW')
+gM_PATH=$(echo "$globalMetrics" | jq '.PATH')
+gM_LPE=$(echo "$globalMetrics" | jq '.LPE')
+gM_SPL=$(echo "$globalMetrics" | jq '.SPL')
+gM_WL=$(echo "$globalMetrics" | jq '.WL')
+gM_CL=$(echo "$globalMetrics" | jq '.CL')
+gM_FPATH=$(echo "$globalMetrics" | jq '.FPATH')
+gM_FACT=$(echo "$globalMetrics" | jq '.FACT')
+gM_TPI=$(echo "$globalMetrics" | jq '.TPI')
+gM_WPTP=$(echo "$globalMetrics" | jq '.WPTP')
+gM_PPTP=$(echo "$globalMetrics" | jq '.PPTP')
+gM_CPOP=$(echo "$globalMetrics" | jq '.CPOP')
 
 echo "Global metrics: $globalMetrics"
 
@@ -69,11 +101,6 @@ echo "::endgroup::"
 echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
-
-#Making table about metrics
-
-echo "# Chatbot conversation flow" >> "${GITHUB_STEP_SUMMARY}"
-echo "![$repo conversation flow](http://www.plantuml.com/plantuml/png/$imgEncoded)" >> "${GITHUB_STEP_SUMMARY}"
 
 #python3 --version
 #cat /metrics_to_html.py
