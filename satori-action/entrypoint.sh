@@ -19,6 +19,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
     INPUT_FILES=$repo.xmi
 else
     INPUT_FILES=$repo.zip
+    PLANTUML_TXT=$repo.txt
     zip -r $INPUT_FILES .
 fi
 
@@ -35,7 +36,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
     fi
 else
     echo "::debug::{Running CONGA with $INPUT_FILES}"
-    java -jar /CongaReverse.jar $INPUT_FILES $INPUT_FORMAT
+    java -jar /CongaReverse_pUML.jar $INPUT_FILES $INPUT_FORMAT
 
     XMI_FILE=./$repo.xmi
 
@@ -46,6 +47,12 @@ else
         exit 1
     fi
 
+    java -jar /plantUML-encode.jar $PLANTUML_TXT
+
+    imgEncoded=$(cat plantUML-encoded.txt)
+
+    echo "$imgEncoded"
+    ls
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
@@ -53,10 +60,6 @@ fi
 echo "::group::Metrics"
 echo "Information about metrics"
 echo "::endgroup::"
-
-mkdiir img
-cp 1.jpg img/2.jpg
-
 #echo "$GITHUB_STEP_SUMMARY"
 echo "Expected file"
 echo $METRICS_OUTPUT
