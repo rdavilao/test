@@ -57,6 +57,12 @@ else
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
 
+json=$(cat $METRICS_OUTPUT | jq '.')
+
+valor=$(echo $json | jq -r '.BotName')
+
+echo "$valor"
+
 echo "::group::Metrics"
 echo "Information about metrics"
 echo "::endgroup::"
