@@ -54,13 +54,10 @@ else
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
 
-json=$(cat $METRICS_OUTPUT | jq '.')
+globalMetrics=$(jq -r '.["Global Metrics"]' $METRICS_OUTPUT)
 
-globalMetrics=$(echo $json | jq -r '.Global Metrics')
 
-ENT=$(echo $globalMetrics | jq -r '.ENT')
-
-echo "Valor: $ENT"
+echo "Global metrics: $globalMetrics"
 
 echo "::group::Metrics"
 echo "Information about metrics"
