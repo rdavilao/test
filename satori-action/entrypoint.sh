@@ -36,7 +36,7 @@ gM_PPTP_MIN=0
 gM_CPOP_MAX=10
 gM_CPOP_MIN=0
 
-function verifyMetric {
+function verifyMetric() {
     local res="Hola"
     if test -e metrics.json; then
         res="SI HAY"
