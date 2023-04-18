@@ -48,11 +48,8 @@ else
     fi
 
     java -jar /plantUML-encode.jar $PLANTUML_TXT
-
     imgEncoded=$(cat plantUML-encoded.txt)
 
-    echo "$imgEncoded"
-    ls
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
@@ -70,6 +67,11 @@ echo "::endgroup::"
 echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
+
+#Making table about metrics
+
+echo "# Chatbot conversation flow" >> "${GITHUB_STEP_SUMMARY}"
+echo "![$repo conversation flow](http://www.plantuml.com/plantuml/png/$imgEncoded)" >> "${GITHUB_STEP_SUMMARY}"
 
 #python3 --version
 #cat /metrics_to_html.py
