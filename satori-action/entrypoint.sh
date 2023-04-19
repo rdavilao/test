@@ -58,7 +58,7 @@ function verificar_parametros {
 
 function isMetric(){
     
-    if [ jq 'has("ENT_MIN")' or 'has("AUX")' metrics.json ]; then
+    if [ jq 'has("ENT_MIN")' or 'has("ENT_MAX")' metrics.json ]; then
         echo "Existe al menos 1"
     else
         echo "No existe ninguna"
