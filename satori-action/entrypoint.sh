@@ -58,7 +58,7 @@ function verificar_parametros {
 
 function isMetric(){
     
-    if jq 'has("ENT_MIN")' or 'has("AUX")' metrics.json; then
+    if [ jq 'has("ENT_MIN")' or 'has("AUX")' metrics.json ]; then
         echo "Existe al menos 1"
     else
         echo "No existe ninguna"
@@ -142,8 +142,6 @@ lpee=$(jq -r '.["Global Metrics"].LPE' $METRICS_OUTPUT)
 echo "LPE: $lpee | bc" 
 lpFloat=$(echo "$lpee" | bc)
 echo "Lpfloat: $lpFloat"
-
-which bc
 
 
 echo "GlobalMetrics: $globalMetrics"
