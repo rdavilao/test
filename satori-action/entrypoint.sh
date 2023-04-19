@@ -69,9 +69,13 @@ function key_exist(){
 
 
 function getResult(){
-    echo "Valor1 = $1"
-    echo "Valor2 = $2"
-    echo "Valor3 = $3"
+    param1=$1
+    param2=$2
+    param3=$3
+    echo "$param1"
+    echo "Valor2 = $param2"
+    echo "Valor3 = $param3"
+    
 }
 
 function verifyMetric(){
