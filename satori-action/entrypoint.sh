@@ -69,6 +69,9 @@ function key_exist(){
 
 
 function getResult(){
+    echo "Valor1 = $1"
+    echo "Valor2 = $2"
+    echo "Valor3 = $3"
     if [ $(echo "$3 >= $2 && $3 <= $1" | bc -l) -eq 1 ]; then
     echo "✅"
     else
