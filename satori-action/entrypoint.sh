@@ -56,6 +56,15 @@ function verificar_parametros {
   fi
 }
 
+function isMetric(){
+    
+    if [jq 'has("ENT_MIN")' or 'has("AUX")' metrics.json]; then
+        echo "Existe al menos 1"
+    else
+        echo "No existe ninguna"
+    fi    
+}
+
 function verifyMetric(){
 
 	case $1 in
@@ -196,7 +205,7 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
-verificar_parametros metrics.json "ENT_MIN" "AUX"
+isMetric
 
 
 #python3 --version
