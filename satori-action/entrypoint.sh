@@ -96,7 +96,7 @@ else
 fi
 
 globalMetrics=$(jq --raw-output '.["Global Metrics"]' $METRICS_OUTPUT)
-gb=$(echo $METRICS_OUTPUT | jq --raw-output '.[Global Metrics]')
+gb=$(echo $METRICS_OUTPUT | jq --raw-output '.["Global Metrics"]')
 
 
 echo "GlobalMetrics: $globalMetrics"
