@@ -69,13 +69,15 @@ function key_exist(){
 
 
 function getResult(){
-    param1=$1
-    param2=$2
-    param3=$3
-    echo "$param1"
-    echo "Valor2 = $param2"
-    echo "Valor3 = $param3"
-    
+    max=$1
+    min=$2
+    value=$3
+    if [ $(echo "$value >= $min && $value <= $max" | bc -l) -eq 1 ]
+    then
+        echo "✅"
+    else
+        echo "❌"
+    fi
 }
 
 function verifyMetric(){
@@ -87,15 +89,13 @@ function verifyMetric(){
         if keys_exist ENT_MAX ENT_MIN; then
             if key_exist ENT_MIN; then
                 gM_ENT_MIN=$(jq -r '.ENT_MIN' metrics.json)
-                echo "$gM_ENT_MIN"
             else
-                gM_ENT_MIN=
+                gM_ENT_MIN=0
             fi
             if key_exist ENT_MAX; then
-                gM_ENT_MAX=$(jq -r '.ENT_MAX' metrics.json)
-                echo "$gM_ENT_MAX"                
+                gM_ENT_MAX=$(jq -r '.ENT_MAX' metrics.json)              
             else
-                gM_ENT_MAX=
+                gM_ENT_MAX=1000000
             fi
         else
         echo "algo"     
