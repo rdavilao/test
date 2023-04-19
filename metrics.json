@@ -26,5 +26,7 @@
 "WPTP_MIN": 2.30,
 "WPTP_MAX": 2.30,
 "PPTP_MIN": 1.00,
-"PPTP_MAX": 1.00, 
+"PPTP_MAX": 1.00,
+"CPOP_MIN": 74.27,
+"CPOP_MAX": 74.27   
 }
