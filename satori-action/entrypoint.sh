@@ -56,12 +56,6 @@ function check_keys_exist() {
   fi
 }
 
-function isMetric(){
-    key1Is=$(jq 'has("ENT_MAX") metrics.json')
-
-    echo "$key1Is" 
-}
-
 function verifyMetric(){
 
 	case $1 in
@@ -200,7 +194,7 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
-isMetric 
+#isMetric 
 
 check_keys_exist metrics.json "ENT_MAX" "AUX"
 #python3 --version
