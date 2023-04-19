@@ -163,7 +163,7 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
-jq 'has("ENT_MIN")' metrics.json
+jq 'has("ENT_MINN")' metrics.json
 
 #python3 --version
 #cat /metrics_to_html.py
