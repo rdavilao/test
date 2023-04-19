@@ -169,23 +169,50 @@ echo "****" >> "${GITHUB_STEP_SUMMARY}"
 
 #Making table about metrics
 echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
-
 echo "| Name | Value | Result |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
+if keys_exist ENT_MAX ENT_MIN; then
 echo " ENT | $gM_ENT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist INT_MAX INT_MIN; then
 echo " INT | $gM_INT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist NL_MAX NL_MIN; then
 echo " NL | $gM_NL | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist FLOW_MAX FLOW_MIN; then
 echo " FLOW | $gM_FLOW | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist PATH_MAX PATH_MIN; then
 echo " PATH | $gM_PATH | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist LPE_MAX LPE_MIN; then
 echo " LPE | $gM_LPE | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist SPL_MAX SPL_MIN; then
 echo " SPL | $gM_SPL | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist WL_MAX WL_MIN; then
 echo " WL | $gM_WL | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist CL_MAX CL_MIN; then
 echo " CL | $gM_CL | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist FPATH_MAX FPATH_MIN; then
 echo " FPATH | $gM_FPATH | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist FACT_MAX FACT_MIN; then
 echo " FACT | $gM_FACT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist TPI_MAX TPI_MIN; then
 echo " TPI | $gM_TPI | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist WPTP_MAX WPTP_MIN; then
 echo " WPTP | $gM_WPTP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+if keys_exist PPTP_MAX PPTP_MIN; then
 echo " PPTP | $gM_PPTP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
 if keys_exist CPOP_MAX CPOP_MIN; then
 echo " CPOP | $gM_CPOP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
 fi
