@@ -44,16 +44,16 @@ function isMetricJson(){
     fi
 }
 
-function isMetric(){
-
-    jq 'has("$1")' metrics.json
-    jq 'has($1)' metrics.json
-    
-    if [jq 'has("$1")' or 'has("$2")' metrics.json]; then
-        echo "Existe al menos 1"
-    else
-        echo "No existe ninguna"
-    fi    
+function verificar_parametros {
+  json_file="$1"
+  param1="$2"
+  param2="$3"
+  
+  if jq -e --argjson p1 "$param1" --argjson p2 "$param2" '(.[$p1] or .[$p2]) != null' "$json_file" >/dev/null; then
+    echo "Los parámetros $param1 y/o $param2 existen en el archivo $json_file"
+  else
+    echo "Los parámetros $param1 y/o $param2 no existen en el archivo $json_file"
+  fi
 }
 
 function verifyMetric(){
@@ -196,7 +196,7 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
-isMetric "ENT_MIN" "AUX"
+verificar_parametros metrics.json "ENT_MIN" "AUX"
 
 
 #python3 --version
