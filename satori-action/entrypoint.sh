@@ -94,7 +94,8 @@ function verifyMetric(){
                 gM_ENT_MAX=$(echo metrics.json | jq -r ".ENT_MAX")
                 echo "$gM_ENT_MAX"
             fi
-        else     
+        else
+        echo "algo"     
         fi
 	 else	 
 	 gM_ENT_MIN=0
