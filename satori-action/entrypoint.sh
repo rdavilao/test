@@ -97,7 +97,9 @@ fi
 
 globalMetrics=$(jq --raw-output '.["Global Metrics"]' $METRICS_OUTPUT)
 lpee=$(jq -r '.["Global Metrics"].LPE' $METRICS_OUTPUT)
-echo "LPE: $lpee"
+echo "LPE: $lpee" | bc
+lpFloat=$(echo "$lpee" | bc)
+echo "Lpfloat: $lpFloat"
 
 echo "GlobalMetrics: $globalMetrics"
 
