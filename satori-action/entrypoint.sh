@@ -72,7 +72,7 @@ function verifyMetric(){
     ENT)
      if isMetricJson; then
      if keys_exist ENT_MAX ENT_MIN; then
-     echo "✅"
+     echo "❌"
      else
      echo "❌"
      fi
