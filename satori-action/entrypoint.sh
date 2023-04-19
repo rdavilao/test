@@ -59,6 +59,71 @@ function verifyMetric(){
 
 	case $1 in
 	
+    ENT)
+     if isMetricJson; then
+     if keys_exist CPOP_MAX CPOP_MIN; then
+     echo "EXISTEN"
+     else
+     echo "NO EXISTEN"
+     fi
+	 gM_CPOP_MIN=10
+	 gM_CPOP_MAX=200
+	 else	 
+	 gM_CPOP_MIN=0
+	 gM_CPOP_MAX=10	 
+	 fi
+     ;;
+
+    INT)
+
+     ;;
+
+    NL)
+
+     ;;
+
+    FLOW)
+
+     ;;
+    
+    PATH)
+
+     ;;
+
+    LPE)
+
+     ;;
+
+    SPL) 
+
+     ;;
+    
+    WL)
+
+     ;;
+    
+    CL)
+
+     ;;
+
+    FPATH)
+
+     ;;
+    
+    FACT)
+
+     ;;
+
+    TPI)
+
+     ;;
+    
+    WPTP)
+     ;;
+
+    PPTP)
+     ;;    
+
 	CPOP)
 	 if isMetricJson; then
      if keys_exist CPOP_MAX CPOP_MIN; then
@@ -72,7 +137,6 @@ function verifyMetric(){
 	 gM_CPOP_MIN=0
 	 gM_CPOP_MAX=10	 
 	 fi
-	 echo "CPOP"
 	 ;;
 	 
 	ENT)
