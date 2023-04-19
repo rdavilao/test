@@ -99,7 +99,7 @@ function verifyMetric(){
 	 gM_ENT_MIN=0
 	 gM_ENT_MAX=10 
 	 fi
-     getResult "$gM_ENT_MAX" "$gM_ENT_MIN" "$gM_ENT"
+     getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT
      ;;
 
     INT)
