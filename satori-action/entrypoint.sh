@@ -163,6 +163,12 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
+if jq '.key | has("ENT_MIN")' metrics.json; then
+    echo "Existe la metrica"
+else 
+    echo "No existe la metrica"
+fi
+
 #python3 --version
 #cat /metrics_to_html.py
 #python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
