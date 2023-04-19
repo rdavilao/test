@@ -45,11 +45,11 @@ function isMetricJson(){
 }
 
 function isMetric(){
-    if [jq 'has("$1")' metrics.json] -o [jq 'has("$2")' metrics.json]
+    if [jq 'has("$1")' or 'has("$2")' metrics.json]
         echo "Existe al menos 1"
     else
         echo "No existe ninguna"
-    fi
+    fi    
 }
 
 function verifyMetric(){
