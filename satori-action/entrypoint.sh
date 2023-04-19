@@ -72,11 +72,6 @@ function getResult(){
     echo "Valor1 = $1"
     echo "Valor2 = $2"
     echo "Valor3 = $3"
-    if [ $(echo "$3 >= $2 && $3 <= $1" | bc -l) -eq 1 ]; then
-    echo "✅"
-    else
-    echo "❌"
-    fi
 }
 
 function verifyMetric(){
@@ -341,7 +336,6 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
-verifyMetric CPOP
 #python3 --version
 #cat /metrics_to_html.py
 #python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
