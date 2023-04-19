@@ -186,9 +186,7 @@ echo " FACT | $gM_FACT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
 echo " TPI | $gM_TPI | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
 echo " WPTP | $gM_WPTP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
 echo " PPTP | $gM_PPTP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
-if keys_exist CPOP_MAX CPOP_MIN; then
 echo " CPOP | $gM_CPOP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
-fi
 
 
 echo "#### For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a>" >> "${GITHUB_STEP_SUMMARY}"
