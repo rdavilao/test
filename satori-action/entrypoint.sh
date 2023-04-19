@@ -87,14 +87,15 @@ function verifyMetric(){
         if keys_exist ENT_MAX ENT_MIN; then
             if key_exist ENT_MIN; then
                 gM_ENT_MIN=$(echo metrics.json | jq -r ".ENT_MIN")
+                echo "$gM_ENT_MIN"
             else
                 gM_ENT_MIN=
             fi
             if key_exist ENT_MAX; then
-                gM_ENT_MAX=
-            else
                 gM_ENT_MAX=$(echo metrics.json | jq -r ".ENT_MAX")
-                echo "$gM_ENT_MAX"
+                echo "$gM_ENT_MAX"                
+            else
+                gM_ENT_MAX=
             fi
         else
         echo "algo"     
