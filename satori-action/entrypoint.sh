@@ -57,9 +57,11 @@ repo=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
 if [ "$INPUT_FORMAT" = "conga" ]; then
     INPUT_FILES=$repo.xmi
 else
+    echo "::group::Compressing repository"
     INPUT_FILES=$repo.zip
     PLANTUML_TXT=$repo.txt
-    zip -r $INPUT_FILES .
+    zip -r $INPUT_FILES .    
+    echo "::endgroup::"
 fi
 
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
@@ -93,7 +95,7 @@ else
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
 
-globalMetrics=$(jq -r '.["Global Metrics"]' $METRICS_OUTPUT)
+globalMetrics=$(jq --raw-output '.["Global Metrics"]' $METRICS_OUTPUT)
 
 gM_ENT=$(echo "$globalMetrics" | jq '.ENT')
 gM_INT=$(echo "$globalMetrics" | jq '.INT')
