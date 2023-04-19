@@ -44,25 +44,22 @@ function isMetricJson(){
     fi
 }
 
-function verificar_parametros {
-  json_file="$1"
-  param1="$2"
-  param2="$3"
-  
-  if jq -e --argjson p1 "$param1" --argjson p2 "$param2" '(.[$p1] or .[$p2]) != null' "$json_file" >/dev/null; then
-    echo "Los parámetros $param1 y/o $param2 existen en el archivo $json_file"
+function check_keys_exist() {
+  local json_file="$1"
+  local key1="$2"
+  local key2="$3"
+
+  if jq -e ".\"$key1\"" "$json_file" >/dev/null 2>&1 || jq -e ".\"$key2\"" "$json_file" >/dev/null 2>&1; then
+    echo "At least one key exists in the JSON"
   else
-    echo "Los parámetros $param1 y/o $param2 no existen en el archivo $json_file"
+    echo "Neither key exists in the JSON"
   fi
 }
 
 function isMetric(){
-    
-    if [ jq 'has("ENT_MIN")' or 'has("ENT_MAX")' metrics.json ]; then
-        echo "Existe al menos 1"
-    else
-        echo "No existe ninguna"
-    fi    
+    key1Is=$(jq 'has("ENT_MAX") metrics.json')
+
+    echo "$key1Is" 
 }
 
 function verifyMetric(){
@@ -203,9 +200,9 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
-isMetric
+isMetric 
 
-
+check_keys_exist metrics.json "ENT_MAX" "AUX"
 #python3 --version
 #cat /metrics_to_html.py
 #python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
