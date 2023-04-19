@@ -36,15 +36,16 @@ gM_PPTP_MIN=0
 gM_CPOP_MAX=10
 gM_CPOP_MIN=0
 
-function verifyMetric() {
-    local res="Hola"
+function isMetricJson(){
     if test -e metrics.json; then
-        res="SI HAY"
-        return "$res"
+        return 0
     else
-        res="NO"
-        return "$res"
+        return 1
     fi
+}
+
+function defineMetric(){
+
 }
 
 echo "Ver: $(verifyMetric)"
@@ -106,6 +107,8 @@ gM_NL=$(echo "$globalMetrics" | jq '.NL')
 gM_FLOW=$(echo "$globalMetrics" | jq '.FLOW')
 gM_PATH=$(echo "$globalMetrics" | jq '.PATH')
 gM_LPE=$(echo "$globalMetrics" | jq '.LPE')
+gm_LPE=$(echo "$gm_LPE" | bc)
+
 gM_SPL=$(echo "$globalMetrics" | jq '.SPL')
 gM_WL=$(echo "$globalMetrics" | jq '.WL')
 gM_CL=$(echo "$globalMetrics" | jq '.CL')
