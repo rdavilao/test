@@ -45,11 +45,10 @@ function isMetricJson(){
 }
 
 function keys_exist() {
-  local json_file="$1"
-  local key1="$2"
-  local key2="$3"
+  local key1="$1"
+  local key2="$2"
 
-  if jq -e ".\"$key1\"" "$json_file" >/dev/null 2>&1 || jq -e ".\"$key2\"" "$json_file" >/dev/null 2>&1; then
+  if jq -e ".\"$key1\"" "metrics.json" >/dev/null 2>&1 || jq -e ".\"$key2\"" "metrics.json" >/dev/null 2>&1; then
     return 0
   else
     return 1
@@ -62,7 +61,7 @@ function verifyMetric(){
 	
 	CPOP)
 	 if isMetricJson; then
-     if keys_exist metrics.json CPOP_MAX CPOP_MIN; then
+     if keys_exist CPOP_MAX CPOP_MIN; then
      echo "EXISTEN"
      else
      echo "NO EXISTEN"
@@ -187,7 +186,10 @@ echo " FACT | $gM_FACT | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
 echo " TPI | $gM_TPI | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
 echo " WPTP | $gM_WPTP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
 echo " PPTP | $gM_PPTP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+if keys_exist CPOP_MAX CPOP_MIN; then
 echo " CPOP | $gM_CPOP | ✅ |" >> "${GITHUB_STEP_SUMMARY}"
+fi
+
 
 echo "#### For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a>" >> "${GITHUB_STEP_SUMMARY}"
 
