@@ -49,7 +49,7 @@ function isMetric(){
         echo "Existe al menos 1"
     else
         echo "No existe ninguna"
-    if
+    fi
 }
 
 function verifyMetric(){
