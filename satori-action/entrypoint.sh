@@ -45,7 +45,9 @@ function isMetricJson(){
 }
 
 function isMetric(){
-    if [jq 'has("$1")' or 'has("$2")' metrics.json]; then
+    echo "$1"
+    echo "$2"
+    if [jq 'has($1)' or 'has($2)' metrics.json]; then
         echo "Existe al menos 1"
     else
         echo "No existe ninguna"
@@ -193,7 +195,6 @@ echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
 isMetric "ENT_MIN" "AUX"
-jq 'has("ENT_MINN")' metrics.json
 
 #python3 --version
 #cat /metrics_to_html.py
