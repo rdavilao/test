@@ -44,6 +44,35 @@ function isMetricJson(){
     fi
 }
 
+function isMetric(){
+    if [jq 'has("$1")' metrics.json] -o [jq 'has("$2")' metrics.json]
+        echo "Existe al menos 1"
+    else
+        echo "No existe ninguna"
+    if
+}
+
+function verifyMetric(){
+
+	case $1 in
+	
+	CPOP)
+	 if isMetricJson; then
+	 gM_CPOP_MIN=10
+	 gM_CPOP_MAX=200
+	 else	 
+	 gM_CPOP_MIN=0
+	 gM_CPOP_MAX=10	 
+	 fi
+	 echo "CPOP"
+	 ;;
+	 
+	ENT)
+	 echo "ENT"
+	 ;;
+	esac
+}
+
 if [ "$INPUT_FORMAT" = "" ]; then
     echo -e "${BRED}Format must be specified${NC}"
     exit 1
@@ -163,6 +192,7 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
+isMetric "ENT_MIN" "AUX"
 jq 'has("ENT_MINN")' metrics.json
 
 #python3 --version
