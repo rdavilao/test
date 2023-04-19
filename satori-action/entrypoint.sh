@@ -44,15 +44,15 @@ function isMetricJson(){
     fi
 }
 
-function check_keys_exist() {
+function keys_exist() {
   local json_file="$1"
   local key1="$2"
   local key2="$3"
 
   if jq -e ".\"$key1\"" "$json_file" >/dev/null 2>&1 || jq -e ".\"$key2\"" "$json_file" >/dev/null 2>&1; then
-    echo "At least one key exists in the JSON"
+    return 0
   else
-    echo "Neither key exists in the JSON"
+    return 1
   fi
 }
 
@@ -62,6 +62,11 @@ function verifyMetric(){
 	
 	CPOP)
 	 if isMetricJson; then
+     if keys_exist metrics.json CPOP_MAX CPOP_MIN; then
+     echo "EXISTEN"
+     else
+     echo "NO EXISTEN"
+     fi
 	 gM_CPOP_MIN=10
 	 gM_CPOP_MAX=200
 	 else	 
@@ -128,11 +133,11 @@ else
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
 
-globalMetrics=$(jq --raw-output '.["Global Metrics"]' $METRICS_OUTPUT)
-lpee=$(jq -r '.["Global Metrics"].LPE' $METRICS_OUTPUT)
-echo "LPE: $lpee | bc" 
-lpFloat=$(echo "$lpee" | bc)
-echo "Lpfloat: $lpFloat"
+#Test globalMetrics=$(jq --raw-output '.["Global Metrics"]' $METRICS_OUTPUT)
+#Test lpee=$(jq -r '.["Global Metrics"].LPE' $METRICS_OUTPUT)
+#Test echo "LPE: $lpee | bc" 
+#Test lpFloat=$(echo "$lpee" | bc)
+#Test echo "Lpfloat: $lpFloat"
 
 
 echo "GlobalMetrics: $globalMetrics"
@@ -194,9 +199,7 @@ echo "Expected file"
 echo $METRICS_OUTPUT
 #jq '."Intent Metrics" | .[] | [.name, .INTP] | @tsv' "$METRICS_OUTPUT"#  >> "${GITHUB_STEP_SUMMARY}"
 
-#isMetric 
-
-check_keys_exist metrics.json "ENT_MAXX" "AUX"
+verifyMetric CPOP
 #python3 --version
 #cat /metrics_to_html.py
 #python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
