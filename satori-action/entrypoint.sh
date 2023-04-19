@@ -44,12 +44,6 @@ function isMetricJson(){
     fi
 }
 
-function defineMetric(){
-
-}
-
-echo "Ver: $(verifyMetric)"
-
 if [ "$INPUT_FORMAT" = "" ]; then
     echo -e "${BRED}Format must be specified${NC}"
     exit 1
