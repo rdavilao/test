@@ -196,7 +196,7 @@ echo $METRICS_OUTPUT
 
 #isMetric 
 
-check_keys_exist metrics.json "ENT_MAX" "AUX"
+check_keys_exist metrics.json "ENT_MAXX" "AUX"
 #python3 --version
 #cat /metrics_to_html.py
 #python3 /metrics_to_html.py -f $METRICS_OUTPUT >> "${GITHUB_STEP_SUMMARY}"
