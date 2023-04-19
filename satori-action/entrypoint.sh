@@ -36,7 +36,7 @@ gM_PPTP_MIN=0
 gM_CPOP_MAX=10
 gM_CPOP_MIN=0
 
-#Check if the .json exists with the minimum or maximum values per metric to be considered.
+#Check if metrics.json exists with the minimum or maximum values per metric to be considered.
 function isMetricJson(){
     if test -e metrics.json; then
         return 0
@@ -45,7 +45,8 @@ function isMetricJson(){
     fi
 }
 
-function keys_exist() {
+#Check if there is in metrics.json at least one key corresponding to the minimum or maximum value of some metric.
+function keys_exist(){
   local key1="$1"
   local key2="$2"
 
@@ -56,12 +57,22 @@ function keys_exist() {
   fi
 }
 
-function key_exist() {
+#Check if the key exists in metrics.json 
+function key_exist(){
     local key="$1"
     if jq -e ".${key}" "metrics.json" > /dev/null; then
         return 0
     else
         return 1
+    fi
+}
+
+
+function getResult(){
+    if [ $(echo "$3 >= $2 && $3 <= $1" | bc -l) -eq 1 ]; then
+    echo "✅"
+    else
+    echo "❌"
     fi
 }
 
@@ -71,17 +82,25 @@ function verifyMetric(){
 	
     ENT)
      if isMetricJson; then
-     if keys_exist ENT_MAX ENT_MIN; then
-     echo "❌"
-     else
-     echo "❌"
-     fi
-	 gM_CPOP_MIN=10
-	 gM_CPOP_MAX=200
+        if keys_exist ENT_MAX ENT_MIN; then
+            if key_exist ENT_MIN; then
+                gM_ENT_MIN=$(echo metrics.json | jq -r ".ENT_MIN")
+            else
+                gM_ENT_MIN=
+            fi
+            if key_exist ENT_MAX; then
+                gM_ENT_MAX=
+            else
+                gM_ENT_MAX=$(echo metrics.json | jq -r ".ENT_MAX")
+                echo "$gM_ENT_MAX"
+            fi
+        else     
+        fi
 	 else	 
-	 gM_CPOP_MIN=0
-	 gM_CPOP_MAX=10 
+	 gM_ENT_MIN=0
+	 gM_ENT_MAX=10 
 	 fi
+     getResult "$gM_ENT_MAX" "$gM_ENT_MIN" "$gM_ENT"
      ;;
 
     INT)
