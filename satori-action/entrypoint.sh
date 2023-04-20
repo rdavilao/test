@@ -5,37 +5,6 @@ BRED='\033[1;31m'
 BYELLOW='\033[1;33m'
 NC='\033[0m'
 
-gM_ENT_MAX=10
-gM_ENT_MIN=0
-gM_INT_MAX=10
-gM_INT_MIN=0
-gM_NL_MAX=10
-gM_NL_MIN=0
-gM_FLOW_MAX=10
-gM_FLOW_MIN=0
-gM_PATH_MAX=10
-gM_PATH_MIN=0
-gM_LPE_MAX=10
-gM_LPE_MIN=0
-gM_SPL_MAX=10
-gM_SPL_MIN=0
-gM_WL_MAX=10
-gM_WL_MIN=0
-gM_CL_MAX=10
-gM_CL_MIN=0
-gM_FPATH_MAX=10
-gM_FPATH_MIN=0
-gM_FACT_MAX=10
-gM_FACT_MIN=0
-gM_TPI_MAX=10
-gM_TPI_MIN=0
-gM_WPTP_MAX=10
-gM_WPTP_MIN=0
-gM_PPTP_MAX=10
-gM_PPTP_MIN=0
-gM_CPOP_MAX=10
-gM_CPOP_MIN=0
-
 #Check if metrics.json exists with the minimum or maximum values per metric to be considered.
 function isMetricJson(){
     if test -e metrics.json; then
@@ -524,7 +493,7 @@ echo "****" >> "${GITHUB_STEP_SUMMARY}"
 
 #Making table about metrics
 echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
-echo "| Name | Value | Result |" >> "${GITHUB_STEP_SUMMARY}"
+echo "| METRIC | VALUE | RESULT |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
@@ -589,7 +558,7 @@ else
     echo " PPTP | $gM_PPTP | $(verifyMetric PPTP) |" >> "${GITHUB_STEP_SUMMARY}"
     echo " CPOP | $gM_CPOP | $(verifyMetric CPOP) |" >> "${GITHUB_STEP_SUMMARY}"
 fi
-echo "#### For more information on the interpretation of these matrices, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a>" >> "${GITHUB_STEP_SUMMARY}"
+echo "#### For more information on the interpretation of these metrics, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a>" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
 echo "Information about metrics"
