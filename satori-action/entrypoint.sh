@@ -74,7 +74,12 @@ function getResult(){
     value=$3
     if [ $(echo "$value >= $min && $value <= $max" | bc -l) -eq 1 ]
     then
-        echo "✅"
+        if [ $(echo "$value == $min || $value == $max" | bc -l) -eq 1 ]        
+        then
+            echo "⚠️"
+        else
+            echo "✅"
+        fi        
     else
         echo "❌"
     fi
@@ -108,72 +113,325 @@ function verifyMetric(){
      ;;
 
     INT)
-
+     if isMetricJson; then
+        if keys_exist INT_MAX INT_MIN; then
+            if key_exist INT_MIN; then
+                gM_INT_MIN=$(jq -r '.INT_MIN' metrics.json)
+            else
+                gM_INT_MIN=0
+            fi
+            if key_exist INT_MAX; then
+                gM_INT_MAX=$(jq -r '.INT_MAX' metrics.json)              
+            else
+                gM_INT_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_INT_MIN=0
+	 gM_INT_MAX=10 
+	 fi
+     getResult $gM_INT_MAX $gM_INT_MIN $gM_INT
      ;;
 
     NL)
-
+     if isMetricJson; then
+        if keys_exist NL_MAX NL_MIN; then
+            if key_exist NL_MIN; then
+                gM_NL_MIN=$(jq -r '.NL_MIN' metrics.json)
+            else
+                gM_NL_MIN=0
+            fi
+            if key_exist NL_MAX; then
+                gM_NL_MAX=$(jq -r '.NL_MAX' metrics.json)              
+            else
+                gM_NL_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_NL_MIN=0
+	 gM_NL_MAX=10 
+	 fi
+     getResult $gM_NL_MAX $gM_NL_MIN $gM_NL
      ;;
 
     FLOW)
-
+     if isMetricJson; then
+        if keys_exist FLOW_MAX FLOW_MIN; then
+            if key_exist FLOW_MIN; then
+                gM_FLOW_MIN=$(jq -r '.FLOW_MIN' metrics.json)
+            else
+                gM_FLOW_MIN=0
+            fi
+            if key_exist FLOW_MAX; then
+                gM_FLOW_MAX=$(jq -r '.FLOW_MAX' metrics.json)              
+            else
+                gM_FLOW_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_FLOW_MIN=0
+	 gM_FLOW_MAX=10 
+	 fi
+     getResult $gM_FLOW_MAX $gM_FLOW_MIN $gM_FLOW
      ;;
     
     PATH)
-
+     if isMetricJson; then
+        if keys_exist PATH_MAX PATH_MIN; then
+            if key_exist PATH_MIN; then
+                gM_PATH_MIN=$(jq -r '.PATH_MIN' metrics.json)
+            else
+                gM_PATH_MIN=0
+            fi
+            if key_exist PATH_MAX; then
+                gM_PATH_MAX=$(jq -r '.PATH_MAX' metrics.json)              
+            else
+                gM_PATH_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_PATH_MIN=0
+	 gM_PATH_MAX=10 
+	 fi
+     getResult $gM_PATH_MAX $gM_PATH_MIN $gM_PATH
      ;;
 
     LPE)
-
+     if isMetricJson; then
+        if keys_exist LPE_MAX LPE_MIN; then
+            if key_exist LPE_MIN; then
+                gM_LPE_MIN=$(jq -r '.LPE_MIN' metrics.json)
+            else
+                gM_LPE_MIN=0
+            fi
+            if key_exist LPE_MAX; then
+                gM_LPE_MAX=$(jq -r '.LPE_MAX' metrics.json)              
+            else
+                gM_LPE_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_LPE_MIN=0
+	 gM_LPE_MAX=10 
+	 fi
+     getResult $gM_LPE_MAX $gM_LPE_MIN $gM_LPE
      ;;
 
     SPL) 
-
+     if isMetricJson; then
+        if keys_exist SPL_MAX SPL_MIN; then
+            if key_exist SPL_MIN; then
+                gM_SPL_MIN=$(jq -r '.SPL_MIN' metrics.json)
+            else
+                gM_SPL_MIN=0
+            fi
+            if key_exist SPL_MAX; then
+                gM_SPL_MAX=$(jq -r '.SPL_MAX' metrics.json)              
+            else
+                gM_SPL_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_SPL_MIN=0
+	 gM_SPL_MAX=10 
+	 fi
+     getResult $gM_SPL_MAX $gM_SPL_MIN $gM_SPL
      ;;
     
     WL)
-
+     if isMetricJson; then
+        if keys_exist WL_MAX WL_MIN; then
+            if key_exist WL_MIN; then
+                gM_WL_MIN=$(jq -r '.WL_MIN' metrics.json)
+            else
+                gM_WL_MIN=0
+            fi
+            if key_exist WL_MAX; then
+                gM_WL_MAX=$(jq -r '.WL_MAX' metrics.json)              
+            else
+                gM_WL_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_WL_MIN=0
+	 gM_WL_MAX=10 
+	 fi
+     getResult $gM_WL_MAX $gM_WL_MIN $gM_WL
      ;;
     
     CL)
-
+     if isMetricJson; then
+        if keys_exist CL_MAX CL_MIN; then
+            if key_exist CL_MIN; then
+                gM_CL_MIN=$(jq -r '.CL_MIN' metrics.json)
+            else
+                gM_CL_MIN=0
+            fi
+            if key_exist CL_MAX; then
+                gM_CL_MAX=$(jq -r '.CL_MAX' metrics.json)              
+            else
+                gM_CL_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_CL_MIN=0
+	 gM_CL_MAX=10 
+	 fi
+     getResult $gM_CL_MAX $gM_CL_MIN $gM_CL
      ;;
 
     FPATH)
-
+     if isMetricJson; then
+        if keys_exist FPATH_MAX FPATH_MIN; then
+            if key_exist FPATH_MIN; then
+                gM_FPATH_MIN=$(jq -r '.FPATH_MIN' metrics.json)
+            else
+                gM_FPATH_MIN=0
+            fi
+            if key_exist FPATH_MAX; then
+                gM_FPATH_MAX=$(jq -r '.FPATH_MAX' metrics.json)              
+            else
+                gM_FPATH_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_FPATH_MIN=0
+	 gM_FPATH_MAX=10 
+	 fi
+     getResult $gM_FPATH_MAX $gM_FPATH_MIN $gM_FPATH
      ;;
     
     FACT)
-
+     if isMetricJson; then
+        if keys_exist FACT_MAX FACT_MIN; then
+            if key_exist FACT_MIN; then
+                gM_FACT_MIN=$(jq -r '.FACT_MIN' metrics.json)
+            else
+                gM_FACT_MIN=0
+            fi
+            if key_exist FACT_MAX; then
+                gM_FACT_MAX=$(jq -r '.FACT_MAX' metrics.json)              
+            else
+                gM_FACT_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_FACT_MIN=0
+	 gM_FACT_MAX=10 
+	 fi
+     getResult $gM_FACT_MAX $gM_FACT_MIN $gM_FACT
      ;;
 
     TPI)
-
+    if isMetricJson; then
+        if keys_exist TPI_MAX TPI_MIN; then
+            if key_exist TPI_MIN; then
+                gM_TPI_MIN=$(jq -r '.TPI_MIN' metrics.json)
+            else
+                gM_TPI_MIN=0
+            fi
+            if key_exist TPI_MAX; then
+                gM_TPI_MAX=$(jq -r '.TPI_MAX' metrics.json)              
+            else
+                gM_TPI_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_TPI_MIN=0
+	 gM_TPI_MAX=10 
+	 fi
+     getResult $gM_TPI_MAX $gM_TPI_MIN $gM_TPI
      ;;
     
     WPTP)
+     if isMetricJson; then
+        if keys_exist WPTP_MAX WPTP_MIN; then
+            if key_exist WPTP_MIN; then
+                gM_WPTP_MIN=$(jq -r '.WPTP_MIN' metrics.json)
+            else
+                gM_WPTP_MIN=0
+            fi
+            if key_exist WPTP_MAX; then
+                gM_WPTP_MAX=$(jq -r '.WPTP_MAX' metrics.json)              
+            else
+                gM_WPTP_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_WPTP_MIN=0
+	 gM_WPTP_MAX=10 
+	 fi
+     getResult $gM_WPTP_MAX $gM_WPTP_MIN $gM_WPTP
      ;;
 
     PPTP)
+    if isMetricJson; then
+        if keys_exist PPTP_MAX PPTP_MIN; then
+            if key_exist PPTP_MIN; then
+                gM_PPTP_MIN=$(jq -r '.PPTP_MIN' metrics.json)
+            else
+                gM_PPTP_MIN=0
+            fi
+            if key_exist PPTP_MAX; then
+                gM_PPTP_MAX=$(jq -r '.PPTP_MAX' metrics.json)              
+            else
+                gM_PPTP_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
+	 else	 
+	 gM_PPTP_MIN=0
+	 gM_PPTP_MAX=10 
+	 fi
+     getResult $gM_PPTP_MAX $gM_PPTP_MIN $gM_PPTP
      ;;    
 
 	CPOP)
 	 if isMetricJson; then
-     if keys_exist CPOP_MAX CPOP_MIN; then
-     echo "EXISTEN"
-     else
-     echo "NO EXISTEN"
-     fi
-	 gM_CPOP_MIN=10
-	 gM_CPOP_MAX=200
+        if keys_exist CPOP_MAX CPOP_MIN; then
+            if key_exist CPOP_MIN; then
+                gM_CPOP_MIN=$(jq -r '.CPOP_MIN' metrics.json)
+            else
+                gM_CPOP_MIN=0
+            fi
+            if key_exist CPOP_MAX; then
+                gM_CPOP_MAX=$(jq -r '.CPOP_MAX' metrics.json)              
+            else
+                gM_CPOP_MAX=1000000
+            fi
+        else
+        echo "algo"     
+        fi
 	 else	 
 	 gM_CPOP_MIN=0
-	 gM_CPOP_MAX=10	 
+	 gM_CPOP_MAX=10 
 	 fi
-	 ;;
-	 
-	ENT)
-	 echo "ENT"
+     getResult $gM_CPOP_MAX $gM_CPOP_MIN $gM_CPOP
 	 ;;
 	esac
 }
