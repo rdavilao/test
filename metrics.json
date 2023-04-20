@@ -1,5 +1,5 @@
 {
-"ENT_MIN": 5.00,
+"ENT_MIN": 3.00,
 "ENT_MAX": 10.00,
 "INT_MIN": 7.00,
 "INT_MAX": 14.00,
@@ -9,7 +9,7 @@
 "FLOW_MAX": 6.00,
 "PATH_MIN": 6.00,
 "PATH_MAX": 6.00,
-"LPE_MIN": 3.25,
+"LPE_MIN": 2.95,
 "LPE_MAX": 3.25,
 "SPL_MIN": 2.68,
 "SPL_MAX": 2.68,
@@ -27,6 +27,6 @@
 "WPTP_MAX": 2.30,
 "PPTP_MIN": 1.00,
 "PPTP_MAX": 1.00,
-"CPOP_MIN": 74.27,
+"CPOP_MIN": 73.00,
 "CPOP_MAX": 74.27   
 }
