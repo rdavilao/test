@@ -543,7 +543,7 @@ echo "| METRIC | VALUE | RESULT | RANGE |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
-    echo " ENT | $gM_ENT | $(verifyMetric ENT) | getRanges |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " ENT | $gM_ENT | $(verifyMetric ENT) | $(getRanges) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist INT_MAX INT_MIN; then
     echo " INT | $gM_INT | $(verifyMetric INT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
