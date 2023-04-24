@@ -501,7 +501,7 @@ else
     java -jar /plantUML-encode.jar $PLANTUML_TXT
     imgEncoded=$(cat plantUML-encoded.txt)
 
-    congaValidator=$(java -jar /CONGA_Validator.jar $XMI_OUTPUT)    
+    congaValidator=$(java -jar /CONGA_Validator.jar $XMI_OUTPUT 2>&1)    
 
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
@@ -605,7 +605,7 @@ echo "#### For more information on the interpretation of these metrics, please v
 
 echo "****" >> "${GITHUB_STEP_SUMMARY}"
 echo "# Conga Validation" >> "${GITHUB_STEP_SUMMARY}"
-
+echo "#### $congaValidator" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
 echo "Information about metrics"
