@@ -5,7 +5,16 @@ BRED='\033[1;31m'
 BYELLOW='\033[1;33m'
 NC='\033[0m'
 
-#Check if metrics.json exists with the minimum or maximum values per metric to be considered.
+<<COMMENT
+Function that checks if the file metrics.json exists.
+
+ARGUMENTS:
+    NO ARGUMENTS
+
+RETURNS:
+    0 if exist / 0 means success
+    1 if doesn't exist / any other value than 0 means error
+COMMENT
 function isMetricJson(){
     if test -e metrics.json; then
         return 0
@@ -14,7 +23,17 @@ function isMetricJson(){
     fi
 }
 
-#Check if there is in metrics.json at least one key corresponding to the minimum or maximum value of some metric.
+<<COMMENT
+Function that checks if there is at least one key corresponding to the minimum or maximum value of some metric in metrics.json.
+
+ARGUMENTS:
+    key1 --> Key that refers to the maximum value of a metric.
+    key2 --> Key that refers to the minimum value of a metric.
+
+RETURNS:
+    0 if at least one key exists / 0 means success
+    1 if neither of both keys exists / any other value than 0 means error
+COMMENT
 function keys_exist(){
   local key1="$1"
   local key2="$2"
@@ -26,7 +45,16 @@ function keys_exist(){
   fi
 }
 
-#Check if the key exists in metrics.json 
+<<COMMENT
+Function that checks if the key exists in metric.json.
+
+ARGUMENTS:
+    key --> Key that refers to some metric value. 
+
+RETURNS:
+    0 if exist / 0 means success
+    1 if doesn't exist / any other value than 0 means error
+COMMENT
 function key_exist(){
     local key="$1"
     if jq -e ".${key}" "metrics.json" > /dev/null; then
@@ -36,7 +64,19 @@ function key_exist(){
     fi
 }
 
+<<COMMENT
+Function that evaluate metrics.
 
+ARGUMENTS:
+    max --> is the maximum value that the metric can take.
+    min -->  is the minimum value that the metric can take.
+    value --> is the value of the metric.
+
+RETURNS:
+    ✅ if value is within the range between max and min
+    ⚠️ if value is equal to max or min
+    ❌ if value is out of the range between max and min
+COMMENT
 function getResult(){
     max=$1
     min=$2
@@ -54,9 +94,18 @@ function getResult(){
     fi
 }
 
-function verifyMetric(){
+<<COMMENT
+Function that performs the verification by metric, here the maximum and minimum value of each metric is defined.
 
-	case $1 in
+ARGUMENTS:
+    metric --> It is the metric that will be evaluated.
+
+RETURNS:
+    The results obtained by the function getResult()
+COMMENT
+function verifyMetric(){
+    metric=$1
+	case $metric in
 	
     ENT)
      if isMetricJson; then
@@ -339,6 +388,7 @@ function verifyMetric(){
         if keys_exist WPTP_MAX WPTP_MIN; then
             if key_exist WPTP_MIN; then
                 gM_WPTP_MIN=$(jq -r '.WPTP_MIN' metrics.json)
+                echo "WTPT_MIN: $gM_WPTP_MIN"
             else
                 gM_WPTP_MIN=0
             fi
