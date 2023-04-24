@@ -95,26 +95,8 @@ function getResult(){
 }
 
 
-function initializeValues(){
-    if isMetricJson; then
-        if keys_exist ENT_MAX ENT_MIN; then
-            if key_exist ENT_MIN; then
-                gM_ENT_MIN=$(jq -r '.ENT_MIN' metrics.json)
-            else
-                gM_ENT_MIN=0
-            fi
-            if key_exist ENT_MAX; then
-                gM_ENT_MAX=$(jq -r '.ENT_MAX' metrics.json)              
-            else
-                gM_ENT_MAX=1000000
-            fi
-        else
-        echo "algo"     
-        fi
-	 else	 
-	 gM_ENT_MIN=0
-	 gM_ENT_MAX=10 
-	 fi
+function getRanges(){
+    echo "[$gM_ENT_MIN, $gM_ENT_MAX ]"
 }
 <<COMMENT
 Function that performs the verification by metric, here the maximum and minimum value of each metric is defined.
@@ -555,15 +537,13 @@ echo "![$repo conversation flow](http://www.plantuml.com/plantuml/png/$imgEncode
 echo "#### This diagram is built thanks to:  <a href='https://plantuml.com/'>PlantUML</a>" >> "${GITHUB_STEP_SUMMARY}"
 echo "****" >> "${GITHUB_STEP_SUMMARY}"
 
-initializeValues
-
 #Making table about metrics
 echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
 echo "| METRIC | VALUE | RESULT | RANGE |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
-    echo " ENT | $gM_ENT | $(verifyMetric ENT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " ENT | $gM_ENT | $(verifyMetric ENT) | getRanges |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist INT_MAX INT_MIN; then
     echo " INT | $gM_INT | $(verifyMetric INT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
