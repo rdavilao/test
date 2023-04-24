@@ -1,6 +1,5 @@
 FROM openjdk:18-alpine
 RUN apk update && apk upgrade --available
-RUN apk add --update python3
 RUN apk add bash  #Be careful, because alpine doesn't have bash
 RUN apk add zip
 RUN apk add jq
