@@ -605,6 +605,7 @@ echo "#### For more information on the interpretation of these metrics, please v
 
 echo "****" >> "${GITHUB_STEP_SUMMARY}"
 echo "# Conga Validation" >> "${GITHUB_STEP_SUMMARY}"
+echo "congavalidator: $congaValidator "
 echo "$congaValidator" >> "${GITHUB_STEP_SUMMARY}"
 echo "::group::Metrics"
 echo "Information about metrics"
