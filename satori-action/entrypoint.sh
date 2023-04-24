@@ -388,7 +388,6 @@ function verifyMetric(){
         if keys_exist WPTP_MAX WPTP_MIN; then
             if key_exist WPTP_MIN; then
                 gM_WPTP_MIN=$(jq -r '.WPTP_MIN' metrics.json)
-                echo "WTPT_MIN: $gM_WPTP_MIN"
             else
                 gM_WPTP_MIN=0
             fi
@@ -506,7 +505,7 @@ else
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
 
-globalMetrics=$(jq --raw-output '.["Global Metrics"]' $METRICS_OUTPUT)
+globalMetrics=$(jq -r '.["Global Metrics"]' $METRICS_OUTPUT)
 #Test lpee=$(jq -r '.["Global Metrics"].LPE' $METRICS_OUTPUT)
 #Test echo "LPE: $lpee | bc" 
 #Test lpFloat=$(echo "$lpee" | bc)
