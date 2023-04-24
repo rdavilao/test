@@ -536,14 +536,14 @@ echo "****" >> "${GITHUB_STEP_SUMMARY}"
 
 #Making table about metrics
 echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
-echo "| METRIC | VALUE | RESULT |" >> "${GITHUB_STEP_SUMMARY}"
+echo "| METRIC | VALUE | RESULT | RANGE |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
-    echo " ENT | $gM_ENT | $(verifyMetric ENT) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " ENT | $gM_ENT | $(verifyMetric ENT) | RANGE |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist INT_MAX INT_MIN; then
-    echo " INT | $gM_INT | $(verifyMetric INT) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " INT | $gM_INT | $(verifyMetric INT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist NL_MAX NL_MIN; then
     echo " NL | $gM_NL | $(verifyMetric NL) |" >> "${GITHUB_STEP_SUMMARY}"
