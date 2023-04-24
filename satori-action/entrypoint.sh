@@ -506,7 +506,8 @@ else
 fi
 
 globalMetrics=$(jq -r '.["Global Metrics"]' $METRICS_OUTPUT)
-#Test lpee=$(jq -r '.["Global Metrics"].LPE' $METRICS_OUTPUT)
+lpee=$(jq -r '.["Global Metrics"].LPE' $METRICS_OUTPUT)
+echo "VALUE: $lpee"
 #Test echo "LPE: $lpee | bc" 
 #Test lpFloat=$(echo "$lpee" | bc)
 #Test echo "Lpfloat: $lpFloat"
