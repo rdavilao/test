@@ -501,21 +501,14 @@ else
     java -jar /plantUML-encode.jar $PLANTUML_TXT
     imgEncoded=$(cat plantUML-encoded.txt)
 
+    congaValidator=$(java -jar /CONGA_Validator.jar $XMI_OUTPUT)
+    echo "$congaValidator"
+
     echo "::debug::{Running Asymob with $XMI_OUTPUT}"
     java -jar /AsymobJSON.jar $XMI_OUTPUT
 fi
 
 globalMetrics=$(jq -r '.["Global Metrics"]' $METRICS_OUTPUT)
-lpee=$(jq -r '.["Global Metrics"].LPE' $METRICS_OUTPUT)
-cat $METRICS_OUTPUT
-echo "VALUE: $lpee"
-#Test echo "LPE: $lpee | bc" 
-#Test lpFloat=$(echo "$lpee" | bc)
-#Test echo "Lpfloat: $lpFloat"
-
-
-echo "GlobalMetrics: $globalMetrics"
-
 
 gM_ENT=$(echo "$globalMetrics" | jq '.ENT')
 gM_INT=$(echo "$globalMetrics" | jq '.INT')
