@@ -540,49 +540,49 @@ echo "| METRIC | VALUE | RESULT | RANGE |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
-    echo " ENT | $gM_ENT | $(verifyMetric ENT) | RANGE |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " ENT | $gM_ENT | $(verifyMetric ENT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist INT_MAX INT_MIN; then
     echo " INT | $gM_INT | $(verifyMetric INT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist NL_MAX NL_MIN; then
-    echo " NL | $gM_NL | $(verifyMetric NL) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " NL | $gM_NL | $(verifyMetric NL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FLOW_MAX FLOW_MIN; then
-    echo " FLOW | $gM_FLOW | $(verifyMetric FLOW) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " FLOW | $gM_FLOW | $(verifyMetric FLOW) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist PATH_MAX PATH_MIN; then
-    echo " PATH | $gM_PATH | $(verifyMetric PATH) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " PATH | $gM_PATH | $(verifyMetric PATH) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist LPE_MAX LPE_MIN; then
-    echo " LPE | $gM_LPE | $(verifyMetric LPE) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " LPE | $gM_LPE | $(verifyMetric LPE) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist SPL_MAX SPL_MIN; then
-    echo " SPL | $gM_SPL | $(verifyMetric SPL) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " SPL | $gM_SPL | $(verifyMetric SPL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist WL_MAX WL_MIN; then
-    echo " WL | $gM_WL | $(verifyMetric WL) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " WL | $gM_WL | $(verifyMetric WL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist CL_MAX CL_MIN; then
-    echo " CL | $gM_CL | $(verifyMetric CL) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " CL | $gM_CL | $(verifyMetric CL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FPATH_MAX FPATH_MIN; then
-    echo " FPATH | $gM_FPATH | $(verifyMetric FPATH) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " FPATH | $gM_FPATH | $(verifyMetric FPATH) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FACT_MAX FACT_MIN; then
-    echo " FACT | $gM_FACT | $(verifyMetric FACT) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " FACT | $gM_FACT | $(verifyMetric FACT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist TPI_MAX TPI_MIN; then
-    echo " TPI | $gM_TPI | $(verifyMetric TPI) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " TPI | $gM_TPI | $(verifyMetric TPI) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist WPTP_MAX WPTP_MIN; then
-    echo " WPTP | $gM_WPTP | $(verifyMetric WPTP) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " WPTP | $gM_WPTP | $(verifyMetric WPTP) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist PPTP_MAX PPTP_MIN; then
-    echo " PPTP | $gM_PPTP | $(verifyMetric PPTP) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " PPTP | $gM_PPTP | $(verifyMetric PPTP) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist CPOP_MAX CPOP_MIN; then
-    echo " CPOP | $gM_CPOP | $(verifyMetric CPOP) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " CPOP | $gM_CPOP | $(verifyMetric CPOP) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
 else 
     echo " ENT | $gM_ENT | $(verifyMetric ENT) |" >> "${GITHUB_STEP_SUMMARY}"
