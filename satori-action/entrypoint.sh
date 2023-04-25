@@ -5,6 +5,9 @@ BRED='\033[1;31m'
 BYELLOW='\033[1;33m'
 NC='\033[0m'
 
+gM_ENT_MIN=0
+gM_ENT_MAX=10
+
 <<COMMENT
 Function that checks if the file metrics.json exists.
 
