@@ -624,7 +624,7 @@ contW=0
 
 campos=($(echo "$congaValidator" | awk -v RS='WARNING:' '{print}'))
 
-echo "${campos[@]}"
+echo "${campos[0]}"
 echo "::group::Metrics"
 echo "Information about metrics"
 echo "::endgroup::"
