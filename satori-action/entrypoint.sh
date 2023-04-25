@@ -5,9 +5,13 @@ BRED='\033[1;31m'
 BYELLOW='\033[1;33m'
 NC='\033[0m'
 
-gM_ENT_MIN=0
-gM_ENT_MAX=10
 
+function inicializar(){
+    gM_ENT_MIN=0
+    gM_ENT_MAX=10
+}
+
+inicializar 
 <<COMMENT
 Function that checks if the file metrics.json exists.
 
@@ -613,18 +617,6 @@ echo "****" >> "${GITHUB_STEP_SUMMARY}"
 echo "# Conga Validation" >> "${GITHUB_STEP_SUMMARY}"
 echo "#### $congaValidator" >> "${GITHUB_STEP_SUMMARY}"
 
-warning=$(echo "$congaValidator" | grep -o 'WARNING:' | wc -l)
-error=$(echo "$congaValidator" | grep -o 'ERROR:' | wc -l)
-
-total=$((warning + error))
-
-cont=0
-contE=0
-contW=0
-
-campos=($(echo "$congaValidator" | awk -v RS='WARNING:' '{print}'))
-
-echo "${campos[0]}"
 echo "::group::Metrics"
 echo "Information about metrics"
 echo "::endgroup::"
