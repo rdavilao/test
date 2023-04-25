@@ -613,6 +613,18 @@ echo "****" >> "${GITHUB_STEP_SUMMARY}"
 echo "# Conga Validation" >> "${GITHUB_STEP_SUMMARY}"
 echo "#### $congaValidator" >> "${GITHUB_STEP_SUMMARY}"
 
+warning=$(echo "$congaValidator" | grep -o 'WARNING:' | wc -l)
+error=$(echo "$congaValidator" | grep -o 'ERROR:' | wc -l)
+
+total=$((warning + error))
+
+cont=0
+contE=0
+contW=0
+
+campos=($(echo "$congaValidator" | awk -v RS='WARNING:' '{print}'))
+
+echo "${campos[@]}"
 echo "::group::Metrics"
 echo "Information about metrics"
 echo "::endgroup::"
