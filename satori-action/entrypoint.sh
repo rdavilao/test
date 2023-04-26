@@ -132,6 +132,31 @@ function getRanges(){
     fi    
 }
 
+function getDescription() {
+    max=$1
+    min=$2
+    value=$3
+    if [ $(echo "$value >= $min && $value <= $max" | bc -l) -eq 1 ]
+    then
+        if [ $(echo "$value == $min || $value == $max" | bc -l) -eq 1 ]        
+        then
+            if [ $value -eq $min ]; then
+            echo "<div style='color: yellow;'>Be careful the metric is at the edge of the lower range.</div>"
+        else
+            echo "echo "<div style='color: yellow;'>Be careful the metric is at the edge of the upper range.</div>""
+        fi
+        else
+            echo "Everything is fine"
+        fi        
+    else
+        if [ $value -lt $min ]; then
+            echo "<div style='color: red;'>Metric is out of the lower range.</div>"
+        else
+            echo "echo "<div style='color: red;'>Metric is out of the upper range.</div>""
+        fi
+    fi
+}
+
 <<COMMENT
 Function that initializes the max and min values of the metric received as argument.
 
@@ -582,49 +607,49 @@ echo "| RESULT | METRIC | VALUE | RANGE | DESCRIPTION |" >> "${GITHUB_STEP_SUMMA
 echo " :-: | :-: | :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
-    echo " $(getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) | ENT | $gM_ENT | $(getRanges $gM_ENT_MAX $gM_ENT_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) | ENT | $gM_ENT | $(getRanges $gM_ENT_MAX $gM_ENT_MIN) | $(getDescription $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist INT_MAX INT_MIN; then
-    echo " $(getResult $gM_INT_MAX $gM_INT_MIN $gM_INT) | INT | $gM_INT | $(getRanges $gM_INT_MAX $gM_INT_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_INT_MAX $gM_INT_MIN $gM_INT) | INT | $gM_INT | $(getRanges $gM_INT_MAX $gM_INT_MIN) | $(getDescription $gM_INT_MAX $gM_INT_MIN $gM_INT) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist NL_MAX NL_MIN; then
-    echo " $(getResult $gM_NL_MAX $gM_NL_MIN $gM_NL) | NL | $gM_NL | $(getRanges $gM_INT_MAX $gM_INT_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_NL_MAX $gM_NL_MIN $gM_NL) | NL | $gM_NL | $(getRanges $gM_INT_MAX $gM_INT_MIN) | $(getDescription $gM_NL_MAX $gM_NL_MIN $gM_NL) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FLOW_MAX FLOW_MIN; then
-    echo " $(getResult $gM_FLOW_MAX $gM_FLOW_MIN $gM_FLOW) | FLOW | $gM_FLOW | $(getRanges $gM_FLOW_MAX $gM_FLOW_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_FLOW_MAX $gM_FLOW_MIN $gM_FLOW) | FLOW | $gM_FLOW | $(getRanges $gM_FLOW_MAX $gM_FLOW_MIN) | $(getDescription $gM_FLOW_MAX $gM_FLOW_MIN $gM_FLOW) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist PATH_MAX PATH_MIN; then
-    echo " $(getResult $gM_PATH_MAX $gM_PATH_MIN $gM_PATH) | PATH | $gM_PATH | $(getRanges $gM_PATH_MAX $gM_PATH_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_PATH_MAX $gM_PATH_MIN $gM_PATH) | PATH | $gM_PATH | $(getRanges $gM_PATH_MAX $gM_PATH_MIN) | $(getDescription $gM_PATH_MAX $gM_PATH_MIN $gM_PATH) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist LPE_MAX LPE_MIN; then
-    echo " $(getResult $gM_LPE_MAX $gM_LPE_MIN $gM_LPE) | LPE | $gM_LPE | $(getRanges $gM_LPE_MAX $gM_LPE_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_LPE_MAX $gM_LPE_MIN $gM_LPE) | LPE | $gM_LPE | $(getRanges $gM_LPE_MAX $gM_LPE_MIN) | $(getDescription $gM_LPE_MAX $gM_LPE_MIN $gM_LPE) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist SPL_MAX SPL_MIN; then
-    echo " $(getResult $gM_SPL_MAX $gM_SPL_MIN $gM_SPL) | SPL | $gM_SPL | $(getRanges $gM_SPL_MAX $gM_SPL_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_SPL_MAX $gM_SPL_MIN $gM_SPL) | SPL | $gM_SPL | $(getRanges $gM_SPL_MAX $gM_SPL_MIN) | $(getDescription $gM_SPL_MAX $gM_SPL_MIN $gM_SPL) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist WL_MAX WL_MIN; then
-    echo " $(getResult $gM_WL_MAX $gM_WL_MIN $gM_WL) | WL | $gM_WL | $(getRanges $gM_WL_MAX $gM_WL_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_WL_MAX $gM_WL_MIN $gM_WL) | WL | $gM_WL | $(getRanges $gM_WL_MAX $gM_WL_MIN) | $(getDescription $gM_WL_MAX $gM_WL_MIN $gM_WL) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist CL_MAX CL_MIN; then
-    echo " $(getResult $gM_CL_MAX $gM_CL_MIN $gM_CL) | CL | $gM_CL | $(getRanges $gM_CL_MAX $gM_CL_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_CL_MAX $gM_CL_MIN $gM_CL) | CL | $gM_CL | $(getRanges $gM_CL_MAX $gM_CL_MIN) | $(getDescription $gM_CL_MAX $gM_CL_MIN $gM_CL) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FPATH_MAX FPATH_MIN; then
-    echo " $(getResult $gM_FPATH_MAX $gM_FPATH_MIN $gM_FPATH) | FPATH | $gM_FPATH | $(getRanges $gM_FPATH_MAX $gM_FPATH_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_FPATH_MAX $gM_FPATH_MIN $gM_FPATH) | FPATH | $gM_FPATH | $(getRanges $gM_FPATH_MAX $gM_FPATH_MIN) | $(getDescription $gM_FPATH_MAX $gM_FPATH_MIN $gM_FPATH) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FACT_MAX FACT_MIN; then
-    echo " $(getResult $gM_FACT_MAX $gM_FACT_MIN $gM_FACT) | FACT | $gM_FACT | $(getRanges $gM_FACT_MAX $gM_FACT_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_FACT_MAX $gM_FACT_MIN $gM_FACT) | FACT | $gM_FACT | $(getRanges $gM_FACT_MAX $gM_FACT_MIN) | $(getDescription $gM_FACT_MAX $gM_FACT_MIN $gM_FACT) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist TPI_MAX TPI_MIN; then
-    echo " $(getResult $gM_TPI_MAX $gM_TPI_MIN $gM_TPI) | TPI | $gM_TPI | $(getRanges $gM_TPI_MAX $gM_TPI_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_TPI_MAX $gM_TPI_MIN $gM_TPI) | TPI | $gM_TPI | $(getRanges $gM_TPI_MAX $gM_TPI_MIN) | $(getDescription $gM_TPI_MAX $gM_TPI_MIN $gM_TPI) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist WPTP_MAX WPTP_MIN; then
-    echo " $(getResult $gM_WPTP_MAX $gM_WPTP_MIN $gM_WPTP) | WPTP | $gM_WPTP | $(getRanges $gM_WPTP_MAX $gM_WPTP_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_WPTP_MAX $gM_WPTP_MIN $gM_WPTP) | WPTP | $gM_WPTP | $(getRanges $gM_WPTP_MAX $gM_WPTP_MIN) | $(getDescription $gM_WPTP_MAX $gM_WPTP_MIN $gM_WPTP) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist PPTP_MAX PPTP_MIN; then
-    echo " $(getResult $gM_PPTP_MAX $gM_PPTP_MIN $gM_PPTP) | PPTP | $gM_PPTP | $(getRanges $gM_PPTP_MAX $gM_PPTP_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_PPTP_MAX $gM_PPTP_MIN $gM_PPTP) | PPTP | $gM_PPTP | $(getRanges $gM_PPTP_MAX $gM_PPTP_MIN) | $(getDescription $gM_PPTP_MAX $gM_PPTP_MIN $gM_PPTP) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist CPOP_MAX CPOP_MIN; then
-    echo " $(getResult $gM_CPOP_MAX $gM_CPOP_MIN $gM_CPOP) | CPOP | $gM_CPOP | $(getRanges $gM_CPOP_MAX $gM_CPOP_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_CPOP_MAX $gM_CPOP_MIN $gM_CPOP) | CPOP | $gM_CPOP | $(getRanges $gM_CPOP_MAX $gM_CPOP_MIN) | $(getDescription $gM_CPOP_MAX $gM_CPOP_MIN $gM_CPOP) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
 else 
     echo " ENT | $gM_ENT | $(verifyMetric ENT) |" >> "${GITHUB_STEP_SUMMARY}"
