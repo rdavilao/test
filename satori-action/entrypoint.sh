@@ -652,12 +652,12 @@ if [ $total -gt 0 ]; then
 	do		
 		SAVEIFS=$IFS
 		IFS=$':'  
-		dato=(${campos[$cont]}) 
+		row=(${congaValidProb[$cont]}) 
 		IFS=$SAVEIFS
-		rule=$(echo "${dato[1]}" | cut -c 1-4)
+		rule=$(echo "${row[1]}" | cut -c 1-4)
 		rule=$(echo "$rule" | tr -d ' ')
-		des=$(echo "${dato[1]}" | cut -c 5-)
-        echo " $(problemType ${dato[0]}) | $rule | $des |" >> "${GITHUB_STEP_SUMMARY}"
+		des=$(echo "${row[1]}" | cut -c 5-)
+        echo " $(problemType ${row[0]}) | $rule | $des |" >> "${GITHUB_STEP_SUMMARY}"
 		cont=$((cont+1))
 	done
 fi
