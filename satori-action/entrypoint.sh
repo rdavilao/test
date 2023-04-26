@@ -141,18 +141,18 @@ function getDescription() {
         if [ $(echo "$value == $min || $value == $max" | bc -l) -eq 1 ]        
         then
             if [ $value -eq $min ]; then
-            echo "<div style='color: yellow;'>Be careful the metric is at the edge of the lower range.</div>"
+            echo "Be careful the metric is at the edge of the lower range."
         else
-            echo "echo "<div style='color: yellow;'>Be careful the metric is at the edge of the upper range.</div>""
+            echo "Be careful the metric is at the edge of the upper range."
         fi
         else
-            echo "Everything is fine"
+            echo "Everything is fine."
         fi        
     else
         if [ $value -lt $min ]; then
-            echo "<div style='color: red;'>Metric is out of the lower range.</div>"
+            echo "Metric is out of the lower range."
         else
-            echo "echo "<div style='color: red;'>Metric is out of the upper range.</div>""
+            echo "Metric is out of the upper range."
         fi
     fi
 }
