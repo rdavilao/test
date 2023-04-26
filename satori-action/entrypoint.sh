@@ -661,7 +661,7 @@ if [ $total -gt 0 ]; then
 		cont=$((cont+1))
 	done
 fi
-
+echo "" >> "${GITHUB_STEP_SUMMARY}"
 echo "####Summary: ${congaValidProb[0]}" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
