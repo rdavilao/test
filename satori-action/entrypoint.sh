@@ -121,13 +121,13 @@ function getRanges(){
 }
 
 <<COMMENT
-Function that performs the verification by metric, here the maximum and minimum value of each metric is defined.
+Function that initializes the max and min values of the metric received as argument.
 
 ARGUMENTS:
-    metric --> It is the metric that will be evaluated.
+    metric --> It is the metric.
 
 RETURNS:
-    The results obtained by the function getResult()
+    NO RETURNS:
 COMMENT
 function initializeEvalMetrics(){
     metric=$1
@@ -147,7 +147,7 @@ function initializeEvalMetrics(){
                 gM_ENT_MAX=9999999
             fi
         else
-        echo "Métrica ENT_MAX o ENT_MIN no existe en el archivo de metrics.json"     
+        echo "Metrics ENT_MAX or ENT_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_ENT_MIN=0
@@ -166,10 +166,10 @@ function initializeEvalMetrics(){
             if key_exist INT_MAX; then
                 gM_INT_MAX=$(jq -r '.INT_MAX' metrics.json)              
             else
-                gM_INT_MAX=1000000
+                gM_INT_MAX=9999999
             fi
         else
-        echo "Métrica INT_MAX o INT_MIN no existe en el archivo de metrics.json"     
+        echo "Metrics INT_MAX or INT_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_INT_MIN=0
@@ -188,16 +188,15 @@ function initializeEvalMetrics(){
             if key_exist NL_MAX; then
                 gM_NL_MAX=$(jq -r '.NL_MAX' metrics.json)              
             else
-                gM_NL_MAX=1000000
+                gM_NL_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics NL_MAX or NL_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_NL_MIN=0
 	 gM_NL_MAX=10 
-	 fi
-     getResult $gM_NL_MAX $gM_NL_MIN $gM_NL
+	 fi     
      ;;
 
     FLOW)
@@ -211,16 +210,15 @@ function initializeEvalMetrics(){
             if key_exist FLOW_MAX; then
                 gM_FLOW_MAX=$(jq -r '.FLOW_MAX' metrics.json)              
             else
-                gM_FLOW_MAX=1000000
+                gM_FLOW_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics FLOW_MAX or FLOW_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_FLOW_MIN=0
 	 gM_FLOW_MAX=10 
-	 fi
-     getResult $gM_FLOW_MAX $gM_FLOW_MIN $gM_FLOW
+	 fi     
      ;;
     
     PATH)
@@ -234,16 +232,15 @@ function initializeEvalMetrics(){
             if key_exist PATH_MAX; then
                 gM_PATH_MAX=$(jq -r '.PATH_MAX' metrics.json)              
             else
-                gM_PATH_MAX=1000000
+                gM_PATH_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics PATH_MAX or PATH_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_PATH_MIN=0
 	 gM_PATH_MAX=10 
-	 fi
-     getResult $gM_PATH_MAX $gM_PATH_MIN $gM_PATH
+	 fi     
      ;;
 
     LPE)
@@ -257,16 +254,15 @@ function initializeEvalMetrics(){
             if key_exist LPE_MAX; then
                 gM_LPE_MAX=$(jq -r '.LPE_MAX' metrics.json)              
             else
-                gM_LPE_MAX=1000000
+                gM_LPE_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics LPE_MAX or LPE_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_LPE_MIN=0
 	 gM_LPE_MAX=10 
-	 fi
-     getResult $gM_LPE_MAX $gM_LPE_MIN $gM_LPE
+	 fi     
      ;;
 
     SPL) 
@@ -280,16 +276,15 @@ function initializeEvalMetrics(){
             if key_exist SPL_MAX; then
                 gM_SPL_MAX=$(jq -r '.SPL_MAX' metrics.json)              
             else
-                gM_SPL_MAX=1000000
+                gM_SPL_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics SPL_MAX or SPL_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_SPL_MIN=0
 	 gM_SPL_MAX=10 
-	 fi
-     getResult $gM_SPL_MAX $gM_SPL_MIN $gM_SPL
+	 fi     
      ;;
     
     WL)
@@ -303,16 +298,15 @@ function initializeEvalMetrics(){
             if key_exist WL_MAX; then
                 gM_WL_MAX=$(jq -r '.WL_MAX' metrics.json)              
             else
-                gM_WL_MAX=1000000
+                gM_WL_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics WL_MAX or WL_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_WL_MIN=0
 	 gM_WL_MAX=10 
-	 fi
-     getResult $gM_WL_MAX $gM_WL_MIN $gM_WL
+	 fi     
      ;;
     
     CL)
@@ -326,16 +320,15 @@ function initializeEvalMetrics(){
             if key_exist CL_MAX; then
                 gM_CL_MAX=$(jq -r '.CL_MAX' metrics.json)              
             else
-                gM_CL_MAX=1000000
+                gM_CL_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics CL_MAX or CL_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_CL_MIN=0
 	 gM_CL_MAX=10 
-	 fi
-     getResult $gM_CL_MAX $gM_CL_MIN $gM_CL
+	 fi     
      ;;
 
     FPATH)
@@ -349,16 +342,15 @@ function initializeEvalMetrics(){
             if key_exist FPATH_MAX; then
                 gM_FPATH_MAX=$(jq -r '.FPATH_MAX' metrics.json)              
             else
-                gM_FPATH_MAX=1000000
+                gM_FPATH_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics FPATH_MAX or FPATH_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_FPATH_MIN=0
 	 gM_FPATH_MAX=10 
-	 fi
-     getResult $gM_FPATH_MAX $gM_FPATH_MIN $gM_FPATH
+	 fi     
      ;;
     
     FACT)
@@ -372,16 +364,15 @@ function initializeEvalMetrics(){
             if key_exist FACT_MAX; then
                 gM_FACT_MAX=$(jq -r '.FACT_MAX' metrics.json)              
             else
-                gM_FACT_MAX=1000000
+                gM_FACT_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics FACT_MAX or FACT_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_FACT_MIN=0
 	 gM_FACT_MAX=10 
-	 fi
-     getResult $gM_FACT_MAX $gM_FACT_MIN $gM_FACT
+	 fi     
      ;;
 
     TPI)
@@ -395,16 +386,15 @@ function initializeEvalMetrics(){
             if key_exist TPI_MAX; then
                 gM_TPI_MAX=$(jq -r '.TPI_MAX' metrics.json)              
             else
-                gM_TPI_MAX=1000000
+                gM_TPI_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics TPI_MAX or TPI_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_TPI_MIN=0
 	 gM_TPI_MAX=10 
-	 fi
-     getResult $gM_TPI_MAX $gM_TPI_MIN $gM_TPI
+	 fi     
      ;;
     
     WPTP)
@@ -418,16 +408,15 @@ function initializeEvalMetrics(){
             if key_exist WPTP_MAX; then
                 gM_WPTP_MAX=$(jq -r '.WPTP_MAX' metrics.json)              
             else
-                gM_WPTP_MAX=1000000
+                gM_WPTP_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics WPTP_MAX or WPTP_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_WPTP_MIN=0
 	 gM_WPTP_MAX=10 
-	 fi
-     getResult $gM_WPTP_MAX $gM_WPTP_MIN $gM_WPTP
+	 fi     
      ;;
 
     PPTP)
@@ -441,16 +430,15 @@ function initializeEvalMetrics(){
             if key_exist PPTP_MAX; then
                 gM_PPTP_MAX=$(jq -r '.PPTP_MAX' metrics.json)              
             else
-                gM_PPTP_MAX=1000000
+                gM_PPTP_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics PPTP_MAX or PPTP_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_PPTP_MIN=0
 	 gM_PPTP_MAX=10 
-	 fi
-     getResult $gM_PPTP_MAX $gM_PPTP_MIN $gM_PPTP
+	 fi     
      ;;    
 
 	CPOP)
@@ -464,22 +452,38 @@ function initializeEvalMetrics(){
             if key_exist CPOP_MAX; then
                 gM_CPOP_MAX=$(jq -r '.CPOP_MAX' metrics.json)              
             else
-                gM_CPOP_MAX=1000000
+                gM_CPOP_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Metrics CPOP_MAX or CPOP_MIN do not exist in metrics.json"     
         fi
 	 else	 
 	 gM_CPOP_MIN=0
 	 gM_CPOP_MAX=10 
-	 fi
-     getResult $gM_CPOP_MAX $gM_CPOP_MIN $gM_CPOP
+	 fi     
 	 ;;
 	esac
 }
 
+echo "::group::Values for metrics evaluation"
+echo "Initialize values for metrics evaluation"
 initializeEvalMetrics ENT
 initializeEvalMetrics INT
+initializeEvalMetrics NL
+initializeEvalMetrics FLOW
+initializeEvalMetrics PATH
+initializeEvalMetrics LPE
+initializeEvalMetrics SPL
+initializeEvalMetrics WL
+initializeEvalMetrics CL
+initializeEvalMetrics FPATH
+initializeEvalMetrics FACT
+initializeEvalMetrics TPI
+initializeEvalMetrics WPTP
+initializeEvalMetrics PPTP
+initializeEvalMetrics CPOP
+echo "::endgroup::"
+
 
 if [ "$INPUT_FORMAT" = "" ]; then
     echo -e "${BRED}Format must be specified${NC}"
@@ -566,49 +570,49 @@ echo "| METRIC | VALUE | RESULT | RANGE |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
-    echo " ENT | $gM_ENT | $(getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) | $(getRanges) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " ENT | $gM_ENT | $(getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) | $(getRanges $gM_ENT_MAX $gM_ENT_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist INT_MAX INT_MIN; then
-    echo " INT | $gM_INT | $(getResult $gM_INT_MAX $gM_INT_MIN $gM_INT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " INT | $gM_INT | $(getResult $gM_INT_MAX $gM_INT_MIN $gM_INT) | $(getRanges $gM_INT_MAX $gM_INT_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist NL_MAX NL_MIN; then
-    echo " NL | $gM_NL | $(verifyMetric NL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " NL | $gM_NL | $(getResult $gM_NL_MAX $gM_NL_MIN $gM_NL) | $(getRanges $gM_INT_MAX $gM_INT_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FLOW_MAX FLOW_MIN; then
-    echo " FLOW | $gM_FLOW | $(verifyMetric FLOW) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " FLOW | $gM_FLOW | $(getResult $gM_FLOW_MAX $gM_FLOW_MIN $gM_FLOW) | $(getRanges $gM_FLOW_MAX $gM_FLOW_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist PATH_MAX PATH_MIN; then
-    echo " PATH | $gM_PATH | $(verifyMetric PATH) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " PATH | $gM_PATH | $(getResult $gM_PATH_MAX $gM_PATH_MIN $gM_PATH) | $(getRanges $gM_PATH_MAX $gM_PATH_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist LPE_MAX LPE_MIN; then
-    echo " LPE | $gM_LPE | $(verifyMetric LPE) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " LPE | $gM_LPE | $(getResult $gM_LPE_MAX $gM_LPE_MIN $gM_LPE) | $(getRanges $gM_LPE_MAX $gM_LPE_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist SPL_MAX SPL_MIN; then
-    echo " SPL | $gM_SPL | $(verifyMetric SPL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " SPL | $gM_SPL | $(getResult $gM_SPL_MAX $gM_SPL_MIN $gM_SPL) | $(getRanges $gM_SPL_MAX $gM_SPL_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist WL_MAX WL_MIN; then
-    echo " WL | $gM_WL | $(verifyMetric WL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " WL | $gM_WL | $(getResult $gM_WL_MAX $gM_WL_MIN $gM_WL) | $(getRanges $gM_WL_MAX $gM_WL_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist CL_MAX CL_MIN; then
-    echo " CL | $gM_CL | $(verifyMetric CL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " CL | $gM_CL | $(getResult $gM_CL_MAX $gM_CL_MIN $gM_CL) | $(getRanges $gM_CL_MAX $gM_CL_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FPATH_MAX FPATH_MIN; then
-    echo " FPATH | $gM_FPATH | $(verifyMetric FPATH) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " FPATH | $gM_FPATH | $(getResult $gM_FPATH_MAX $gM_FPATH_MIN $gM_FPATH) | $(getRanges $gM_FPATH_MAX $gM_FPATH_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist FACT_MAX FACT_MIN; then
-    echo " FACT | $gM_FACT | $(verifyMetric FACT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " FACT | $gM_FACT | $(getResult $gM_FACT_MAX $gM_FACT_MIN $gM_FACT) | $(getRanges $gM_FACT_MAX $gM_FACT_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist TPI_MAX TPI_MIN; then
-    echo " TPI | $gM_TPI | $(verifyMetric TPI) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " TPI | $gM_TPI | $(getResult $gM_TPI_MAX $gM_TPI_MIN $gM_TPI) | $(getRanges $gM_TPI_MAX $gM_TPI_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist WPTP_MAX WPTP_MIN; then
-    echo " WPTP | $gM_WPTP | $(verifyMetric WPTP) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " WPTP | $gM_WPTP | $(getResult $gM_WPTP_MAX $gM_WPTP_MIN $gM_WPTP) | $(getRanges $gM_WPTP_MAX $gM_WPTP_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist PPTP_MAX PPTP_MIN; then
-    echo " PPTP | $gM_PPTP | $(verifyMetric PPTP) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " PPTP | $gM_PPTP | $(getResult $gM_PPTP_MAX $gM_PPTP_MIN $gM_PPTP) | $(getRanges $gM_PPTP_MAX $gM_PPTP_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist CPOP_MAX CPOP_MIN; then
-    echo " CPOP | $gM_CPOP | $(verifyMetric CPOP) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " CPOP | $gM_CPOP | $(getResult $gM_CPOP_MAX $gM_CPOP_MIN $gM_CPOP) | $(getRanges $gM_CPOP_MAX $gM_CPOP_MIN) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
 else 
     echo " ENT | $gM_ENT | $(verifyMetric ENT) |" >> "${GITHUB_STEP_SUMMARY}"
