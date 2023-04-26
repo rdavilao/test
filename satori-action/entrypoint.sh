@@ -5,6 +5,27 @@ BRED='\033[1;31m'
 BYELLOW='\033[1;33m'
 NC='\033[0m'
 
+<<COMMENT
+Function that returns a character depending on the type of problem.
+
+ARGUMENTS:
+    type --> The name of the problema
+
+RETURNS:
+    ⚠️ if type is 'WARNING:'
+    ❌ if type is 'ERROR:'
+COMMENT
+function problemType() {
+	type=$1
+	
+	if [ $type == "WARNING" ]; then
+		echo "⚠️"
+	fi
+	if [ $type == "ERROR" ]; then
+		echo "❌"
+	fi
+}
+
 
 function inicializar(){
     gM_ENT_MIN=0
@@ -613,8 +634,33 @@ else
 fi
 echo "#### For more information on the interpretation of these metrics, please visit:  <a href='http://miso.ii.uam.es/asymobService/metrics.html'>asymob</a>" >> "${GITHUB_STEP_SUMMARY}"
 
+#Making table of conga validations
 echo "****" >> "${GITHUB_STEP_SUMMARY}"
 echo "# Conga Validation" >> "${GITHUB_STEP_SUMMARY}"
+
+SAVEIFS=$IFS
+IFS=$'\n'  
+congaValidProb=($congaValidator) 
+IFS=$SAVEIFS
+total=${#congaValidProb[@]}
+cont=1
+
+echo "| RESULT | ID | PROBLEM |" >> "${GITHUB_STEP_SUMMARY}"
+echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
+if [ $total -gt 0 ]; then
+	while [ $cont -le $total ]
+	do		
+		SAVEIFS=$IFS
+		IFS=$':'  
+		dato=(${campos[$cont]}) 
+		IFS=$SAVEIFS
+		rule=$(echo "${dato[1]}" | cut -c 1-4)
+		rule=$(echo "$rule" | tr -d ' ')
+		des=$(echo "${dato[1]}" | cut -c 5-)
+        echo " $(problemType ${dato[0]}) | $rule | $des |" >> "${GITHUB_STEP_SUMMARY}"
+		cont=$((cont+1))
+	done
+fi
 echo "#### $congaValidator" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
