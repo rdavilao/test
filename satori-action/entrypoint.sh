@@ -662,7 +662,7 @@ if [ $total -gt 0 ]; then
 	done
 fi
 
-echo "####Summary: ${congaValidProb[0]}"
+echo "####Summary: ${congaValidProb[0]}" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
 echo "Information about metrics"
