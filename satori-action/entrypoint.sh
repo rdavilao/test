@@ -606,7 +606,7 @@ echo "****" >> "${GITHUB_STEP_SUMMARY}"
 #Making table about metrics
 echo "# Chatbot Metrics" >> "${GITHUB_STEP_SUMMARY}"
 echo "| RESULT | METRIC | VALUE | RANGE | DESCRIPTION |" >> "${GITHUB_STEP_SUMMARY}"
-echo " :-: | :-: | :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
+echo " :-: | :-: | :-: | :-: | :--- " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
     echo " $(getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) | ENT | $gM_ENT | $(getRanges $gM_ENT_MAX $gM_ENT_MIN) | $(getDescription $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) |" >> "${GITHUB_STEP_SUMMARY}"
