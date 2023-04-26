@@ -684,7 +684,7 @@ total=${#congaValidProb[@]}
 cont=1
 
 echo "| RESULT | ID | PROBLEM |" >> "${GITHUB_STEP_SUMMARY}"
-echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
+echo " :-: | :-: | :--- " >> "${GITHUB_STEP_SUMMARY}"
 if [ $total -gt 0 ]; then
 	while [ $cont -lt $total ]
 	do		
