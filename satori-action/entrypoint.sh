@@ -648,7 +648,7 @@ cont=1
 echo "| RESULT | ID | PROBLEM |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if [ $total -gt 0 ]; then
-	while [ $cont -le $total ]
+	while [ $cont -lt $total ]
 	do		
 		SAVEIFS=$IFS
 		IFS=$':'  
@@ -661,7 +661,8 @@ if [ $total -gt 0 ]; then
 		cont=$((cont+1))
 	done
 fi
-echo "#### $congaValidator" >> "${GITHUB_STEP_SUMMARY}"
+
+echo "####Summary: ${congaValidProb[0]}"
 
 echo "::group::Metrics"
 echo "Information about metrics"
