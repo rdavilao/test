@@ -122,11 +122,13 @@ function getRanges(){
     if [ $min -eq 0 ] || [ $max -eq 9999999 ]; then
         if [ $min -gt 0 ]; then
             echo "[ $min,  ∞ ["
-        fi
-        if [ $max -lt 9999999 ]; then
-            echo "] ∞ , $max ] "
-        fi
-            echo "] ∞ , ∞ ["
+        else 
+            if [ $max -lt 9999999 ]; then
+                echo "] ∞ , $max ] "
+            else
+                echo "] ∞ , ∞ ["
+            fi
+        fi           
     else
         echo "[ $min, $max ]"
     fi    
