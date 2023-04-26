@@ -26,13 +26,6 @@ function problemType() {
 	fi
 }
 
-
-function inicializar(){
-    gM_ENT_MIN=0
-    gM_ENT_MAX=10
-}
-
-inicializar 
 <<COMMENT
 Function that checks if the file metrics.json exists.
 
@@ -126,6 +119,7 @@ function getResult(){
 function getRanges(){
     echo "[$gM_ENT_MIN, $gM_ENT_MAX ]"
 }
+
 <<COMMENT
 Function that performs the verification by metric, here the maximum and minimum value of each metric is defined.
 
@@ -135,7 +129,7 @@ ARGUMENTS:
 RETURNS:
     The results obtained by the function getResult()
 COMMENT
-function verifyMetric(){
+function initializeEvalMetrics(){
     metric=$1
 	case $metric in
 	
@@ -150,16 +144,15 @@ function verifyMetric(){
             if key_exist ENT_MAX; then
                 gM_ENT_MAX=$(jq -r '.ENT_MAX' metrics.json)              
             else
-                gM_ENT_MAX=1000000
+                gM_ENT_MAX=9999999
             fi
         else
-        echo "algo"     
+        echo "Métrica ENT_MAX o ENT_MIN no existe en el archivo de metrics.json"     
         fi
 	 else	 
 	 gM_ENT_MIN=0
 	 gM_ENT_MAX=10 
 	 fi
-     getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT
      ;;
 
     INT)
@@ -176,13 +169,12 @@ function verifyMetric(){
                 gM_INT_MAX=1000000
             fi
         else
-        echo "algo"     
+        echo "Métrica INT_MAX o INT_MIN no existe en el archivo de metrics.json"     
         fi
 	 else	 
 	 gM_INT_MIN=0
 	 gM_INT_MAX=10 
-	 fi
-     getResult $gM_INT_MAX $gM_INT_MIN $gM_INT
+	 fi     
      ;;
 
     NL)
@@ -486,6 +478,9 @@ function verifyMetric(){
 	esac
 }
 
+initializeEvalMetrics ENT
+initializeEvalMetrics INT
+
 if [ "$INPUT_FORMAT" = "" ]; then
     echo -e "${BRED}Format must be specified${NC}"
     exit 1
@@ -571,10 +566,10 @@ echo "| METRIC | VALUE | RESULT | RANGE |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :-: | :-: " >> "${GITHUB_STEP_SUMMARY}"
 if isMetricJson; then
     if keys_exist ENT_MAX ENT_MIN; then
-    echo " ENT | $gM_ENT | $(verifyMetric ENT) | $(getRanges) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " ENT | $gM_ENT | $(getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) | $(getRanges) |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist INT_MAX INT_MIN; then
-    echo " INT | $gM_INT | $(verifyMetric INT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " INT | $gM_INT | $(getResult $gM_INT_MAX $gM_INT_MIN $gM_INT) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
     fi
     if keys_exist NL_MAX NL_MIN; then
     echo " NL | $gM_NL | $(verifyMetric NL) | [$gM_INT_MIN,  $gM_INT_MAX] |" >> "${GITHUB_STEP_SUMMARY}"
