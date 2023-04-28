@@ -704,7 +704,8 @@ echo "#### Summary: ${congaValidProb[0]}" >> "${GITHUB_STEP_SUMMARY}"
 echo "::group::Metrics"
 echo "Information about metrics"
 echo "::endgroup::"
-#echo "$GITHUB_STEP_SUMMARY"
 echo "Expected file"
 echo $METRICS_OUTPUT
+
+node -v
 exit 0
