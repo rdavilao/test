@@ -142,7 +142,7 @@ function getDescription() {
     then
         if [ $(echo "$value == $min || $value == $max" | bc -l) -eq 1 ]        
         then
-            if [ $value -eq $min ]; then
+            if [ $(echo "$value == $min" | bc -l) -eq 1 ]; then
             echo "Be careful the metric is at the edge of the lower range."
         else
             echo "Be careful the metric is at the edge of the upper range."
