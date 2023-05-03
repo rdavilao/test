@@ -151,7 +151,7 @@ function getDescription() {
             echo "Everything is fine."
         fi        
     else
-        if [ $value -lt $min ]; then
+        if [ $(echo "$value < $min" | bc -l) -eq 1 ]; then
             echo "Metric is out of the lower range."
         else
             echo "Metric is out of the upper range."
@@ -656,7 +656,7 @@ if isMetricJson; then
 else 
     echo " $(getResult $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) | ENT | $gM_ENT | $(getRanges $gM_ENT_MAX $gM_ENT_MIN) | $(getDescription $gM_ENT_MAX $gM_ENT_MIN $gM_ENT) |" >> "${GITHUB_STEP_SUMMARY}"
     echo " $(getResult $gM_INT_MAX $gM_INT_MIN $gM_INT) | INT | $gM_INT | $(getRanges $gM_INT_MAX $gM_INT_MIN) | $(getDescription $gM_INT_MAX $gM_INT_MIN $gM_INT) |" >> "${GITHUB_STEP_SUMMARY}"
-    echo " $(getResult $gM_NL_MAX $gM_NL_MIN $gM_NL) | NL | $gM_NL | $(getRanges $gM_INT_MAX $gM_INT_MIN) | $(getDescription $gM_NL_MAX $gM_NL_MIN $gM_NL) |" >> "${GITHUB_STEP_SUMMARY}"
+    echo " $(getResult $gM_NL_MAX $gM_NL_MIN $gM_NL) | NL | $gM_NL | $(getRanges $gM_NL_MAX $gM_NL_MIN) | $(getDescription $gM_NL_MAX $gM_NL_MIN $gM_NL) |" >> "${GITHUB_STEP_SUMMARY}"
     echo " $(getResult $gM_FLOW_MAX $gM_FLOW_MIN $gM_FLOW) | FLOW | $gM_FLOW | $(getRanges $gM_FLOW_MAX $gM_FLOW_MIN) | $(getDescription $gM_FLOW_MAX $gM_FLOW_MIN $gM_FLOW) |" >> "${GITHUB_STEP_SUMMARY}"
     echo " $(getResult $gM_PATH_MAX $gM_PATH_MIN $gM_PATH) | PATH | $gM_PATH | $(getRanges $gM_PATH_MAX $gM_PATH_MIN) | $(getDescription $gM_PATH_MAX $gM_PATH_MIN $gM_PATH) |" >> "${GITHUB_STEP_SUMMARY}"
     echo " $(getResult $gM_LPE_MAX $gM_LPE_MIN $gM_LPE) | LPE | $gM_LPE | $(getRanges $gM_LPE_MAX $gM_LPE_MIN) | $(getDescription $gM_LPE_MAX $gM_LPE_MIN $gM_LPE) |" >> "${GITHUB_STEP_SUMMARY}"
