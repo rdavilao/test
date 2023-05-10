@@ -1,4 +1,4 @@
-name: test-satori-action
+name: test-satori-validation-action
 run-name: ${{ github.actor }} is checking chatbots with SATORI
 on: [push]
 jobs:  

@@ -1,6 +1,6 @@
 FROM openjdk:18-alpine
 RUN apk update && apk upgrade --available
-RUN apk add bash  #Be careful, because alpine doesn't have bash
+RUN apk add bash 
 RUN apk add zip
 RUN apk add jq
 ADD https://github.com/SaraPerezSoler/CONGA/releases/download/0.1/CongaReverse_pUML.jar /
