@@ -707,5 +707,4 @@ echo "::endgroup::"
 echo "Expected file"
 echo $METRICS_OUTPUT
 
-node -v
 exit 0
