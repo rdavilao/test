@@ -538,7 +538,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
     INPUT_FILES=$repo.xmi
 else
     echo "::group::Compressing repository"
-    INPUT_FILES=$repo.zip
+    INPUT_FILES=chatbot.zip
     PLANTUML_TXT=$repo.txt
     if [ "$INPUT_FORMAT" = "Rasa" ]; then
         if [ "$INPUT_VERSION" = "1.10" ]; then
