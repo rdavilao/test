@@ -542,8 +542,9 @@ else
     PLANTUML_TXT=$repo.txt
     if [ "$INPUT_FORMAT" = "Rasa" ]; then
         if [ "$INPUT_VERSION" = "1.10"]; then
-        
+        echo "Version: 1.10"
         else
+        echo "Version: 2.0 or 3.0"
         zip -r $INPUT_FILES data/ actions/ config.yml credentials.yml domain.yml endpoints.yml
         fi
     fi        
