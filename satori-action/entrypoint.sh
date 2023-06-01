@@ -551,7 +551,8 @@ else
     echo "::endgroup::"
 fi
 
-XMI_OUTPUT="${"chatbot"/.zip/.xmi}"
+XMI_OUTPUT="chatbot${/.zip/.xmi}"
+echo "VER OUTPUY: $XMI_OUTPUT"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
 
 if [ "$INPUT_FORMAT" = "conga" ]; then
