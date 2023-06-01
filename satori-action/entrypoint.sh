@@ -540,7 +540,13 @@ else
     echo "::group::Compressing repository"
     INPUT_FILES=$repo.zip
     PLANTUML_TXT=$repo.txt
-    zip -r $INPUT_FILES .    
+    if [ "$INPUT_FORMAT" = "Rasa" ]; then
+        if [ "$INPUT_VERSION" = "1.10"]; then
+        
+        else
+        zip -r $INPUT_FILES data/ actions/ config.yml credentials.yml domain.yml endpoints.yml
+        fi
+    fi        
     echo "::endgroup::"
 fi
 
