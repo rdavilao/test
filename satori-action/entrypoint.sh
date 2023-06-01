@@ -557,6 +557,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
     fi
 else
     echo "::debug::{Running CONGA with $INPUT_FILES}"
+    echo "Version $INPUT_VERSION"
     ls
     java -jar /CongaReverse2.0_pUML.jar $INPUT_FILES $INPUT_FORMAT $INPUT_VERSION
 
