@@ -542,10 +542,10 @@ else
     PLANTUML_TXT=$repo.txt
     if [ "$INPUT_FORMAT" = "Rasa" ]; then
         if [ "$INPUT_VERSION" = "1.10" ]; then
-        echo "Version: 1.10"
+            echo "Version: 1.10"
         else
-        echo "Version: 2.0 or 3.0"
-        zip -r $INPUT_FILES data/ actions/ config.yml credentials.yml domain.yml endpoints.yml
+            echo "Version: 2.0 or 3.0"
+            zip -r $INPUT_FILES data/ actions/ config.yml credentials.yml domain.yml endpoints.yml
         fi
     fi        
     echo "::endgroup::"
@@ -565,7 +565,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
 else
     echo "::debug::{Running CONGA with $INPUT_FILES}"
     ls
-    java -jar /CongaReverse2.0_pUML.jar $INPUT_FILES $INPUT_FORMAT $INPUT_VERSION
+    java -jar /CongaReverse2.0_pUML.jar $INPUT_FILES $INPUT_FORMAT "2.0"
 
     XMI_FILE=./$repo.xmi
 
