@@ -551,7 +551,7 @@ else
     echo "::endgroup::"
 fi
 
-XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
+XMI_OUTPUT="${"chatbot"/.zip/.xmi}"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
 
 if [ "$INPUT_FORMAT" = "conga" ]; then
@@ -567,7 +567,7 @@ else
     ls
     java -jar /CongaReverse2.0_pUML.jar $INPUT_FILES $INPUT_FORMAT "2.0"
 
-    XMI_FILE=./$repo.xmi
+    XMI_FILE=./chatbot.xmi
 
     if test -f "$XMI_FILE"; then    
         echo -e "${BGREEN}Archivo $XMI_FILE ha sido creado exitosamente${NC}"
