@@ -539,7 +539,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
 else
     echo "::group::Compressing repository"
     INPUT_FILES=chatbot.zip
-    PLANTUML_TXT=$repo.txt
+    PLANTUML_TXT=chatbot.txt
     if [ "$INPUT_FORMAT" = "Rasa" ]; then
         if [ "$INPUT_VERSION" = "1.10" ]; then
             echo "Version: 1.10"
@@ -551,7 +551,7 @@ else
     echo "::endgroup::"
 fi
 
-XMI_OUTPUT="chatbot${/.zip/.xmi}"
+XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
 echo "VER OUTPUY: $XMI_OUTPUT"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
 
