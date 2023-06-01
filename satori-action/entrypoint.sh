@@ -541,7 +541,7 @@ else
     INPUT_FILES=$repo.zip
     PLANTUML_TXT=$repo.txt
     if [ "$INPUT_FORMAT" = "Rasa" ]; then
-        if [ "$INPUT_VERSION" = "1.10"]; then
+        if [ "$INPUT_VERSION" = "1.10" ]; then
         echo "Version: 1.10"
         else
         echo "Version: 2.0 or 3.0"
@@ -564,7 +564,6 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
     fi
 else
     echo "::debug::{Running CONGA with $INPUT_FILES}"
-    echo "Version $INPUT_VERSION"
     ls
     java -jar /CongaReverse2.0_pUML.jar $INPUT_FILES $INPUT_FORMAT $INPUT_VERSION
 
