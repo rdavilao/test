@@ -686,32 +686,28 @@ echo "****" >> "${GITHUB_STEP_SUMMARY}"
 echo "# Conga Validation" >> "${GITHUB_STEP_SUMMARY}"
 
 SAVEIFS=$IFS
-IFS=$'\n'
-congaValidProb=($congaValidator)
+IFS=$'\n'  
+congaValidProb=($congaValidator) 
 IFS=$SAVEIFS
 total=${#congaValidProb[@]}
 cont=1
 
 echo "| RESULT | ID | PROBLEM |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :--- " >> "${GITHUB_STEP_SUMMARY}"
-
 if [ $total -gt 0 ]; then
-    # Ordenar la salida por el campo 'rule' numérico utilizando awk
-    sortedOutput=$(printf "%s\n" "${congaValidProb[@]}" | awk -F':' '{print $2, $0}' | sort -n | cut -d' ' -f2-)
-
-    while [ $cont -lt $total ]; do
-        SAVEIFS=$IFS
-        IFS=$':'
-        row=(${sortedOutput[$cont]})
-        IFS=$SAVEIFS
-        rule=$(echo "${row[1]}" | cut -c 1-4)
-        rule=$(echo "$rule" | tr -d ' ')
-        des=$(echo "${row[1]}" | cut -c 5-)
+	while [ $cont -lt $total ]
+	do		
+		SAVEIFS=$IFS
+		IFS=$':'  
+		row=(${congaValidProb[$cont]}) 
+		IFS=$SAVEIFS
+		rule=$(echo "${row[1]}" | cut -c 1-4)
+		rule=$(echo "$rule" | tr -d ' ')
+		des=$(echo "${row[1]}" | cut -c 5-)
         echo " $(problemType ${row[0]}) | $rule | $des |" >> "${GITHUB_STEP_SUMMARY}"
-        cont=$((cont+1))
-    done
+		cont=$((cont+1))
+	done
 fi
-
 echo "#### Summary: ${congaValidProb[0]}" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
