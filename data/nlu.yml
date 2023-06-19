@@ -1517,7 +1517,7 @@ nlu:
     - 2 tickets please
     - 11
     - 1
-- intent: booking_reference
+- intent: booking_referenc
   examples: |
     - My booking reference is [1234563AB](booking_reference)
     - Here is my booking reference [5272837VC](booking_reference)
