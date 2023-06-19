@@ -357,7 +357,6 @@ nlu:
     - thanks, you been really helpful
     - bye, you sucked
     - thank youuuu
-    - 
 
 
 
@@ -669,7 +668,6 @@ nlu:
     - nope, thats wrong
     - 100% wrong 
     - that is wrong 
-    - 
 - intent: book_tickets
   examples: |
     - I want to buy tickets
@@ -825,7 +823,6 @@ nlu:
     - can I get 5 tickets for [Old Boy](movie_name)
     - Hi, can I get 1 ticket to see [Old Boy](movie_name)
     - I'd like 2 tickets to see [Old Boy](movie_name)
-
     - I want to boo
 - intent: inform_movie
   examples: |
@@ -1836,7 +1833,6 @@ nlu:
     - num = [976](cvv)
     - here it is [054](cvv)
     - here you go [129](cvv)
-    - 
 - intent: inquire_prices
   examples: |
     - How much is a ticket
