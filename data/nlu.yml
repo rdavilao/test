@@ -985,8 +985,6 @@ nlu:
     - I want seats for the movie [The Graduate](movie_name)
     - movie title: [Sanjuro](movie_name)
     - I want to book for [](movie_name), can i get the booking number
-    - Think I want tickets for [](), Can i have the booking reference
-    - I need to get tickets to see []()
 - intent: collect_tickets
   examples: |
     - Can I collect tickets here
