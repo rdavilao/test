@@ -566,7 +566,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
 else
     echo "::debug::{Running CONGA with $INPUT_FILES}"
     ls
-    java -jar /CongaReverse3.0_pUML.jar $INPUT_FILES $INPUT_FORMAT "2.0"
+    java -jar /CongaReverse3.0_pUML.jar $INPUT_FILES $INPUT_FORMAT $INPUT_VERSION
 
     XMI_FILE=./chatbot.xmi
 
@@ -685,32 +685,29 @@ echo "#### For more information on the interpretation of these metrics, please v
 echo "****" >> "${GITHUB_STEP_SUMMARY}"
 echo "# Conga Validation" >> "${GITHUB_STEP_SUMMARY}"
 
-IFS=$'\n' read -d '' -ra congaValidProb <<< "$congaValidator"
-
-sortedArray=()
-for item in "${congaValidProb[@]}"; do
-    IFS=':' read -ra row <<< "$item"
-    rule=$(echo "${row[1]}" | awk '{gsub(/ /,""); print substr($0, 2)}')
-    sortedArray+=("$rule:$item")
-done
-
-IFS=$'\n' sortedArray=($(sort -t':' -k1,1nr <<< "${sortedArray[*]}"))
-
-total=${#sortedArray[@]}
-cont=0
-
-echo "$total"
+SAVEIFS=$IFS
+IFS=$'\n'  
+congaValidProb=($congaValidator) 
+IFS=$SAVEIFS
+total=${#congaValidProb[@]}
+cont=1
 
 echo "| RESULT | ID | PROBLEM |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :--- " >> "${GITHUB_STEP_SUMMARY}"
-
-while [ $cont -lt $total ]; do
-    IFS=':' read -ra row <<< "${sortedArray[$cont]}"
-    rule=$(echo "${row[1]}" | cut -c 1-4)
-    des=$(echo "${row[1]}" | cut -c 5-)
-    echo " $(problemType ${row[0]}) | $rule | $des |" >> "${GITHUB_STEP_SUMMARY}"
-    cont=$((cont+1))
-done
+if [ $total -gt 0 ]; then
+	while [ $cont -lt $total ]
+	do		
+		SAVEIFS=$IFS
+		IFS=$':'  
+		row=(${congaValidProb[$cont]}) 
+		IFS=$SAVEIFS
+		rule=$(echo "${row[1]}" | cut -c 1-4)
+		rule=$(echo "$rule" | tr -d ' ')
+		des=$(echo "${row[1]}" | cut -c 5-)
+        echo " $(problemType ${row[0]}) | $rule | $des |" >> "${GITHUB_STEP_SUMMARY}"
+		cont=$((cont+1))
+	done
+fi
 echo "#### Summary: ${congaValidProb[0]}" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
