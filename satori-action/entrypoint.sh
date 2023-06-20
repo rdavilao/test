@@ -552,7 +552,7 @@ else
 fi
 
 XMI_OUTPUT="${INPUT_FILES/.zip/.xmi}"
-echo "VER OUTPUY: $XMI_OUTPUT"
+echo "VER OUTPUT: $XMI_OUTPUT"
 METRICS_OUTPUT="${INPUT_FILES/.zip/.metrics.json}"
 
 if [ "$INPUT_FORMAT" = "conga" ]; then
@@ -698,6 +698,8 @@ IFS=$'\n' sortedArray=($(sort -t':' -k1,1nr <<< "${sortedArray[*]}"))
 
 total=${#sortedArray[@]}
 cont=0
+
+echo "$total"
 
 echo "| RESULT | ID | PROBLEM |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :--- " >> "${GITHUB_STEP_SUMMARY}"
