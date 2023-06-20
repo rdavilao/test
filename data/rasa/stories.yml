@@ -1,19 +1,9 @@
 version: "3.1"
 
+# Training stories, check https://rasa.com/docs/rasa/stories/ for more info
 stories:
 
-- story: search for a recipe by keyword
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: search_by_keyword
-    entities:
-      - recipe_keyword
-  - action: action_search_by_keyword
-
-
-
-- story: search for a recipe by ingredients
+- story: Search for a recipe by ingredients
   steps:
   - intent: greet
   - action: utter_greet
@@ -21,3 +11,21 @@ stories:
     entities:
       - ingredient
   - action: action_search_by_ingredients
+  - slot_was_set:
+    - found_recipes_ids
+    - current_recipe
+  - checkpoint: recipe_selected
+  
+  
+- story: Read recipe details
+  steps:
+  - checkpoint: recipe_selected
+  - action: utter_ask_want_more_info
+  - intent: affirm
+  - action: utter_ask_people_count
+  - intent: people_count
+  - action: action_list_ingredients
+  - action: utter_ask_start_cooking
+  - intent: affirm
+  - action: list_steps_loop
+  - active_loop: list_steps_loop

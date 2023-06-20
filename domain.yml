@@ -1,47 +1,130 @@
 version: "3.1"
 
-# Intents
+# Intents, check https://rasa.com/docs/rasa/domain/#intents for more info
 intents:
   - greet
   - goodbye
   - affirm
   - deny
-  - search_by_keyword
+  - next
   - search_by_ingredients:
-      use_entities: 
-        - ingredient
+      use_entities: [ ingredient ]
+  - expected_time
+  - people_count:
+      use_entities: [ CARDINAL ]
 
-# Responses
+# Responses, check https://rasa.com/docs/rasa/responses for more info
 responses:
   utter_greet:
   - text: "Hi! What would you like me to do?"
+  - text: "Hello! What can I do for you today?"
+
+  utter_info:
+  - text: "I can help you find cooking recipes."
 
   utter_goodbye:
+  - text: "Thanks for talking with me. Bye!"
   - text: "Bye!"
 
-  utter_recipe_found:
-  - text: "I found a recipe for \"{recipe_title}\", would you like to know more?"
+  utter_search_recipe/found:
+  - text: "I found a recipe for \"{recipe_title}\"."
 
-  utter_recipe_not_found:
+  utter_search_recipe/alternatives:
+  - text: "Here are the other recipes I was able to find:\n{recipes_list}. Which recipe would you like to know more about?"
+
+  utter_search_recipe/not_found:
   - text: "Sorry, I couldn't find any recipe. Would you like to search for something else?"
 
-# Actions
+  utter_search_recipe/no_alternatives:
+  - text: "Sorry I wasn't able to find any alternative. Would you like to search for something else?"
+
+  utter_ask_want_more_info:
+  - text: "Would you like to know more?"
+
+  utter_ask_start_cooking:
+  - text: "Shall we start cooking?"
+  - text: "Do you have everything ready?"
+
+  utter_ask_people_count:
+  - text: "Great! How many people are you cooking for?"
+  - text: "Thank you. How many people will be eating?"
+
+  utter_expected_time:
+  - text: "This recipe requires {prep_time}min for preparation and {cook_time}min for cooking."
+
+  utter_list_ingredients:
+  - text: "Here are the ingredients you'll need for {people_count_str}:\n{ingredients_list}."
+  - text: "For {people_count_str} you'll need:\n{ingredients_list}."
+
+  utter_list_steps/first:
+  - text: "Ok let's start! First, {step_description} Let me know when you're done."
+  - text: "Let's cook. To begin, {step_description} Tell me when you're ready for the next step"
+
+  utter_list_steps/next:
+  - text: "Great, now please {step_description}"
+  - text: "Perfect, now {step_description}"
+  - text: "Then {step_description}"
+  - text: "Now {step_description}"
+
+  utter_list_steps/end:
+  - text: "Great! That was the last step, enjoy your meal!"
+  - text: "And we are done! Have a nice meal!"
+  
+# Actions, check https://rasa.com/docs/rasa/actions for more info
 actions:
-  - action_search_by_keyword
   - action_search_by_ingredients
+  - action_tell_expected_time
+  - action_list_ingredients
+  - validate_list_steps_loop
 
-# Entities
+# Entities, check https://rasa.com/docs/rasa/domain/#entities for more info
 entities:
-  - recipe_keyword
   - ingredient
+  - CARDINAL
 
-# Slots
-# slots:
-#   recipe_keyword:
-#     type: text
-#     mappings:
-#     - type: from_entity
-#       entity: recipe_keyword
+# Slots, check https://rasa.com/docs/rasa/domain/#slots for more info
+slots:
+  found_recipes_ids:
+    type: list
+    mappings:
+    - type: custom
+
+  current_recipe:
+    type: any
+    mappings:
+    - type: custom
+
+  people_count:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: CARDINAL
+      intent: people_count
+
+  current_step_idx:
+    type: any
+    initial_value: -1
+    mappings:
+    - type: custom
+
+  list_steps_done:
+    type: bool
+    mappings:
+    - type: from_trigger_intent # affirm intent that triggers form
+      intent: affirm
+      value: false # Set slot value so that validate_list_steps_loop is triggered
+    - type: from_intent
+      intent: next
+      value: false # Set slot value so that validate_list_steps_loop is triggered
+      conditions:
+      - active_loop: list_steps_loop
+
+# Forms, check https://rasa.com/docs/rasa/forms for more info
+forms:
+  list_steps_loop:
+    required_slots:
+      - current_step_idx
+      - list_steps_done
 
 # Other configs
 session_config:
