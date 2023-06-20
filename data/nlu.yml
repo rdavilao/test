@@ -1103,7 +1103,6 @@ nlu:
     - pretty confident it's called [Planet of the Apes](movie_name)
     - I want seats for the movie [The Graduate](movie_name)
     - movie title: [Sanjuro](movie_name)
-    - Think I want tickets for [](), Can i have the booking reference
 
 
 - intent: collect_tickets
