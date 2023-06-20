@@ -506,9 +506,7 @@ stories:
 
 - story: book tickets about movie interupt, unhappy path
   steps:
-  - or:
-    - intent: book_tickets
-    - intent: inform_movie
+  - intent: book_tickets
   - action: booking_form
   - active_loop: booking_form
   - intent: inquire_movie_schedule
@@ -542,9 +540,7 @@ stories:
 
 - story: book tickets about movie interupt, unhappy path
   steps:
-  - or:
-    - intent: book_tickets
-    - intent: inform_movie
+  - intent: book_tickets
   - action: booking_form
   - active_loop: booking_form
   - intent: inquire_movie_schedule
@@ -582,9 +578,7 @@ stories:
   
 - story: book tickets cancel interupt, unhappy path
   steps:
-  - or:
-    - intent: book_tickets
-    - intent: inform_movie
+  - intent: book_tickets
   - action: booking_form
   - active_loop: booking_form
   - intent: stop
@@ -607,9 +601,7 @@ stories:
 
 - story: book tickets about movie interupt, unhappy path
   steps:
-  - or:
-    - intent: book_tickets
-    - intent: inform_movie
+  - intent: book_tickets
   - action: booking_form
   - active_loop: booking_form
   - slot_was_set:
@@ -640,9 +632,7 @@ stories:
 
 - story: book tickets about movie interupt, unhappy path
   steps:
-  - or:
-    - intent: book_tickets
-    - intent: inform_movie
+  - intent: book_tickets
   - action: booking_form
   - active_loop: booking_form
   - slot_was_set:
@@ -673,9 +663,7 @@ stories:
 
 - story: book tickets about movie interupt, unhappy path
   steps:
-  - or:
-    - intent: book_tickets
-    - intent: inform_movie
+  - intent: book_tickets
   - action: booking_form
   - active_loop: booking_form
   - slot_was_set:
@@ -703,9 +691,7 @@ stories:
 
 - story: book tickets collection interupt, unhappy path
   steps:
-  - or:
-    - intent: book_tickets
-    - intent: inform_movie
+  - intent: book_tickets
   - action: booking_form
   - active_loop: booking_form
   - intent: collect_tickets
@@ -726,9 +712,7 @@ stories:
 
 - story: Booking tickets payment form interupt
   steps:
-  - or:
-    - intent: book_tickets
-    - intent: inform_movie
+  - intent: book_tickets
   - action: booking_form
   - active_loop: booking_form
   - slot_was_set:

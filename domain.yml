@@ -10,15 +10,12 @@ intents:
 - no_tickets
 - deny
 - inform_movie
-- inform_sort_code
-- inform_cvv
-- inform_card_num
+- inform_details
 - greet
 - goodbye
 - collect_tickets
 - inquire_movie_schedule
 - inquire_movie_times
-- booking_reference
 - out_of_scope
 - stop
 - inquire_prices
