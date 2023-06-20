@@ -14,9 +14,7 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: SpacyEntityExtractor
-    dimensions: [ CARDINAL ] # Only for numbers
-  - name: RegexEntityExtractor
-    use_lookup_tables: True
+    dimensions: [ CARDINAL, TIME ]
   - name: DIETClassifier
     epochs: 100
     constrain_similarities: true
@@ -25,7 +23,7 @@ pipeline:
     epochs: 100
     constrain_similarities: true
   - name: FallbackClassifier
-    threshold: 0.3
+    threshold: 0.4
     ambiguity_threshold: 0.1
 
 # Policies, check https://rasa.com/docs/rasa/policies/ for more info

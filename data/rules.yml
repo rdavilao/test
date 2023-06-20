@@ -2,6 +2,7 @@ version: "2.0"
 
 # Rules, check https://rasa.com/docs/rasa/rules/ for more info
 rules:
+
   - rule: Say hello anytime the user says hello
     steps:
     - intent: greet
@@ -13,27 +14,24 @@ rules:
     - intent: goodbye
     - action: utter_goodbye
 
-  
-  - rule: Search by keyword
+
+  - rule: Two-stage fallback
     steps:
-    - intent: search_by_keyword
-    - action: action_search_by_keyword
-    - action: utter_ask_want_more_info
+    - intent: nlu_fallback
+    - action: action_two_stage_fallback
+    - active_loop: action_two_stage_fallback
 
 
-  - rule: Search by ingredients
+  - rule: Handle unlikely intents
     steps:
-    - intent: search_by_ingredients
-    - action: action_search_by_ingredients
-    - action: utter_ask_want_more_info
+    - action: action_unlikely_intent
+    - action: utter_please_rephrase
 
 
-  - rule: Ask for alternative recipe
+  - rule: Repeat last message
     steps:
-    - intent: ask_alternative_recipe
-    - action: action_search_alternative_recipe
-    - action: utter_ask_want_more_info
-
+    - intent: ask_to_repeat
+    - action: action_repeat_last_utterance
 
   - rule: Ask for expected preparation time
     condition:
@@ -81,11 +79,21 @@ rules:
     - action: utter_set_timer/expired
 
 
-  - rule: Start cooking
+  - rule: Start cooking (user inititiative)
     condition:
     - slot_was_set: [ current_recipe ]
     steps:
     - intent: start_cooking
+    - action: list_steps_loop
+    - active_loop: list_steps_loop
+
+
+  - rule: Start cooking (system inititiative)
+    condition:
+    - slot_was_set: [ current_recipe ]
+    steps:
+    - action: utter_ask_start_cooking
+    - intent: affirm
     - action: list_steps_loop
     - active_loop: list_steps_loop
 

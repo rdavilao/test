@@ -29,7 +29,7 @@
     ~[i am?] not sure
 
 ~[next]
-    {next/next step/finished/proceed/go on}
+    {next [step?]/finished/proceed/go on/after [that?]}
     ~[i am?] done
 
 ~[please]
@@ -47,13 +47,13 @@
     find [me?]
 
 ~[have]
-    {have/possess/own}
+    {have/own}
 
 ~[use]
     {use/utilize/employ}
 
 ~[eat]
-    {eat/try/taste}
+    {eat/try}
 
 ~[cook]
     {cook/prepare/make/bake}
@@ -67,11 +67,20 @@
 ~[remind]
     {remind/remember/notify/alert/warn}
 
+~[repeat]
+    {repeat/say it again}
+
+~[give]
+    {give/deliver/send/tell/share with}
+
 ~[needed]
     {needed/required}
 
 ~[need]
     {need/require}
+
+~[ready]
+    {ready/set/all set/prepared}
 
 ~[start]
     {start/begin/initiate/commence}
@@ -80,11 +89,11 @@
     {stop/end/halt/cancel}
 
 ~[can]
-    {can/could/may/would/should}
+    {can/could/may/would}
 
-~[i want to]
-    [&I]{'d/ would} [really?] [like|love] to
-    [&I] want to
+~[i want]
+    [&I]{'d/ would} [really?] [like|love]
+    [&I] want
 
 ~[recipe]
     {recipe/something/food}
@@ -101,6 +110,9 @@
 ~[containing]
     {containing/with/using}
 
+~[only]
+    {only/just/solely/exclusively}
+
 ~[day time]
     {today/tomorrow}
     {for/this} {breakfast/launch/dinner/morning/evening}
@@ -110,3 +122,4 @@
 
 ~[alone]
     {alone/only/by myself}
+
