@@ -974,8 +974,8 @@ nlu:
     - can I get 5 tickets for [Old Boy](movie_name)
     - Hi, can I get 1 ticket to see [Old Boy](movie_name)
     - I'd like 2 tickets to see [Old Boy](movie_name)
-    - Can I have a ticket to see [](movie_name)
-    - I want to purchase 2 tickets for [](movie_name)
+    - Can I have a ticket to see [The Seventh Seal](movie_name)
+    - I want to purchase 2 tickets for [Wings of Desire](movie_name)
     - Can I purchase a ticket
     - Hello Cinebot, could I buy a ticket
     - Do you sell tickets here
@@ -992,8 +992,9 @@ nlu:
     - me and my family would like a ticket
     - I want a ticket to see a movie
     - Can I buy tickets to watch movies here
-    - Can I get a ticket to see [](movie_name) today?
-    - I want to book for [](movie_name), can i get the booking number
+    - Can I get a ticket to see [All About my Mother](movie_name) today?
+    - I want to book for [Fantastic Planet](movie_name), can i get the booking number
+    - I need to get tickets to see [Ran](movie_name)
     - I want to purchase tickets 
     - Do you sell tickets here?
     - I think you sell tickets right?
@@ -1001,18 +1002,18 @@ nlu:
     - Is this where i can book tickets for [Pirates of the Caribbean: Curse of the Black Pearl](movie_name)
     - Can I purchase tickets for a group of people
     - I need tickets for 12 people
-    - I need as many tickets as you have to see [](movie_name)
+    - I need as many tickets as you have to see [The Kid](movie_name)
     - Would you be able yo sell me a ticket
     - What are your options for buying tickets
     - Could I buy a ticket here
     - By chance, can you book me a ticket
     - I was wondering if this is where to book a ticket
     - I was wondering if I could purchase a ticket
-    - I need a ticket for tommorow at 2pm for [](movie_name)
+    - I need a ticket for tommorow at 2pm for [Josep](movie_name)
     - Is it possible to buy a ticket for tomorrow
     - Would it be possible to book a ticket 
     - Can you tell me if I can buy a ticket here
-    - Give me 2 tickets for [](movie_name) please
+    - Give me 2 tickets for [A Short Film About Love](movie_name) please
     - Give me a ticket 
     - Let me book a ticket
     - Please may I purchase a ticket
@@ -1102,7 +1103,9 @@ nlu:
     - pretty confident it's called [Planet of the Apes](movie_name)
     - I want seats for the movie [The Graduate](movie_name)
     - movie title: [Sanjuro](movie_name)
+    - Think I want tickets for [Grave of the Fireflies](movie_name), Can i have the booking reference
 
+  
 
 - intent: collect_tickets
   examples: |
@@ -1610,33 +1613,34 @@ nlu:
     - Do you happen to know the times for [O Brother, Where Art Thou](movie_name)
     - do you happen to know the schedule of [Dead Alive](movie_name)
     - Can I get the viewing schedule for [Captain America: Civil War](movie_name)
-    - viewing schedule for [](movie_name)
-    - I was wondering if you have times for [](movie_name)
-    - Can you tell me if you have an available times for [](movie_name)
-    - available times for [](movie_name)
-    - Tell me the times available to see [](movie_name)
-    - are there any showings of [](movie_name)
-    - When are there showings for [](movie_name)
-    - When is [](movie_name) on?
-    - What times is [](movie_name) on at?
-    - Tell what the viewing schedule for [](movie_name) is
-    - Can you list the times for [](movie_name)
-    - I was wonding if you have any information on the times for [](movie_name)
-    - Can you provide information on the times for [](movie_name)
-    - Do you have the ability to give me times for [](movie_name)
-    - I need the times for [](movie_name)
-    - I need to obtain the viewing schedule for [](movie_name)
-    - Is it alright if I ask for times to see [](movie_name)
-    - Is it possible to get times for [](movie_name)
-    - Would it be possible to get a list of times that [](movie_name) is available to see?
-    - When is [](movie_name) available?
-    - what times are you showing [](movie_name)
-    - What time are in the schedule for [](movie_name)
-    - what times is [](movie_name) at?
-    - what times is [](movie_name) in?
-    - tell me times for [](movie_name)
-    - Can you give me a list of times for [](movie_name)
-    - what times are [](movie_name)
+    - viewing schedule for [Woman In The Dunes](movie_name)
+    - I was wondering if you have times for [My Life as a Courgette](movie_name)
+    - Can you tell me if you have an available times for [Your Turn](movie_name)
+    - available times for [Blade Runner](movie_name)
+    - Tell me the times available to see [Fantastic Mr. Fox](movie_name)
+    - are there any showings of [Chinatown](movie_name)
+    - When are there showings for [Raging Bull](movie_name)
+    - When is [Paths of Glory](movie_name) on?
+    - What times is [The Gold Rush](movie_name) on at?
+    - Tell what the viewing schedule for [The Red Shoes](movie_name) is
+    - Can you list the times for [Ordet](movie_name)
+    - I was wonding if you have any information on the times for [Ivy](movie_name)
+    - Can you provide information on the times for [City of God](movie_name)
+    - Do you have the ability to give me times for [La Strada](movie_name)
+    - I need the times for [The Red Balloon](movie_name)
+    - I need to obtain the viewing schedule for [Throne of Blood](movie_name)
+    - Is it alright if I ask for times to see [Lessons of Darkness](movie_name)
+    - Is it possible to get times for [RBG](movie_name)
+    - Would it be possible to get a list of times that [Fargo](movie_name) is available to see?
+    - When is [Manhatten](movie_name) available?
+    - what times are you showing [The White Ribbon](movie_name)
+    - What time are in the schedule for [The Human Voice](movie_name)
+    - what times is [Good Morning](movie_name) at?
+    - what times is [Lucky](movie_name) in?
+    - tell me times for [Malcolm X](movie_name)
+    - Can you give me a list of times for [Summer 1993](movie_name)
+    - what times are [The Trial](movie_name)
+    
     
     
 - intent: inquire_about_movie
@@ -1732,7 +1736,7 @@ nlu:
     - is it possible to get details about [12 Years a Slave](movie_name)
     - Can you tell me the age rating of [Titanic](movie_name)
     - is [Within Our Gates](movie_name) good
-    - is [](movie_name) a good movie
+    - is [The Sopranos](movie_name) a good movie
     - Do you know how good [The Good, The Bad, and The Ugly](movie_name) is
     - Can you tell me the reviews of [The Piano](movie_name)
     - How are the review for [The Wizard of Oz](movie_name)
@@ -1793,8 +1797,8 @@ nlu:
     - display info of [Little Women](movie_name)
     - display information of [The Greatest Showman](movie_name)
     - what is [2001 A Space Odyssey](movie_name) about?
-    - May I know about [](movie_name)
-    - What dox
+    - May I know about [Over the Hedge](movie_name)
+  
 
 - intent: set_movie_time
   examples: |
@@ -1958,7 +1962,40 @@ nlu:
     - 11
     - 1
     - are there still 6 seats left
-    - Can 
+    - Can I get 4 tickets
+    - is it possible to get 6 tickets
+    - would it be alright to buy 1 ticket
+    - please can I get three tickets
+    - I need five tickets
+    - 3 tickets please
+    - Hello cinebot, can I get 2 tickets
+    - 3 tickets to go please
+    - me and my friends want 4 tickets please
+    - I'd like three tickets
+    - Can me and my girlfriend get two tickets
+    - My boyfriend and I would like two tickets 
+    - I want to reserve one ticket please
+    - is it ok to get three tickets
+    - is there a chance i could get 10 tickets
+    - can you provide me with 6 ticekts
+    - what are the chances I can get eleven tickets
+    - I require a total of 7 tickets
+    - good morning I would like 2 tickets
+    - good afternoon I need 3 tickets 
+    - good evening can i get 4 ticekts 
+    - 4 for the group please
+    - I demand three tickets
+    - It is necessary I get 3 tickets
+    - Hello, could i get three tickets please
+    - me and the wife want two tickets
+    - may i acquire 8 tickets 
+    - just the one please
+    - could i trouble you for two tickets
+    - just need three tickets please
+    - could i kindly ask for seven tickets
+    - could i request four tickets
+    - need 4 plz
+
 
 - intent: out_of_scope
   examples: |
@@ -2079,7 +2116,7 @@ nlu:
     - Do you have any information about upcoming movies
     - What movies will you be shoing next month
     - Can you tell me information about the movies you are showing in the next week
-    - Do you know when [](movie_name) will be out
+    - Do you know when [Wonder Woman](movie_name) will be out
     - Do you have information about movies that will be released next month
     - I'm wondering what new movies you will have in next week
     - Are there any movies coming out soon
@@ -2126,7 +2163,48 @@ nlu:
     - I'n not sure which movie to see, can you suggest one?
     - I think you should suggest a movie
     - How many screens do you have?
-    - Can you tell me which screen is the IMAX
+    - Can you tell me which screen is the IMAX 
+    - Can you show me the lay out of each screen
+    - Do you know what the layout for the IMAX is
+    - Can you tell me how many seats are in each screen
+    - How many people can fit in one showing 
+    - What is the max number of people per showing
+    - Can A book out a while showing
+    - Do you offer private showings
+    - Can i rent out a private screen
+    - Are you allowed to take your own food in
+    - Where are your bathrooms
+    - What is the difference between the IMAX and standard
+    - is the IMAX in 3D
+    - do you provide 3D glasses
+    - Do 3D glasses cost extra
+    - What is an IMAX
+    - I'm confused about the IMAX
+    - What can you tell me about the different screen types
+    - I don't know what the IMAX screen is
+    - Why is the IMAX more expensive
+    - Can I rent out the IMAX
+    - Is it possible to get information on the IMAX
+    - What is special out the IMAX
+    - How many people can the IMAX fit
+    - How many tickets can i buy at once
+    - What is the best movie you are currently showing
+    - Can you decide a movie for me
+    - When is the next movie coming out
+    - Do you have any information about when [Thor: Love and Thunder](movie_name) is coming out
+    - What action movies do you have
+    - are you showing an comedies
+    - Do you host events
+    - Are you showing any special event movies soon
+    - What are the movies that you can recommend
+    - I can't pick out a movie, can you do it
+    - What is the worst movie your are showing?
+    - Do you have any animated films
+    - Are there any Disney movies out right now.
+ 
+
+
+
 
 
     
@@ -2367,8 +2445,8 @@ nlu:
     - fairly sure the sort code is [12-23-65](sort_code)
     - pretty sure this is it [12-43-34](sort_code)
     - the is right I think [12-65-87](sort_code)
-    - that's fine, here you go [](sort_code)
-    - got it here, [](sort_code)
+    - that's fine, here you go [54-55-11](sort_code)
+    - got it here, [65-54-22](sort_code)
     - [123](cvv)
     - [657](cvv)
     - my security code is [876](cvv)
@@ -2949,9 +3027,9 @@ nlu:
     - Do you think I could get info on my booking reference 
     - I'm wondering what you can tell me about this [5737272OP](booking_reference)
     - how much can you tell me about this [2317232WE](booking_reference)
-    - what is this [](booking_reference) about 
-    - what is [](booking_reference)
-    - tell me about [](booking_reference)
+    - what is this [1244353AQ](booking_reference) about 
+    - what is [383812QW](booking_reference)
+    - tell me about [8583952AQ](booking_reference)
     - What is my booking reference for
     - Information about my ticket
     - Can I find out what screen my booking is in?
@@ -2983,9 +3061,9 @@ nlu:
     - What is this booking reference for [1235245QW](booking_reference)
     - Can you tell me what movie I booked
     - I need to know the movie I booked
-    - What is this for [](booking_reference)
+    - What is this for [1284832AM](booking_reference)
     - What time is the movie I am seeing at?
-    - Can you tell me the time I was supposed to see this movie, the booking reference is [](booking_reference)
+    - Can you tell me the time I was supposed to see this movie, the booking reference is [3828234QI](booking_reference)
     - Can I ask about my tickets
     - When did I book my tickets for?
     - I booked my tickets but I forgot when for
@@ -3004,8 +3082,8 @@ nlu:
     - Was wondering which screen and seat numbers my booking is for?
     - Yeah, I'd like to know the screen number for my booking
     - uh huh, Can I know the screen type for my booking
-    - My booking reference is [](booking_reference), can you tell me my screen number?
-    - My booking reference is [](booking_reference), can you tell me how many seats I booked and the seat numbers please?
+    - My booking reference is [4737283DS](booking_reference), can you tell me my screen number?
+    - My booking reference is [4828399ZI](booking_reference), can you tell me how many seats I booked and the seat numbers please?
     - Can I know the seat numbers for my booking
     - Would like the seat numbers for my purchase
     - Can I know which seats I'm in?
@@ -3066,6 +3144,25 @@ nlu:
     - How do I find out my seat information
     - Can I find out where my seat is
     - I need to know the seat row I'm in
+    - I seem to have forgotten which time I booked
+    - what was the viewing I booked again?
+    - I can't seem to remeber which viewing i booked
+    - I'm unsure what screen I'm in
+    - Where do I get my ticket information
+    - I need information about the tickets that I have booked
+    - I'm wondering what time the movie I booked is at
+    - I'm wondering what screen the movie I booked is in
+    - seat location please
+    - Can I know what my seat loaction is 
+    - I want to know about my seat loaction
+    - What row number are my seats in
+    - I need to know the row that my seat is in
+    - How do I find out my seat number
+    - Can you tell me my seat number
+    - Is it possible for me to get my seat number
+    - What do you know about the screen I'm in
+    - What can you tell me about the screen number I'm in
+
 
 
 
