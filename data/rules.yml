@@ -1,0 +1,147 @@
+version: "2.0"
+
+# Rules, check https://rasa.com/docs/rasa/rules/ for more info
+rules:
+  - rule: Say hello anytime the user says hello
+    steps:
+    - intent: greet
+    - action: utter_greet
+
+
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+  
+  - rule: Search by keyword
+    steps:
+    - intent: search_by_keyword
+    - action: action_search_by_keyword
+    - action: utter_ask_want_more_info
+
+
+  - rule: Search by ingredients
+    steps:
+    - intent: search_by_ingredients
+    - action: action_search_by_ingredients
+    - action: utter_ask_want_more_info
+
+
+  - rule: Ask for alternative recipe
+    steps:
+    - intent: ask_alternative_recipe
+    - action: action_search_alternative_recipe
+    - action: utter_ask_want_more_info
+
+
+  - rule: Ask for expected preparation time
+    condition:
+    - slot_was_set: [ current_recipe ]
+    steps:
+    - intent: ask_expected_time
+    - action: action_tell_expected_time
+
+
+  - rule: Ask for ingredients substitute
+    steps:
+    - intent: ask_ingredient_substitute
+    - action: action_search_ingredient_substitute
+
+
+  - rule: Update number of people
+    steps:
+    - or:
+      - intent: tell_people_count
+        entities: [ CARDINAL ]
+      - intent: tell_people_count_one
+    - action: action_update_people_count
+    - action: action_list_ingredients
+    wait_for_user_input: false
+
+
+  - rule: Ask for ingredients list
+    condition:
+    - slot_was_set: [ current_recipe ]
+    steps:
+    - intent: ask_ingredients_list
+    - action: action_list_ingredients
+    wait_for_user_input: false
+
+
+  - rule: Set timer
+    steps:
+    - intent: set_timer
+    - action: action_set_timer
+
+
+  - rule: Notify timer has expired
+    steps:
+    - intent: EXTERNAL_timer_expired
+    - action: utter_set_timer/expired
+
+
+  - rule: Start cooking
+    condition:
+    - slot_was_set: [ current_recipe ]
+    steps:
+    - intent: start_cooking
+    - action: list_steps_loop
+    - active_loop: list_steps_loop
+
+
+  - rule: Finish cooking
+    condition:
+    - slot_was_set: [ current_recipe ]
+    - active_loop: list_steps_loop
+    steps:
+    - action: list_steps_loop
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: utter_greet/finish
+    - action: action_restart
+
+
+  - rule: Stop cooking
+    condition:
+    - slot_was_set: [ current_recipe ]
+    - active_loop: list_steps_loop
+    steps:
+    - intent: stop_cooking
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: action_restart
+
+
+  # Reading cooking steps interruptions 
+  - rule: Interruption - ask for alternative ingredient
+    condition:
+    - active_loop: list_steps_loop
+    steps:
+    - intent: ask_ingredient_substitute
+    - action: action_search_ingredient_substitute
+    - action: list_steps_loop
+    - active_loop: list_steps_loop
+
+
+  - rule: Interruption - ask for expected preparation time
+    condition:
+    - active_loop: list_steps_loop
+    steps:
+    - intent: ask_expected_time
+    - action: action_tell_expected_time
+    - action: list_steps_loop
+    - active_loop: list_steps_loop
+
+
+  - rule: Interruption - set timer
+    condition:
+    - active_loop: list_steps_loop
+    steps:
+    - intent: set_timer
+    - action: action_set_timer
+    - action: list_steps_loop
+    - active_loop: list_steps_loop
+

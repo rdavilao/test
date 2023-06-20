@@ -16,7 +16,7 @@ class Ingredient:
     unit: Optional[Text]
     def __str__(self) -> str:
         res = ''
-        if not np.isnan(self.amount): res += f'{self.amount:{ ".0f" if self.amount.is_integer else ".2f"}}'
+        if not np.isnan(self.amount): res += f'{self.amount:{ ".0f" if self.amount.is_integer() else ".1f"}}'
         if self.unit is not None: res += f'{self.unit}'
         if len(res) > 0: res += ' '
         res += self.name
@@ -39,7 +39,12 @@ class Recipe:
     servings: int
     ingredients: List[Ingredient]
     steps: List[Step]
-    
+
+    def set_servings(self, servings: int):
+        for ingredient in self.ingredients:
+            ingredient.amount = ingredient.amount * (servings / self.servings)
+        self.servings = servings
+
 class Dataset():
     """Dataset containing the recipes data used by the agent."""
 
@@ -48,13 +53,17 @@ class Dataset():
         recipes_path = os.path.join(PROJECT_ROOT, 'data', 'recipes', 'recipes.yml')
         with open(recipes_path, 'r', encoding='utf-8') as f:
             raw_recipes = yaml.load(f, Loader=yaml.FullLoader)
+        ingredients_substitutes_path = os.path.join(PROJECT_ROOT, 'data', 'recipes', 'ingredients_substitutes.yml')
+        with open(ingredients_substitutes_path, 'r', encoding='utf-8') as f:
+            raw_ingredients_substitutes = yaml.load(f, Loader=yaml.FullLoader)
         # Convert to DataFrame
         self._df_recipes = pd.DataFrame([ dict(id=i, **r) for i, r in enumerate(raw_recipes)])
         self._df_ingredients = pd.DataFrame([ dict(recipe_id=i, **ingr) for i, r in enumerate(raw_recipes) for ingr in r['ingredients'] ])
         self._df_steps = pd.DataFrame([ dict(recipe_id=i, step_index=j, description=desc) for i, r in enumerate(raw_recipes) for j, desc in enumerate(r['steps']) ])
+        self._df_ingredients_substitutes = pd.DataFrame([next(iter(i.items())) for i  in raw_ingredients_substitutes], columns=['name', 'substitute'])
         # Post-processing
         self._df_recipes = self._df_recipes.drop(['ingredients', 'steps'], axis=1).set_index('id')
-        self._df_ingredients[['amount', 'unit']] = self._df_ingredients.amount.fillna('').astype(str).str.split(r'(\d+)(.*)', expand=True)[[1,2]].replace('', None)
+        self._df_ingredients[['amount', 'unit']] = self._df_ingredients.amount.fillna('').astype(str).str.split(r'(\d+)(.*)', expand=True)[[1,2]]
         self._df_ingredients['amount'] = self._df_ingredients['amount'].astype(float)
 
     @property
@@ -85,8 +94,15 @@ class Dataset():
     def search_by_ingredients(self, query: List[Text]) -> List[int]:
         """Search for a recipe by ingredients."""
         query = '|'.join(query)
-        results = self._df_ingredients[self._df_ingredients['name'].str.contains(query)]
+        results = self._df_ingredients[self._df_ingredients['name'].str.contains(query, case=False)]
         # Count number of ingredients occurences
         results = results.groupby('recipe_id', as_index=False).name.count().rename(columns={'name': 'count'})
-        recipes_ids = results.sort_values('count', ascending=False).recipe_id.to_list()
+        recipes_ids = results.sort_values('count', ascending=False).recipe_id.to_list() # Returns list ordered by number of mathched ingredients
         return recipes_ids
+
+    def search_ingredient_substitute(self, query: Text) -> Optional[Text]:
+        """Search for an alternative to the given ingredient."""
+        results = self._df_ingredients_substitutes[self._df_ingredients_substitutes['name'].str.contains(query, case=False)].substitute.tolist()
+        if len(results) == 0: 
+            return None
+        return results[0]
