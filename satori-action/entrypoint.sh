@@ -685,29 +685,30 @@ echo "#### For more information on the interpretation of these metrics, please v
 echo "****" >> "${GITHUB_STEP_SUMMARY}"
 echo "# Conga Validation" >> "${GITHUB_STEP_SUMMARY}"
 
-SAVEIFS=$IFS
-IFS=$'\n'  
-congaValidProb=($congaValidator) 
-IFS=$SAVEIFS
-total=${#congaValidProb[@]}
-cont=1
+# Generar el array con la información
+IFS=$'\n' read -d '' -ra congaValidProb <<< "$congaValidator"
+
+# Ordenar el array por el campo 'rule' de mayor a menor
+sortedArray=($(for item in "${congaValidProb[@]}"; do
+    IFS=':' read -ra row <<< "$item"
+    rule=$(echo "${row[1]}" | tr -d ' ' | cut -c 2-)
+    printf '%s:%s\n' "$rule" "$item"
+done | sort -nr | cut -d':' -f2-))
+
+total=${#sortedArray[@]}
+cont=0
 
 echo "| RESULT | ID | PROBLEM |" >> "${GITHUB_STEP_SUMMARY}"
 echo " :-: | :-: | :--- " >> "${GITHUB_STEP_SUMMARY}"
-if [ $total -gt 0 ]; then
-	while [ $cont -lt $total ]
-	do		
-		SAVEIFS=$IFS
-		IFS=$':'  
-		row=(${congaValidProb[$cont]}) 
-		IFS=$SAVEIFS
-		rule=$(echo "${row[1]}" | cut -c 1-4)
-		rule=$(echo "$rule" | tr -d ' ')
-		des=$(echo "${row[1]}" | cut -c 5-)
-        echo " $(problemType ${row[0]}) | $rule | $des |" >> "${GITHUB_STEP_SUMMARY}"
-		cont=$((cont+1))
-	done
-fi
+
+while [ $cont -lt $total ]; do
+    IFS=':' read -ra row <<< "${sortedArray[$cont]}"
+    rule=$(echo "${row[1]}" | cut -c 1-4)
+    des=$(echo "${row[1]}" | cut -c 5-)
+    echo " $(problemType ${row[0]}) | $rule | $des |" >> "${GITHUB_STEP_SUMMARY}"
+    cont=$((cont+1))
+done
+
 echo "#### Summary: ${congaValidProb[0]}" >> "${GITHUB_STEP_SUMMARY}"
 
 echo "::group::Metrics"
