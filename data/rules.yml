@@ -15,6 +15,12 @@ rules:
     - action: utter_goodbye
 
 
+  - rule: Tell the user the available features
+    steps:
+    - intent: ask_features
+    - action: utter_info
+
+
   - rule: Say you're welcome anytime the user says thank you
     steps:
     - intent: thanks
@@ -44,7 +50,6 @@ rules:
     steps:
     - intent: search_recipes
     - action: action_search_recipes
-    wait_for_user_input: false
 
 
   - rule: Refine recipe search by asking user additional filters
@@ -174,7 +179,23 @@ rules:
     - action: utter_anything_else
 
 
-  # Reading cooking steps interruptions 
+  - rule: Stop cooking, ask for new recipe
+    condition:
+    - slot_was_set: [ current_recipe_id ]
+    - active_loop: list_steps_loop
+    steps:
+    - intent: search_recipes
+    - action: action_deactivate_loop
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: action_reset_list_steps_loop
+    - action: utter_list_steps_stop
+    - action: action_search_recipes
+    wait_for_user_input: false
+
+
+  # Reading cooking steps interruptions and recovery
   - rule: Interruption - ask for alternative ingredient
     condition:
     - active_loop: list_steps_loop
@@ -192,10 +213,20 @@ rules:
     steps:
     - or:
       - intent: ask_ingredient_amount
-        entities: [ ingredient]
+        entities: [ ingredient ]
       - intent: ask_ingredient_amount
         entities: [ ingredient, CARDINAL ]
     - action: action_tell_ingredient_amount
+    - action: list_steps_loop
+    - active_loop: list_steps_loop
+
+
+  - rule: Interruption - Ask for ingredients list
+    condition:
+    - active_loop: list_steps_loop
+    steps:
+    - intent: ask_ingredients_list
+    - action: action_list_ingredients
     - action: list_steps_loop
     - active_loop: list_steps_loop
 
@@ -215,7 +246,7 @@ rules:
     - active_loop: list_steps_loop
     steps:
     - intent: set_timer
-      entities: [ TIMER ]
+      entities: [ TIME ]
     - action: action_set_timer
     - action: list_steps_loop
     - active_loop: list_steps_loop

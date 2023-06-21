@@ -25,14 +25,17 @@
     ~[&affirm?] ~[next] ~[thanks?]
     ~[&affirm?] ~[i am?] [done|~[ready]]
 
-%[search_recipes](300)
-    ~[&i want] to ~[eat] [a?] [@[recipe]|@[cuisine] ~[recipe]] ~[day time?]
-    ~[&can] you ~[please?] ~[search] [~[recipe] for|how to ~[cook]?] [@[recipe]|@[cuisine] ~[recipe]]?
+%[ask_features](50)
+    [&what] can you do?
+    [&how] ~[can] you ~[help] [me?]?
+    [&what|which] are your ~[features]? 
+
+%[search_recipes](400)
+    ~[&i want] to ~[eat] [a?] @[recipe?keyword/90] [@[cuisine] ~[recipe]?!keyword/10] ~[day time?]
+    ~[&can] you ~[please?] ~[search] [~[recipe] for|how to ~[cook]?] @[recipe?keyword/90] [@[cuisine] ~[recipe]?!keyword/10]?
     ~[&i want] to ~[eat] ~[recipe] ~[containing] @[ingredient][ [and?] @[ingredient]?] ~[day time?]
-    ~[&can] you ~[please?] ~[search] ~[recipe] ~[containing] @[ingredient][ [and?] @[ingredient]?]?
-    [&I] ~[only?] ~[have] @[ingredient][, what ~[can] [&I] ~[cook]\??]
-    ~[&i want] to ~[eat] ~[recipe] @[tag][ [and?] @[tag]?] ~[day time?]
-    ~[&can] you ~[please?] ~[search] ~[recipe] @[tag][ [and?] @[tag]?]?
+    ~[&can] you ~[please?] ~[search] [@[tag][ [and?] @[tag]]?keyword/10] ~[recipe] ~[containing] [@[ingredient][ [and?] @[ingredient]?]?keyword/90]?
+    [&I] ~[only?] ~[have] @[ingredient][ what ~[can] [&I] ~[cook]\??]
 
 %[ask_alternative_recipe](100)
     [&no?] [[is|are] there?] [any|some|an] ~[alternative] ~[recipe?]?
@@ -47,13 +50,13 @@
     [&how] [long|much time] [[will it|is going to] take?] to ~[cook]?
     [&what][ is|'s] the [cooking|preparation] time?
 
-%[ask_ingredient_substitute](100)
+%[ask_ingredient_substitute](200)
     [&I] ~[do not] ~[have] [any?] @[ingredient], what [else|~[ingredient]|~[alternative]?] ~[can] [&I] ~[use] [instead?]?
     [&what|which] [else|[other?] ~[ingredient][s?]|~[alternative][s?]?] ~[can] [&I] ~[use] instead of @[ingredient]?
     [&what|which][ is|'s] an ~[alternative][s?] [for|to] @[ingredient]?
     [&any|some] ~[alternative][s?] [for|to] @[ingredient]?
 
-%[ask_ingredient_amount](100)
+%[ask_ingredient_amount](200)
     [&how] [much|many] [of?] @[ingredient][ [and|,?] @[ingredient]?] [do [&I]|does the recipe] ~[need] [for @[CARDINAL] ~[people?]?/80]?
     [&how] [much|many] [of?] @[ingredient][ [and|,?] @[ingredient]?] [is|are] ~[needed] [for this [recipe?]?] [for @[CARDINAL] ~[people?]?/80]?
 
