@@ -5,42 +5,43 @@ stories:
 
 ####################### Phase 1: Search recipe #######################
 
-- story: Search for a recipe by keyword
+- story: Search for a recipe
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: search_by_keyword
-    entities: [ recipe_keyword ]
-  - action: action_search_by_keyword
-  - slot_was_set: [ found_recipes_ids, current_recipe ]
-  - checkpoint: recipe_selected
-
-
-- story: Search for a recipe by ingredients
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: search_by_ingredients
-    entities: [ ingredient ]
-  - action: action_search_by_ingredients
-  - slot_was_set: [ found_recipes_ids, current_recipe ]
+  - intent: search_recipes
+  - action: action_search_recipes
+  - slot_was_set: [ found_recipes_ids, current_recipe_id ]
   - checkpoint: recipe_selected
   
+
+- story: Search for a recipe with additional fitlering
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_recipes
+  - action: action_search_recipes
+  - slot_was_set: [ found_recipes_ids ]
+  - action: action_refine_recipes_search_ask
+  - slot_was_set: [ refine_recipes_search_prop, refine_recipes_search_value ]
+  - intent: affirm
+  - action: action_refine_recipes_search_filter
+  - slot_was_set: [ found_recipes_ids, current_recipe_id ]
+  - checkpoint: recipe_selected
 
 - story: Search for an alternative recipe
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: search_by_ingredients
-    entities: [ ingredient ]
-  - action: action_search_by_ingredients
-  - slot_was_set: [ found_recipes_ids, current_recipe ]
-  - action: utter_ask_want_more_info
+  - intent: search_recipes
+    entities: [ recipe, ingredient, tag, cuisine ]
+  - action: action_search_recipes
+  - slot_was_set: [ found_recipes_ids, current_recipe_id ]
   - or:
     - intent: ask_alternative_recipe
     - intent: deny
   - action: action_search_alternative_recipe
-  - slot_was_set: [ current_recipe ]
+  - slot_was_set: [ current_recipe_id ]
   - checkpoint: recipe_selected
 
 
@@ -49,7 +50,6 @@ stories:
 - story: Ask for ingredient lists
   steps:
   - checkpoint: recipe_selected
-  - action: utter_ask_want_more_info
   - or:
     - intent: ask_ingredients_list
     - intent: affirm
@@ -60,7 +60,6 @@ stories:
 - story: Ask for expected preparation time
   steps:
   - checkpoint: recipe_selected
-  - action: utter_ask_want_more_info
   - intent: ask_expected_time
   - action: action_tell_expected_time
 
@@ -68,15 +67,20 @@ stories:
 - story: Ask for ingredient substitute
   steps:
   - checkpoint: recipe_selected
-  - action: utter_ask_want_more_info
   - intent: ask_ingredient_substitute
-  - action: action_search_ingredient_substitute
+  - action: action_search_ingredients_substitutes
+
+
+- story: Ask for ingredients amount
+  steps:
+  - checkpoint: recipe_selected
+  - intent: ask_ingredient_amount
+  - action: action_tell_ingredient_amount
 
 
 - story: Update people count in recipe
   steps:
   - checkpoint: recipe_selected
-  - action: utter_ask_want_more_info
   - or:
     - intent: tell_people_count
       entities: [ CARDINAL ]
@@ -90,7 +94,6 @@ stories:
 - story: Start cooking (system inititiative)
   steps:
   - checkpoint: recipe_selected
-  - action: utter_ask_want_more_info
   - intent: deny
   - action: utter_ask_start_cooking
   - intent: affirm
@@ -100,7 +103,6 @@ stories:
 - story: Start cooking (user initiative)
   steps:
   - checkpoint: recipe_selected
-  - action: utter_ask_want_more_info
   - intent: start_cooking
   - checkpoint: cooking_started
 
@@ -120,10 +122,13 @@ stories:
   - action: list_steps_loop
   - active_loop: list_steps_loop
   - intent: stop_cooking
+  - action: action_deactivate_loop
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
-  - action: action_restart
+  - action: action_reset_list_steps_loop
+  - action: utter_list_steps_stop
+  - action: utter_anything_else
 
 
 # - story: Start reading recipe steps
@@ -154,7 +159,7 @@ stories:
 #     - current_step_idx: -1
 #     - list_steps_done: True
 #     - requested_slot: null
-#   - action: utter_greet/finish
-#   - action: restart
+#   - action: action_reset_list_steps_loop
+#   - action: utter_anything_else
 
 
