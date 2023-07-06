@@ -1,11 +1,26 @@
 [
   {
+    "id": "2b290444-1a03-465e-ba2c-ff1ab6b01dde",
+    "data": [
+      {
+        "text": "Ap6612",
+        "meta": "@playerName",
+        "alias": "playerName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
     "id": "1978626a-aac4-4b58-8eea-7267912a5aca",
     "data": [
       {
         "text": "Pope",
-        "meta": "@sys.any",
-        "alias": "name",
+        "meta": "@playerName",
+        "alias": "playerName",
         "userDefined": true
       }
     ],
@@ -19,8 +34,8 @@
     "data": [
       {
         "text": "Alucard",
-        "meta": "@sys.any",
-        "alias": "name",
+        "meta": "@playerName",
+        "alias": "playerName",
         "userDefined": true
       }
     ],
@@ -34,8 +49,8 @@
     "data": [
       {
         "text": "Joan",
-        "meta": "@sys.any",
-        "alias": "name",
+        "meta": "@playerName",
+        "alias": "playerName",
         "userDefined": false
       }
     ],
@@ -49,8 +64,8 @@
     "data": [
       {
         "text": "Marcos",
-        "meta": "@sys.any",
-        "alias": "name",
+        "meta": "@playerName",
+        "alias": "playerName",
         "userDefined": false
       }
     ],

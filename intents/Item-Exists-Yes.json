@@ -1,31 +1,16 @@
 {
-  "id": "6037a09e-6e51-4f1b-bf58-87e50a0d58bb",
-  "name": "New-Object",
+  "id": "cc235c20-6037-47e7-9492-a05015f7a1f2",
+  "name": "Item-Exists-Yes",
   "auto": true,
   "contexts": [
-    "player-selection"
+    "exists-item"
   ],
   "responses": [
     {
       "resetContexts": false,
       "action": "",
       "affectedContexts": [],
-      "parameters": [
-        {
-          "id": "a515748b-a6a5-454f-a265-8fab24ff45bf",
-          "name": "object",
-          "required": false,
-          "dataType": "@sys.any",
-          "value": "$object",
-          "defaultValue": "",
-          "isList": false,
-          "prompts": [],
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": []
-        }
-      ],
+      "parameters": [],
       "messages": [
         {
           "type": "0",

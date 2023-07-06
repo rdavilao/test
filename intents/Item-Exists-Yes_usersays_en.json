@@ -1,16 +1,15 @@
 [
   {
-    "id": "f40d4087-57bc-4777-95dd-a90735c1b8a7",
+    "id": "e87e1aa3-30db-4b1b-a60c-05da903f366e",
     "data": [
       {
-        "text": "An ",
+        "text": "Why not",
+        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
-        "text": "NPC",
-        "meta": "@sys.person",
-        "alias": "character",
-        "userDefined": true
+        "text": "?",
+        "userDefined": false
       }
     ],
     "isTemplate": false,
@@ -19,17 +18,12 @@
     "updated": 0
   },
   {
-    "id": "1786d53e-bba0-4d0b-a6a1-f871aa7273d2",
+    "id": "2eebf065-828d-45ed-a58d-0e42eceb8a1e",
     "data": [
       {
-        "text": "A new ",
+        "text": "Sure",
+        "meta": "@sys.ignore",
         "userDefined": false
-      },
-      {
-        "text": "character",
-        "meta": "@sys.person",
-        "alias": "character",
-        "userDefined": true
       }
     ],
     "isTemplate": false,
@@ -38,21 +32,25 @@
     "updated": 0
   },
   {
+    "id": "8b5a96b1-bd5e-4446-917e-bd8cd6ce5b7f",
     "data": [
       {
-        "text": "new character",
+        "text": "Yeah",
+        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
     "isTemplate": false,
-    "count": 1,
+    "count": 0,
     "lang": "en",
     "updated": 0
   },
   {
+    "id": "38d2ecd4-52b5-48ca-8918-e43c0ce4c59b",
     "data": [
       {
-        "text": "a new character",
+        "text": "Yes",
+        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],

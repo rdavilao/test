@@ -1,5 +1,18 @@
 [
   {
+    "id": "f79adfaa-e5ce-4b49-b3ed-33c5dbf0377e",
+    "data": [
+      {
+        "text": "new player",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
     "id": "2b5247f8-9575-4b42-8388-561c366dbc85",
     "data": [
       {
@@ -87,6 +100,18 @@
         "meta": "@sys.person",
         "alias": "player",
         "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "A new player",
+        "userDefined": false
       }
     ],
     "isTemplate": false,

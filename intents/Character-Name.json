@@ -1,9 +1,9 @@
 {
-  "id": "2dc5b769-e6c5-48a2-9ac4-d1cd582d0bb9",
-  "name": "Player-name",
+  "id": "91863031-77cf-48fe-a8d6-bf8e93f82784",
+  "name": "Character-Name",
   "auto": true,
   "contexts": [
-    "player-configuration"
+    "character-configuration"
   ],
   "responses": [
     {
@@ -12,23 +12,14 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "65d7104c-08da-4123-8d38-10f5eca52099",
-          "name": "playerName",
-          "required": true,
-          "dataType": "@playerName",
-          "value": "$playerName",
+          "id": "9aa63631-5758-4b07-ae81-c53151d9d2ed",
+          "name": "characterName",
+          "required": false,
+          "dataType": "@characterName",
+          "value": "$characterName",
           "defaultValue": "",
           "isList": false,
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "Sorry I did not get that, could you repeat the name?"
-            },
-            {
-              "lang": "en",
-              "value": "I am afraid that $playerName is not a valid name, could you try again?"
-            }
-          ],
+          "prompts": [],
           "promptMessages": [],
           "noMatchPromptMessages": [],
           "noInputPromptMessages": [],

@@ -1,0 +1,9 @@
+{
+  "id": "a1fd6f67-e15e-4cb9-873f-3e5aac965e45",
+  "name": "place",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": true,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}
