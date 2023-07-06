@@ -1,0 +1,58 @@
+[
+  {
+    "id": "e87e1aa3-30db-4b1b-a60c-05da903f366e",
+    "data": [
+      {
+        "text": "Why not",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2eebf065-828d-45ed-a58d-0e42eceb8a1e",
+    "data": [
+      {
+        "text": "Sure",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8b5a96b1-bd5e-4446-917e-bd8cd6ce5b7f",
+    "data": [
+      {
+        "text": "Yeah",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "38d2ecd4-52b5-48ca-8918-e43c0ce4c59b",
+    "data": [
+      {
+        "text": "Yes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

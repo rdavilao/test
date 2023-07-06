@@ -1,0 +1,86 @@
+[
+  {
+    "id": "6bdabfd3-62a0-487e-8899-5b190c42e66e",
+    "data": [
+      {
+        "text": "Potion",
+        "meta": "@item",
+        "alias": "newItem",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8769855b-8a8b-4d7d-a582-b9c37de168de",
+    "data": [
+      {
+        "text": "A",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "book",
+        "meta": "@item",
+        "alias": "newItem",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6b252975-7745-4497-a1df-43bb4eff25a6",
+    "data": [
+      {
+        "text": "A",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "potion",
+        "meta": "@item",
+        "alias": "newItem",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "29cf1090-6f12-4d33-9eb9-56c799cc6b7a",
+    "data": [
+      {
+        "text": "A",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "rock",
+        "meta": "@item",
+        "alias": "newItem",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

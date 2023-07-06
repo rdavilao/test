@@ -1,0 +1,49 @@
+{
+  "id": "26f2ed48-6b98-4d94-8740-c1e522633c5e",
+  "name": "Modify-Character-Selection",
+  "auto": true,
+  "contexts": [
+    "modify-character-selection"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d1b3b046-6219-4857-8e85-e67319fd053e",
+          "name": "characterName",
+          "required": false,
+          "dataType": "@characterName",
+          "value": "$characterName",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
