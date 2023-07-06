@@ -1,6 +1,6 @@
 {
   "id": "2dc5b769-e6c5-48a2-9ac4-d1cd582d0bb9",
-  "name": "Player-Name",
+  "name": "player-name",
   "auto": true,
   "contexts": [
     "player-configuration"
@@ -12,23 +12,14 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "207de2da-5907-42e7-a1f4-5e058653d5b8",
-          "name": "playerName",
-          "required": true,
-          "dataType": "@playerName",
-          "value": "$playerName",
+          "id": "ea68075f-6f9e-4987-a179-c2146e2fc381",
+          "name": "name",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$name",
           "defaultValue": "",
           "isList": false,
-          "prompts": [
-            {
-              "lang": "en",
-              "value": "Sorry I did not get that, could you repeat the name?"
-            },
-            {
-              "lang": "en",
-              "value": "I am afraid that $playerName is not a valid name, could you try again?"
-            }
-          ],
+          "prompts": [],
           "promptMessages": [],
           "noMatchPromptMessages": [],
           "noInputPromptMessages": [],

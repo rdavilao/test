@@ -36,55 +36,5 @@
     "count": 0,
     "lang": "en",
     "updated": 0
-  },
-  {
-    "id": "af4bf743-bd72-4163-929b-cce47cbb7309",
-    "data": [
-      {
-        "text": "new ",
-        "userDefined": false
-      },
-      {
-        "text": "character",
-        "meta": "@sys.person",
-        "alias": "character",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
-    "lang": "en",
-    "updated": 0
-  },
-  {
-    "id": "3674e20c-171e-430a-9790-d260c500cbd9",
-    "data": [
-      {
-        "text": "a new ",
-        "userDefined": false
-      },
-      {
-        "text": "character",
-        "meta": "@sys.person",
-        "alias": "character",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 8,
-    "lang": "en",
-    "updated": 0
-  },
-  {
-    "data": [
-      {
-        "text": "a new character",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 6,
-    "lang": "en",
-    "updated": 0
   }
 ]

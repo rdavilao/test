@@ -8,8 +8,8 @@
       },
       {
         "text": "room",
-        "meta": "@item",
-        "alias": "room",
+        "meta": "@sys.any",
+        "alias": "rooms",
         "userDefined": true
       }
     ],
@@ -27,8 +27,8 @@
       },
       {
         "text": "rooms",
-        "meta": "@item",
-        "alias": "room",
+        "meta": "@sys.any",
+        "alias": "rooms",
         "userDefined": true
       },
       {
@@ -50,8 +50,8 @@
       },
       {
         "text": "rooms",
-        "meta": "@item",
-        "alias": "room",
+        "meta": "@sys.any",
+        "alias": "rooms",
         "userDefined": true
       }
     ],
@@ -69,55 +69,13 @@
       },
       {
         "text": "rooms",
-        "meta": "@item",
-        "alias": "room",
+        "meta": "@sys.any",
+        "alias": "rooms",
         "userDefined": true
       }
     ],
     "isTemplate": false,
     "count": 0,
-    "lang": "en",
-    "updated": 0
-  },
-  {
-    "data": [
-      {
-        "text": "the number of ",
-        "userDefined": false
-      },
-      {
-        "text": "rooms",
-        "meta": "@item",
-        "alias": "room",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
-    "lang": "en",
-    "updated": 0
-  },
-  {
-    "data": [
-      {
-        "text": "the number of rooms",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
-    "lang": "en",
-    "updated": 0
-  },
-  {
-    "data": [
-      {
-        "text": "the rooms",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "lang": "en",
     "updated": 0
   }

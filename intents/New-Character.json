@@ -12,7 +12,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "b5319e70-c25d-41f6-861a-088f7d01f8f3",
+          "id": "c68c4d48-07ec-40f6-8165-df9d1e77d0b8",
           "name": "character",
           "required": false,
           "dataType": "@sys.person",

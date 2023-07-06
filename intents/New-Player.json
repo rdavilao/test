@@ -12,7 +12,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "3de9ec22-8790-48f7-84ba-574965859624",
+          "id": "1f4f8783-bb57-4a20-b102-673cf34e1b22",
           "name": "player",
           "required": false,
           "dataType": "@sys.person",

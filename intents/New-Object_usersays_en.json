@@ -1,5 +1,18 @@
 [
   {
+    "id": "81d655c0-81d6-433b-8f2c-3f2eea042fe7",
+    "data": [
+      {
+        "text": "A new item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
     "id": "67213a08-6007-492f-9941-928993616281",
     "data": [
       {
@@ -8,8 +21,8 @@
       },
       {
         "text": "item",
-        "meta": "@item",
-        "alias": "item",
+        "meta": "@sys.any",
+        "alias": "object",
         "userDefined": true
       }
     ],
@@ -27,8 +40,8 @@
       },
       {
         "text": "gadget",
-        "meta": "@item",
-        "alias": "item",
+        "meta": "@sys.any",
+        "alias": "object",
         "userDefined": true
       }
     ],
@@ -46,8 +59,8 @@
       },
       {
         "text": "device",
-        "meta": "@item",
-        "alias": "item",
+        "meta": "@sys.any",
+        "alias": "object",
         "userDefined": true
       }
     ],
@@ -65,8 +78,8 @@
       },
       {
         "text": "thing",
-        "meta": "@item",
-        "alias": "item",
+        "meta": "@sys.any",
+        "alias": "object",
         "userDefined": true
       },
       {
@@ -88,8 +101,8 @@
       },
       {
         "text": "item",
-        "meta": "@item",
-        "alias": "item",
+        "meta": "@sys.any",
+        "alias": "object",
         "userDefined": true
       }
     ],
@@ -107,27 +120,9 @@
       },
       {
         "text": "object",
-        "meta": "@item",
-        "alias": "item",
+        "meta": "@sys.any",
+        "alias": "object",
         "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "lang": "en",
-    "updated": 0
-  },
-  {
-    "data": [
-      {
-        "text": "a new ",
-        "userDefined": false
-      },
-      {
-        "text": "character",
-        "meta": "@item",
-        "alias": "item",
-        "userDefined": false
       }
     ],
     "isTemplate": false,

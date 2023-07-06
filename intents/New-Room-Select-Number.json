@@ -1,6 +1,6 @@
 {
   "id": "c4cd2a89-bd6c-480c-bedb-0495377a9b58",
-  "name": "New-Room-Select-Number",
+  "name": "New-Room-select-number",
   "auto": true,
   "contexts": [
     "number-of-rooms"
@@ -12,13 +12,13 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "103cfe63-7f9a-4618-9dd2-f9aa374c829c",
+          "id": "22b709e2-1faf-43d5-bdcf-17a1c05b8b0c",
           "name": "number",
           "required": true,
           "dataType": "@sys.number",
           "value": "$number",
           "defaultValue": "",
-          "isList": false,
+          "isList": true,
           "prompts": [
             {
               "lang": "en",
