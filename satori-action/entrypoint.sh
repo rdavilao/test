@@ -547,6 +547,11 @@ else
             echo "Version: 2.0 or 3.0"
             zip -r $INPUT_FILES data/ actions/ config.yml credentials.yml domain.yml endpoints.yml
         fi
+    else
+         if [ "$INPUT_FORMAT" = "Dialogflow" ]; then
+            echo "Version: 2.0 or 3.0"
+            zip -r $INPUT_FILES entities/ intents/ agent.json package.json
+         fi
     fi        
     echo "::endgroup::"
 fi
