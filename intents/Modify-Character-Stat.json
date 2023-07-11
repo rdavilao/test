@@ -1,10 +1,8 @@
 {
-  "id": "56e7f72a-86ec-46a4-ab66-6ed75a368b82",
-  "name": "New-Player",
+  "id": "5c4316af-d54b-4da3-904b-9cbd247ec49f",
+  "name": "Modify-Character-Stat",
   "auto": true,
-  "contexts": [
-    "player-selection"
-  ],
+  "contexts": [],
   "responses": [
     {
       "resetContexts": false,
@@ -12,11 +10,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "3de9ec22-8790-48f7-84ba-574965859624",
-          "name": "player",
+          "id": "bf33e706-4dc6-4d1a-9734-1527bd2f2ce1",
+          "name": "stat",
           "required": false,
-          "dataType": "@sys.person",
-          "value": "$player",
+          "dataType": "@item",
+          "value": "$stat",
           "defaultValue": "",
           "isList": false,
           "prompts": [],

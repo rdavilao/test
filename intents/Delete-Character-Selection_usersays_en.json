@@ -1,0 +1,17 @@
+[
+  {
+    "id": "d48e76ac-7b02-4aee-aecd-78a3c10630b9",
+    "data": [
+      {
+        "text": "Magnus",
+        "meta": "@characterName",
+        "alias": "characterName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

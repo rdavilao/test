@@ -1,34 +1,26 @@
 [
   {
-    "id": "747c2874-286b-4b22-9afe-816eedf8e5c4",
+    "id": "a8ff8bc5-e8ba-470f-b31d-91d0efcd7578",
     "data": [
       {
-        "text": "A ",
-        "userDefined": false
-      },
-      {
-        "text": "potion",
+        "text": "Name",
         "meta": "@item",
-        "alias": "item",
-        "userDefined": true
+        "alias": "stat",
+        "userDefined": false
       }
     ],
     "isTemplate": false,
-    "count": 1,
+    "count": 0,
     "lang": "en",
     "updated": 0
   },
   {
-    "id": "75805299-7b9a-4783-bb7f-fff168e6896f",
+    "id": "34b7a10c-0107-41eb-a312-b2265d114654",
     "data": [
       {
-        "text": "A ",
-        "userDefined": false
-      },
-      {
-        "text": "item",
+        "text": "Health",
         "meta": "@item",
-        "alias": "item",
+        "alias": "stat",
         "userDefined": true
       }
     ],
@@ -38,12 +30,12 @@
     "updated": 0
   },
   {
-    "id": "db0c8987-8536-412a-b1fd-46e6aa4b771e",
+    "id": "e7c8787e-8a61-4b97-a3e6-b709ca497257",
     "data": [
       {
-        "text": "Rock",
+        "text": "HP",
         "meta": "@item",
-        "alias": "item",
+        "alias": "stat",
         "userDefined": true
       }
     ],

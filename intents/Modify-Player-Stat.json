@@ -1,9 +1,9 @@
 {
-  "id": "56e7f72a-86ec-46a4-ab66-6ed75a368b82",
-  "name": "New-Player",
+  "id": "f06077e8-fd01-457d-b52a-e38ffbc47c1f",
+  "name": "Modify-Player-Stat",
   "auto": true,
   "contexts": [
-    "player-selection"
+    "modify-player-stat"
   ],
   "responses": [
     {
@@ -12,11 +12,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "3de9ec22-8790-48f7-84ba-574965859624",
-          "name": "player",
+          "id": "3f67a9fa-af39-4daf-b069-d5579197514e",
+          "name": "stat",
           "required": false,
-          "dataType": "@sys.person",
-          "value": "$player",
+          "dataType": "@item",
+          "value": "$stat",
           "defaultValue": "",
           "isList": false,
           "prompts": [],

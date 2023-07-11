@@ -1,9 +1,9 @@
 {
-  "id": "56e7f72a-86ec-46a4-ab66-6ed75a368b82",
-  "name": "New-Player",
+  "id": "cf61892d-1ecd-4e11-9aea-a210442dada8",
+  "name": "Delete-Character-Selection",
   "auto": true,
   "contexts": [
-    "player-selection"
+    "delete-character-selection"
   ],
   "responses": [
     {
@@ -12,11 +12,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "3de9ec22-8790-48f7-84ba-574965859624",
-          "name": "player",
+          "id": "b6b05333-f62e-481f-ba49-a2b75d28d8d0",
+          "name": "characterName",
           "required": false,
-          "dataType": "@sys.person",
-          "value": "$player",
+          "dataType": "@characterName",
+          "value": "$characterName",
           "defaultValue": "",
           "isList": false,
           "prompts": [],

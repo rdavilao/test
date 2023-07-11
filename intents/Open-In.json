@@ -1,9 +1,9 @@
 {
-  "id": "56e7f72a-86ec-46a4-ab66-6ed75a368b82",
-  "name": "New-Player",
+  "id": "85581207-d199-4d68-9be9-166564a00108",
+  "name": "Open-In",
   "auto": true,
   "contexts": [
-    "player-selection"
+    "open-in"
   ],
   "responses": [
     {
@@ -12,13 +12,13 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "3de9ec22-8790-48f7-84ba-574965859624",
-          "name": "player",
+          "id": "478dba49-0ba6-465a-9515-d6392c066a0e",
+          "name": "item",
           "required": false,
-          "dataType": "@sys.person",
-          "value": "$player",
+          "dataType": "@item",
+          "value": "$item",
           "defaultValue": "",
-          "isList": false,
+          "isList": true,
           "prompts": [],
           "promptMessages": [],
           "noMatchPromptMessages": [],

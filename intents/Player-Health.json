@@ -9,15 +9,10 @@
     {
       "resetContexts": false,
       "action": "",
-      "affectedContexts": [
-        {
-          "name": "Player-health-followup",
-          "lifespan": 2
-        }
-      ],
+      "affectedContexts": [],
       "parameters": [
         {
-          "id": "aa0e366b-ca62-453c-844d-7a672dd38339",
+          "id": "b435736f-d119-45b1-a44d-675c5310bf2e",
           "name": "health",
           "required": true,
           "dataType": "@sys.number",

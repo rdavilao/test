@@ -1,9 +1,0 @@
-{
-  "id": "8f645eb8-718b-4659-b203-f178c853e4f0",
-  "name": "itemRelation",
-  "isOverridable": true,
-  "isEnum": false,
-  "isRegexp": true,
-  "automatedExpansion": false,
-  "allowFuzzyExtraction": false
-}

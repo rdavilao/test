@@ -1,31 +1,16 @@
 {
-  "id": "3f6f1ded-c25a-4c01-91c0-000d5fa732c8",
-  "name": "Item-Action",
+  "id": "09fb3fb1-7669-4d7c-b9be-5c22fc801e80",
+  "name": "Item-Consumption",
   "auto": true,
   "contexts": [
-    "action-item"
+    "item-consumption"
   ],
   "responses": [
     {
       "resetContexts": false,
       "action": "",
       "affectedContexts": [],
-      "parameters": [
-        {
-          "id": "0b6539a1-b162-492f-b73c-27db8da73a09",
-          "name": "action",
-          "required": false,
-          "dataType": "@action",
-          "value": "$action",
-          "defaultValue": "",
-          "isList": true,
-          "prompts": [],
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": []
-        }
-      ],
+      "parameters": [],
       "messages": [
         {
           "type": "0",

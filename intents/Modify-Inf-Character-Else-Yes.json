@@ -1,31 +1,16 @@
 {
-  "id": "3f6f1ded-c25a-4c01-91c0-000d5fa732c8",
-  "name": "Item-Action",
+  "id": "4daac7f1-5c45-455e-a6cb-a7323be5c00e",
+  "name": "Modify-Inf-Character-Else-Yes",
   "auto": true,
   "contexts": [
-    "action-item"
+    "modify-inf-character-else"
   ],
   "responses": [
     {
       "resetContexts": false,
       "action": "",
       "affectedContexts": [],
-      "parameters": [
-        {
-          "id": "0b6539a1-b162-492f-b73c-27db8da73a09",
-          "name": "action",
-          "required": false,
-          "dataType": "@action",
-          "value": "$action",
-          "defaultValue": "",
-          "isList": true,
-          "prompts": [],
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": []
-        }
-      ],
+      "parameters": [],
       "messages": [
         {
           "type": "0",

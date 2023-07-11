@@ -1,9 +1,9 @@
 {
-  "id": "56e7f72a-86ec-46a4-ab66-6ed75a368b82",
-  "name": "New-Player",
+  "id": "516aff20-4296-4902-84a6-87bcc64d6f4b",
+  "name": "Modify-Character-Name",
   "auto": true,
   "contexts": [
-    "player-selection"
+    "modify-character-name"
   ],
   "responses": [
     {
@@ -12,11 +12,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "3de9ec22-8790-48f7-84ba-574965859624",
-          "name": "player",
+          "id": "9fa276a5-eb97-41b0-a049-58e39270d85d",
+          "name": "characterName",
           "required": false,
-          "dataType": "@sys.person",
-          "value": "$player",
+          "dataType": "@characterName",
+          "value": "$characterName",
           "defaultValue": "",
           "isList": false,
           "prompts": [],

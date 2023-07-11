@@ -1,6 +1,6 @@
 {
-  "id": "56e7f72a-86ec-46a4-ab66-6ed75a368b82",
-  "name": "New-Player",
+  "id": "79165fce-afea-4b25-b929-b86422ff3dcd",
+  "name": "Delete-Item",
   "auto": true,
   "contexts": [
     "player-selection"
@@ -10,22 +10,7 @@
       "resetContexts": false,
       "action": "",
       "affectedContexts": [],
-      "parameters": [
-        {
-          "id": "3de9ec22-8790-48f7-84ba-574965859624",
-          "name": "player",
-          "required": false,
-          "dataType": "@sys.person",
-          "value": "$player",
-          "defaultValue": "",
-          "isList": false,
-          "prompts": [],
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": []
-        }
-      ],
+      "parameters": [],
       "messages": [
         {
           "type": "0",

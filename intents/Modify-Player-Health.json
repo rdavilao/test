@@ -1,9 +1,9 @@
 {
-  "id": "56e7f72a-86ec-46a4-ab66-6ed75a368b82",
-  "name": "New-Player",
+  "id": "42e04edb-d991-46b2-bb73-fe1990923656",
+  "name": "Modify-Player-Health",
   "auto": true,
   "contexts": [
-    "player-selection"
+    "modify-player-health"
   ],
   "responses": [
     {
@@ -12,11 +12,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "3de9ec22-8790-48f7-84ba-574965859624",
-          "name": "player",
+          "id": "4df68592-3825-43c3-a83a-93ae4e40ebac",
+          "name": "health",
           "required": false,
-          "dataType": "@sys.person",
-          "value": "$player",
+          "dataType": "@sys.number",
+          "value": "$health",
           "defaultValue": "",
           "isList": false,
           "prompts": [],

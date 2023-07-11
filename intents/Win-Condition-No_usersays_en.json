@@ -1,0 +1,57 @@
+[
+  {
+    "id": "826ebe65-d4d7-4042-af23-d556469df46d",
+    "data": [
+      {
+        "text": "Nein",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "29bb3452-0f9b-46be-8a25-42367b3d6c84",
+    "data": [
+      {
+        "text": "Nah",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "90b43778-29e5-4922-bd3b-bdae2913f900",
+    "data": [
+      {
+        "text": "Hell no",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f6b4cf6a-aeff-4528-b3de-67638e129cb0",
+    "data": [
+      {
+        "text": "No",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
