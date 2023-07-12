@@ -1,0 +1,88 @@
+[
+  {
+    "id": "773b5ab2-64fa-4b6f-9c9d-9ad6951e807e",
+    "data": [
+      {
+        "text": "Nothing",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "cb12e633-7c90-4482-a404-567b023d8680",
+    "data": [
+      {
+        "text": "No",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "385448ef-e3a4-4d22-9c20-754b7a156c82",
+    "data": [
+      {
+        "text": "A",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "book",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": false
+      },
+      {
+        "text": " and a ",
+        "userDefined": false
+      },
+      {
+        "text": "rock",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "4cf5419f-a08b-428b-bdb6-a55463d25f06",
+    "data": [
+      {
+        "text": "A",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "key",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

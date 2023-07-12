@@ -1,20 +1,34 @@
 {
-  "id": "df199e12-cdc2-47a9-bc0d-83506597bc39",
-  "name": "Default-Welcome-Intent",
+  "id": "e041953b-a6af-4db3-b3d8-462af5169730",
+  "name": "testing",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "input.welcome",
+      "action": "",
       "affectedContexts": [],
       "parameters": [],
       "messages": [
         {
           "type": "0",
+          "platform": "telegram",
           "title": "",
           "textToSpeech": "",
           "lang": "en",
+          "speech": [
+            "api tel"
+          ],
+          "condition": ""
+        },
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "api not tel"
+          ],
           "condition": ""
         }
       ],
@@ -25,11 +39,7 @@
   "webhookUsed": true,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
-  "events": [
-    {
-      "name": "WELCOME"
-    }
-  ],
+  "events": [],
   "conditionalResponses": [],
   "condition": "",
   "conditionalFollowupEvents": []

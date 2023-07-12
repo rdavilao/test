@@ -1,5 +1,43 @@
 [
   {
+    "id": "ec68778a-6aac-46c3-99ec-340e159743be",
+    "data": [
+      {
+        "text": "another ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f79adfaa-e5ce-4b49-b3ed-33c5dbf0377e",
+    "data": [
+      {
+        "text": "new ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
     "id": "2b5247f8-9575-4b42-8388-561c366dbc85",
     "data": [
       {
@@ -90,7 +128,50 @@
       }
     ],
     "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2762718b-230f-416b-b960-06098e3fd804",
+    "data": [
+      {
+        "text": "a ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
     "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "A new player",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 6,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "a new player",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
     "lang": "en",
     "updated": 0
   }

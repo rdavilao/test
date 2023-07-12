@@ -1,10 +1,8 @@
 {
-  "id": "6037a09e-6e51-4f1b-bf58-87e50a0d58bb",
-  "name": "New-Object",
+  "id": "06b40a13-5696-47f7-b7b8-30a346f3e204",
+  "name": "Delete-Item-Selection",
   "auto": true,
-  "contexts": [
-    "player-selection"
-  ],
+  "contexts": [],
   "responses": [
     {
       "resetContexts": false,
@@ -12,11 +10,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "a515748b-a6a5-454f-a265-8fab24ff45bf",
-          "name": "object",
+          "id": "17628217-73b5-44b6-a316-f853264c3b09",
+          "name": "item",
           "required": false,
-          "dataType": "@sys.any",
-          "value": "$object",
+          "dataType": "@item",
+          "value": "$item",
           "defaultValue": "",
           "isList": false,
           "prompts": [],
