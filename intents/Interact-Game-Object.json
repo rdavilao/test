@@ -12,7 +12,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "b7b9dc84-0864-40d4-a62b-97330f4ec829",
+          "id": "311993f1-391b-4f05-ae76-6170ae7959c6",
           "name": "item",
           "required": false,
           "dataType": "@word",
@@ -26,7 +26,7 @@
           "outputDialogContexts": []
         },
         {
-          "id": "a8bf76ff-853e-4b2c-b0d4-e78167899657",
+          "id": "26004caa-0747-49b3-b351-f001e6c71082",
           "name": "action",
           "required": false,
           "dataType": "@word",
@@ -59,5 +59,6 @@
   "events": [],
   "conditionalResponses": [],
   "condition": "",
-  "conditionalFollowupEvents": []
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
 }

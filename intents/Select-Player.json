@@ -1,9 +1,9 @@
 {
-  "id": "75662f2d-ea6d-4a18-a63d-d948856be73f",
-  "name": "Info-Character-Game",
+  "id": "fb77e65c-19c4-48f0-b410-8962f28b5cda",
+  "name": "Select-Player",
   "auto": true,
   "contexts": [
-    "player-action"
+    "select-player"
   ],
   "responses": [
     {
@@ -12,21 +12,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "1bb55941-d047-4637-be4a-54d5127d61c5",
-          "name": "item",
-          "required": false,
-          "dataType": "@word",
-          "value": "$item",
-          "defaultValue": "",
-          "isList": false,
-          "prompts": [],
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": []
-        },
-        {
-          "id": "43f9d01e-d829-4aa1-8665-5fb6b9e1832d",
+          "id": "495358ef-5344-4927-a56e-415c42a943fb",
           "name": "characterName",
           "required": false,
           "dataType": "@characterName",

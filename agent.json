@@ -7,9 +7,25 @@
   "displayName": "Game-Chatbot",
   "disableInteractionLogs": false,
   "disableStackdriverLogs": true,
+  "googleAssistant": {
+    "googleAssistantCompatible": false,
+    "project": "",
+    "welcomeIntentSignInRequired": false,
+    "startIntents": [],
+    "systemIntents": [],
+    "endIntentIds": [
+      "bc5396cc-b356-4b02-85f2-50e72458c64c"
+    ],
+    "voiceType": "VOICE_TYPE_UNSPECIFIED",
+    "capabilities": [],
+    "env": "",
+    "protocolVersion": "PROTOCOL_VERSION_UNSPECIFIED",
+    "autoPreviewEnabled": false,
+    "isDeviceAgent": false
+  },
   "defaultTimezone": "Europe/Madrid",
   "webhook": {
-    "url": "https://6348098256e0.ngrok.io/webhook_game",
+    "url": "https://e475edf9acff.ngrok.io/webhook_game",
     "username": "",
     "headers": {},
     "available": true,
