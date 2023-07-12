@@ -9,7 +9,7 @@
   "disableStackdriverLogs": true,
   "defaultTimezone": "Europe/Madrid",
   "webhook": {
-    "url": "https://f23bf868a8c9.ngrok.io/webhook_game",
+    "url": "https://6348098256e0.ngrok.io/webhook_game",
     "username": "",
     "headers": {},
     "available": true,
