@@ -1,8 +1,10 @@
 {
-  "id": "e041953b-a6af-4db3-b3d8-462af5169730",
-  "name": "testing",
+  "id": "738b9255-2e7e-4ad4-b3d9-916a4039d129",
+  "name": "Modify-Inf-Character-Else-No",
   "auto": true,
-  "contexts": [],
+  "contexts": [
+    "modify-inf-character-else"
+  ],
   "responses": [
     {
       "resetContexts": false,
@@ -12,23 +14,9 @@
       "messages": [
         {
           "type": "0",
-          "platform": "telegram",
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "api tel"
-          ],
-          "condition": ""
-        },
-        {
-          "type": "0",
-          "title": "",
-          "textToSpeech": "",
-          "lang": "en",
-          "speech": [
-            "api not tel"
-          ],
           "condition": ""
         }
       ],

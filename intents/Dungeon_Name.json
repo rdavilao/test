@@ -1,0 +1,49 @@
+{
+  "id": "280be978-dfa1-4b26-be68-3555cd43aaef",
+  "name": "Dungeon_Name",
+  "auto": true,
+  "contexts": [
+    "dungeon-name"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "fdf90938-5bee-4143-a745-bd209369d73a",
+          "name": "dungeon",
+          "required": false,
+          "dataType": "@characterName",
+          "value": "$dungeon",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,49 @@
+{
+  "id": "5c4316af-d54b-4da3-904b-9cbd247ec49f",
+  "name": "Modify-Character-Stat",
+  "auto": true,
+  "contexts": [
+    "modify-character-stat"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "f99db7b6-2d92-40a1-a9b3-6598b76f3356",
+          "name": "stat",
+          "required": false,
+          "dataType": "@item",
+          "value": "$stat",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

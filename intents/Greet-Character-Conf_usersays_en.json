@@ -1,0 +1,36 @@
+[
+  {
+    "id": "48f563eb-09b7-4f81-b058-65857797caac",
+    "data": [
+      {
+        "text": "Greetings ",
+        "userDefined": false
+      },
+      {
+        "text": "adventurer",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8b45d9b4-1455-4968-8696-0ad25c4199c6",
+    "data": [
+      {
+        "text": "Hello ",
+        "userDefined": false
+      },
+      {
+        "text": "traveller",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

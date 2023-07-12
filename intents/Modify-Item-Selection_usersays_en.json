@@ -1,0 +1,94 @@
+[
+  {
+    "id": "95fb84ca-cb54-4f73-8449-0c376450c205",
+    "data": [
+      {
+        "text": "The",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "chest",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d6fc3eca-852a-4147-8e72-a0fc1d06b225",
+    "data": [
+      {
+        "text": "The",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "book",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "8dfb4d4e-f631-4c55-bfa0-1046cceb50ca",
+    "data": [
+      {
+        "text": "The",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "rock",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7c5320c5-471b-40a0-8bd0-1d24f520bdda",
+    "data": [
+      {
+        "text": "The",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "potion",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

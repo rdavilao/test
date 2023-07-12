@@ -1,0 +1,178 @@
+[
+  {
+    "id": "ec68778a-6aac-46c3-99ec-340e159743be",
+    "data": [
+      {
+        "text": "another ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f79adfaa-e5ce-4b49-b3ed-33c5dbf0377e",
+    "data": [
+      {
+        "text": "new ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2b5247f8-9575-4b42-8388-561c366dbc85",
+    "data": [
+      {
+        "text": "I\u0027d like to set up a ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "cd3dcdfc-eaac-49e8-bec4-4c2c9420cdd4",
+    "data": [
+      {
+        "text": "A ",
+        "userDefined": false
+      },
+      {
+        "text": "participant",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "31c01a5a-abe0-4fc7-879b-a7ef825192b3",
+    "data": [
+      {
+        "text": "A new ",
+        "userDefined": false
+      },
+      {
+        "text": "playable character",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "5e20f378-90ac-40f0-953b-2e2f1536c355",
+    "data": [
+      {
+        "text": "A ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "e06d3946-db07-4ba7-b13b-883869c93328",
+    "data": [
+      {
+        "text": "A new ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2762718b-230f-416b-b960-06098e3fd804",
+    "data": [
+      {
+        "text": "a ",
+        "userDefined": false
+      },
+      {
+        "text": "player",
+        "meta": "@sys.person",
+        "alias": "player",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "A new player",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 6,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "a new player",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,8 +1,10 @@
 {
-  "id": "e041953b-a6af-4db3-b3d8-462af5169730",
-  "name": "testing",
+  "id": "79165fce-afea-4b25-b929-b86422ff3dcd",
+  "name": "Delete-Item",
   "auto": true,
-  "contexts": [],
+  "contexts": [
+    "player-selection"
+  ],
   "responses": [
     {
       "resetContexts": false,
@@ -12,23 +14,9 @@
       "messages": [
         {
           "type": "0",
-          "platform": "telegram",
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "api tel"
-          ],
-          "condition": ""
-        },
-        {
-          "type": "0",
-          "title": "",
-          "textToSpeech": "",
-          "lang": "en",
-          "speech": [
-            "api not tel"
-          ],
           "condition": ""
         }
       ],

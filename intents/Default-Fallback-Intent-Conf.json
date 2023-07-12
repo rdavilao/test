@@ -1,6 +1,6 @@
 {
-  "id": "e041953b-a6af-4db3-b3d8-462af5169730",
-  "name": "testing",
+  "id": "7574adc5-9d85-4350-8223-dd528d680515",
+  "name": "Default-Fallback-Intent-Conf",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -12,23 +12,9 @@
       "messages": [
         {
           "type": "0",
-          "platform": "telegram",
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "api tel"
-          ],
-          "condition": ""
-        },
-        {
-          "type": "0",
-          "title": "",
-          "textToSpeech": "",
-          "lang": "en",
-          "speech": [
-            "api not tel"
-          ],
           "condition": ""
         }
       ],
@@ -38,7 +24,7 @@
   "priority": 500000,
   "webhookUsed": true,
   "webhookForSlotFilling": false,
-  "fallbackIntent": false,
+  "fallbackIntent": true,
   "events": [],
   "conditionalResponses": [],
   "condition": "",

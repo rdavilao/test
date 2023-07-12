@@ -1,6 +1,6 @@
 {
-  "id": "e041953b-a6af-4db3-b3d8-462af5169730",
-  "name": "testing",
+  "id": "68649e50-5306-41b5-a6a9-015e795e2cfc",
+  "name": "Reset-Game",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -12,23 +12,9 @@
       "messages": [
         {
           "type": "0",
-          "platform": "telegram",
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "api tel"
-          ],
-          "condition": ""
-        },
-        {
-          "type": "0",
-          "title": "",
-          "textToSpeech": "",
-          "lang": "en",
-          "speech": [
-            "api not tel"
-          ],
           "condition": ""
         }
       ],

@@ -1,8 +1,10 @@
 {
-  "id": "e041953b-a6af-4db3-b3d8-462af5169730",
-  "name": "testing",
+  "id": "99a34c04-576f-43c7-b8e1-b77e41b5371f",
+  "name": "Change-Item",
   "auto": true,
-  "contexts": [],
+  "contexts": [
+    "player-selection"
+  ],
   "responses": [
     {
       "resetContexts": false,
@@ -12,23 +14,9 @@
       "messages": [
         {
           "type": "0",
-          "platform": "telegram",
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "api tel"
-          ],
-          "condition": ""
-        },
-        {
-          "type": "0",
-          "title": "",
-          "textToSpeech": "",
-          "lang": "en",
-          "speech": [
-            "api not tel"
-          ],
           "condition": ""
         }
       ],

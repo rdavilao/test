@@ -1,8 +1,10 @@
 {
-  "id": "e041953b-a6af-4db3-b3d8-462af5169730",
-  "name": "testing",
+  "id": "5f877b14-699b-4b26-8857-577146b488f6",
+  "name": "Greet-Character-Conf",
   "auto": true,
-  "contexts": [],
+  "contexts": [
+    "greet-character"
+  ],
   "responses": [
     {
       "resetContexts": false,
@@ -12,23 +14,9 @@
       "messages": [
         {
           "type": "0",
-          "platform": "telegram",
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "api tel"
-          ],
-          "condition": ""
-        },
-        {
-          "type": "0",
-          "title": "",
-          "textToSpeech": "",
-          "lang": "en",
-          "speech": [
-            "api not tel"
-          ],
           "condition": ""
         }
       ],

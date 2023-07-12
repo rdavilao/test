@@ -1,9 +1,11 @@
 [
   {
-    "id": "c0e74385-1f04-47be-b6fd-48b9fb723374",
+    "id": "d12e6db5-ae4d-4f92-a5d3-2f77b13a1e29",
     "data": [
       {
-        "text": "TESTING",
+        "text": "Magnus",
+        "meta": "@playerName",
+        "alias": "playerName",
         "userDefined": false
       }
     ],

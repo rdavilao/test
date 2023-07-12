@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2b290444-1a03-465e-ba2c-ff1ab6b01dde",
+    "data": [
+      {
+        "text": "Ap6612",
+        "meta": "@playerName",
+        "alias": "playerName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1978626a-aac4-4b58-8eea-7267912a5aca",
+    "data": [
+      {
+        "text": "Pope",
+        "meta": "@playerName",
+        "alias": "playerName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "db742025-48d1-4243-8c3f-76f850850916",
+    "data": [
+      {
+        "text": "Alucard",
+        "meta": "@playerName",
+        "alias": "playerName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "46c13560-a9de-4593-a425-e2989e9ac5fe",
+    "data": [
+      {
+        "text": "Joan",
+        "meta": "@playerName",
+        "alias": "playerName",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6acd756b-ec67-45eb-8165-a8c7a7aa88e1",
+    "data": [
+      {
+        "text": "Marcos",
+        "meta": "@playerName",
+        "alias": "playerName",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]
