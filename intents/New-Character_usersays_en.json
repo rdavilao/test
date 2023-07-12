@@ -1,0 +1,40 @@
+[
+  {
+    "id": "f40d4087-57bc-4777-95dd-a90735c1b8a7",
+    "data": [
+      {
+        "text": "An ",
+        "userDefined": false
+      },
+      {
+        "text": "NPC",
+        "meta": "@sys.person",
+        "alias": "character",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "1786d53e-bba0-4d0b-a6a1-f871aa7273d2",
+    "data": [
+      {
+        "text": "A new ",
+        "userDefined": false
+      },
+      {
+        "text": "character",
+        "meta": "@sys.person",
+        "alias": "character",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "id": "fed709d9-f01f-45ed-ab31-f9fa50316775",
+  "name": "Player-health",
+  "auto": true,
+  "contexts": [
+    "hp-player"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "Player-health-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "aa0e366b-ca62-453c-844d-7a672dd38339",
+          "name": "health",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$health",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter a number"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

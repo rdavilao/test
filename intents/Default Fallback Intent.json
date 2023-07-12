@@ -1,6 +1,6 @@
 {
-  "id": "399a5074-8245-4a81-8bdd-b0c8a79266af",
-  "name": "Default-Fallback-Intent-Game",
+  "id": "8023355b-abc6-42b6-a5be-36b02e51b671",
+  "name": "Default Fallback Intent",
   "auto": true,
   "contexts": [],
   "responses": [
@@ -36,7 +36,7 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": true,
+  "webhookUsed": false,
   "webhookForSlotFilling": false,
   "fallbackIntent": true,
   "events": [],

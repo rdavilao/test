@@ -1,9 +1,11 @@
 [
   {
-    "id": "120d4185-3ab9-4744-9e69-4d4860f0911e",
+    "id": "ef8a5564-b4fa-47a3-9597-04136d7c9f97",
     "data": [
       {
-        "text": "Describe this room",
+        "text": "thirteen",
+        "meta": "@sys.number",
+        "alias": "number",
         "userDefined": false
       }
     ],
@@ -13,14 +15,12 @@
     "updated": 0
   },
   {
-    "id": "bc41e349-566c-4207-9138-5574f99575f8",
+    "id": "de463336-87a8-4427-8e2b-a5f931eb72ba",
     "data": [
       {
-        "text": "Where am I",
-        "userDefined": false
-      },
-      {
-        "text": "?",
+        "text": "20",
+        "meta": "@sys.number",
+        "alias": "number",
         "userDefined": false
       }
     ],

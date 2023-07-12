@@ -1,9 +1,9 @@
 {
-  "id": "26e1ef92-5c16-411a-a427-875801bdbcf1",
-  "name": "Move-Room",
+  "id": "56e7f72a-86ec-46a4-ab66-6ed75a368b82",
+  "name": "New-Player",
   "auto": true,
   "contexts": [
-    "player-action"
+    "player-selection"
   ],
   "responses": [
     {
@@ -12,11 +12,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "4c9be317-0008-47c6-a075-eb3f9468d6d0",
-          "name": "direction",
+          "id": "1f4f8783-bb57-4a20-b102-673cf34e1b22",
+          "name": "player",
           "required": false,
-          "dataType": "@word",
-          "value": "$direction",
+          "dataType": "@sys.person",
+          "value": "$player",
           "defaultValue": "",
           "isList": false,
           "prompts": [],

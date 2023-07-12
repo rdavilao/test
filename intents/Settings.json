@@ -1,15 +1,23 @@
 {
-  "id": "7a2d07d8-df94-4a13-9fcd-fd62d92074d5",
-  "name": "Default-Welcome-Intent-Game",
+  "id": "ab6adb9c-8f1c-4ad1-901e-b882e35996e9",
+  "name": "Settings",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "input.welcome",
+      "action": "",
       "affectedContexts": [],
       "parameters": [],
-      "messages": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
       "speech": []
     }
   ],
@@ -17,11 +25,7 @@
   "webhookUsed": true,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
-  "events": [
-    {
-      "name": "WELCOME"
-    }
-  ],
+  "events": [],
   "conditionalResponses": [],
   "condition": "",
   "conditionalFollowupEvents": []

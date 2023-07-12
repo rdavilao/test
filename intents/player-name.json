@@ -1,9 +1,9 @@
 {
-  "id": "4b80660d-1ba4-4c9f-b936-64be2f1589a8",
-  "name": "Greet-Character-Game",
+  "id": "2dc5b769-e6c5-48a2-9ac4-d1cd582d0bb9",
+  "name": "player-name",
   "auto": true,
   "contexts": [
-    "player-action"
+    "player-configuration"
   ],
   "responses": [
     {
@@ -12,11 +12,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "69f69c09-5a85-4c4a-a959-41781ebba912",
-          "name": "characterName",
+          "id": "ea68075f-6f9e-4987-a179-c2146e2fc381",
+          "name": "name",
           "required": false,
-          "dataType": "@characterName",
-          "value": "$characterName",
+          "dataType": "@sys.any",
+          "value": "$name",
           "defaultValue": "",
           "isList": false,
           "prompts": [],

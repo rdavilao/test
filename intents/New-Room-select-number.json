@@ -1,25 +1,30 @@
 {
-  "id": "fb77e65c-19c4-48f0-b410-8962f28b5cda",
-  "name": "Select-Player",
+  "id": "c4cd2a89-bd6c-480c-bedb-0495377a9b58",
+  "name": "New-Room-select-number",
   "auto": true,
   "contexts": [
-    "select-player"
+    "number-of-rooms"
   ],
   "responses": [
     {
       "resetContexts": false,
-      "action": "",
+      "action": "New-Room.New-Room-selectnumber",
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "495358ef-5344-4927-a56e-415c42a943fb",
-          "name": "characterName",
-          "required": false,
-          "dataType": "@characterName",
-          "value": "$characterName",
+          "id": "22b709e2-1faf-43d5-bdcf-17a1c05b8b0c",
+          "name": "number",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$number",
           "defaultValue": "",
-          "isList": false,
-          "prompts": [],
+          "isList": true,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "You must select a number"
+            }
+          ],
           "promptMessages": [],
           "noMatchPromptMessages": [],
           "noInputPromptMessages": [],

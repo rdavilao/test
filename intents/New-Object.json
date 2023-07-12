@@ -1,16 +1,31 @@
 {
-  "id": "647ce8c3-2e49-4e86-8c05-87fe02cc6193",
-  "name": "See_Map",
+  "id": "6037a09e-6e51-4f1b-bf58-87e50a0d58bb",
+  "name": "New-Object",
   "auto": true,
   "contexts": [
-    "player-action"
+    "player-selection"
   ],
   "responses": [
     {
       "resetContexts": false,
       "action": "",
       "affectedContexts": [],
-      "parameters": [],
+      "parameters": [
+        {
+          "id": "a515748b-a6a5-454f-a265-8fab24ff45bf",
+          "name": "object",
+          "required": false,
+          "dataType": "@sys.any",
+          "value": "$object",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
       "messages": [
         {
           "type": "0",

@@ -1,9 +1,9 @@
 {
-  "id": "bc5396cc-b356-4b02-85f2-50e72458c64c",
-  "name": "Interact-Game-Object",
+  "id": "04451111-6a98-4a7f-99c0-faed21b0095b",
+  "name": "New-Character",
   "auto": true,
   "contexts": [
-    "player-action"
+    "player-selection"
   ],
   "responses": [
     {
@@ -12,25 +12,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "311993f1-391b-4f05-ae76-6170ae7959c6",
-          "name": "item",
+          "id": "c68c4d48-07ec-40f6-8165-df9d1e77d0b8",
+          "name": "character",
           "required": false,
-          "dataType": "@word",
-          "value": "$item",
-          "defaultValue": "",
-          "isList": false,
-          "prompts": [],
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": []
-        },
-        {
-          "id": "26004caa-0747-49b3-b351-f001e6c71082",
-          "name": "action",
-          "required": false,
-          "dataType": "@word",
-          "value": "$action",
+          "dataType": "@sys.person",
+          "value": "$character",
           "defaultValue": "",
           "isList": false,
           "prompts": [],
@@ -59,6 +45,5 @@
   "events": [],
   "conditionalResponses": [],
   "condition": "",
-  "conditionalFollowupEvents": [],
-  "endInteraction": true
+  "conditionalFollowupEvents": []
 }

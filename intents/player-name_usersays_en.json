@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1978626a-aac4-4b58-8eea-7267912a5aca",
+    "data": [
+      {
+        "text": "Pope",
+        "meta": "@sys.any",
+        "alias": "name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "db742025-48d1-4243-8c3f-76f850850916",
+    "data": [
+      {
+        "text": "Alucard",
+        "meta": "@sys.any",
+        "alias": "name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "46c13560-a9de-4593-a425-e2989e9ac5fe",
+    "data": [
+      {
+        "text": "Joan",
+        "meta": "@sys.any",
+        "alias": "name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "6acd756b-ec67-45eb-8165-a8c7a7aa88e1",
+    "data": [
+      {
+        "text": "Marcos",
+        "meta": "@sys.any",
+        "alias": "name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

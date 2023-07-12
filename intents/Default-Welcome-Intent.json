@@ -1,14 +1,12 @@
 {
-  "id": "7d971b5a-169e-4616-a269-4f2b93c0fdbb",
-  "name": "help",
+  "id": "df199e12-cdc2-47a9-bc0d-83506597bc39",
+  "name": "Default-Welcome-Intent",
   "auto": true,
-  "contexts": [
-    "player-action"
-  ],
+  "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "",
+      "action": "input.welcome",
       "affectedContexts": [],
       "parameters": [],
       "messages": [
@@ -27,7 +25,11 @@
   "webhookUsed": true,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
-  "events": [],
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
   "conditionalResponses": [],
   "condition": "",
   "conditionalFollowupEvents": []

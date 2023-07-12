@@ -1,0 +1,82 @@
+[
+  {
+    "id": "07104d42-3f05-4914-8c64-c962e8c6c705",
+    "data": [
+      {
+        "text": "New ",
+        "userDefined": false
+      },
+      {
+        "text": "room",
+        "meta": "@sys.any",
+        "alias": "rooms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "0743869d-94a4-47d3-b9f6-36e9f6ebd837",
+    "data": [
+      {
+        "text": "How many ",
+        "userDefined": false
+      },
+      {
+        "text": "rooms",
+        "meta": "@sys.any",
+        "alias": "rooms",
+        "userDefined": true
+      },
+      {
+        "text": " there will be",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "edc72b93-3d14-43ef-a43f-efe7927f0d39",
+    "data": [
+      {
+        "text": "The number of ",
+        "userDefined": false
+      },
+      {
+        "text": "rooms",
+        "meta": "@sys.any",
+        "alias": "rooms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "214c9243-06e4-45e6-aa52-0cbf736a7a45",
+    "data": [
+      {
+        "text": "I\u0027d like to choose the number of ",
+        "userDefined": false
+      },
+      {
+        "text": "rooms",
+        "meta": "@sys.any",
+        "alias": "rooms",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

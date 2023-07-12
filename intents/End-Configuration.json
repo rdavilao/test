@@ -1,9 +1,9 @@
 {
-  "id": "69f8e042-377e-49d8-871f-70f339606133",
-  "name": "Take-Note",
+  "id": "9ced1f2b-57f4-4760-90d1-657607a238b4",
+  "name": "End-Configuration",
   "auto": true,
   "contexts": [
-    "player-action"
+    "player-selection"
   ],
   "responses": [
     {
@@ -30,5 +30,6 @@
   "events": [],
   "conditionalResponses": [],
   "condition": "",
-  "conditionalFollowupEvents": []
+  "conditionalFollowupEvents": [],
+  "endInteraction": true
 }

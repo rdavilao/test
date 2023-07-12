@@ -1,9 +1,9 @@
 {
-  "id": "75662f2d-ea6d-4a18-a63d-d948856be73f",
-  "name": "Info-Character-Game",
+  "id": "958c12e3-2870-45e5-8c74-ee31e5fc68b3",
+  "name": "New-Room",
   "auto": true,
   "contexts": [
-    "player-action"
+    "player-selection"
   ],
   "responses": [
     {
@@ -12,25 +12,11 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "1bb55941-d047-4637-be4a-54d5127d61c5",
-          "name": "item",
+          "id": "411867b1-33f2-48da-869f-c4fa278228d1",
+          "name": "rooms",
           "required": false,
-          "dataType": "@word",
-          "value": "$item",
-          "defaultValue": "",
-          "isList": false,
-          "prompts": [],
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": []
-        },
-        {
-          "id": "43f9d01e-d829-4aa1-8665-5fb6b9e1832d",
-          "name": "characterName",
-          "required": false,
-          "dataType": "@characterName",
-          "value": "$characterName",
+          "dataType": "@sys.any",
+          "value": "$rooms",
           "defaultValue": "",
           "isList": false,
           "prompts": [],
