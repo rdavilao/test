@@ -1,0 +1,54 @@
+[
+  {
+    "id": "478cb451-425f-44c1-8639-8948ec5d4da5",
+    "data": [
+      {
+        "text": "Yes",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "eb9ce08e-cd90-4fa9-9e96-0622cd0b49c9",
+    "data": [
+      {
+        "text": "Let\u0027s go",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "7db6868a-f897-4e30-a0a8-fbc5aa6a3eac",
+    "data": [
+      {
+        "text": "Yeah",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "4c3026e2-0fde-47ba-b385-7348eedce70a",
+    "data": [
+      {
+        "text": "Sure",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

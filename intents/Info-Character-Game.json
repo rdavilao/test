@@ -1,0 +1,63 @@
+{
+  "id": "75662f2d-ea6d-4a18-a63d-d948856be73f",
+  "name": "Info-Character-Game",
+  "auto": true,
+  "contexts": [
+    "player-action"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "8a9b8a2e-c93f-4099-866f-58ac05e45131",
+          "name": "item",
+          "required": false,
+          "dataType": "@word",
+          "value": "$item",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "aa91d85e-e20d-4bdd-af64-cbfae94915c2",
+          "name": "characterName",
+          "required": false,
+          "dataType": "@characterName",
+          "value": "$characterName",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
