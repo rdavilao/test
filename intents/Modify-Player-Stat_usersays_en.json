@@ -43,5 +43,23 @@
     "count": 0,
     "lang": "en",
     "updated": 0
+  },
+  {
+    "data": [
+      {
+        "text": "the ",
+        "userDefined": false
+      },
+      {
+        "text": "name",
+        "meta": "@item",
+        "alias": "stat",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
   }
 ]

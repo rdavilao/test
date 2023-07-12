@@ -1,9 +1,9 @@
 {
-  "id": "5c4316af-d54b-4da3-904b-9cbd247ec49f",
-  "name": "Modify-Character-Stat",
+  "id": "fb7fdabb-1f66-4ca8-b5a9-f3254f664720",
+  "name": "Modify-Item-Stat",
   "auto": true,
   "contexts": [
-    "modify-character-stat"
+    "modify-item-stat"
   ],
   "responses": [
     {
@@ -12,7 +12,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "f99db7b6-2d92-40a1-a9b3-6598b76f3356",
+          "id": "54aeb149-a2d3-4325-a753-4d5b8f815373",
           "name": "stat",
           "required": false,
           "dataType": "@item",
