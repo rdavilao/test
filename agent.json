@@ -32,7 +32,7 @@
   },
   "defaultTimezone": "Europe/Madrid",
   "webhook": {
-    "url": "https://b197a95387a6.ngrok.io/webhook_conf",
+    "url": "https://3f0f97e4ad73.ngrok.io/webhook_conf",
     "username": "",
     "headers": {},
     "available": true,

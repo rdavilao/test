@@ -4,7 +4,6 @@
     "data": [
       {
         "text": "The",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -28,7 +27,6 @@
     "data": [
       {
         "text": "The",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -37,7 +35,6 @@
       },
       {
         "text": "way",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -46,7 +43,6 @@
       },
       {
         "text": "he",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -55,7 +51,6 @@
       },
       {
         "text": "will",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -74,7 +69,6 @@
       },
       {
         "text": "player",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -88,7 +82,6 @@
     "data": [
       {
         "text": "The",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -112,7 +105,6 @@
     "data": [
       {
         "text": "The",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -136,7 +128,6 @@
     "data": [
       {
         "text": "The",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -155,7 +146,6 @@
       },
       {
         "text": "of",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -164,7 +154,6 @@
       },
       {
         "text": "character",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],

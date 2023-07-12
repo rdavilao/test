@@ -19,7 +19,6 @@
     "data": [
       {
         "text": "A",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -43,7 +42,6 @@
     "data": [
       {
         "text": "A",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -67,7 +65,6 @@
     "data": [
       {
         "text": "A",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {

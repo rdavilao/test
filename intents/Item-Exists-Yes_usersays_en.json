@@ -4,7 +4,6 @@
     "data": [
       {
         "text": "Why not",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -22,7 +21,6 @@
     "data": [
       {
         "text": "Sure",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -36,7 +34,6 @@
     "data": [
       {
         "text": "Yeah",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -50,7 +47,6 @@
     "data": [
       {
         "text": "Yes",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],

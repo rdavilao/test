@@ -4,7 +4,6 @@
     "data": [
       {
         "text": "yeah",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -18,7 +17,6 @@
     "data": [
       {
         "text": "sure",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -32,7 +30,6 @@
     "data": [
       {
         "text": "yes",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],

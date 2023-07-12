@@ -12,7 +12,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "3df4fab8-80ca-4365-a8ea-baf4cc7d79b2",
+          "id": "2a4b8f80-e19d-4555-8333-b80e80eaeacb",
           "name": "lose",
           "required": false,
           "dataType": "@action",
@@ -26,11 +26,25 @@
           "outputDialogContexts": []
         },
         {
-          "id": "14e162d1-dda3-4246-b2e3-4a6b405e9238",
+          "id": "6eb2d8a9-beba-4fee-a339-638b40792e5f",
           "name": "win",
           "required": false,
           "dataType": "@action",
           "value": "$win",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "dcb72294-712e-4e61-a2cf-4c03aff7450a",
+          "name": "none",
+          "required": false,
+          "dataType": "@action",
+          "value": "$none",
           "defaultValue": "",
           "isList": false,
           "prompts": [],
