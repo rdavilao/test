@@ -1,6 +1,6 @@
 {
   "id": "85581207-d199-4d68-9be9-166564a00108",
-  "name": "Open-In",
+  "name": "Item-Open-In",
   "auto": true,
   "contexts": [
     "open-in"
@@ -12,7 +12,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "478dba49-0ba6-465a-9515-d6392c066a0e",
+          "id": "223c9385-9c76-4027-84c3-5073ab502f9a",
           "name": "item",
           "required": false,
           "dataType": "@item",

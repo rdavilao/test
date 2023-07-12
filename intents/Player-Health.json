@@ -1,6 +1,6 @@
 {
   "id": "fed709d9-f01f-45ed-ab31-f9fa50316775",
-  "name": "Player-health",
+  "name": "Player-Health",
   "auto": true,
   "contexts": [
     "hp-player"
@@ -12,7 +12,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "b435736f-d119-45b1-a44d-675c5310bf2e",
+          "id": "a2b7b2c8-eda5-4d9b-8606-a47d94d86652",
           "name": "health",
           "required": true,
           "dataType": "@sys.number",

@@ -1,31 +1,16 @@
 {
-  "id": "6de117d3-e7a2-4d78-b089-34d384ec7d5e",
-  "name": "Open-Need",
+  "id": "7db77c79-ade4-4348-8634-9e7196a632f2",
+  "name": "Item-Read-Description",
   "auto": true,
   "contexts": [
-    "open-need"
+    "read-description"
   ],
   "responses": [
     {
       "resetContexts": false,
       "action": "",
       "affectedContexts": [],
-      "parameters": [
-        {
-          "id": "c6a8d189-92fd-4741-81a9-518b3e57ce33",
-          "name": "item",
-          "required": false,
-          "dataType": "@item",
-          "value": "$item",
-          "defaultValue": "",
-          "isList": true,
-          "prompts": [],
-          "promptMessages": [],
-          "noMatchPromptMessages": [],
-          "noInputPromptMessages": [],
-          "outputDialogContexts": []
-        }
-      ],
+      "parameters": [],
       "messages": [
         {
           "type": "0",

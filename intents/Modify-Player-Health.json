@@ -12,14 +12,19 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "4df68592-3825-43c3-a83a-93ae4e40ebac",
+          "id": "5cbdc839-488f-476c-88e3-5f59ec7d9788",
           "name": "health",
-          "required": false,
+          "required": true,
           "dataType": "@sys.number",
           "value": "$health",
           "defaultValue": "",
           "isList": false,
-          "prompts": [],
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter a valid number."
+            }
+          ],
           "promptMessages": [],
           "noMatchPromptMessages": [],
           "noInputPromptMessages": [],
