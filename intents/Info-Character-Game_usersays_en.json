@@ -126,7 +126,6 @@
     "data": [
       {
         "text": "Is there anything you can tell me,",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -154,7 +153,6 @@
     "data": [
       {
         "text": "What can you tell me",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {

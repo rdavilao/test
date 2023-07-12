@@ -4,7 +4,6 @@
     "data": [
       {
         "text": "Describe this room",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -18,7 +17,6 @@
     "data": [
       {
         "text": "Where am I",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {

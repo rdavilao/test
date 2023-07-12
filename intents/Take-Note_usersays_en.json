@@ -17,7 +17,6 @@
     "data": [
       {
         "text": "Take a note",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -31,7 +30,6 @@
     "data": [
       {
         "text": "I want to take a note",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],

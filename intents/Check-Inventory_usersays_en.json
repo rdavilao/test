@@ -4,7 +4,6 @@
     "data": [
       {
         "text": "See",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -13,7 +12,6 @@
       },
       {
         "text": "my",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -22,7 +20,6 @@
       },
       {
         "text": "inventory",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -36,7 +33,6 @@
     "data": [
       {
         "text": "Check",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -45,7 +41,6 @@
       },
       {
         "text": "my",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -54,7 +49,6 @@
       },
       {
         "text": "inventory",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -68,7 +62,6 @@
     "data": [
       {
         "text": "Inventory",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
@@ -82,7 +75,6 @@
     "data": [
       {
         "text": "I",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -91,7 +83,6 @@
       },
       {
         "text": "wanna",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -100,7 +91,6 @@
       },
       {
         "text": "see",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -109,7 +99,6 @@
       },
       {
         "text": "my",
-        "meta": "@sys.ignore",
         "userDefined": false
       },
       {
@@ -118,7 +107,6 @@
       },
       {
         "text": "inventory",
-        "meta": "@sys.ignore",
         "userDefined": false
       }
     ],
