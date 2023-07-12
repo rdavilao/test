@@ -1,0 +1,49 @@
+{
+  "id": "6037a09e-6e51-4f1b-bf58-87e50a0d58bb",
+  "name": "New-Item",
+  "auto": true,
+  "contexts": [
+    "player-selection"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "de275b6e-bc04-4a56-b743-58c1f478cd7e",
+          "name": "item",
+          "required": false,
+          "dataType": "@item",
+          "value": "$item",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

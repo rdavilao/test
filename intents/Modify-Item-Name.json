@@ -1,0 +1,49 @@
+{
+  "id": "b30363b6-6ff4-489c-81f5-eb7eb92975a4",
+  "name": "Modify-Item-Name",
+  "auto": true,
+  "contexts": [
+    "modify-item-name"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "0f093d0e-af96-4ece-bb16-a4ff6c07f584",
+          "name": "newItem",
+          "required": false,
+          "dataType": "@item",
+          "value": "$newItem",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

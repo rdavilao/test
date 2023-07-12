@@ -1,0 +1,49 @@
+{
+  "id": "3d4cb13f-b899-4466-b41d-6a8d274bda18",
+  "name": "Modify-Player-Name",
+  "auto": true,
+  "contexts": [
+    "modify-player-name"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "7058ba9a-5b42-4b46-aeda-54409a01f429",
+          "name": "playerName",
+          "required": false,
+          "dataType": "@playerName",
+          "value": "$playerName",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

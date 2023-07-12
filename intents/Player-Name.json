@@ -1,0 +1,58 @@
+{
+  "id": "2dc5b769-e6c5-48a2-9ac4-d1cd582d0bb9",
+  "name": "Player-Name",
+  "auto": true,
+  "contexts": [
+    "player-configuration"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "207de2da-5907-42e7-a1f4-5e058653d5b8",
+          "name": "playerName",
+          "required": true,
+          "dataType": "@playerName",
+          "value": "$playerName",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Sorry I did not get that, could you repeat the name?"
+            },
+            {
+              "lang": "en",
+              "value": "I am afraid that $playerName is not a valid name, could you try again?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

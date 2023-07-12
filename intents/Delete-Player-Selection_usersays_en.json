@@ -1,0 +1,17 @@
+[
+  {
+    "id": "4ec972ce-fe2a-4121-8602-1a226224fbd5",
+    "data": [
+      {
+        "text": "Marcus",
+        "meta": "@playerName",
+        "alias": "playerName",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

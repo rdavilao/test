@@ -1,0 +1,50 @@
+[
+  {
+    "id": "5cc8b148-83cb-4224-8b93-8af8af96ff7c",
+    "data": [
+      {
+        "text": "The",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "rock",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2cedfe72-0abd-4d28-aaf0-7c7deb829106",
+    "data": [
+      {
+        "text": "The",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "potion",
+        "meta": "@item",
+        "alias": "item",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

@@ -1,6 +1,6 @@
 {
-  "id": "fcb5956c-8a77-4e21-bd8f-873334b64af3",
-  "name": "characterName",
+  "id": "f41b2ebf-728f-498d-b108-b35825236823",
+  "name": "playerName",
   "isOverridable": true,
   "isEnum": false,
   "isRegexp": true,

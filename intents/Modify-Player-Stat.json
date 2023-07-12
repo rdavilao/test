@@ -1,0 +1,49 @@
+{
+  "id": "f06077e8-fd01-457d-b52a-e38ffbc47c1f",
+  "name": "Modify-Player-Stat",
+  "auto": true,
+  "contexts": [
+    "modify-player-stat"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3f67a9fa-af39-4daf-b069-d5579197514e",
+          "name": "stat",
+          "required": false,
+          "dataType": "@item",
+          "value": "$stat",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
