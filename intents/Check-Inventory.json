@@ -1,6 +1,6 @@
 {
-  "id": "9762552e-4756-4899-8521-5d5eca8de13b",
-  "name": "testing",
+  "id": "62a03711-a06c-43d4-bb8d-703df318793e",
+  "name": "Check-Inventory",
   "auto": true,
   "contexts": [
     "player-action"
@@ -9,12 +9,7 @@
     {
       "resetContexts": false,
       "action": "",
-      "affectedContexts": [
-        {
-          "name": "player-action",
-          "lifespan": 1
-        }
-      ],
+      "affectedContexts": [],
       "parameters": [],
       "messages": [
         {
@@ -22,17 +17,17 @@
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "you are testing"
-          ],
           "condition": ""
         }
       ],
+      "defaultResponsePlatforms": {
+        "telegram": true
+      },
       "speech": []
     }
   ],
   "priority": 500000,
-  "webhookUsed": false,
+  "webhookUsed": true,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
   "events": [],

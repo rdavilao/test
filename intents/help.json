@@ -1,6 +1,6 @@
 {
-  "id": "9762552e-4756-4899-8521-5d5eca8de13b",
-  "name": "testing",
+  "id": "7d971b5a-169e-4616-a269-4f2b93c0fdbb",
+  "name": "help",
   "auto": true,
   "contexts": [
     "player-action"
@@ -9,12 +9,7 @@
     {
       "resetContexts": false,
       "action": "",
-      "affectedContexts": [
-        {
-          "name": "player-action",
-          "lifespan": 1
-        }
-      ],
+      "affectedContexts": [],
       "parameters": [],
       "messages": [
         {
@@ -22,9 +17,6 @@
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "you are testing"
-          ],
           "condition": ""
         }
       ],
@@ -32,7 +24,7 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": false,
+  "webhookUsed": true,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
   "events": [],

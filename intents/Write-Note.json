@@ -1,20 +1,13 @@
 {
-  "id": "9762552e-4756-4899-8521-5d5eca8de13b",
-  "name": "testing",
+  "id": "39845ccc-4d4f-4ed0-a04a-74abb826a2c7",
+  "name": "Write-Note",
   "auto": true,
-  "contexts": [
-    "player-action"
-  ],
+  "contexts": [],
   "responses": [
     {
       "resetContexts": false,
       "action": "",
-      "affectedContexts": [
-        {
-          "name": "player-action",
-          "lifespan": 1
-        }
-      ],
+      "affectedContexts": [],
       "parameters": [],
       "messages": [
         {
@@ -22,9 +15,6 @@
           "title": "",
           "textToSpeech": "",
           "lang": "en",
-          "speech": [
-            "you are testing"
-          ],
           "condition": ""
         }
       ],
@@ -32,7 +22,7 @@
     }
   ],
   "priority": 500000,
-  "webhookUsed": false,
+  "webhookUsed": true,
   "webhookForSlotFilling": false,
   "fallbackIntent": false,
   "events": [],
