@@ -9,5 +9,6 @@ jobs:
       
       - uses: ./satori-action/.
         with:
-          format: "Dialogflow"
+          format: "Rasa"
+          version: "3.0"
           
