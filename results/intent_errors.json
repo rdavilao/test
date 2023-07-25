@@ -1,0 +1,1874 @@
+[
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9693902730941772
+    }
+  },
+  {
+    "text": "I come in peace",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "is this cinebot?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.19597208499908447
+    }
+  },
+  {
+    "text": "I want to speak with cinebot",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9906112551689148
+    }
+  },
+  {
+    "text": "what is this?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "display_booking",
+      "confidence": 0.8864325284957886
+    }
+  },
+  {
+    "text": "good night",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7875203490257263
+    }
+  },
+  {
+    "text": "so long",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "au revoir",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.1300615519285202
+    }
+  },
+  {
+    "text": "I want to leave",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "no_tickets",
+      "confidence": 0.15330052375793457
+    }
+  },
+  {
+    "text": "ya",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.30662432312965393
+    }
+  },
+  {
+    "text": "no doubt",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9991117119789124
+    }
+  },
+  {
+    "text": "da",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "you betcha",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "right on",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9829224348068237
+    }
+  },
+  {
+    "text": "unequivocally",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "no chance",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.999987006187439
+    }
+  },
+  {
+    "text": "negative",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9763824939727783
+    }
+  },
+  {
+    "text": "unsuitable",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9999994039535522
+    }
+  },
+  {
+    "text": "see movies",
+    "intent": "book_tickets",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 0.9998786449432373
+    }
+  },
+  {
+    "text": "give me ticket",
+    "intent": "book_tickets",
+    "intent_prediction": {
+      "name": "no_tickets",
+      "confidence": 0.9817573428153992
+    }
+  },
+  {
+    "text": "I want to see 2001: A Space Odyssey",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I would like to watch the movie Your name",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.9040731191635132
+    }
+  },
+  {
+    "text": "Bram Stockers Dracula",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "We would like to see Tick Tick Boom",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.9988487958908081
+    }
+  },
+  {
+    "text": "is The Lion King on just now",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.984083354473114
+    }
+  },
+  {
+    "text": "tickets for Toy Story 3",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.49870410561561584
+    }
+  },
+  {
+    "text": "Groundhog Day",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "the name of it is The Tale of Princess Kaguya",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.7928735017776489
+    }
+  },
+  {
+    "text": "Blade Runner 2049 is it's name",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9998272061347961
+    }
+  },
+  {
+    "text": "What screening are available",
+    "intent": "inquire_movie_schedule",
+    "intent_prediction": {
+      "name": "inquire_prices",
+      "confidence": 0.9760897159576416
+    }
+  },
+  {
+    "text": "can you tell me the times for Spider-Man: Homecoming?",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9998834133148193
+    }
+  },
+  {
+    "text": "time info Hacksaw Ridge",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9999979734420776
+    }
+  },
+  {
+    "text": "Back to the Future times",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 0.9999558925628662
+    }
+  },
+  {
+    "text": "Is Meshes of the Afternoon a bad movie",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.999915361404419
+    }
+  },
+  {
+    "text": "is The Parent Trap apropriate for children",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.9089365601539612
+    }
+  },
+  {
+    "text": "half 3",
+    "intent": "set_movie_time",
+    "intent_prediction": {
+      "name": "no_tickets",
+      "confidence": 0.968868613243103
+    }
+  },
+  {
+    "text": "A single ticket",
+    "intent": "no_tickets",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "this is definitely my booking reference 9827697LA",
+    "intent": "booking_reference",
+    "intent_prediction": {
+      "name": "collect_tickets",
+      "confidence": 0.3791724145412445
+    }
+  },
+  {
+    "text": "i have noticed a problem in the cinema",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9988189339637756
+    }
+  },
+  {
+    "text": "I don't wish to purchase tickets",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.9867211580276489
+    }
+  },
+  {
+    "text": "wait",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9784886837005615
+    }
+  },
+  {
+    "text": "I can't buy tickets",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "You're not showing anything I want to see",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.37096744775772095
+    }
+  },
+  {
+    "text": "I can't afford tickets",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.9999979734420776
+    }
+  },
+  {
+    "text": "Just to let you know, I'm leaving",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9999997615814209
+    }
+  },
+  {
+    "text": "I'm finished",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6386128664016724
+    }
+  },
+  {
+    "text": "I have no payment",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "inquire_payment",
+      "confidence": 0.9537999033927917
+    }
+  },
+  {
+    "text": "disregard this",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.32464221119880676
+    }
+  },
+  {
+    "text": "wait ignore everything I've said",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6333552002906799
+    }
+  },
+  {
+    "text": "I did it wrong",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "What is this for 1023945LO",
+    "intent": "display_booking",
+    "intent_prediction": {
+      "name": "booking_reference",
+      "confidence": 0.9486801028251648
+    }
+  },
+  {
+    "text": "booking reference info",
+    "intent": "display_booking",
+    "intent_prediction": {
+      "name": "collect_tickets",
+      "confidence": 0.8529353141784668
+    }
+  },
+  {
+    "text": "hows it hanging",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9999701976776123
+    }
+  },
+  {
+    "text": "Long time no see",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.5498431921005249
+    }
+  },
+  {
+    "text": "Been a long time",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "been nice talking to you",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9988671541213989
+    }
+  },
+  {
+    "text": "thats no problem",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7944977283477783
+    }
+  },
+  {
+    "text": "Can see nothing wrong",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9992617964744568
+    }
+  },
+  {
+    "text": "yep, good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9882347583770752
+    }
+  },
+  {
+    "text": "carry on",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "inquire_payment",
+      "confidence": 0.637559175491333
+    }
+  },
+  {
+    "text": "incontrovertibly",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "yeah, no",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "you got nothing right",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.3145076334476471
+    }
+  },
+  {
+    "text": "you have been mistaken",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9907407760620117
+    }
+  },
+  {
+    "text": "buy",
+    "intent": "book_tickets",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9990631937980652
+    }
+  },
+  {
+    "text": "purchase tickets for the",
+    "intent": "book_tickets",
+    "intent_prediction": {
+      "name": "set_movie_time",
+      "confidence": 0.6045551896095276
+    }
+  },
+  {
+    "text": "I endevour to buy tickets",
+    "intent": "book_tickets",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9999994039535522
+    }
+  },
+  {
+    "text": "I'd like to make a purchase",
+    "intent": "book_tickets",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.8109937310218811
+    }
+  },
+  {
+    "text": "Can I book tickets for Old Boy?",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Dispicable me",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "collect_tickets",
+      "confidence": 0.9974604845046997
+    }
+  },
+  {
+    "text": "movie is City of God",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.30414456129074097
+    }
+  },
+  {
+    "text": "do you have the movie 1917",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inform_cvv",
+      "confidence": 0.6360328197479248
+    }
+  },
+  {
+    "text": "Life of Brian",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I need tickets for The Sound of Music",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.999933123588562
+    }
+  },
+  {
+    "text": "when is the next time for Guardians of the Galaxy?",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "when are you showing Tangled?",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 0.9983692765235901
+    }
+  },
+  {
+    "text": "need info about times for Gone Girl",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9999988079071045
+    }
+  },
+  {
+    "text": "the blurb of The Notebook",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9997202754020691
+    }
+  },
+  {
+    "text": "I need tickets for 10-12-12",
+    "intent": "set_movie_time",
+    "intent_prediction": {
+      "name": "inform_sort_code",
+      "confidence": 0.9133477807044983
+    }
+  },
+  {
+    "text": "Would you be able to put me down for 12pm on the 5th January",
+    "intent": "set_movie_time",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9844992756843567
+    }
+  },
+  {
+    "text": "Am i able to get two tickets",
+    "intent": "no_tickets",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.565083920955658
+    }
+  },
+  {
+    "text": "Is it possible to buy seven tickets",
+    "intent": "no_tickets",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.8390229940414429
+    }
+  },
+  {
+    "text": "the booking reference I have is 5736746NB",
+    "intent": "booking_reference",
+    "intent_prediction": {
+      "name": "display_booking",
+      "confidence": 0.5661274194717407
+    }
+  },
+  {
+    "text": "booking reference 5663521BI",
+    "intent": "booking_reference",
+    "intent_prediction": {
+      "name": "display_booking",
+      "confidence": 0.6917271614074707
+    }
+  },
+  {
+    "text": "chocolate?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9999570846557617
+    }
+  },
+  {
+    "text": "halt",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can we finish this up here",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "collect_tickets",
+      "confidence": 0.817285418510437
+    }
+  },
+  {
+    "text": "letting you know, I'm going",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9999815225601196
+    }
+  },
+  {
+    "text": "I really need to go, sorry",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "leave",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I need to what film this is booked for",
+    "intent": "display_booking",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.8272014260292053
+    }
+  },
+  {
+    "text": "Aloha",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "hai",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.8524746298789978
+    }
+  },
+  {
+    "text": "How was your day?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9999995231628418
+    }
+  },
+  {
+    "text": "You all right?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "marhaban",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.2943551242351532
+    }
+  },
+  {
+    "text": "hiii, are the bot that sells tickets?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "no_tickets",
+      "confidence": 0.733033299446106
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9999758005142212
+    }
+  },
+  {
+    "text": "sayonara",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9999686479568481
+    }
+  },
+  {
+    "text": "until next time",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "have a great day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Bon Voyage",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "That me just leaving",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "thats great",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "ok",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "got it",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "no, yeah",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "untrue",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I don't need more help",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9999827146530151
+    }
+  },
+  {
+    "text": "I don't think I need more help",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Are movies available to book",
+    "intent": "book_tickets",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "what do I say to get tickets",
+    "intent": "book_tickets",
+    "intent_prediction": {
+      "name": "no_tickets",
+      "confidence": 0.4993217885494232
+    }
+  },
+  {
+    "text": "Baby Driver",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.9863114953041077
+    }
+  },
+  {
+    "text": "I want to see the movie Harry Potter and the Goblet of Fire",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9999949932098389
+    }
+  },
+  {
+    "text": "see Rango",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Nosferatu",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can I have tickets for The Wizard of OZ",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "it's called The Deer Hunter",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9999568462371826
+    }
+  },
+  {
+    "text": "I think the name is X-men: Days of Future Past",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.9869213104248047
+    }
+  },
+  {
+    "text": "pre purchased tickets",
+    "intent": "collect_tickets",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.9946240782737732
+    }
+  },
+  {
+    "text": "give me schedule for The Godd, the Bad and the Ugly",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "when is Kill Bill: Vol.1 on?",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.9991676807403564
+    }
+  },
+  {
+    "text": "info times Rush",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "can you tell me the schedule for Heat",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I wonder if you happen to know times for Hot Fuzz",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "movie info Matilda",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "is [](movie_name) a good movie",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can you tell me what I need to know about Heathers",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 0.9999995231628418
+    }
+  },
+  {
+    "text": "What age can I see I Am Sam at",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "set_movie_time",
+      "confidence": 0.9338266849517822
+    }
+  },
+  {
+    "text": "Am I old enough to see My Girl",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can you show me everything you have on Breakfast At Tiffany's",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.8040132522583008
+    }
+  },
+  {
+    "text": "next thursday at 6pm",
+    "intent": "set_movie_time",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8755320906639099
+    }
+  },
+  {
+    "text": "Just one",
+    "intent": "no_tickets",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Here is my booking reference 5272837VC",
+    "intent": "booking_reference",
+    "intent_prediction": {
+      "name": "display_booking",
+      "confidence": 0.6389425992965698
+    }
+  },
+  {
+    "text": "9053104AQ is my booking reference",
+    "intent": "booking_reference",
+    "intent_prediction": {
+      "name": "display_booking",
+      "confidence": 0.7181028723716736
+    }
+  },
+  {
+    "text": "Does this cinema sell popcorn",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.909515917301178
+    }
+  },
+  {
+    "text": "I don't want to collect tickets any more",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "collect_tickets",
+      "confidence": 0.9970807433128357
+    }
+  },
+  {
+    "text": "Can i get something different",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I made a mistake",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I have no money",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "This isn't working",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "gonna call this off",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "gonna withdraw",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "quit movie booking",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "here's my card number 372828494582939",
+    "intent": "inform_card_num",
+    "intent_prediction": {
+      "name": "inform_cvv",
+      "confidence": 0.8609074354171753
+    }
+  },
+  {
+    "text": "payment",
+    "intent": "inquire_payment",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9829985499382019
+    }
+  },
+  {
+    "text": "What did I book with this 1234567FG",
+    "intent": "display_booking",
+    "intent_prediction": {
+      "name": "booking_reference",
+      "confidence": 0.9964292645454407
+    }
+  },
+  {
+    "text": "details on this 8623634LK",
+    "intent": "display_booking",
+    "intent_prediction": {
+      "name": "booking_reference",
+      "confidence": 0.9793841242790222
+    }
+  },
+  {
+    "text": "Information on this 5692384AQ",
+    "intent": "display_booking",
+    "intent_prediction": {
+      "name": "booking_reference",
+      "confidence": 0.9776801466941833
+    }
+  },
+  {
+    "text": "Can you tell what movie this is for",
+    "intent": "display_booking",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 0.9932801127433777
+    }
+  },
+  {
+    "text": "bonjour",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "wyd",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "hola",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.1553308516740799
+    }
+  },
+  {
+    "text": "guten tag",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "who am I talking to?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9999996423721313
+    }
+  },
+  {
+    "text": "see you",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9962724447250366
+    }
+  },
+  {
+    "text": "see ya",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.999997615814209
+    }
+  },
+  {
+    "text": "see ya Cinebot",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "im off",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.1856067180633545
+    }
+  },
+  {
+    "text": "all good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "for real",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "clearly",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9023545980453491
+    }
+  },
+  {
+    "text": "nuhuh",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I don't want anything else",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "nope, I'm finished thanks",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.90925532579422
+    }
+  },
+  {
+    "text": "Can I see Captain America Civil War",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.9891694784164429
+    }
+  },
+  {
+    "text": "Deadpool",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "wish to see Coco",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can I get tickets for The Batman",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.9985900521278381
+    }
+  },
+  {
+    "text": "see My Neighbor Totoro",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9084935784339905
+    }
+  },
+  {
+    "text": "The Help",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "it's Donnie Darko, can i see it?",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9226027727127075
+    }
+  },
+  {
+    "text": "I don't know if your showing it but Akira",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9263615608215332
+    }
+  },
+  {
+    "text": "I have a booking reference",
+    "intent": "collect_tickets",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8631402254104614
+    }
+  },
+  {
+    "text": "booking reference",
+    "intent": "collect_tickets",
+    "intent_prediction": {
+      "name": "display_booking",
+      "confidence": 0.981359601020813
+    }
+  },
+  {
+    "text": "avaiable movies",
+    "intent": "inquire_movie_schedule",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.6230670213699341
+    }
+  },
+  {
+    "text": "Are you showing Iron Man right now?",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I want to know the times for Inception",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 0.9191480278968811
+    }
+  },
+  {
+    "text": "what is the schedule for Interview with the Vampire",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 0.9289770722389221
+    }
+  },
+  {
+    "text": "How are the review for The Wizard of Oz",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.9999828338623047
+    }
+  },
+  {
+    "text": "give me everything you have on Suspiria",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "inquire_movie_times",
+      "confidence": 0.9636444449424744
+    }
+  },
+  {
+    "text": "what is [2001 A Space Odyssey] about?",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.9983556866645813
+    }
+  },
+  {
+    "text": "10 am",
+    "intent": "set_movie_time",
+    "intent_prediction": {
+      "name": "no_tickets",
+      "confidence": 0.9738243818283081
+    }
+  },
+  {
+    "text": "movie time at 12th October 2022",
+    "intent": "set_movie_time",
+    "intent_prediction": {
+      "name": "inform_card_num",
+      "confidence": 0.5773454308509827
+    }
+  },
+  {
+    "text": "I would like tickets for monday",
+    "intent": "set_movie_time",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Are there five tickets available?",
+    "intent": "no_tickets",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can I buy fifteen tickets",
+    "intent": "no_tickets",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "1756945LI booking reference",
+    "intent": "booking_reference",
+    "intent_prediction": {
+      "name": "display_booking",
+      "confidence": 0.9542126059532166
+    }
+  },
+  {
+    "text": "snack prices?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inquire_prices",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "sweet prices?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "inquire_prices",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I forgot my card details",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9881845712661743
+    }
+  },
+  {
+    "text": "I am done here",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5002045631408691
+    }
+  },
+  {
+    "text": "saluatations",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Wagwan",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.6461253762245178
+    }
+  },
+  {
+    "text": "Ahoy, matey!",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Namaste",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6565846800804138
+    }
+  },
+  {
+    "text": "privet",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "inquire_prices",
+      "confidence": 0.999907374382019
+    }
+  },
+  {
+    "text": "cya",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.9974881410598755
+    }
+  },
+  {
+    "text": "see u, it was nice to meet u",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9998321533203125
+    }
+  },
+  {
+    "text": "keep it real",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "stay safe",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "roger",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9966044425964355
+    }
+  },
+  {
+    "text": "okey-dokey",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9912455677986145
+    }
+  },
+  {
+    "text": "yeah, why not",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9999984502792358
+    }
+  },
+  {
+    "text": "nothing wrong here",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9999995231628418
+    }
+  },
+  {
+    "text": "go ahead",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "incontestably",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "never",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "doubtful",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "how did you get it so wrong",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.3626982569694519
+    }
+  },
+  {
+    "text": "think thats everything",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "pretty sure thats wrong",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 0.7016372680664062
+    }
+  },
+  {
+    "text": "you've made a mistake",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Moonlight",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "would i be able to get tickets for WALL-E",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.7812623381614685
+    }
+  },
+  {
+    "text": "do u have Joker",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9992051720619202
+    }
+  },
+  {
+    "text": "I want tickets for M at",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.9999011754989624
+    }
+  },
+  {
+    "text": "Star Trek it is",
+    "intent": "inform_movie",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "is this were I can get tickets I bought earlier?",
+    "intent": "collect_tickets",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 0.9996590614318848
+    }
+  },
+  {
+    "text": "What time is The batman on at?",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.8459329605102539
+    }
+  },
+  {
+    "text": "The Matrix times",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "showings for The Great Dictator",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 0.9353377819061279
+    }
+  },
+  {
+    "text": "when can i see Jurassic Park?",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inform_movie",
+      "confidence": 0.9872614145278931
+    }
+  },
+  {
+    "text": "schedule Goodfellas",
+    "intent": "inquire_movie_times",
+    "intent_prediction": {
+      "name": "inquire_movie_schedule",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "What is Jaws?",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Can you tell me if Booksmart is any good?",
+    "intent": "inquire_about_movie",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 0.9998902082443237
+    }
+  },
+  {
+    "text": "eight tickets",
+    "intent": "no_tickets",
+    "intent_prediction": {
+      "name": "book_tickets",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "can I cancel my booking",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I want to cancel a booking",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "stop",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Would I be able to return later",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.4790497124195099
+    }
+  },
+  {
+    "text": "pause",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "inquire_payment",
+      "confidence": 0.9535716772079468
+    }
+  },
+  {
+    "text": "hold that thought",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "affirm",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "okay, think thats enough",
+    "intent": "stop",
+    "intent_prediction": {
+      "name": "inquire_about_movie",
+      "confidence": 1.0
+    }
+  }
+]

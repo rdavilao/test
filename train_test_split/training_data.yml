@@ -1,0 +1,1650 @@
+version: "3.0"
+nlu:
+- intent: inform_sort_code
+  examples: |
+    - [12-34-56](sort_code)
+    - [21-67-32](sort_code)
+    - my sort code is [34-67-12](sort_code)
+    - [12-12-12](sort_code)
+    - [12-11-12](sort_code)
+    - (31-08-71)(sort_code)
+    - [10-02-13](sort_code)
+    - [34-06-13](sort_code)
+    - [12-89-53](sort_code)
+- intent: inform_card_num
+  examples: |
+    - bank card is [1139392938492393](card_num)
+    - [1234567890123456](card_num)
+    - [6432857163845856](card_num)
+    - here's my card number [372828494582939](card_num)
+    - [1209375959939494](card_num)
+    - [6539823947234110](card_num)
+    - [6734534534534534](card_num)
+    - [7937492749681054](card_num)
+    - card num is [7264818182934534](card_num)
+    - [1234567891234567](card_num)
+    - here's my credit card number [2346234547641423](card_num)
+- intent: inform_cvv
+  examples: |
+    - [187](cvv)
+    - [823](cvv)
+    - the code is [312](cvv)
+    - [123](cvv)
+    - [456](cvv)
+    - num = [976](cvv)
+    - the code is [465](cvv)
+    - here you go [129](cvv)
+    - [534](cvv)
+    - code [845](cvv)
+    - my code is [123](cvv)
+    - the number is [112](cvv)
+    - [657](cvv)
+    - security code is [456](cvv)
+    - [122](cvv)
+    - here it is [054](cvv)
+    - code: [123](cvv)
+    - [934](cvv)
+- intent: display_booking
+  examples: |
+    - What can you tell me about this [3813982NJ](booking_reference)
+    - This is my booking reference [9632531SW](booking_reference) what is it for
+    - details on this [8623634LK](booking_reference)
+    - What can I know about this [1838332CV](booking_reference)
+    - I want to know about a booking reference
+    - Can you tell what movie this is for
+    - I need to know about this bookng reference [2131232MI](booking_reference)
+    - Can you tell me what this is for [6583423BA](booking_reference)
+    - tell me the movie this is for [1865392BN](booking_reference)
+    - booking reference info
+    - What movie is this for [1952305ZX](booking_reference)
+    - Can I know about [1283727CW](booking_reference)
+    - how much can you tell me about this [2317232WE](booking_reference)
+    - can you tell me about my booking reference
+    - Tell me about my booking reference
+    - Tell me about this [5729383IW](booking_reference)
+    - Do you think you can tell me what this booking reference is [8629340NM](booking_reference)
+    - What is my booking reference for
+    - Information on this [5692384AQ](booking_reference)
+    - I don't know what movie my booking reference is for
+    - what is this [](booking_reference) about
+    - booking reference information
+    - Would you be able to tell me about this [4131231AQ](booking_reference)
+    - Do you think I could get info on my booking reference
+    - Give me info on booking references
+    - I need info on booking refrences
+    - What did I book with this [1234567FG](booking_reference)
+    - I'd like information on this booking reference [5839323QP](booking_reference)
+    - what is [](booking_reference)
+    - I need to know about this booking reference
+- intent: out_of_scope
+  examples: |
+    - I want popcorn
+    - Can I pay for snacks here
+    - do you sell snacks?
+    - can you point in the direction of where they sell snacks
+    - Can I purchase food here
+    - refund
+    - do you sell drinks?
+    - let me make a complaint
+    - food
+    - drinks
+    - i want to get snacks
+    - do you know where snacks are
+    - inform refunds
+    - I want to cancel a booking
+    - I need to get a refund
+    - Do you offer refunds
+    - i have noticed a problem in the cinema
+    - where can i get snacks
+    - Can you give me a refund
+    - Can I order popcorn?
+    - I want to make a complaint
+    - Where can i make a complaint
+    - how much is a small popcorn
+    - Do you know anything about refunds
+    - how much is a large drink
+    - Can you issue refunds
+    - inform food
+    - sweet prices?
+    - chocolate?
+    - What types of popcorn do you have
+    - popcorn
+    - inform drinks
+    - I want a refund
+    - snack prices?
+    - Can you tell me where I can get a refund
+    - let me cancel my booking
+    - what drinks do you sell
+    - Does this cinema sell popcorn
+    - snacks
+    - refund info
+- intent: booking_reference
+  examples: |
+    - my booking reference [2344552HJ](booking_reference)
+    - code: [5673534FR](booking_reference)
+    - i think it's [4829923XW](booking_reference)
+    - uh huh, my booking reference is [1244254LK](booking_reference)
+    - [1639455FS](booking_reference), hope its right
+    - pretty sure it's [9234223WX](booking_reference)
+    - [1235235SD](booking_reference)
+    - I think this my booking code [3134243ZA](booking_reference)
+    - is this the right thing [7452234PQ](booking_reference)
+    - [1756945LI](booking_reference) booking reference
+    - my reference is [1223452ID](booking_reference)
+    - [6839533RM](booking_reference) is my booking ref
+    - this is my booking code [4634523LQ](booking_reference)
+    - booking reference [5663521BI](booking_reference)
+    - the booking reference I have is [5736746NB](booking_reference)
+    - Here is my booking reference [5272837VC](booking_reference)
+    - booking code is [0784353IO](booking_reference) i think
+    - booking [3624562YD](booking_reference)
+    - [2935473GH](booking_reference)
+    - here it is [4829304ML](booking_reference)
+    - [7983949CA](booking_reference)
+    - booking reference: [4949494JH](booking_reference)
+    - the code is [1567445SA](booking_reference)
+    - [9053104AQ](booking_reference) is my booking reference
+    - Okay, here you go [1324536AD](booking_reference)
+    - yep, it is [1348472QP](booking_reference)
+    - i think my booking is [2948232JH](booking_reference)
+    - I think this might be the right one [1233427KP](booking_reference)
+    - I hope this is right [0394932LE](booking_reference)
+    - booking ref [9283742JK](booking_reference)
+    - [5968394KQ](booking_reference)
+    - my booking is [7465345RL](booking_reference)
+    - [1248908XL](booking_reference)
+    - i think [1843942AZ](booking_reference) is right
+    - [6743523MD](booking_reference)
+    - it is [1245723BN](booking_reference)
+    - [7254284VD](booking_reference)
+    - i think [4316890OP](booking_reference) is correct
+    - My booking reference is [1234563AB](booking_reference)
+    - it's [8623445CW](booking_reference)
+    - I think this is the code [7823426LT](booking_reference)
+- intent: inquire_payment
+  examples: |
+    - pay methods
+    - how do i pay?
+    - Do you know how I pay
+    - do you accept cash
+    - how to pay?
+    - payment
+    - inform about payments
+    - tell me payment info
+    - What are the payment methods you take
+    - Are you able to use cash
+    - Do you take cash?
+    - is paying by cash fine
+    - is paying by card fine?
+    - what paymemt do you take?
+    - Can i use cash
+    - what ways can i pay?
+    - do you take card
+    - Can i use card
+    - information about paying
+    - what the best way to pay
+    - paying
+    - tell me available payment methods
+    - information about payment methods
+    - Can I only pay by card
+    - do you accept card
+    - I want to pay with cash
+    - inform payments
+    - give pay info
+    - Can i use my bank card?
+    - available payment methods
+    - card or cash
+    - inform pay
+    - what payment to you accept
+    - Are you only able to take card
+    - is it okay to pay by card
+    - pay
+    - I want to use cash, is that fine
+    - How can I pay
+    - cash or card
+    - give me payment method info
+    - can you tell me about paying
+    - Can I pay buy card?
+- intent: no_tickets
+  examples: |
+    - is it possible to get 3 tickets
+    - 1
+    - only one
+    - five seats
+    - I would like three seats
+    - we are a family of four
+    - 5
+    - we're a group of five
+    - group of 9
+    - four
+    - would it be possible to have 2 seats
+    - Can I get 5 tickets
+    - We need 5 tickets
+    - We need five seats
+    - I want 5 tickets
+    - 3
+    - Can we have 2 tickets
+    - purchase 2 tickets
+    - is it alright to buy 9 tickets
+    - I just need 2
+    - 11
+    - give me 9 tickets
+    - Can I have five seats
+    - I wish to get four tickets
+    - family of 3
+    - may we get seven tickets
+    - 2 tickets please
+    - please, give me 1 ticket
+    - can I have two seats
+    - I want three tickets
+    - we are 4
+    - May I have 6 tickets
+    - Can I buy fifteen tickets
+    - 20
+    - A single ticket
+    - would we be able to get five
+    - I want six seats
+    - we need six seats
+    - Are there five tickets available?
+    - three
+    - there's 4 of us
+    - We are a group of 4
+    - 7 tickets
+    - I want to purchase 8 ticket
+    - 8 tickets plz
+- intent: set_movie_time
+  examples: |
+    - I want to go to the 6pm showing on monday
+    - I think i'll go to the 1am showing on the 6th
+    - 12 pm
+    - Can I see it at 2pm tomorrow
+    - 1st april at 5pm
+    - the time slot I want is 6pm
+    - I need tickets for 6th of Decemeber at 8pm
+    - 1st of April
+    - movie time at 12th October 2022
+    - Can you give seats for the 2 30 pm showing today
+    - set the time for 1pm
+    - 22/07/21
+    - can i see it at three pm
+    - give me tickets for 10 o'clock
+    - 1:30 pm
+    - three pm
+    - Get me tickets for the 1st at 2pm
+    - Would you be able to put me down for 12pm on the 5th January
+    - Do you think I can see it at 3pm tomorrow
+    - 10 am
+    - tickets for 25th at 1pm
+    - 13:00
+    - 25th march at 10am
+    - 02:45 pm
+    - I want to see it today at 3pm
+    - 14:30
+    - Do you think I can see it on march 10th at 9pm
+    - 10:30
+    - are there still tickets available for the 2nd
+    - I want to see for the 2:30 showing
+    - 06:20
+    - I want to see the movie at 5 o'clock
+    - I want to see the movie at 1pm today
+    - Am I able to buy tickets for the 1st of march at 10
+    - I'm thinking I want to see it at 5pm
+    - 5pm on 16th september
+    - I wish to book it for four pm
+    - I need to see it at 12pm
+    - I want to go to the 2pm showing
+    - I'll go to the 8am showing
+    - set the time for 30th of June on 5pm
+    - I would like tickets for monday
+    - 27th march at 4pm
+    - I want to see it at one pm
+    - today at 12 pm
+    - is there space for the 17:30 showing today
+    - I want seats for the 9 O'clock showing
+    - 28th march 1pm
+    - Give me tickets for 2pm
+    - 22/12/03 at 4am
+    - I'll go to the 12pm showing today
+    - Can I get tickets for 8th April at 2pm
+    - 27th March at 4pm
+    - the time I want to see it is 5pm
+    - Can you give me tickets for 3pm on the 6th of june
+    - can I get tickets for today at 5pm
+    - Am I able to see it at 8 o'clock
+    - 3pm on the 1st of april
+    - 10:30 pm
+    - 25th of march at 10am
+- intent: inform_movie
+  examples: |
+    - tickets for [Toy Story 3](movie_name)
+    - is [Howl's Moving Castle](movie_name) available
+    - we would like to watch [The Jungle Book](movie_name)
+    - do you have the movie [1917](movie_name)
+    - [Nosferatu](movie_name)
+    - film [Power of the Dog](movie_name)
+    - I want to see the movie [Harry Potter and the Goblet of Fire](movie_name)
+    - wish to see [Coco](movie_name)
+    - Give me tickets for [The Green Mile](movie_name)
+    - the film I want to see is [It's a Wonderful Life](movie_name)
+    - [Baby Driver](movie_name)
+    - We would like to see [Tick Tick Boom](movie_name)
+    - the movie title is [Bohemian Rhapsody](movie_name)
+    - pretty confident it's called [Planet of the Apes](movie_name)
+    - [The Help](movie_name)
+    - [The Pursuit of Happyness](movie_name), is it available?
+    - do u have [Joker](movie_name)
+    - Can I watch [Fargo](movie_name) here
+    - [The Silence of the Lambs](movie_name)
+    - it's [Donnie Darko](movie_name), can i see it?
+    - [Kill Bill: Vol. 2](movie_name), do you have it?
+    - Can I see the movie [Life is Beautiful](movie_name)
+    - Can you give me tickets for [Alien](movie_name)
+    - would like to watch [The Theory of Everything](movie_name)
+    - is [The Lion King](movie_name) on just now
+    - pretty sure it's called [Fiddler on the Roof](movie_name)
+    - I think the name is [X-men: Days of Future Past](movie_name)
+    - Can I get tickets for [The Batman](movie_name)
+    - I want to watch [Avengers](movie_name)
+    - The name is [Zootopia](movie_name)
+    - Is this where i can book tickets for [Pirates of the Caribbean: Curse of the Black Pearl](movie_name)
+    - would i be able to get tickets for [WALL-E](movie_name)
+    - movie [Ladybird](movie_name)
+    - I want seats for the movie [The Graduate](movie_name)
+    - I would like to watch the movie [Your name](movie_name)
+    - [Blade Runner 2049](movie_name) is it's name
+    - [Moonlight](movie_name)
+    - want tickets for [Interstellar](movie_name)
+    - for [Princess Mononoke](movie_name)
+    - it's called [The Deer Hunter](movie_name)
+    - I think the title is [Castle in the Sky](movie_name)
+    - [Star Trek](movie_name) it is
+    - [All Quite on the Western Front](movie_name) is the title
+    - I need tickets for [The Sound of Music](movie_name)
+    - Fairly sure the title is [Solaris](movie_name)
+    - the name of it is [The Tale of Princess Kaguya](movie_name)
+    - movie title: [Sanjuro](movie_name)
+    - it is under the moniker [The perks of Being a Wallflower](movie_name)
+    - movie is [City of God](movie_name)
+    - [Dispicable me](movie_name)
+    - I want to see [2001: A Space Odyssey](movie_name)
+    - it is [Black Swan](movie_name)
+    - Can I book tickets for [Old Boy](movie_name)?
+    - Can I have tickets for [The Wizard of OZ](movie_name)
+    - it's [The Kings Speech](movie_name)
+    - [Bram Stockers Dracula](movie_name)
+    - its [Rain Man](movie_name), do you have it?
+    - Is the movie [Parasite](movie_name) available to see
+    - watch [Jojo Rabbit](movie_name)
+    - I want to purchase tickets for [The Sixth Sense](movie_name)
+- intent: collect_tickets
+  examples: |
+    - Am I available to collect tickets here
+    - Is this a ticket collection point?
+    - would u be able to tell me where i can collect tickets?
+    - would you be able to print tickets for me
+    - I need help collecting tickets
+    - collect movie tickets
+    - Can you guide me through collecting tickets
+    - I want to collect tickets
+    - what do i do to collect tickets
+    - I'm wondering if I can collect tickets here
+    - Can I collect tickets here
+    - would I be able to collect tickets here
+    - Infromation on collecting tickets
+    - do u know if I can collect tickets here
+    - I need my tickets printed
+    - I'm here to collect tickets
+    - I am here to collect tickets
+    - help me collect my tickets
+    - pre-bought tickets
+    - need my tickets printed
+    - I'm collecting tickets
+    - I need to pick up tickets
+    - collect tickets
+    - do you want my booking reference?
+    - I already bought tickets
+    - Can i pick up tickets here?
+    - collection
+    - do u offer ticket pick up
+    - I bought tickets yesterday and was wondering if this is where I can print them
+    - Is this where i pick up tickets
+    - I need to collect my tickets
+    - booking reference
+    - I'm intending to pick-up tickets
+    - I want to pick up some tickets
+    - is it possible to collect tickets
+    - do u do ticket collection?
+    - how do we collect tickets
+    - Can I collect some tickets
+    - do you need my booking reference
+    - collecting
+    - pick up
+    - I'd like to collect my tickets
+    - I already bought tickets and I need them printed
+    - Do think I can pick up tickets here
+    - ticket pick-up
+    - tell me how to collect tickets
+    - can we pick up our tickets here?
+    - collect my ticket
+    - Can you aid me in ticket collection
+    - infromation on how to collect tickets
+    - I'm here to pick up tickts
+    - I already bought my tickets
+    - ticket collection
+    - collect film tickets
+    - print tickets
+    - Where can I collect tickets?
+    - pre purchased tickets
+    - is this the ticket collection point?
+    - Is it here that I can collect tickets?
+    - Is ticket collection available here?
+    - I wish to collect tickets
+    - Can you print my tickets
+    - I have brought my booking reference
+    - collect
+- intent: inquire_movie_times
+  examples: |
+    - What time is [The batman](movie_name) on at?
+    - schedule of [The Truman Show](movie_name)
+    - when is the next time for [Guardians of the Galaxy](movie_name)?
+    - give me schedule for [The Godd, the Bad and the Ugly](movie_name)
+    - Current showings for [What we do in the Shadows](movie_name)
+    - viewing schedule for [12 Angry Men](movie_name)
+    - I need information on showings for [The Bridge on the River Kwai](movie_name)
+    - time info [Hacksaw Ridge](movie_name)
+    - movie [Seven Samurai](movie_name) times
+    - are there any times for [Avengers: Endgame](movie_name) today?
+    - I'm wondering what the time for [Ocean's Eleven](movie_name) are?
+    - timings for [Ikiru](movie_name)
+    - I want times for [The Shawshank Redemption](movie_name)
+    - give me times for [The Hunt](movie_name)
+    - Can I get the viewing schedule for [Captain America: Civil War](movie_name)
+    - showings for [The Great Dictator](movie_name)
+    - info times [Rush](movie_name)
+    - give me the time [Logan](movie_name) is showing at
+    - [Scarface](movie_name) schedule
+    - times for the movie [The Dark Night](movie_name)
+    - I want the times of [King Kong](movie_name)
+    - what time is [A Silent Voice: The Movie](movie_name) on at?
+    - times for [Twilight]
+    - can you tell me the schedule for [Heat](movie_name)
+    - What is the schedule for [One Flew Over the Cuckoo's Nest](movie_name)
+    - give me showings for [Turning Red](movie_name)
+    - I want to know the times for [Inception](movie_name)
+    - times [Boogie Nights](movie_name)
+    - [Back to the Future](movie_name) times
+    - need info about times for [Gone Girl](movie_name)
+    - when can i see [Jurassic Park](movie_name)?
+    - what is the schedule for [Interview with the Vampire](movie_name)
+    - times for [The Avengers](movie_name)
+    - do you happen to know the schedule of [Dead Alive](movie_name)
+    - times of [Once Upon a Time in America](movie_name)
+    - can you tell me the times for [Spider-Man: Homecoming](movie_name)?
+    - tell me the times for [A Prophet](movie_name)
+    - time info for [Apocalypse Now](movie_name)
+    - when are you showing [Tangled](movie_name)?
+    - Do you happen to know the times for [O Brother, Where Art Thou](movie_name)
+    - Can i get the times availiable for [Up](movie_name)
+    - info on times for [Baby Driver](movie_name)
+    - Are you showing [Iron Man](movie_name) right now?
+    - give me the schedule for [Kick-Ass](movie_name)
+    - when is [Kill Bill: Vol.1](movie_name) on?
+    - info on schedule for [A Clockwork Orange](movie_name)
+    - schedule info for [Lawrence of Arabia](movie_name)
+    - print information about timings for [Gone with the Wind](movie_name)
+    - I want the schedule for [Go](movie_name)
+    - inform times for [Pulp Fiction](movie_name)
+    - schedule for [Schindler's List](movie_name)
+    - need the times for [Reservoir Dogs](movie_name)
+    - display time of [The Bourne Identity](movie_name)
+    - I wonder if you can tell me the time of [The Italian Job](movie_name)
+    - give me the times for [Casablanca](movie_name)
+    - tell me the schedule for [The Departed](movie_name)
+    - display [V for Vendetta](movie_name) schedule
+    - display [Inside Out](movie_name) times
+    - How can I find out when [The Great Escape](movie_name) is showing?
+    - information on times for [The Godfather](movie_name)
+    - [Vertigo](movie_name) timings
+    - What are the times for [Gladiator](movie_name)
+    - [Forrest Gump](movie_name) showings
+    - display schedule for [An American Werewolf in London](movie_name)
+- intent: inquire_prices
+  examples: |
+    - Can I know the cost?
+    - info about ticket prices
+    - How many different screens are there
+    - What screen types do you offer
+    - how much are your prices
+    - price list
+    - price
+    - display prices
+    - cost of different showings
+    - display how much
+    - display cost
+    - diff screen type cost
+    - Cinema prices
+    - what is the price of the IMAX
+    - What is your most expensive ticket
+    - cost
+    - show me ticket prices
+    - Can you tell me the price of a standard ticket
+    - tell me how much a ticket is
+    - tell price
+    - how much per seat
+    - how expensive are your tickets
+    - Can I ask the ticket prices
+    - tell me cost
+    - Is everything the same price
+    - 2D price
+    - cost of 2d screenings
+    - what prices
+    - are your tickets expensive
+    - Price for a seat
+    - what screen types do you have
+    - are the tickets here cheap
+    - Do you know how much it costs
+    - do screen have different prices
+    - tell me ticket cost
+    - What are your prices
+    - IMAX ticket cost info
+    - what can you tell me about the screen types
+    - ticket price list
+    - Would you be able to tell me the ticket prices
+    - ticket cost information
+    - ticket price
+    - most expensive ticket
+    - how much are 3D showings
+    - prices please
+    - I'm wondering how much a ticket is
+    - what's the price of a ticket
+    - list of seat prices
+    - How much are all your different screen types
+    - Cost of different screen types
+    - how much are showings in the IMAX
+    - 3D price
+    - I need to know how much is ticket
+    - showing cost info
+    - how cheap are your tickets
+    - Can you tell me how expensive your tickets are
+    - what are costs
+    - tell me the screen types
+    - cost of a seat
+    - how much
+    - I want to Know how much a ticket costs
+    - Do you know the ticket prices
+    - what are prices
+    - please tell me ticket prices
+    - ticket are how much?
+    - inform ticket prices
+    - what does a ticket cost
+    - 2D ticket cost info
+    - seat prices
+    - cost of each screen type
+    - display price
+    - do seats have different prices
+    - What ticket is cheapest
+    - cinema ticket price
+    - different screening prices
+    - can you tell me costs
+    - How much is a ticket
+    - Standard price
+    - list of ticket prices
+    - What can you tell me about ticket prices
+    - ticket price info
+- intent: goodbye
+  examples: |
+    - goodbye <3
+    - bye
+    - I'm going, thanks for your help
+    - That me just leaving
+    - Okay, imma go
+    - adios
+    - Catch you later
+    - I’ve got to get going
+    - I'm gonna dip
+    - cheers
+    - see you later
+    - take it easy
+    - thanks so much for your help
+    - you were v helpful, bye
+    - I’ve got to get going.
+    - gonna get going now
+    - later dude
+    - see you
+    - byeee
+    - thanks for you help!
+    - have a great day
+    - bye, you were very helpful
+    - Thanks for your help
+    - thanks <3
+    - Well, I'm off!
+    - thanks
+    - see u later
+    - bye bye
+    - catch u later
+    - have a good one
+    - Have a good one!
+    - so long
+    - cee you later
+    - bye <3
+    - until next time
+    - thank you, you were very helpful
+    - good by
+    - I better get going
+    - see ya
+    - bye for now
+    - alright, I am going
+    - enjoy you're day
+    - Thanks for your help, see u later
+    - I'm gonna take off
+    - take care
+    - I wanna leave
+    - enjoy your day
+    - goodbye, friend!
+    - later
+    - by
+    - I'm gonna go
+    - Bon Voyage
+    - thank you, good bye
+    - im off
+    - Nice talking with you Cinebot
+    - bye, it was nice meeting you
+    - thank you
+    - I've gotta go
+    - I have to go
+    - cheery-bye
+    - I'm goona head out now
+    - cu
+    - cya
+    - I want to go
+    - yep, thats me going
+    - So long, suckers!
+    - Bye, Cinebot
+    - thanks Cinebot
+    - I gotta head out
+    - bye, you sucked
+    - thats me heading off now
+    - I'mma go
+    - laters
+    - I gotta hit the road
+    - I'm leaving
+    - toodles
+    - au revoir
+    - bye, love u
+    - lets dip
+    - have a brilliant day
+    - I must be going
+    - Toodaloo
+    - u helped alot, cya
+    - lovely talking to you
+    - imma leave
+    - sayonara
+    - bye, see you later!
+    - thats me leaving
+    - Have a good day
+    - peace
+    - fair thee well
+    - see you around
+    - peace out
+    - I gotta dip
+    - see ya later
+    - Fare thee well
+    - see ya Cinebot
+    - thank you, goodbye
+    - See ya later, alligator!
+    - nope, thats me going
+    - I gotta take off
+    - I gotta bounce.
+    - buh-bye
+    - enjoy the rest of your day
+    - I want to leave
+    - I'm gonna head
+    - c u later
+    - bye, you were not helpful
+    - Thanks Cinebot, I'm gonna take off
+    - bye, I'm leaving
+    - been nice talking to you
+    - Nice talking with you
+    - I need to go
+    - Thats me going to leave
+    - thanks, bye cinebot
+    - Adios, amigos.
+- intent: deny
+  examples: |
+    - wait, thats not right
+    - you got it wrong somewhere
+    - thats wrong
+    - thats not right
+    - that booking reference is not right
+    - You didn't get the right time
+    - not okay
+    - no thanks
+    - not at all
+    - definitely not
+    - positively incorrect
+    - you got nothing right
+    - absolutely not
+    - that is not right
+    - wrong
+    - Nah, that booking reference is wrong
+    - sorry, I have to decline
+    - the movie is wrong
+    - nae
+    - I wanted a different showing
+    - certainly not
+    - n
+    - nah
+    - nah, I'm finished
+    - no thank you
+    - yeah, this is wrong
+    - do better next time
+    - wrong date
+    - sorry, but no
+    - unsuitable
+    - false
+    - I think I'm done
+    - thats not going to work
+    - wrong number of tickets
+    - na
+    - thanks but no
+    - I didn't want that many tickets
+    - movie is incorrect
+    - untrue
+    - The number of tickets is wrong
+    - no, sorry
+    - the movie I wanted was
+    - the date is wrong
+    - need no more help
+    - yeah, no
+    - I don't think so
+    - nahhh
+    - I don't want anything else
+    - not correct
+    - thats not what I wanted
+    - yeah, thats not right
+    - haha, nope
+    - all wrong
+    - you didn't get the right date
+    - I don't think I need more help
+    - no, I don't want that
+    - I think this is not right
+    - Incorrect
+    - no I think thats it
+    - hell no
+    - the movie i wanted was something else
+    - don't like that
+    - I don't need more help
+    - nahp
+    - uh uh
+    - that is false
+    - The date is incorrect
+    - I think this is wrong
+    - yep, thats incorrect
+    - not possible
+    - thats not feasible
+    - never
+    - nah, thats not right
+    - gonna have to say no
+    - not right at all
+    - theres a mistake
+    - nay
+    - doubtful
+    - all done
+    - extremely wrong
+    - naw
+    - The day and time is wrong
+    - no chance
+    - get it right next time
+    - wrong movie
+    - Thats not my booking reference
+    - no
+    - not right
+    - everything is wrong
+    - think thats everything
+    - very incorrect
+    - can i say no
+    - thats definitely not right
+    - I think thats not right
+    - nope, I'm finished thanks
+    - literally everything is wrong
+    - not really
+    - no way
+    - nope
+    - no more help required
+    - you didn't get it right
+    - nah, sorry
+    - thats very wrong
+    - nah I'm done
+    - nope, that's wrong
+    - nap
+    - nah, this is wrong
+    - you have been mistaken
+    - absolutely wrong
+    - heck no
+    - nuh
+    - negative
+    - I wanna say nope
+    - nuhuh
+    - You got the amount of tickets incorrect
+    - that won't work
+- intent: greet
+  examples: |
+    - I need you to do something
+    - konnichiha
+    - What’s going on?
+    - hello, what are you called?
+    - konnichiwa
+    - whats up cinebot
+    - Hallo
+    - How's life?
+    - hi, hope you're having a good day
+    - hello, I need help
+    - Hello, I want help
+    - Hello, its good to meet you, whats your name?
+    - hows it hanging
+    - cinebot?
+    - Yo
+    - hi, how are you
+    - anyeong
+    - yo yo
+    - goodmorning
+    - what's good
+    - what's crackin?
+    - great to see you
+    - How’s everything?
+    - Aloha
+    - good evening
+    - Hi, what's you name
+    - evening
+    - I want to speak with cinebot
+    - yo, what's up
+    - howdy
+    - heyyy
+    - Whazzup
+    - how u doin
+    - Whaddup
+    - Hiya
+    - How ya doin’?
+    - Hi, bot
+    - hiiii
+    - hiya, can you help
+    - can you do something for me?
+    - what's new
+    - hello ,can you help me with something
+    - good morning
+    - Hello, are you the ticket bot?
+    - How was your day?
+    - hi there, I need assiatnce with something?
+    - hola
+    - good afternoon
+    - helo
+    - morning
+    - hey dude
+    - What’s new?
+    - are you cinebot?
+    - bot?
+    - Howdy-doody!
+    - Nice to see you!
+    - I come in peace
+    - what's poppin
+    - hi hi
+    - what's happening
+    - g'day
+    - ni hao
+    - hey there
+    - haya, mate
+    - Hey y'all
+    - what's up
+    - hai
+    - Long time no see
+    - guten tag
+    - good morrow
+    - hello, who is this?
+    - yoooo what up
+    - I need you to help me
+    - nice to see you
+    - Hey man
+    - who am I talking to?
+    - can you tell me, are you Cinebot?
+    - let's go
+    - good day
+    - wyd
+    - hello hello
+    - hiii, are the bot that sells tickets?
+    - how's it going
+    - hey, Cinebot
+    - hi, mate
+    - bonjour
+    - hiya, who is this?
+    - what is this?
+    - hello
+    - hey, who are you?
+    - Wagwan
+    - You all right?
+    - tell me who this is?
+    - heyy
+    - afternoon
+    - annyeong haseyo
+    - saluatations
+    - Ahoy, matey!
+    - Hi!!! Mate
+    - hello!, are the the Cinema bot?
+    - hey
+    - Namaste
+    - hi ya
+    - annyeong
+    - good to see you
+    - Hey yall
+    - Well, who do we have here?
+    - goo morn
+    - hello there
+    - goodevening
+    - can you provide me with assitance?
+    - privet
+    - Been a long time
+    - heyyy fren
+    - Hey, hiiii
+    - greetings
+    - moin
+    - heyy, cinebot
+    - marhaban
+    - whats going on
+    - sup cinebot
+- intent: inquire_about_movie
+  examples: |
+    - everything you know about [Carol](movie_name)
+    - Do you happen to know about [The Tree of Life](movie_name)
+    - Are the reviews positive for [Lost in Translation](movie_name)
+    - I need to know the director of [The Muppet Movie](movie_name)
+    - display info of [Little Women,](movie_name)
+    - Can I get all you know about [Grizzly Man](movie_name)
+    - what do you think I need to know about [John Wick](movie_name)
+    - I need info on [Blow Out](movie_name)
+    - What do the reviews say about [Nobody](movie_name)?
+    - Do you think I could get everything you have about [Clueless](movie_name)
+    - what is [2001 A Space Odyssey] about?
+    - Do you have any information on [Thor:Ragnarok](movie_name)
+    - what are you able to tell me about [La Dolce Vita](movie_name)
+    - details [Blade Runner](movie_name)
+    - do you have any details about [Monty Python and the Holy Grail](movie_name)
+    - give me everything you have on [Suspiria](movie_name)
+    - Can you tell me some facts about [Spotlight](movie_name)
+    - reviews for [Sleeping Beauty](movie_name)
+    - I want a short summary of [Eternal Sunshine of the Spotless Mind](movie_name)
+    - director of [How to Train Your Dragon](movie_name)
+    - please can you tell me about [Monsters Inc](movie_name)
+    - director for [Moonlight](movie_name)
+    - Would it be possible to find out what [Tokyo Story](movie_name) is about?
+    - which person directed [Shang-Chi And The Legend Of The Ten Rings](movie_name)
+    - What is the runtime for [Don't Look Up](movie_name)?
+    - details of [Mulholland Drive](movie_name)
+    - information of [Wonder Woman](movie_name)
+    - What can you tell me about [Pirates of the Carribean the Curse of the Black Pearl](movie_name)?
+    - info of [Get Out](movie_name)
+    - What is the average review of [Grease](movie_name)
+    - Is there information about [Zack Snyder’s Justice League](movie_name) available?
+    - can you tell me anything about [Morbius](movie_name)
+    - display info for [The Blind Side](movie_name)
+    - Who directed [Raya And The Last Dragon](movie_name)
+    - please can i have information about [Aladdin](movie_name)
+    - Can you tell me the synopsis of [Guaridans of the Galaxy: Vol 2](movie_name)
+    - Can you tell me the reviews of [The Piano](movie_name)
+    - What do you think of [Selma](movie_name)
+    - information for [Inside Out](movie_name)
+    - I don't know anything about [Avengers: Infinity War](movie_name)
+    - how much do you have about [Punch-Drunk Love](movie_name)
+    - I need you display information about [American Beauty](movie_name)
+    - Can I get info on the director for [Lord of the Rings: The Two Towers](movie_name)
+    - I wish I had info about [Roger & Me](movie_name)
+    - Can you tell me who directed [Spider-Man: Far From Home](movie_name)
+    - do you know anything about [Dances with Wolves](movie_name)
+    - I need a short summanry of [Blazing Saddles](movie_name)
+    - What do you happen to know about [Black Panther](movie_name)
+    - How good is [Crazy Stupid Love](movie_name)?
+    - do you know who directed [Annie](movie_name)
+    - Can you show me everything you have on [Breakfast At Tiffany's](movie_name)
+    - I need the synopsis of [Psycho](movie_name)
+    - the blurb of [The Notebook](movie_name)
+    - tell me about [Fresh](movie_name)
+    - do you know stuff about [In the Mood for Love](movie_name)
+    - synopsis for [The Breakfast Club](movie_name)
+    - who was the director of [Oliver](movie_name)
+    - display information about [Dirty Dancing](movie_name)
+    - what do you have on [The Rules of the Game](movie_name)
+    - synopsis of [The Little Mermaid](movie_name)
+    - display everything you know about [Rocky](movie_name)
+    - What age can I see [I Am Sam](movie_name) at
+    - how much are you able to tell me about [Before Sunrise](movie_name)
+    - is [The Parent Trap](movie_name) apropriate for children
+    - Can you tell me if [Booksmart](movie_name) is any good?
+    - what is [A Quiet Place](movie_name) about?
+    - Is [Meshes of the Afternoon](movie_name) a bad movie
+    - I want to know who directed [Song of the Sea](movie_name)
+    - brief summary of [Singin' in the Rain](movie_name)
+    - who's the direcor for [In The Heights](movie_name)
+    - I need to see reviews of [Children of Men](movie_name)
+    - What is [Jaws](movie_name)?
+    - information about [Star wars: a new hope](movie_name)
+    - synopsis for [Hot Fuzz](movie_name)
+    - is [Within Our Gates](movie_name) good
+    - Can you tell me the age rating of [Titanic](movie_name)
+    - I want to know about [The Devil all the Time](movie_name)
+    - inform  about [How to train your dragon](movie_name)
+    - Is there anything you can tell me about [The Martian](movie_name)?
+    - Give me information about [The Contractor](movie_name)
+    - Can you give me a summary of [Vertigo](movie_name)
+    - summarize [Home Alone](movie_name)
+    - rundown of [The Little Rascals](movie_name)
+    - Do you happen to have information on [This is Spinal Tap](movie_name)
+    - What is [Citizen Kane](movie_name) about?
+    - How many directors were involved with [Bicycle Thieves](movie_name)
+    - do you think you can summarise [Who Framed Roger Rabbit](movie_name)
+    - would I be able to get all you know about [Z](movie_name)
+    - Can you tell me anything about [Thor: the Dark World](movie_name)
+    - movie info [Matilda](movie_name)
+    - Am I old enough to see [My Girl](movie_name)
+    - summary of [The Night of the Hunter](movie_name)
+    - details for [Blade Runner](movie_name)
+    - I want to know what the plot of [Mad Max: Fury Road](movie_name) is
+    - I need to know about [Sweet Home Alabama](movie_name)
+    - [Snow White and the Seven Dwarfs](movie_name) synopsis
+    - age rating of [Ratatouille](movie_name)
+    - do you happen to know anything about [The Terminator](movie_name)
+    - tell me information about [Bram Stokers Dracula](movie_name)
+    - info for [Star Wars: The Last Jedi](movie_name)
+    - [Life of Brian](movie_name) details
+    - any info about [Spider-Man: No Way Home](movie_name)?
+    - What age do you need to be for [Fast Five](movie_name)
+    - let me know about [Whiplash](movie_name)
+    - Show details for [Ferris Bueller's Day Off](movie_name)
+    - Can you show me information about [Paddington 2](movie_name)
+    - Can you tell me what I need to know about [Heathers](movie_name)
+    - tell me about [Dead Poets Society](movie_name)
+    - What are the reviews like for [Spectre](movie_name)?
+    - summarise [An American Tail: Fievel Goes West](movie_name)
+    - how much do you know about [There Will Be Blood](movie_name)
+    - can you provide a summary of [The Verdict](movie_name)
+    - inform [Shutter Island](movie_name)
+    - what do I need to know about [Coco](movie_name)
+    - Do you have any info on [Thor](movie_name)
+    - knowledge about [Good Will Hunting](movie_name)
+    - are you able to give more information about [Toni Erdmann](movie_name)
+    - is it possible to get details about [12 Years a Slave](movie_name)
+    - Can you give more information about [A Face in the Crowd](movie_name)
+    - can you inform me about [American Psycho](movie_name)
+    - I need a summary of [Some Like it Hot](movie_name)
+    - How long is [A Quiet Place Part II](movie_name)?
+- intent: book_tickets
+  examples: |
+    - I'm considering seeing a movie
+    - Looking to see a film
+    - buy tickets
+    - i figure I can purchase movies here
+    - cinema tickets please
+    - Is it possible to book a ticket
+    - purchase a film ticket
+    - I'm considering purchasing some tickets
+    - ticket purchase
+    - looking for movie tickets
+    - book
+    - Is this the place I purchase tickets?
+    - Can you help me in booking a movie ticket
+    - I'm looking for tickets?
+    - Do you know if I can book tickets here?
+    - purchase tickets for the
+    - purchase movie tickets
+    - I'd like to book a movie
+    - do you have the ability to book tickets
+    - would i be able to buy a ticket?
+    - Is this the ticket office
+    - is this where i can book tickets?
+    - I'm intending on buying a ticket
+    - help me buy a ticket
+    - I'm hoping to buy tickets
+    - How do I obtain tickets
+    - I'm looking to purchase tickets
+    - I wonder if you could book me a ticket
+    - is this where you book tickets?
+    - see movies
+    - where do I have to look to purchase a ticket
+    - Do you think I can book a ticket
+    - let me book a movie
+    - want tickets
+    - I would be grateful if I could book a ticket
+    - can you aid me in purchasing tickets
+    - intending to buy tickets
+    - Hi, can I get 1 ticket to see [Old Boy](movie_name)
+    - is this the right place to book tickets
+    - book tickets
+    - I want to book tickets
+    - tickets for a film
+    - do u sell cinema tickets
+    - I was told this is where I can get tickets
+    - watch movies
+    - I want help in seeing a movie
+    - I'd like 2 tickets to see [Old Boy](movie_name)
+    - book me a movie
+    - I was wondering if I could book tickets here?
+    - Is this where I can book a ticket
+    - I am considering buying tickets
+    - buy tickets for a movie
+    - movie tickets
+    - hoping I can buy tickets here
+    - I'd like to make a purchase
+    - Can u sell me tickets to see a movie?
+    - tickets please
+    - watch films
+    - Can you inform me if I can buy tickets here?
+    - Hi ya, would you be able to tell me if I can buy tickets here?
+    - I would be grateful if you let me book a ticket
+    - can I get 5 tickets for [Old Boy](movie_name)
+    - May I buy tickets here
+    - Could you help me book tickets
+    - purchase film tickets
+    - I want to see a film
+    - I want to purchase some tickets
+    - I want to buy tickets for the cinema
+    - I think this is where I get tickets right?
+    - hello, would you be able to help me buy a ticket
+    - I'm trying to purchase tickets
+    - 2 tickets for [Old Boy](movie_name)
+    - I'm searching for tickets
+    - book a movie
+    - I wish to book some tickets
+    - Am I able to purchase tickets here?
+    - I endevour to buy tickets
+    - Is it possible to buy tickets here
+    - I want to pruchase a seat for a movie
+    - Are movies available to book
+    - I want to book a movie?
+    - Can I buy tickets to see a movie here?
+    - Can I book a movie here
+    - I have been struggling to buy tickets
+    - was wondering if I can buy tickets
+    - Can you book tickets for me
+    - I want to see a movie
+    - buy a movie
+    - puchase a movie
+    - cinema tickets
+    - intend to purchase tickets
+    - I need help booking a ticket
+    - hey, are you aware if I can book tickets here?
+    - Does this cinema sell tickets
+    - I think I want to book tickets
+    - are you aware of where I can buy tickets?
+    - how do i buy tickets
+    - Can you tell me if I can book tickets here?
+    - I'm hoping to see a film
+    - buy tickets to see a movie
+    - how do I purchase tickets
+    - tickets to book
+    - see films
+    - film tickts
+    - we are trying to buy tickets
+    - Hello, I'd like to book tickets
+    - I think I need help buying tickets
+    - Is it possible to purchase tickets
+    - I figure I can get tickets here
+    - I'm looking to see a movie
+    - do you think I can buy tickets
+    - Is it possible to book a movie
+    - I want tickets
+    - Have been informed this is where I can get tickets
+    - contemplating seeing a movie
+    - would you be able to help buy cinema tickets
+    - booking
+    - buy
+    - purchase
+    - Where can I book tickets?
+    - am hoping this is where I get tickets
+    - book ticket here
+- intent: affirm
+  examples: |
+    - lit
+    - clearly
+    - yes, I understand
+    - yeppers
+    - I gladly concur
+    - that is absolutely correct
+    - Yepperdoodles
+    - absolutely fine
+    - for sure
+    - irrefutably
+    - indeed
+    - y
+    - totes
+    - get on with it
+    - looks right
+    - yeah, why not
+    - yep, good
+    - definitely
+    - go ahead
+    - unquestionably
+    - Okay
+    - yeah, I see no problems
+    - carry on
+    - Yuppers
+    - yes, thank you
+    - undoubtably correct
+    - bet
+    - undoubtably
+    - yah
+    - of course
+    - righto
+    - absolutely
+    - Let's do it
+    - I agree
+    - thats okay
+    - cool
+    - sounds great
+    - yes sir
+    - do it
+    - yeah, let's do this
+    - undoubtedly
+    - yes, correct
+    - correct
+    - undoubtably right
+    - ye
+    - right
+    - Yessir
+    - assuredly
+    - tru that
+    - yeah
+    - yep, sure
+    - true
+    - Yes
+    - affirmative
+    - sure, why not
+    - sure
+    - yay
+    - I concur
+    - k
+    - thats great
+    - no problems here
+    - righty-ho
+    - okie
+    - agreed
+    - positively correct
+    - I can see zero problems
+    - That is right
+    - uh huh
+    - sure thing!
+    - incontrovertibly
+    - positively right
+    - nothing wrong here
+    - uhhuh
+    - yas
+    - sounds good
+    - you are correct
+    - yerp
+    - areed
+    - Yessum
+    - thats perfect
+    - totally
+    - I think thats right
+    - heck yeah
+    - beyond a shadow of a doubt
+    - yes, thanks
+    - aye
+    - perfect, thanks
+    - most assuredly
+    - yeah, okay
+    - confirm
+    - yip
+    - da
+    - Let's do this
+    - proceed
+    - yes
+    - Gotcha
+    - yar
+    - Can't see any problems
+    - yarr
+    - for real
+    - yip yip
+    - all good
+    - Aye aye
+    - beyond doubt
+    - oki-doki
+    - I'm fine with that
+    - yep
+    - thats no problem
+    - defo
+    - roger
+    - no, yeah
+    - you betcha
+    - yiss
+    - yee
+    - oki
+    - without doubt
+    - alrighty
+    - beyond a doubt
+    - ya
+    - confirmed
+    - certainly
+    - thats fine
+    - yea
+- intent: stop
+  examples: |
+    - delete, i did it wrong
+    - Can I quit
+    - Can I come back later?
+    - I've changed my mind, I don't want this
+    - forget about it
+    - informing you I want to stop
+    - I can't buy tickets
+    - gonna withdraw
+    - please stop
+    - I don't want tickets anymore
+    - Am I able to return later
+    - I don't wish to purchase tickets
+    - stop, please
+    - I no longer want to to buy tickets
+    - need to cancel this
+    - Can you drop it
+    - Can we end it here
+    - cancel buying
+    - there is nothing I want to see
+    - I have no payment
+    - You don't have any good movies
+    - I can't pay
+    - stop
+    - I've changed my mind
+    - I'm finished
+    - don't want tickets anymore
+    - I need to stop booking
+    - Don't bother, I've changed my mind
+    - I changed my mind, you have no movies I wanna see
+    - You're not showing anything I want to see
+    - Can you forget about this
+    - leave
+    - letting you know, I'm going
+    - gonna finish this here
+    - nothing
+    - please, can I cancel
+    - don't bother
+    - I want to restart
+    - Can I stop this form
+    - Can I stop buying tickts now
+    - I'd like to start again
+    - stop please
+    - let me quit
+    - Is it okay if I cancel
+    - end here
+    - I want to see nothing
+    - stop booking
+    - abort mission
+    - wait never mind
+    - how do I quit
+    - This isn't working
+    - Can I stop booking
+    - cancel purchase
+    - I'd like to stop
+    - delete
+    - would you be able to stop
+    - Can i get something different
+    - cancel this please
+    - I don't want to see any of these movies
+    - please end here
+    - wait stop
+    - I cannot continue
+    - I did it wrong
+    - ignore it
+    - cancel booking
+    - I don't want to see this movie anymore
+    - Can I cancel this
+    - let me cancel
+    - Can i restart?
+    - forget about this
+    - I forgot my card details
+    - Can i get something else
+    - forget it
+    - I don't want to see a movie any more
+    - stop talking
+    - not sure I wanna see any movies
+    - I want to cancel
+    - I need to restart
+    - stop this
+    - Just to let you know, I'm leaving
+    - I actually don't want tickets anymore
+    - Is it okay if I leave
+    - wait
+    - Think i've changed my mind
+    - I think i want to stop
+    - Can I terminate this
+    - lets stop here
+    - restart
+    - I don't want buy tickets any more
+    - How do I stop
+    - wait ignore everything I've said
+    - I don't think I want to watch those movies
+    - I no longer want to buy tickets
+    - gonna call this off
+    - I wish to start again
+    - hang on never mind
+    - Can i cancel this
+    - stop it
+    - Never mind
+    - is it all right if I cancel this
+    - stop here
+    - halt
+    - I want something else
+    - I think I want to cancel
+    - How do I cancel
+    - I am done here
+    - gonna stop here
+    - can you stop
+    - Think, im just gonna leave it
+    - delete this
+    - cancel
+    - I need to cancel
+    - pause
+    - i'm just gonna leave it
+    - hold that thought
+    - Can I stop this
+    - we don't think any of these movies are good
+    - end
+    - hang on, I wanna quit
+    - drop it
+    - I want to rethink
+    - Would I be able to return later
+    - I think I'm just gonna go
+    - I want to stop
+- intent: inquire_movie_schedule
+  examples: |
+    - What movies are on right now?
+    - What films can I see
+    - film schedule
+    - give me film schedule
+    - Give me todays movies
+    - inform movie schedule
+    - please show me times
+    - I think I would like to know movie times
+    - inform time
+    - What films are on today?
+    - Can I get todays movies
+    - I want to know film times
+    - playing today
+    - I want the times
+    - I require the movie schedule
+    - please give me the film schedule
+    - Can you give me film times
+    - do you have the movie times
+    - viewing schedule
+    - What screening are available
+    - Where do I get movie times
+    - I need todays movie times
+    - films playing
+    - what showings are there
+    - What movies are available
+    - I need the film times
+    - What movies are you currently showing
+    - I need to know what films are on just now
+    - What are the movies you have
+    - Can I know what films you have
+    - tell me times
+    - what movies can I see
+    - what movies can I see today
+    - movie times for today
+    - I need movies on today
+    - movie times please
+    - Would you happen to know todays movies
+    - What do you know about the viewing schedule
+    - could you let me know what films are playing
+    - Can I get movies for today
+    - What movies are you showing?
+    - What are the current movie times
+    - How to I find out movie times
+    - I want you to give me film times
+    - what films can I see right now?
+    - Do you think I could get information on the viewing schedule
+    - Do you think you could give me the movie times
+    - what movies are on today
+    - I need schedule
+    - films today?
+    - what movies are being shown
+    - what movies do you have
+    - what are you showing?
+    - Give me the movie times
+    - would you tell me the movie schedule
+    - what films do you show
+    - Do you have times for which movies are showing
+    - I want information on movie times
+    - movie times
+    - I need to know what movies you have
+    - can you give me movie time
+    - What films have you got
+    - Can you tell me what movies are available
+    - please give me the movie times
+    - Can I know the film schedule?
+    - What are your movie times
+    - times for today
+    - what films do you offer
+    - give me current showing movies
+    - Can u tell me sechedule
+    - movie showings
+    - tell us what times you have
+    - movies tomorrow?
+    - movie time
+    - What films do you have
+    - films on today
+    - I need to know what films you're showing
+    - Can you tell me which movies are currently on
+    - Tell me infomation about the film times
+    - movies for today
+    - show me times please
+    - Do you have to movie times by chance?
+    - Film schedule please
+    - I need info on movie times
+    - Tell me the movie times
+    - give me movie list
+    - Do you have times for which movies are currently showing
+    - entire film schedule
+    - What is the viewing schedule
+    - Do you have info on film schedule
+    - schedule
+    - what times is the movie on at?
+    - let me have the film times
+    - what are the movies you show
+    - need viewing schedule
+    - What movies are on just now
+    - Can I have todays schedule
+    - todays movies
+    - Do you have information on film times
+    - What are the movie times
+    - I want the movie schedule
+    - do u have movie times
+    - Can you give us the movie times
+    - today's schedule
+    - Can I know the movies you offer
+    - times
+    - Current films
+    - Movie times please
+    - I need the movie times
+    - Tell me what movies are available
+    - Can you let me know what films are showing just now?
+    - Give me movie times
+    - Give me the film schedule
+    - Give me information on what movies are showing
+    - what times do you have
+    - I need to know what films you are currently showing
+    - movies playing
+    - Do you think you could tell me what films are own right now
+    - I don't know what films you have
+    - Do you happen to know the film times
+    - want film times
+    - What films are you showing?
+    - what movies do you currently have
+    - what movies
+    - movies you are currently showing
+    - What movies are showing
+    - Can I see the films today
+- synonym: 'Captain America: The Winter Soldier'
+  examples: |
+    - Captain America
+    - winter soldier
+    - The Winter Soldier
+    - CA:TWS
+    - CA
+    - TWS
+    - Winter Soldier
+    - Captain America 2
+    - Captain America Two
+    - Captain America and the Winter Soldier
+    - The Best Movie Ever
+    - captain america: winter soldier
+    - captain america winter soldier
+    - captain america winter
+    - captain america
+    - The Captain America
+    - the Captain America
+- synonym: '2001: a Space Odyssey'
+  examples: |
+    - Space Odyssey
+    - 2001 a Space Odyssey
+    - 2001
+    - A Space Odyssey
+    - a Space Odyssey
+    - 2001:
+    - SO
+- synonym: 'Spider-man: Into the Spider-Verse'
+  examples: |
+    - Spider Man
+    - Into the Spider Verse
+    - Spider Verse
+    - SMITSV
+    - Spider-Man
+    - Spider-man
+    - The Spider Verse
+- synonym: Your Name (Subtitled)
+  examples: |
+    - Kimi No Na Wa
+    - YN
+- synonym: 'Avengers: Infinity War'
+  examples: |
+    - Avengers 3
+    - Avengers
+    - Infinity War
+    - Avengers Infinity War
+    - Avengers Three
+    - Avengers three
+- synonym: 'Thor: Ragnarok'
+  examples: |
+    - Thor
+    - thor ragnarok
+    - Thor Ragnarok
+    - Thor 3
+    - Thor Three
+    - Thor three
+    - Thor R
+- regex: booking_reference
+  examples: |
+    - \d{7}[A-Z]{2}
+- regex: card_num
+  examples: |
+    - \d{16}
+- regex: cvv
+  examples: |
+    - \d{3}
+- regex: sort_code
+  examples: |
+    - \d{2}-\d{2}-\d{2}

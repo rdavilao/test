@@ -1,0 +1,906 @@
+version: "3.0"
+
+stories:
+
+- story: check printed, affirm
+  steps:
+  - checkpoint: check_printed
+  - intent: affirm
+  - action: action_print_ticket
+  - slot_was_set:
+    - too_many_tickets: null
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: check printed, deny
+  steps:
+  - checkpoint: check_printed
+  - intent: deny
+  - action: action_clear_slots
+  - slot_was_set:
+    - too_many_tickets: null
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: User has inquired about movie schedule
+  steps:
+  - intent: inquire_movie_schedule
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: affirm
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form 
+  - intent: stop
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+
+
+- story: User has inquired about movie schedule
+  steps:
+  - intent: inquire_movie_schedule
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: affirm
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form 
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movie_schedule
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: User has inquired about movie schedule
+  steps:
+  - intent: inquire_movie_schedule
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: deny
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+  
+  
+
+- story: user has inquired about sechedule of specific movie
+  steps: 
+  - intent: inquire_movie_times
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movie_schedule
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: user has inquired about sechedule of specific movie
+  steps: 
+  - intent: inquire_movie_times
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form
+  - intent: stop
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+
+
+- story: Deny further help 
+  steps:
+  - checkpoint: check_further_help
+  - or:
+    - intent: goodbye
+    - intent: deny
+  - action: utter_goodbye
+
+- story: accept further help 
+  steps:
+  - checkpoint: check_further_help
+  - intent: affirm
+  - action: utter_how_help
+
+- story: display booking reference info
+  steps:
+  - intent: display_booking
+  - action: display_form
+  - active_loop: display_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_display_booking
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: display booking reference info, interupt
+  steps:
+  - intent: display_booking
+  - action: display_form
+  - active_loop: display_form
+  - intent: stop
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: Booking tickets happy path
+  steps:
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+ 
+
+- story: check correct checkpoint
+  steps:
+  - checkpoint: check_correct
+  - intent: affirm
+  - action: action_input_booking
+  - checkpoint: check_available
+
+- story: check correct checkpoint deny
+  steps:
+  - checkpoint: check_correct
+  - intent: deny
+  - action: action_clear_slots
+  - action: utter_resubmit
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+- story: check available checkpoint correct
+  steps:
+  - checkpoint: check_available
+  - slot_was_set:
+    - too_many_tickets: False
+  - action: action_utter_total_price
+  - action: payment_form
+  - active_loop: payment_form
+  - slot_was_set:
+    - requested_slot: card_num
+  - slot_was_set:
+    - requested_slot: sort_code
+  - slot_was_set:
+    - requested_slot: cvv
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_input_payment
+  - slot_was_set:
+    - card_num: null
+  - slot_was_set:
+    - sort_code: null
+  - slot_was_set:
+    - cvv: null
+  - action: utter_want_printed
+  - checkpoint: check_printed
+
+- story: check avablable check point too many
+  steps:
+  - checkpoint: check_available
+  - slot_was_set:
+    - too_many_tickets: True
+  - checkpoint: check_confirmation
+
+
+- story: check avablable check point too manye
+  steps:
+  - checkpoint: check_confirmation
+  - intent: deny
+  - action: action_clear_slots
+  - slot_was_set:
+    - too_many_tickets: null                                  
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: hdsfahlsdfjiwef
+  steps:
+  - checkpoint: check_confirmation
+  - intent: affirm
+  - action: action_clear_slots
+  - slot_was_set:
+    - too_many_tickets: null 
+  - action: booking_form 
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+
+- story: payment checkpoint, interupt
+  steps:
+  - checkpoint: check_available
+  - slot_was_set:
+    - too_many_tickets: False
+  - action: action_utter_total_price
+  - action: payment_form
+  - active_loop: payment_form
+  - intent: stop
+  - action: action_deactivate_loop
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+
+- story: book tickets mive times interupt, unhappy path
+  steps:
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_times
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movie_schedule
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: deny
+  - action: action_clear_slots
+  - slot_was_set:
+    - too_many_tickets: null
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+
+
+
+
+- story: book tickets mive times interupt, unhappy path
+  steps:
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_schedule
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: affirm
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movie_schedule
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: deny
+  - action: action_clear_slots
+  - slot_was_set:
+    - too_many_tickets: null
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+
+- story: book tickets mive times interupt, unhappy path
+  steps:
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_schedule
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: deny
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: deny
+  - action: action_clear_slots
+  - slot_was_set:
+    - too_many_tickets: null
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+
+- story: book tickets about movie times interupt, unhappy path
+  steps:
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_times
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movie_schedule
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: affirm
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+
+ 
+
+
+- story: book tickets about movie times interupt, unhappy path
+  steps:
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_schedule
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: affirm
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movie_schedule
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: affirm
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+
+- story: book tickets about movie times interupt, unhappy path
+  steps:
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_schedule
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: deny
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: affirm
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+
+- story: book tickets about movie interupt, unhappy path
+  steps:
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_times
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form
+  - intent: stop
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: affirm
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+- story: book tickets about movie interupt, unhappy path
+  steps:
+  - or:
+    - intent: book_tickets
+    - intent: inform_movie
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_schedule
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: deny
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: affirm
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+
+- story: book tickets about movie interupt, unhappy path
+  steps:
+  - or:
+    - intent: book_tickets
+    - intent: inform_movie
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: inquire_movie_schedule
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movies
+  - action: utter_want_times
+  - intent: affirm
+  - action: movie_schedule_form
+  - active_loop: movie_schedule_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_movie_schedule
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: affirm
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+  
+- story: book tickets cancel interupt, unhappy path
+  steps:
+  - or:
+    - intent: book_tickets
+    - intent: inform_movie
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: stop
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+  
+- story: Provide information about movie showing at cinema
+  steps:
+  - intent: inquire_about_movie
+  - action: action_query_movie
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: book tickets about movie interupt, unhappy path
+  steps:
+  - or:
+    - intent: book_tickets
+    - intent: inform_movie
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - intent: inquire_about_movie
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_query_movie
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: affirm
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets  ###this might be worth creating checkpoints for
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+- story: book tickets about movie interupt, unhappy path
+  steps:
+  - or:
+    - intent: book_tickets
+    - intent: inform_movie
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - intent: inquire_about_movie
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_query_movie
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: affirm
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets  ###this might be worth creating checkpoints for
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+- story: book tickets about movie interupt, unhappy path
+  steps:
+  - or:
+    - intent: book_tickets
+    - intent: inform_movie
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - intent: inquire_about_movie
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_query_movie
+  - action: action_clear_slots
+  - action: utter_continue_booking
+  - intent: deny
+  - action: action_clear_slots
+  - slot_was_set:
+    - too_many_tickets: null
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+
+
+
+
+
+
+- story: book tickets collection interupt, unhappy path
+  steps:
+  - or:
+    - intent: book_tickets
+    - intent: inform_movie
+  - action: booking_form
+  - active_loop: booking_form
+  - intent: collect_tickets
+  - slot_was_set:
+    - requested_slot: movie_name
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_clear_slots
+  - action: collection_form
+  - active_loop: collection_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_collection_confirmation
+
+
+- story: Booking tickets payment form interupt
+  steps:
+  - or:
+    - intent: book_tickets
+    - intent: inform_movie
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+
+- story : Submit collection form, correct details
+  steps:
+  - intent: collect_tickets
+  - action: collection_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_collection_confirmation
+  - intent: affirm
+  - action: action_input_collection
+  - slot_was_set:
+    - collected: True
+  - action: action_print_ticket
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+
+- story: collection cancel interupt, unhappy path
+  steps:
+  - intent: collect_tickets
+  - action: collection_form
+  - active_loop: collection_form
+  - intent: stop
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_further_help
+  - action: action_clear_slots
+  - checkpoint: check_further_help
+
+
+- story: Submit collection form, correct details
+  steps:
+  - intent: collect_tickets
+  - action: collection_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_collection_confirmation
+  - intent: affirm
+  - action: action_input_collection
+  - slot_was_set:
+    - collected: False
+  - action: collection_form
+  - active_loop: collection_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_collection_confirmation
+  - intent: affirm
+  - action: action_input_collection
+  - slot_was_set:
+    - collected: True
+  - action: action_print_ticket
+  - action: action_clear_slots
+  - action: utter_further_help
+  - checkpoint: check_further_help
+
+- story: Submit collection form, wrong details
+  steps:
+  - intent: collect_tickets
+  - action: collection_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_collection_confirmation
+  - intent: deny
+  - action: utter_resubmit
+  - action: action_clear_slots
+  - action: collection_form
+  - active_loop: collection_form
+  - slot_was_set:
+    - requested_slot: booking_reference
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_collection_confirmation
+  - intent: affirm
+  - action: action_input_collection
+  - slot_was_set:
+    - collected: False
+  - action: collection_form
+  - active_loop: collection_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_collection_confirmation
+  - intent: affirm
+  - action: action_input_collection
+  - slot_was_set:
+    - collected: False
+  - action: collection_form
+  - active_loop: collection_form
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_collection_confirmation
+
+- story: collect tickets booking interupt, unhappy path
+  steps:
+  - intent: collect_tickets
+  - action: collection_form
+  - active_loop: collection_form
+  - intent: book_tickets
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: booking_form
+  - active_loop: booking_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+
+- story: display booking reference info, interupt
+  steps:
+  - intent: display_booking
+  - action: display_form
+  - active_loop: display_form
+  - intent: book_tickets
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: booking_form
+  - active_loop: booking_form
+  - slot_was_set:
+    - requested_slot: movie_name
+  - slot_was_set:
+    - requested_slot: num_tickets 
+  - slot_was_set:
+    - requested_slot: start_time
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_utter_confirmation
+  - checkpoint: check_correct
+
+- story: display booking reference info, interupt
+  steps:
+  - intent: display_booking
+  - action: display_form
+  - active_loop: display_form
+  - intent: collect_tickets
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: collection_form
+  - active_loop: colleciton_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_collection_confirmation
+

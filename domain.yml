@@ -1,0 +1,197 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- inquire_about_movie
+- book_tickets
+- affirm
+- set_movie_time
+- no_tickets
+- deny
+- inform_movie
+- inform_sort_code
+- inform_cvv
+- inform_card_num
+- greet
+- goodbye
+- collect_tickets
+- inquire_movie_schedule
+- inquire_movie_times
+- booking_reference
+- out_of_scope
+- stop
+- inquire_prices
+- inquire_payment
+- start
+- display_booking
+entities:
+- booking_reference
+- card_num
+- cvv
+- movie_name
+- number
+- sort_code
+- time
+slots:
+  booking_reference:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: booking_reference
+  movie_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: movie_name
+  start_time:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: time
+      conditions:
+      - active_loop: booking_form
+        requested_slot: start_time
+      - active_loop: movie_schedule_form
+        requested_slot: start_time
+  num_tickets:
+    type: any
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: number
+      conditions:
+      - active_loop: booking_form
+        requested_slot: num_tickets
+  too_many_tickets:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: custom
+  card_num:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: card_num
+      conditions:
+      - active_loop: payment_form
+  cvv:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: cvv
+      conditions:
+      - active_loop: payment_form
+  sort_code:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: sort_code
+      conditions:
+      - active_loop: payment_form
+  collected:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: custom
+responses:
+  utter_greet:
+  - text: Hey! I'm Cinebot! How can I help you today?
+  - text: Hello! I'm Cinebot! I What can I do for you?
+  - text: Hey There! I'm Cinebot! Is there anything I can help you with?
+  utter_ask_booking_form_movie_name:
+  - text: What movie would you like to see? (please remember captal letters and avoid special characters)
+  utter_ask_movie_schedule_form_movie_name:
+  - text: What movie would you like times for?
+  utter_ask_movie_schedule_form_start_time:
+  - text: What day do you want times for?
+  utter_ask_collection_form_booking_reference:
+  - text: What is your booking reference?
+  utter_ask_display_form_booking_reference:
+  - text: What is your booking reference?
+  utter_collection_confirmation:
+  - text: 'To confirm this is your booking reference: {booking_reference}'
+  utter_ask_booking_form_start_time:
+  - text: What time and day would you like to see the movie?
+  utter_ask_booking_form_num_tickets:
+  - text: Can you confirm the number of tickets you'd like?
+  utter_further_help:
+  - text: Is there anything else I can help you with?
+  utter_goodbye:
+  - text: Okay, Have a great day!
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_printing_tickets:
+  - text: Printing your tickets now.
+  utter_resubmit:
+  - text: Sorry about that, can you please re-enter the details.
+  utter_out_of_scope:
+  - text: Sorry, I am unable to handle that request.
+  utter_ask_payment_form_card_num:
+  - text: What is your card number? (16 digit number) (Example payment)
+  utter_ask_payment_form_sort_code:
+  - text: What is your sort code? (format XX-XX-XX)
+  utter_ask_payment_form_cvv:
+  - text: What is the card security code? (3 digit number on back of card)
+  utter_inform_prices:
+  - text: 'For IMAX screens it is £9.50, for 3D showings it is £7.50 and for 2D showings it is £5.50 '
+  utter_inform_payment:
+  - text: I can only take card at the moment
+  utter_what_do:
+  - text: What are you doing?
+  utter_how_help:
+  - text: How can I help you?
+  utter_continue_booking:
+  - text: Would you like to continue booking?
+  utter_continue_collecting:
+  - text: Would you like to continue ticket colleciton?
+  utter_cancel:
+  - text: Cancelling transaction
+  utter_want_printed:
+  - text: Do you want your tickets printed now?
+  utter_want_times:
+  - text: Do you want times for a movie?
+actions:
+- action_clear_slots
+- action_display_booking
+- action_display_schedule
+- action_input_booking
+- action_input_collection
+- action_input_payment
+- action_print_ticket
+- action_query_movie
+- action_utter_confirmation
+- action_utter_movie_schedule
+- action_utter_movies
+- action_utter_total_price
+- validate_booking_form
+- validate_collection_form
+- validate_movie_schedule_form
+- validate_payment_form
+forms:
+  booking_form:
+    required_slots:
+    - movie_name
+    - num_tickets
+    - start_time
+  collection_form:
+    required_slots:
+    - booking_reference
+  payment_form:
+    required_slots:
+    - card_num
+    - sort_code
+    - cvv
+  movie_schedule_form:
+    required_slots:
+    - movie_name
+    - start_time
+  display_form:
+    required_slots:
+    - booking_reference
