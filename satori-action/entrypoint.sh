@@ -571,7 +571,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
 else
     echo "::debug::{Running CONGA with $INPUT_FILES}"
     ls
-    java -jar /CongaReverse3.2_pUML.jar $INPUT_FILES $INPUT_FORMAT $INPUT_VERSION
+    java -jar /CongaReverse3.3_pUML.jar $INPUT_FILES $INPUT_FORMAT $INPUT_VERSION
 
     XMI_FILE=./chatbot.xmi
 
