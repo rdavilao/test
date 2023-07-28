@@ -1,0 +1,14 @@
+Hi, I'd like to book tickets
+What movie would you like tickets for?
+Captain America
+What time would you like to see the movie?
+What times are available?
+3,6,8
+3 please
+How many tickets would you like?
+3
+Any preference for seat location (ie. front, middle or back)
+no
+To confirm the details: Cpatain america, 3pm, 3 seats, middle.
+Yes
+That will be £12, you will be redirected to payment, we are only taking card right now apologies for any inconvenice

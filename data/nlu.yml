@@ -407,6 +407,7 @@ nlu:
     - You were useless, bye
     - Well this was frustrating bye
     - I'm going to speak to staff intstead, bye
+    - yeah, thats everything I needed
     
 
 
@@ -594,9 +595,28 @@ nlu:
     - yes, thanks
     - yeah, that'd be great
     - Yip, that'd be amazing
+    - yeah, great
+    - uh huh, thats all
+    - yes, I see no issue
+    - there aren't any issues with that
+    - I can see no issues
+    - no problems
+    - fair enough
+    - yeah, fair enough
+    - pretty much
+    - yeah, more or less correct
+    - Can't see why not
+    - Don't see why not
+    - Yeah, its possible
+    - That is accurate
+    - that pretty much accurate
+    - Thats spot on 
+    - thats exactly right
+    - yeah you got it bang on
+    - Right on the money
     
     
-
+#164
 - intent: deny
   examples: |
     - no
@@ -749,7 +769,60 @@ nlu:
     - nope, thats wrong
     - 100% wrong 
     - that is wrong 
+    - you got it wrong
+    - That date is wrong
+    - you've got the wrong movie
+    - I asked to see a different movie
+    - the movie is wrong
+    - the book reference is incorrect
+    - no, it was something else
+    - no, I wanted to see it at another time
+    - nah, you have the number of tickets wrong
+    - The number of tickets is not right
+    - My booking reference is something else
+    - You messed up the number of tickets
+    - no, You messed it up 
+    - you didn't get anything right
+    - 
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
 
+
+#175
 - intent: book_tickets
   examples: |
     - I want to buy tickets
@@ -905,7 +978,58 @@ nlu:
     - can I get 5 tickets for [Old Boy](movie_name)
     - Hi, can I get 1 ticket to see [Old Boy](movie_name)
     - I'd like 2 tickets to see [Old Boy](movie_name)
+    - Can I have a ticket to see [](movie_name)
+    - I want to purchase 2 tickets for [](movie_name)
+    - Can I purchase a ticket
+    - Hello Cinebot, could I buy a ticket
+    - Do you sell tickets here
+    - Is this the place to get tickets
+    - would it be okay to buy a ticket
+    - I want a ticket please
+    - I want to watch a movie
+    - get me a ticket
+    - one ticket please
+    - I’m here to buy a ticket
+    - Could I get a ticket please
+    - I’d like some tickets
+    - thank you, I’d like a ticket please
+    - me and my family would like a ticket
+    - I want a ticket to see a movie
+    - Can I buy tickets to watch movies here
+    - Can I get a ticket to see [](movie_name) today?
+    - I want to book for [](movie_name), can i get the booking number
+    - I need to get tickets to see []()
+    - I want to purchase tickets 
+    - Do you sell tickets here?
+    - I think you sell tickets right?
+    - Is this where I come to get a ticket
+    - Is this where i can book tickets for [Pirates of the Caribbean: Curse of the Black Pearl](movie_name)
+    - 
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
 
+    
+
+    
+#78
 - intent: inform_movie
   examples: |
     - Can I book tickets for [Old Boy](movie_name)?
@@ -915,7 +1039,7 @@ nlu:
     - Can I see [Captain America Civil War](movie_name)
     - I would like to watch the movie [Your name](movie_name)
     - [Deadpool](movie_name)
-    - Is this where i can book tickets for [Pirates of the Caribbean: Curse of the Black Pearl](movie_name)
+    - 
     - [Baby Driver](movie_name)
     - [Bram Stockers Dracula](movie_name)
     - [Moonlight](movie_name)
@@ -984,7 +1108,32 @@ nlu:
     - pretty confident it's called [Planet of the Apes](movie_name)
     - I want seats for the movie [The Graduate](movie_name)
     - movie title: [Sanjuro](movie_name)
-    - I want to book for [](movie_name), can i get the booking number
+    - 
+    - Think I want tickets for [](), Can i have the booking reference
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+
+
 - intent: collect_tickets
   examples: |
     - Can I collect tickets here
@@ -1128,7 +1277,7 @@ nlu:
     - my tickets were already purchased and I need them printed 
     - Can you print my tickets, I already bought them
     - Is it possible to get my tickets
-    - Is it pissible to get my tickets printed
+    - Is it possible to get my tickets printed
     - Can you tell me, is it possible to collect tickets
     - do you offer ticket collection 
     - If I already bought tickets can I get them printed
@@ -1143,6 +1292,10 @@ nlu:
     - I think I can print tickets here?
     - You can print tickets right?
     - You are able to print me my tickets right?
+    - Was wondering if I could get tickets here
+    - wondering how i collect my tickets
+    - Need advice on how to collect tickets
+    -
 
 
 
@@ -1417,6 +1570,7 @@ nlu:
     - tell me times for [](movie_name)
     - Can you give me a list of times for [](movie_name)
     - what times are [](movie_name)
+    - 
     
     
 - intent: inquire_about_movie
@@ -2043,7 +2197,9 @@ nlu:
     - I don't want these anymore, quit please
     - I can't buy these, I'm gonna leave, sorry
     - sorry, but cancel
-    
+    - Really sorry for the inconvenice but i would like to cancel my booking
+    - I would like to cancel my booking, sorry
+    - Please can I cancel
 
 
 - intent: inform_details
@@ -2314,6 +2470,67 @@ nlu:
     - Do you have an Imax
     - how much are 3D showings
     - how much are showings in the IMAX
+    - Student ticket prices
+    - how much is your standard ticket
+    - How much is a ticket to see the IMAX
+    - Do you have any offers on ticket prices
+    - Do you have a student discount
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+
+
+
+
+
 - intent: inquire_payment
   examples: |
     - do you take card
