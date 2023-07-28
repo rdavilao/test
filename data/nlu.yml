@@ -410,8 +410,6 @@ nlu:
     - yeah, thats everything I needed
     
 
-
-
 - intent: affirm
   examples: |
     - yes
@@ -615,8 +613,7 @@ nlu:
     - yeah you got it bang on
     - Right on the money
     
-    
-#164
+
 - intent: deny
   examples: |
     - no
@@ -731,7 +728,6 @@ nlu:
     - need no more help
     - nah I'm done
     - nope, I'm finished thanks
-    - all done
     - no I think thats it
     - think thats everything
     - I don't think I need more help
@@ -783,46 +779,46 @@ nlu:
     - You messed up the number of tickets
     - no, You messed it up 
     - you didn't get anything right
-    - 
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
+    - no, none of this is correct
+    - nope, this is all incorrect
+    - You didn't select the right date
+    - no, you got the movie title wrong
+    - No, thats not the movie I wanted to see
+    - Nope, I think you got the wrong movie
+    - Thats not the number of tickets I wanted
+    - No, I wanted a different amount of tickets
+    - Thats no the number of tickets that I said
+    - The amount of seats is wrong
+    - thats the wrong booking reference
+    - The booking reference is not right
+    - there is nothing right
+    - almost, the date is wrong
+    - the time you've got is wrong 
+    - I think I had said a different time right?
+    - nope, the day you've put is wrong
+    - I don't think the day you have is right
+    - no, can I start again
+    - thats wrong, can we restart
+    - No, that wrong I think we should restart
+    - Nope, thats not the movie I wanted to see
+    - yeah, thats not right
+    - nah its wrong, do we need to do it again
+    - Sorry, but thats not right
+    - Sorry but thats not the tickets I wanted
+    - Regret to inform, that it's the wrong movie
+    - it's the not the right date
+    - it's not got the right time
+    - pretty sure that the time is not what I asked for
+    - That is not the movie that I asked for
+    - The movie and the date is wrong
+    - The time and the movie is not right
+    - Thats the wrong film
+    - The film title is not what I wanted
+    - You've got more tickets that I had said
+    - You've got more tickets written there than I wanted
 
 
-#175
+
 - intent: book_tickets
   examples: |
     - I want to buy tickets
@@ -998,32 +994,33 @@ nlu:
     - Can I buy tickets to watch movies here
     - Can I get a ticket to see [](movie_name) today?
     - I want to book for [](movie_name), can i get the booking number
+    - I need to get tickets to see []()
     - I want to purchase tickets 
     - Do you sell tickets here?
     - I think you sell tickets right?
     - Is this where I come to get a ticket
     - Is this where i can book tickets for [Pirates of the Caribbean: Curse of the Black Pearl](movie_name)
-    - 
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
+    - Can I purchase tickets for a group of people
+    - I need tickets for 12 people
+    - I need as many tickets as you have to see [](movie_name)
+    - Would you be able yo sell me a ticket
+    - What are your options for buying tickets
+    - Could I buy a ticket here
+    - By chance, can you book me a ticket
+    - I was wondering if this is where to book a ticket
+    - I was wondering if I could purchase a ticket
+    - I need a ticket for tommorow at 2pm for [](movie_name)
+    - Is it possible to buy a ticket for tomorrow
+    - Would it be possible to book a ticket 
+    - Can you tell me if I can buy a ticket here
+    - Give me 2 tickets for [](movie_name) please
+    - Give me a ticket 
+    - Let me book a ticket
+    - Please may I purchase a ticket
+    - Can I get a ticket 
+    - Hiya, may I get a ticket please
+    - Hello, would it be possible to get 2 tickets please 
+    - I think i need to get 2 tickets
 
     
 
@@ -1038,7 +1035,6 @@ nlu:
     - Can I see [Captain America Civil War](movie_name)
     - I would like to watch the movie [Your name](movie_name)
     - [Deadpool](movie_name)
-    - 
     - [Baby Driver](movie_name)
     - [Bram Stockers Dracula](movie_name)
     - [Moonlight](movie_name)
@@ -1108,6 +1104,7 @@ nlu:
     - I want seats for the movie [The Graduate](movie_name)
     - movie title: [Sanjuro](movie_name)
     - 
+    - Think I want tickets for [](), Can i have the booking reference
     -
     -
     -
@@ -1458,6 +1455,14 @@ nlu:
     - viewing schedule 
     - need viewing schedule
     - what are you showing?
+    - What is the schedule for today
+    - Can I find out what movies are on right now
+    - Would I be able to find out the movies you are currently showing
+    - Can I get information about the viewing schdule
+    - I need to know the viewing schdule
+    - Can I find out the movies that are on?
+    - What movies are yolur showing tomorrow?
+
     
 - intent: inquire_movie_times
   examples: |
@@ -2460,7 +2465,7 @@ nlu:
     - cost of a seat
     - seat cost
     - do seats have different prices
-    - do screen have different prices
+    - do screens have different prices
     - Is everything the same price
     - Are showings different prices
     - How many different screens are there
@@ -2473,61 +2478,50 @@ nlu:
     - How much is a ticket to see the IMAX
     - Do you have any offers on ticket prices
     - Do you have a student discount
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-
-
-
-
+    - I need alot of tickets, do you offer any discounts
+    - are there any discounts on ticket prices
+    - Do you offer a family ticket
+    - What are the prices for children
+    - Child prices please
+    - Can you tell me prices for a full family
+    - what are the prices for a family 
+    - Could you please tell me the ticket prices
+    - I was wondering what the price of your tickets are
+    - Are the prices different for each screen
+    - How much is a ticket 
+    - Could I get information on the ticket prices
+    - Could you please tell me about the ticket prices
+    - I need to know the ticket prices
+    - Could I please have the ticket prices
+    - Wondering, if you offer any discount, or cupons
+    - Are all your tickets the same price?
+    - Is the cost of your tickets all the same?
+    - Are the prices of your tickets the same for everyone
+    - Do you offer concession prices
+    - Are your prices cheap
+    - Is a ticket here expensive
+    - Are the prices of your tickets the same for every movie
+    - Do you offer any student prices
+    - What is the price of a standard tickets
+    - How much are your tickets to IMAX movies
+    - Are your IMAX tickets more expensive that the others
+    - What is your most expensive ticket
+    - How much is 3D compare to 2D
+    - Is 3D more expensive than 2D
+    - is the IMAX your most expensive ticket
+    - Is 2D your cheapest ticket
+    - I want to find out which is your cheapest ticket
+    - I was wondering if you could tell me what your cheapest ticket is 
+    - May I know the ticket prices
+    - Can I enquire about your ticket price
+    - What type of tickets do you offer 
+    - Can I get a list of ticket prices
+    - would you be able to show me the ticket prices
+    - I think i'd like to know your ticket prices
+    - Want to find out your ticket price please
+    - Can I get all of the ticket prices you have
+    - Can you supply information regarding the ticket prices
+    - May I request the ticket prices
 
 - intent: inquire_payment
   examples: |
@@ -2735,7 +2729,6 @@ nlu:
     - I was wondering if you have any information about my booking?
     - Wondering if you can provided me with details about my booking
     - Can I get more infotmation about my booking
-
 
 
 
