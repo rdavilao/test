@@ -998,7 +998,6 @@ nlu:
     - Can I buy tickets to watch movies here
     - Can I get a ticket to see [](movie_name) today?
     - I want to book for [](movie_name), can i get the booking number
-    - I need to get tickets to see []()
     - I want to purchase tickets 
     - Do you sell tickets here?
     - I think you sell tickets right?
@@ -1109,7 +1108,6 @@ nlu:
     - I want seats for the movie [The Graduate](movie_name)
     - movie title: [Sanjuro](movie_name)
     - 
-    - Think I want tickets for [](), Can i have the booking reference
     -
     -
     -
