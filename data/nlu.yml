@@ -594,25 +594,6 @@ nlu:
     - yes, thanks
     - yeah, that'd be great
     - Yip, that'd be amazing
-    - 
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
-    -
     
     
 
@@ -768,7 +749,6 @@ nlu:
     - nope, thats wrong
     - 100% wrong 
     - that is wrong 
-    - 
 
 - intent: book_tickets
   examples: |
@@ -1439,7 +1419,6 @@ nlu:
     - tell me times for [](movie_name)
     - Can you give me a list of times for [](movie_name)
     - what times are [](movie_name)
-    - 
     
     
 - intent: inquire_about_movie
