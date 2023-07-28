@@ -1,214 +1,195 @@
 {
-  "greet": {
-    "precision": 0.8466666666666667,
-    "recall": 0.8410596026490066,
-    "f1-score": 0.8438538205980066,
-    "support": 151,
+  "inform_details": {
+    "precision": 0.8932584269662921,
+    "recall": 0.9875776397515528,
+    "f1-score": 0.9380530973451326,
+    "support": 161,
     "confused_with": {
-      "goodbye": 9,
-      "affirm": 7
-    }
-  },
-  "stop": {
-    "precision": 0.8223684210526315,
-    "recall": 0.8064516129032258,
-    "f1-score": 0.8143322475570031,
-    "support": 155,
-    "confused_with": {
-      "deny": 8,
-      "goodbye": 6
-    }
-  },
-  "booking_reference": {
-    "precision": 0.9183673469387755,
-    "recall": 0.8823529411764706,
-    "f1-score": 0.9,
-    "support": 51,
-    "confused_with": {
-      "display_booking": 5,
-      "collect_tickets": 1
-    }
-  },
-  "inform_movie": {
-    "precision": 0.8723404255319149,
-    "recall": 0.5394736842105263,
-    "f1-score": 0.6666666666666667,
-    "support": 76,
-    "confused_with": {
-      "inquire_about_movie": 11,
-      "inquire_movie_times": 6
-    }
-  },
-  "inform_sort_code": {
-    "precision": 0.9230769230769231,
-    "recall": 1.0,
-    "f1-score": 0.9600000000000001,
-    "support": 12,
-    "confused_with": {}
-  },
-  "inquire_prices": {
-    "precision": 0.9619047619047619,
-    "recall": 1.0,
-    "f1-score": 0.9805825242718447,
-    "support": 101,
-    "confused_with": {}
-  },
-  "affirm": {
-    "precision": 0.8486842105263158,
-    "recall": 0.8376623376623377,
-    "f1-score": 0.8431372549019608,
-    "support": 154,
-    "confused_with": {
-      "deny": 9,
-      "greet": 8
-    }
-  },
-  "inquire_about_movie": {
-    "precision": 0.8466257668711656,
-    "recall": 0.9078947368421053,
-    "f1-score": 0.8761904761904762,
-    "support": 152,
-    "confused_with": {
-      "inform_movie": 3,
-      "inquire_movie_times": 2
-    }
-  },
-  "set_movie_time": {
-    "precision": 0.9714285714285714,
-    "recall": 0.9066666666666666,
-    "f1-score": 0.9379310344827586,
-    "support": 75,
-    "confused_with": {
-      "no_tickets": 2,
-      "book_tickets": 1
-    }
-  },
-  "inform_cvv": {
-    "precision": 0.9166666666666666,
-    "recall": 1.0,
-    "f1-score": 0.9565217391304348,
-    "support": 22,
-    "confused_with": {}
-  },
-  "out_of_scope": {
-    "precision": 0.9772727272727273,
-    "recall": 0.86,
-    "f1-score": 0.9148936170212766,
-    "support": 50,
-    "confused_with": {
-      "stop": 3,
-      "inquire_prices": 2
-    }
-  },
-  "no_tickets": {
-    "precision": 0.8909090909090909,
-    "recall": 0.875,
-    "f1-score": 0.8828828828828829,
-    "support": 56,
-    "confused_with": {
-      "book_tickets": 5,
-      "stop": 1
-    }
-  },
-  "inquire_movie_times": {
-    "precision": 0.8714285714285714,
-    "recall": 0.7625,
-    "f1-score": 0.8133333333333334,
-    "support": 80,
-    "confused_with": {
-      "inquire_movie_schedule": 9,
-      "inquire_about_movie": 7
-    }
-  },
-  "inquire_payment": {
-    "precision": 0.9444444444444444,
-    "recall": 0.9807692307692307,
-    "f1-score": 0.9622641509433962,
-    "support": 52,
-    "confused_with": {
-      "stop": 1
-    }
-  },
-  "book_tickets": {
-    "precision": 0.8529411764705882,
-    "recall": 0.9477124183006536,
-    "f1-score": 0.8978328173374613,
-    "support": 153,
-    "confused_with": {
-      "stop": 2,
-      "no_tickets": 2
-    }
-  },
-  "inform_card_num": {
-    "precision": 0.9230769230769231,
-    "recall": 0.9230769230769231,
-    "f1-score": 0.9230769230769231,
-    "support": 13,
-    "confused_with": {
-      "inform_cvv": 1
-    }
-  },
-  "collect_tickets": {
-    "precision": 0.9382716049382716,
-    "recall": 0.95,
-    "f1-score": 0.9440993788819876,
-    "support": 80,
-    "confused_with": {
-      "book_tickets": 2,
+      "collect_tickets": 1,
       "display_booking": 1
     }
   },
-  "display_booking": {
-    "precision": 0.8157894736842105,
-    "recall": 0.8157894736842105,
-    "f1-score": 0.8157894736842104,
-    "support": 38,
+  "no_tickets": {
+    "precision": 0.9622641509433962,
+    "recall": 0.9107142857142857,
+    "f1-score": 0.9357798165137615,
+    "support": 56,
     "confused_with": {
-      "booking_reference": 4,
-      "book_tickets": 1
+      "book_tickets": 4,
+      "set_movie_time": 1
+    }
+  },
+  "set_movie_time": {
+    "precision": 0.9791666666666666,
+    "recall": 0.94,
+    "f1-score": 0.9591836734693877,
+    "support": 100,
+    "confused_with": {
+      "inquire_movie_schedule": 2,
+      "inform_details": 2
+    }
+  },
+  "stop": {
+    "precision": 0.7989949748743719,
+    "recall": 0.803030303030303,
+    "f1-score": 0.801007556675063,
+    "support": 198,
+    "confused_with": {
+      "deny": 8,
+      "inquire_payment": 6
     }
   },
   "goodbye": {
-    "precision": 0.8456375838926175,
-    "recall": 0.8689655172413793,
-    "f1-score": 0.8571428571428572,
-    "support": 145,
+    "precision": 0.8275862068965517,
+    "recall": 0.8484848484848485,
+    "f1-score": 0.8379052369077307,
+    "support": 198,
     "confused_with": {
-      "greet": 7,
-      "affirm": 4
+      "greet": 9,
+      "stop": 6
     }
   },
-  "deny": {
-    "precision": 0.8466666666666667,
-    "recall": 0.8758620689655172,
-    "f1-score": 0.8610169491525425,
-    "support": 145,
+  "inquire_payment": {
+    "precision": 0.9134615384615384,
+    "recall": 0.979381443298969,
+    "f1-score": 0.9452736318407959,
+    "support": 97,
     "confused_with": {
-      "stop": 8,
-      "affirm": 8
+      "stop": 1,
+      "inquire_about_movie": 1
+    }
+  },
+  "inquire_prices": {
+    "precision": 0.98,
+    "recall": 0.9702970297029703,
+    "f1-score": 0.9751243781094527,
+    "support": 101,
+    "confused_with": {
+      "display_booking": 2,
+      "goodbye": 1
+    }
+  },
+  "inquire_about_movie": {
+    "precision": 0.7947019867549668,
+    "recall": 0.7894736842105263,
+    "f1-score": 0.7920792079207921,
+    "support": 152,
+    "confused_with": {
+      "inquire_movie_times": 8,
+      "inform_movie": 5
+    }
+  },
+  "collect_tickets": {
+    "precision": 0.93125,
+    "recall": 0.9738562091503268,
+    "f1-score": 0.952076677316294,
+    "support": 153,
+    "confused_with": {
+      "book_tickets": 2,
+      "display_booking": 2
+    }
+  },
+  "display_booking": {
+    "precision": 0.8333333333333334,
+    "recall": 0.8163265306122449,
+    "f1-score": 0.8247422680412372,
+    "support": 98,
+    "confused_with": {
+      "inform_details": 15,
+      "inquire_movie_schedule": 2
+    }
+  },
+  "affirm": {
+    "precision": 0.8044692737430168,
+    "recall": 0.8,
+    "f1-score": 0.8022284122562675,
+    "support": 180,
+    "confused_with": {
+      "goodbye": 11,
+      "deny": 11
     }
   },
   "inquire_movie_schedule": {
-    "precision": 0.9176470588235294,
+    "precision": 0.8342245989304813,
     "recall": 0.9873417721518988,
-    "f1-score": 0.9512195121951219,
+    "f1-score": 0.9043478260869565,
     "support": 158,
     "confused_with": {
-      "book_tickets": 1,
-      "inquire_prices": 1
+      "inquire_movie_times": 1,
+      "greet": 1
     }
   },
-  "accuracy": 0.8780614903595623,
+  "inquire_movie_times": {
+    "precision": 0.845360824742268,
+    "recall": 0.7663551401869159,
+    "f1-score": 0.8039215686274509,
+    "support": 107,
+    "confused_with": {
+      "inquire_movie_schedule": 16,
+      "inquire_about_movie": 6
+    }
+  },
+  "out_of_scope": {
+    "precision": 0.8865979381443299,
+    "recall": 0.8431372549019608,
+    "f1-score": 0.864321608040201,
+    "support": 102,
+    "confused_with": {
+      "stop": 7,
+      "inquire_prices": 2
+    }
+  },
+  "inform_movie": {
+    "precision": 0.75,
+    "recall": 0.34177215189873417,
+    "f1-score": 0.4695652173913043,
+    "support": 79,
+    "confused_with": {
+      "inquire_about_movie": 15,
+      "book_tickets": 9
+    }
+  },
+  "book_tickets": {
+    "precision": 0.8682634730538922,
+    "recall": 0.9477124183006536,
+    "f1-score": 0.90625,
+    "support": 153,
+    "confused_with": {
+      "display_booking": 3,
+      "stop": 2
+    }
+  },
+  "deny": {
+    "precision": 0.7986577181208053,
+    "recall": 0.7933333333333333,
+    "f1-score": 0.7959866220735786,
+    "support": 150,
+    "confused_with": {
+      "affirm": 16,
+      "stop": 6
+    }
+  },
+  "greet": {
+    "precision": 0.8776595744680851,
+    "recall": 0.8375634517766497,
+    "f1-score": 0.8571428571428572,
+    "support": 197,
+    "confused_with": {
+      "goodbye": 8,
+      "affirm": 7
+    }
+  },
+  "accuracy": 0.8594262295081967,
   "macro avg": {
-    "precision": 0.8929626229653349,
-    "recall": 0.8842180469666739,
-    "f1-score": 0.8858460790214832,
-    "support": 1919
+    "precision": 0.8655139270055554,
+    "recall": 0.8520198609170095,
+    "f1-score": 0.8536105364310146,
+    "support": 2440
   },
   "weighted avg": {
-    "precision": 0.8783741531020995,
-    "recall": 0.8780614903595623,
-    "f1-score": 0.875869762060328,
-    "support": 1919
+    "precision": 0.8575819618214697,
+    "recall": 0.8594262295081967,
+    "f1-score": 0.8550805154860135,
+    "support": 2440
   }
 }

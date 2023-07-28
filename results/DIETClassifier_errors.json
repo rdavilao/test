@@ -1,14 +1,801 @@
 [
   {
-    "text": "Okie Dokie",
+    "text": "bye-bye",
     "entities": [],
     "predicted_entities": [
       {
         "entity": "movie_name",
+        "start": 3,
+        "end": 4,
+        "confidence_entity": 0.3050363063812256,
+        "value": "-",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I have been struggling to buy tickets",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 12,
+        "end": 25,
+        "confidence_entity": 0.5097035765647888,
+        "value": "struggling to",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Is this where i can book tickets for Pirates of the Caribbean: Curse of the Black Pearl",
+    "entities": [
+      {
+        "start": 37,
+        "end": 87,
+        "value": "Pirates of the Caribbean: Curse of the Black Pearl",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 37,
+        "end": 68,
+        "confidence_entity": 0.534282922744751,
+        "value": "Pirates of the Caribbean: Curse",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 76,
+        "end": 87,
+        "confidence_entity": 0.9975080490112305,
+        "value": "Black Pearl",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Dispicable me",
+    "entities": [
+      {
         "start": 0,
+        "end": 13,
+        "value": "Dispicable me",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can I see the movie Life is Beautiful",
+    "entities": [
+      {
+        "start": 20,
+        "end": 37,
+        "value": "Life is Beautiful",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 20,
+        "end": 24,
+        "confidence_entity": 0.9980089068412781,
+        "value": "Life",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 28,
+        "end": 37,
+        "confidence_entity": 0.998428463935852,
+        "value": "Beautiful",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is The Lion King on just now",
+    "entities": [
+      {
+        "start": 3,
+        "end": 16,
+        "value": "The Lion King",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 12,
+        "end": 16,
+        "confidence_entity": 0.5461770296096802,
+        "value": "King",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "would i be able to get tickets for WALL-E",
+    "entities": [
+      {
+        "start": 35,
+        "end": 41,
+        "value": "WALL-E",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can I watch Fargo here",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "Fargo",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Persona",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Persona",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "The Help",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "The Help",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Nosferatu",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Nosferatu",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I need tickets for The Sound of Music",
+    "entities": [
+      {
+        "start": 19,
+        "end": 37,
+        "value": "The Sound of Music",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 32,
+        "end": 37,
+        "confidence_entity": 0.5521824359893799,
+        "value": "Music",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it is Black Swan",
+    "entities": [
+      {
+        "start": 6,
+        "end": 16,
+        "value": "Black Swan",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 6,
+        "end": 11,
+        "confidence_entity": 0.9956988096237183,
+        "value": "Black",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Are you showing Iron Man right now?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 24,
+        "value": "Iron Man",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.8893848061561584,
+        "value": "Man",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you tell what times there is for Batman Begins",
+    "entities": [
+      {
+        "start": 37,
+        "end": 50,
+        "value": "Batman Begins",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 24,
+        "end": 29,
+        "confidence_entity": 0.8661708235740662,
+        "value": "there",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 37,
+        "end": 50,
+        "confidence_entity": 0.8376292586326599,
+        "value": "Batman Begins",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Forrest Gump showings",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Forrest Gump",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "movie Seven Samurai times",
+    "entities": [
+      {
+        "start": 6,
+        "end": 19,
+        "value": "Seven Samurai",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Back to the Future times",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "Back to the Future",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I wonder if you can tell me the time of The Italian Job",
+    "entities": [
+      {
+        "start": 40,
+        "end": 55,
+        "value": "The Italian Job",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 40,
+        "end": 51,
+        "confidence_entity": 0.4577599763870239,
+        "value": "The Italian",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What can you tell me about Pirates of the Carribean the Curse of the Black Pearl?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 80,
+        "value": "Pirates of the Carribean the Curse of the Black Pearl",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.9861211180686951,
+        "value": "Pirates",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 38,
+        "end": 80,
+        "confidence_entity": 0.4929538667201996,
+        "value": "the Carribean the Curse of the Black Pearl",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "movie info Matilda",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "Matilda",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What do the reviews say about Nobody?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 36,
+        "value": "Nobody",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is there information about Zack Snyder’s Justice League available?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 55,
+        "value": "Zack Snyder’s Justice League",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.8166583776473999,
+        "value": "Zack",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 32,
+        "end": 38,
+        "confidence_entity": 0.6745293736457825,
+        "value": "Snyder",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can you tell me anything about Morbius",
+    "entities": [
+      {
+        "start": 31,
+        "end": 38,
+        "value": "Morbius",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want to know what the plot of Mad Max: Fury Road is",
+    "entities": [
+      {
+        "start": 32,
+        "end": 50,
+        "value": "Mad Max: Fury Road",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 20,
+        "end": 28,
+        "confidence_entity": 0.5488202571868896,
+        "value": "the plot",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 32,
+        "end": 45,
+        "confidence_entity": 0.6732704043388367,
+        "value": "Mad Max: Fury",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "info about The Big Lebowski please",
+    "entities": [
+      {
+        "start": 11,
+        "end": 27,
+        "value": "The Big Lebowski",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 15,
+        "end": 34,
+        "confidence_entity": 0.4132385551929474,
+        "value": "Big Lebowski please",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you happen to have information on This is Spinal Tap",
+    "entities": [
+      {
+        "start": 37,
+        "end": 55,
+        "value": "This is Spinal Tap",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 45,
+        "end": 55,
+        "confidence_entity": 0.9804450869560242,
+        "value": "Spinal Tap",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "details of Mulholland Drive",
+    "entities": [
+      {
+        "start": 11,
+        "end": 27,
+        "value": "Mulholland Drive",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 8,
         "end": 10,
-        "confidence_entity": 0.9915027618408203,
-        "value": "Okie Dokie",
+        "confidence_entity": 0.9993869066238403,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 11,
+        "end": 27,
+        "confidence_entity": 0.948103129863739,
+        "value": "Mulholland Drive",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I need to know the director of The Muppet Movie",
+    "entities": [
+      {
+        "start": 31,
+        "end": 47,
+        "value": "The Muppet Movie",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 35,
+        "end": 41,
+        "confidence_entity": 0.7121478319168091,
+        "value": "Muppet",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you know how good The Good, The Bad, and The Ugly is",
+    "entities": [
+      {
+        "start": 21,
+        "end": 52,
+        "value": "The Good, The Bad, and The Ugly",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.998015284538269,
+        "value": "how",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 16,
+        "end": 24,
+        "confidence_entity": 0.8428098559379578,
+        "value": "good The",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 25,
+        "end": 52,
+        "confidence_entity": 0.4054527282714844,
+        "value": "Good, The Bad, and The Ugly",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I need to know about Sweet Home Alabama",
+    "entities": [
+      {
+        "start": 21,
+        "end": 39,
+        "value": "Sweet Home Alabama",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.361596018075943,
+        "value": "Alabama",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What age can I see I Am Sam at",
+    "entities": [
+      {
+        "start": 19,
+        "end": 27,
+        "value": "I Am Sam",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "rundown of The Little Rascals",
+    "entities": [
+      {
+        "start": 11,
+        "end": 29,
+        "value": "The Little Rascals",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 15,
+        "end": 21,
+        "confidence_entity": 0.972913384437561,
+        "value": "Little",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 22,
+        "end": 29,
+        "confidence_entity": 0.9260474443435669,
+        "value": "Rascals",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "give me all you have on Rebel Without a Cause",
+    "entities": [
+      {
+        "start": 24,
+        "end": 45,
+        "value": "Rebel Without a Cause",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you tell me if Booksmart is any good?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 28,
+        "value": "Booksmart",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "movie time at 12th October 2022",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.7319945096969604,
+        "value": "2022",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I need tickets for 9th of november at midnight",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 26,
+        "end": 34,
+        "confidence_entity": 0.8980043530464172,
+        "value": "november",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 35,
+        "end": 46,
+        "confidence_entity": 0.5356091260910034,
+        "value": "at midnight",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "(31-08-71)(sort_code)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sort_code",
+        "start": 1,
+        "end": 20,
+        "confidence_entity": 0.5691964626312256,
+        "value": "31-08-71)(sort_code",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "here's my card number 372828494582939",
+    "entities": [
+      {
+        "start": 22,
+        "end": 37,
+        "value": "372828494582939",
+        "entity": "card_num"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cvv",
+        "start": 22,
+        "end": 37,
+        "confidence_entity": 0.9862449765205383,
+        "value": "372828494582939",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you accept American Express?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 14,
+        "end": 22,
+        "confidence_entity": 0.7762179970741272,
+        "value": "American",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Greetings and salutations",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.7540183067321777,
+        "value": "and",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "no that will be all",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.9027026295661926,
+        "value": "will",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.9307649731636047,
+        "value": "all",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "The day and time is wrong",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 4,
+        "end": 11,
+        "confidence_entity": 0.9759536981582642,
+        "value": "day and",
         "extractor": "DIETClassifier"
       }
     ]
@@ -35,57 +822,102 @@
         "entity": "movie_name"
       }
     ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 32,
-        "end": 36,
-        "confidence_entity": 0.857416033744812,
-        "value": "Your",
-        "extractor": "DIETClassifier"
-      }
-    ]
+    "predicted_entities": []
   },
   {
-    "text": "Is the movie Parasite available to see",
+    "text": "Watch Finding Nemo",
     "entities": [
       {
-        "start": 13,
-        "end": 21,
-        "value": "Parasite",
+        "start": 6,
+        "end": 18,
+        "value": "Finding Nemo",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "tickets for Toy Story 3",
+    "text": "for Princess Mononoke",
     "entities": [
       {
-        "start": 12,
-        "end": 23,
-        "value": "Toy Story 3",
+        "start": 4,
+        "end": 21,
+        "value": "Princess Mononoke",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "the movie I want to see is Inglourious Basterds",
+    "entities": [
+      {
+        "start": 27,
+        "end": 47,
+        "value": "Inglourious Basterds",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 12,
-        "end": 21,
-        "confidence_entity": 0.9995620846748352,
-        "value": "Toy Story",
+        "start": 24,
+        "end": 47,
+        "confidence_entity": 0.5300275087356567,
+        "value": "is Inglourious Basterds",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "All Quite on the Western Front is the title",
+    "text": "do you have the movie 1917",
+    "entities": [
+      {
+        "start": 22,
+        "end": 26,
+        "value": "1917",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cvv",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.9749066829681396,
+        "value": "1917",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is Howl's Moving Castle available",
+    "entities": [
+      {
+        "start": 3,
+        "end": 23,
+        "value": "Howl's Moving Castle",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.9929497241973877,
+        "value": "'s",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "The Silence of the Lambs",
     "entities": [
       {
         "start": 0,
-        "end": 30,
-        "value": "All Quite on the Western Front",
+        "end": 24,
+        "value": "The Silence of the Lambs",
         "entity": "movie_name"
       }
     ],
@@ -93,94 +925,310 @@
       {
         "entity": "movie_name",
         "start": 0,
-        "end": 9,
-        "confidence_entity": 0.9305899739265442,
-        "value": "All Quite",
+        "end": 11,
+        "confidence_entity": 0.993377149105072,
+        "value": "The Silence",
         "extractor": "DIETClassifier"
       },
+      {
+        "entity": "movie_name",
+        "start": 15,
+        "end": 24,
+        "confidence_entity": 0.972411036491394,
+        "value": "the Lambs",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Snakes on a Plane",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "Snakes on a Plane",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.7602896094322205,
+        "value": "Plane",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "the name is The Revenant",
+    "entities": [
+      {
+        "start": 12,
+        "end": 24,
+        "value": "The Revenant",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 16,
+        "end": 24,
+        "confidence_entity": 0.3987064063549042,
+        "value": "Revenant",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Fairly sure the title is Solaris",
+    "entities": [
+      {
+        "start": 25,
+        "end": 32,
+        "value": "Solaris",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what time is The Wolf of Wall Street on at?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 36,
+        "value": "The Wolf of Wall Street",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
       {
         "entity": "movie_name",
         "start": 13,
-        "end": 16,
-        "confidence_entity": 0.51856529712677,
+        "end": 24,
+        "confidence_entity": 0.9952734112739563,
+        "value": "The Wolf of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 25,
+        "end": 39,
+        "confidence_entity": 0.9765001535415649,
+        "value": "Wall Street on",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "display the schedule for Die Hard",
+    "entities": [
+      {
+        "start": 25,
+        "end": 33,
+        "value": "Die Hard",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.9054645299911499,
         "value": "the",
         "extractor": "DIETClassifier"
       },
+      {
+        "entity": "movie_name",
+        "start": 25,
+        "end": 28,
+        "confidence_entity": 0.9983008503913879,
+        "value": "Die",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 29,
+        "end": 33,
+        "confidence_entity": 0.6507720351219177,
+        "value": "Hard",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "info on times for Baby Driver",
+    "entities": [
+      {
+        "start": 18,
+        "end": 29,
+        "value": "Baby Driver",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.6303832530975342,
+        "value": "times",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 18,
+        "end": 29,
+        "confidence_entity": 0.999029278755188,
+        "value": "Baby Driver",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "schedule info for Lawrence of Arabia",
+    "entities": [
+      {
+        "start": 18,
+        "end": 36,
+        "value": "Lawrence of Arabia",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 18,
+        "end": 26,
+        "confidence_entity": 0.9997219443321228,
+        "value": "Lawrence",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 30,
+        "end": 36,
+        "confidence_entity": 0.9536148905754089,
+        "value": "Arabia",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "display V for Vendetta schedule",
+    "entities": [
+      {
+        "start": 8,
+        "end": 22,
+        "value": "V for Vendetta",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 14,
+        "end": 22,
+        "confidence_entity": 0.4491284191608429,
+        "value": "Vendetta",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "do you know when The Elephant Man is on?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 33,
+        "value": "The Elephant Man",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
       {
         "entity": "movie_name",
         "start": 17,
-        "end": 30,
-        "confidence_entity": 0.9786403775215149,
-        "value": "Western Front",
+        "end": 20,
+        "confidence_entity": 0.9628310799598694,
+        "value": "The",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "movie_name",
-        "start": 34,
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.9716273546218872,
+        "value": "Man",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "print information about timings for Gone with the Wind",
+    "entities": [
+      {
+        "start": 36,
+        "end": 54,
+        "value": "Gone with the Wind",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 50,
+        "end": 54,
+        "confidence_entity": 0.6189515590667725,
+        "value": "Wind",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tell me the times for A Prophet",
+    "entities": [
+      {
+        "start": 22,
+        "end": 31,
+        "value": "A Prophet",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "schedule of The Truman Show",
+    "entities": [
+      {
+        "start": 12,
+        "end": 27,
+        "value": "The Truman Show",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 12,
+        "end": 22,
+        "confidence_entity": 0.5623505711555481,
+        "value": "The Truman",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you have information about Encanto",
+    "entities": [
+      {
+        "start": 30,
         "end": 37,
-        "confidence_entity": 0.9261332154273987,
-        "value": "the",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Current showings for What we do in the Shadows",
-    "entities": [
-      {
-        "start": 21,
-        "end": 46,
-        "value": "What we do in the Shadows",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 39,
-        "end": 46,
-        "confidence_entity": 0.7433598041534424,
-        "value": "Shadows",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "I need information on showings for The Bridge on the River Kwai",
-    "entities": [
-      {
-        "start": 35,
-        "end": 63,
-        "value": "The Bridge on the River Kwai",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 35,
-        "end": 45,
-        "confidence_entity": 0.9984080195426941,
-        "value": "The Bridge",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 49,
-        "end": 63,
-        "confidence_entity": 0.9927790760993958,
-        "value": "the River Kwai",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Back to the Future times",
-    "entities": [
-      {
-        "start": 0,
-        "end": 18,
-        "value": "Back to the Future",
+        "value": "Encanto",
         "entity": "movie_name"
       }
     ],
@@ -199,272 +1247,10 @@
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 14,
-        "end": 26,
-        "confidence_entity": 0.9036915302276611,
-        "value": "How to train",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 32,
+        "start": 21,
         "end": 38,
-        "confidence_entity": 0.9071428179740906,
-        "value": "dragon",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Who directed Raya And The Last Dragon",
-    "entities": [
-      {
-        "start": 13,
-        "end": 37,
-        "value": "Raya And The Last Dragon",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 0,
-        "end": 3,
-        "confidence_entity": 0.7486044764518738,
-        "value": "Who",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 13,
-        "end": 37,
-        "confidence_entity": 0.9912847280502319,
-        "value": "Raya And The Last Dragon",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Snow White and the Seven Dwarfs synopsis",
-    "entities": [
-      {
-        "start": 0,
-        "end": 31,
-        "value": "Snow White and the Seven Dwarfs",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 0,
-        "end": 10,
-        "confidence_entity": 0.9353581666946411,
-        "value": "Snow White",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 19,
-        "end": 31,
-        "confidence_entity": 0.9382567405700684,
-        "value": "Seven Dwarfs",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Is Meshes of the Afternoon a bad movie",
-    "entities": [
-      {
-        "start": 3,
-        "end": 26,
-        "value": "Meshes of the Afternoon",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 3,
-        "end": 9,
-        "confidence_entity": 0.6419915556907654,
-        "value": "Meshes",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "What is the average review of Grease",
-    "entities": [
-      {
-        "start": 30,
-        "end": 36,
-        "value": "Grease",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "is The Parent Trap apropriate for children",
-    "entities": [
-      {
-        "start": 3,
-        "end": 18,
-        "value": "The Parent Trap",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 3,
-        "end": 18,
-        "confidence_entity": 0.9816530346870422,
-        "value": "The Parent Trap",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 34,
-        "end": 42,
-        "confidence_entity": 0.8965392112731934,
-        "value": "children",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Bye, Cinebot",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 0,
-        "end": 3,
-        "confidence_entity": 0.4747637212276459,
-        "value": "Bye",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Dispicable me",
-    "entities": [
-      {
-        "start": 0,
-        "end": 13,
-        "value": "Dispicable me",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "movie is City of God",
-    "entities": [
-      {
-        "start": 9,
-        "end": 20,
-        "value": "City of God",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 17,
-        "end": 20,
-        "confidence_entity": 0.440521776676178,
-        "value": "God",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "do you have the movie 1917",
-    "entities": [
-      {
-        "start": 22,
-        "end": 26,
-        "value": "1917",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Snakes on a Plane",
-    "entities": [
-      {
-        "start": 0,
-        "end": 17,
-        "value": "Snakes on a Plane",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 12,
-        "end": 17,
-        "confidence_entity": 0.9305964708328247,
-        "value": "Plane",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "viewing schedule for 12 Angry Men",
-    "entities": [
-      {
-        "start": 21,
-        "end": 33,
-        "value": "12 Angry Men",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 24,
-        "end": 33,
-        "confidence_entity": 0.9650313258171082,
-        "value": "Angry Men",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "when are you showing Tangled?",
-    "entities": [
-      {
-        "start": 21,
-        "end": 28,
-        "value": "Tangled",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "I'm wondering what the times of 28 Days Later are?",
-    "entities": [
-      {
-        "start": 32,
-        "end": 45,
-        "value": "28 Days Later",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 35,
-        "end": 45,
-        "confidence_entity": 0.9087889194488525,
-        "value": "Days Later",
+        "confidence_entity": 0.822587251663208,
+        "value": "train your dragon",
         "extractor": "DIETClassifier"
       }
     ]
@@ -483,20 +1269,91 @@
       {
         "entity": "movie_name",
         "start": 18,
-        "end": 22,
-        "confidence_entity": 0.640419065952301,
-        "value": "Star",
+        "end": 28,
+        "confidence_entity": 0.5062030553817749,
+        "value": "Star wars:",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "I want to know who directed Song of the Sea",
+    "text": "who's the direcor for In The Heights",
     "entities": [
       {
-        "start": 28,
-        "end": 43,
-        "value": "Song of the Sea",
+        "start": 22,
+        "end": 36,
+        "value": "In The Heights",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 25,
+        "end": 36,
+        "confidence_entity": 0.953403115272522,
+        "value": "The Heights",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "director of How to Train Your Dragon",
+    "entities": [
+      {
+        "start": 12,
+        "end": 36,
+        "value": "How to Train Your Dragon",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 19,
+        "end": 36,
+        "confidence_entity": 0.9373912215232849,
+        "value": "Train Your Dragon",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "synopsis for The Breakfast Club",
+    "entities": [
+      {
+        "start": 13,
+        "end": 31,
+        "value": "The Breakfast Club",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 17,
+        "end": 26,
+        "confidence_entity": 0.995764970779419,
+        "value": "Breakfast",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.9479103088378906,
+        "value": "Club",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how much do you know about There Will Be Blood",
+    "entities": [
+      {
+        "start": 27,
+        "end": 46,
+        "value": "There Will Be Blood",
         "entity": "movie_name"
       }
     ],
@@ -504,42 +1361,9 @@
       {
         "entity": "movie_name",
         "start": 33,
-        "end": 43,
-        "confidence_entity": 0.8546919822692871,
-        "value": "of the Sea",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "age rating of Ratatouille",
-    "entities": [
-      {
-        "start": 14,
-        "end": 25,
-        "value": "Ratatouille",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Do you happen to have information on This is Spinal Tap",
-    "entities": [
-      {
-        "start": 37,
-        "end": 55,
-        "value": "This is Spinal Tap",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 45,
-        "end": 55,
-        "confidence_entity": 0.932297945022583,
-        "value": "Spinal Tap",
+        "end": 46,
+        "confidence_entity": 0.7054619789123535,
+        "value": "Will Be Blood",
         "extractor": "DIETClassifier"
       }
     ]
@@ -554,387 +1378,407 @@
         "entity": "movie_name"
       }
     ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want a short summary of Eternal Sunshine of the Spotless Mind",
+    "entities": [
+      {
+        "start": 26,
+        "end": 63,
+        "value": "Eternal Sunshine of the Spotless Mind",
+        "entity": "movie_name"
+      }
+    ],
     "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 26,
+        "end": 33,
+        "confidence_entity": 0.9832278490066528,
+        "value": "Eternal",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 34,
+        "end": 42,
+        "confidence_entity": 0.9277550578117371,
+        "value": "Sunshine",
+        "extractor": "DIETClassifier"
+      },
       {
         "entity": "movie_name",
         "start": 46,
-        "end": 53,
-        "confidence_entity": 0.6216601133346558,
-        "value": "Sunrise",
+        "end": 63,
+        "confidence_entity": 0.6041601300239563,
+        "value": "the Spotless Mind",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "do you know who directed Annie",
+    "text": "summarize Home Alone",
     "entities": [
       {
-        "start": 25,
-        "end": 30,
-        "value": "Annie",
+        "start": 10,
+        "end": 20,
+        "value": "Home Alone",
         "entity": "movie_name"
       }
     ],
-    "predicted_entities": []
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.7108663320541382,
+        "value": "Alone",
+        "extractor": "DIETClassifier"
+      }
+    ]
   },
   {
-    "text": "is it possible to get details about 12 Years a Slave",
+    "text": "is The Parent Trap apropriate for children",
+    "entities": [
+      {
+        "start": 3,
+        "end": 18,
+        "value": "The Parent Trap",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 7,
+        "end": 13,
+        "confidence_entity": 0.8198332786560059,
+        "value": "Parent",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 14,
+        "end": 29,
+        "confidence_entity": 0.6194364428520203,
+        "value": "Trap apropriate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 34,
+        "end": 42,
+        "confidence_entity": 0.48397231101989746,
+        "value": "children",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What age do you need to be for Fast Five",
+    "entities": [
+      {
+        "start": 31,
+        "end": 40,
+        "value": "Fast Five",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 31,
+        "end": 35,
+        "confidence_entity": 0.9699804186820984,
+        "value": "Fast",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what age do you need to be to watch Catch Me If You Can",
     "entities": [
       {
         "start": 36,
-        "end": 52,
-        "value": "12 Years a Slave",
+        "end": 55,
+        "value": "Catch Me If You Can",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I need info on Blow Out",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "Blow Out",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Show details for Ferris Bueller's Day Off",
+    "entities": [
+      {
+        "start": 17,
+        "end": 41,
+        "value": "Ferris Bueller's Day Off",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 39,
-        "end": 52,
-        "confidence_entity": 0.9715749025344849,
-        "value": "Years a Slave",
+        "start": 24,
+        "end": 37,
+        "confidence_entity": 0.9259682893753052,
+        "value": "Bueller's Day",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "I need tickets for 10-12-12",
+    "text": "I don't know my sort-code",
     "entities": [],
     "predicted_entities": [
       {
         "entity": "sort_code",
-        "start": 19,
-        "end": 27,
-        "confidence_entity": 0.9989079236984253,
-        "value": "10-12-12",
+        "start": 20,
+        "end": 21,
+        "confidence_entity": 0.6019154191017151,
+        "value": "-",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Would you be able to put me down for 12pm on the 5th January",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 53,
-        "end": 60,
-        "confidence_entity": 0.9868300557136536,
-        "value": "January",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "(31-08-71)(sort_code)",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "sort_code",
-        "start": 0,
-        "end": 20,
-        "confidence_entity": 0.9991346001625061,
-        "value": "(31-08-71)(sort_code",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "123",
+    "text": "The number on the back of the card is 123",
     "entities": [
       {
-        "start": 0,
-        "end": 3,
+        "start": 38,
+        "end": 41,
         "value": "123",
         "entity": "cvv"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "657",
-    "entities": [
-      {
-        "start": 0,
-        "end": 3,
-        "value": "657",
-        "entity": "cvv"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "534",
-    "entities": [
-      {
-        "start": 0,
-        "end": 3,
-        "value": "534",
-        "entity": "cvv"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "How much is a ticket to see a movie in 3D?",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 39,
-        "end": 41,
-        "confidence_entity": 0.4370904266834259,
-        "value": "3D",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Bon Voyage",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 0,
-        "end": 10,
-        "confidence_entity": 0.9962693452835083,
-        "value": "Bon Voyage",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "I want to see the movie Harry Potter and the Goblet of Fire",
-    "entities": [
-      {
-        "start": 24,
-        "end": 59,
-        "value": "Harry Potter and the Goblet of Fire",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 30,
-        "end": 54,
-        "confidence_entity": 0.4824715256690979,
-        "value": "Potter and the Goblet of",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "see Rango",
-    "entities": [
-      {
-        "start": 4,
-        "end": 9,
-        "value": "Rango",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "are there any times for Avengers: Endgame today?",
-    "entities": [
-      {
-        "start": 24,
-        "end": 41,
-        "value": "Avengers: Endgame",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 24,
-        "end": 47,
-        "confidence_entity": 0.5332395434379578,
-        "value": "Avengers: Endgame today",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Forrest Gump showings",
-    "entities": [
-      {
-        "start": 0,
-        "end": 12,
-        "value": "Forrest Gump",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 8,
-        "end": 12,
-        "confidence_entity": 0.6668404936790466,
-        "value": "Gump",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "give me the time Logan is showing at",
-    "entities": [
-      {
-        "start": 17,
-        "end": 22,
-        "value": "Logan",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 8,
-        "end": 16,
-        "confidence_entity": 0.6429429054260254,
-        "value": "the time",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 17,
-        "end": 22,
-        "confidence_entity": 0.6835666298866272,
-        "value": "Logan",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "movie info Matilda",
-    "entities": [
-      {
-        "start": 11,
-        "end": 18,
-        "value": "Matilda",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "How long is A Quiet Place Part II?",
-    "entities": [
-      {
-        "start": 12,
-        "end": 33,
-        "value": "A Quiet Place Part II",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 12,
-        "end": 30,
-        "confidence_entity": 0.7028489708900452,
-        "value": "A Quiet Place Part",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "details of Mulholland Drive",
-    "entities": [
-      {
-        "start": 11,
-        "end": 27,
-        "value": "Mulholland Drive",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 8,
-        "end": 10,
-        "confidence_entity": 0.7739039659500122,
-        "value": "of",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 11,
-        "end": 27,
-        "confidence_entity": 0.9768203496932983,
-        "value": "Mulholland Drive",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Can I get info on the director for Lord of the Rings: The Two Towers",
-    "entities": [
-      {
-        "start": 35,
-        "end": 68,
-        "value": "Lord of the Rings: The Two Towers",
-        "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
         "start": 18,
-        "end": 21,
-        "confidence_entity": 0.5022738575935364,
-        "value": "the",
+        "end": 25,
+        "confidence_entity": 0.9271709322929382,
+        "value": "back of",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "movie_name",
-        "start": 35,
-        "end": 46,
-        "confidence_entity": 0.8898380994796753,
-        "value": "Lord of the",
+        "start": 26,
+        "end": 37,
+        "confidence_entity": 0.6486616730690002,
+        "value": "the card is",
         "extractor": "DIETClassifier"
       },
       {
-        "entity": "movie_name",
-        "start": 47,
-        "end": 68,
-        "confidence_entity": 0.8759574890136719,
-        "value": "Rings: The Two Towers",
+        "entity": "cvv",
+        "start": 38,
+        "end": 41,
+        "confidence_entity": 0.598517119884491,
+        "value": "123",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "What age can I see I Am Sam at",
+    "text": "I want to watch Avengers",
     "entities": [
       {
-        "start": 19,
-        "end": 27,
-        "value": "I Am Sam",
+        "start": 16,
+        "end": 24,
+        "value": "Avengers",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Bram Stockers Dracula",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "Bram Stockers Dracula",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 21,
-        "end": 27,
-        "confidence_entity": 0.9744360446929932,
-        "value": "Am Sam",
+        "start": 14,
+        "end": 21,
+        "confidence_entity": 0.9741629958152771,
+        "value": "Dracula",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Am I old enough to see My Girl",
+    "text": "we would like to watch The Jungle Book",
     "entities": [
       {
         "start": 23,
+        "end": 38,
+        "value": "The Jungle Book",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 23,
+        "end": 26,
+        "confidence_entity": 0.6483111381530762,
+        "value": "The",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 27,
+        "end": 33,
+        "confidence_entity": 0.6259498000144958,
+        "value": "Jungle",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "movie Ladybird",
+    "entities": [
+      {
+        "start": 6,
+        "end": 14,
+        "value": "Ladybird",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "movie is City of God",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "City of God",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "the film I want to see is It's a Wonderful Life",
+    "entities": [
+      {
+        "start": 26,
+        "end": 47,
+        "value": "It's a Wonderful Life",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 43,
+        "end": 47,
+        "confidence_entity": 0.48057764768600464,
+        "value": "Life",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you give me tickets for Alien",
+    "entities": [
+      {
+        "start": 28,
+        "end": 33,
+        "value": "Alien",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "see My Neighbor Totoro",
+    "entities": [
+      {
+        "start": 4,
+        "end": 22,
+        "value": "My Neighbor Totoro",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Groundhog Day",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Groundhog Day",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "All Quite on the Western Front is the title",
+    "entities": [
+      {
+        "start": 0,
         "end": 30,
-        "value": "My Girl",
+        "value": "All Quite on the Western Front",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 4,
+        "end": 9,
+        "confidence_entity": 0.9936131834983826,
+        "value": "Quite",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 13,
+        "end": 30,
+        "confidence_entity": 0.48558908700942993,
+        "value": "the Western Front",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 34,
+        "end": 43,
+        "confidence_entity": 0.6189420819282532,
+        "value": "the title",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it's The Kings Speech",
+    "entities": [
+      {
+        "start": 5,
+        "end": 21,
+        "value": "The Kings Speech",
         "entity": "movie_name"
       }
     ],
@@ -942,142 +1786,9 @@
       {
         "entity": "movie_name",
         "start": 5,
-        "end": 8,
-        "confidence_entity": 0.7274302840232849,
-        "value": "old",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 23,
-        "end": 30,
-        "confidence_entity": 0.9962491393089294,
-        "value": "My Girl",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "here's my card number 372828494582939",
-    "entities": [
-      {
-        "start": 22,
-        "end": 37,
-        "value": "372828494582939",
-        "entity": "card_num"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "cvv",
-        "start": 22,
-        "end": 37,
-        "confidence_entity": 0.9819889068603516,
-        "value": "372828494582939",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Hi!!! Mate",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 0,
-        "end": 2,
-        "confidence_entity": 0.7302343249320984,
-        "value": "Hi",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Deadpool",
-    "entities": [
-      {
-        "start": 0,
-        "end": 8,
-        "value": "Deadpool",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "Can I watch Fargo here",
-    "entities": [
-      {
-        "start": 12,
-        "end": 17,
-        "value": "Fargo",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "it is under the moniker The perks of Being a Wallflower",
-    "entities": [
-      {
-        "start": 24,
-        "end": 55,
-        "value": "The perks of Being a Wallflower",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 24,
-        "end": 27,
-        "confidence_entity": 0.992804229259491,
-        "value": "The",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 34,
-        "end": 44,
-        "confidence_entity": 0.7180154323577881,
-        "value": "of Being a",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 45,
-        "end": 55,
-        "confidence_entity": 0.648328959941864,
-        "value": "Wallflower",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "I don't know if your showing it but Akira",
-    "entities": [
-      {
-        "start": 36,
-        "end": 41,
-        "value": "Akira",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 32,
-        "end": 35,
-        "confidence_entity": 0.6473453044891357,
-        "value": "but",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 36,
-        "end": 41,
-        "confidence_entity": 0.37296414375305176,
-        "value": "Akira",
+        "end": 14,
+        "confidence_entity": 0.9993508458137512,
+        "value": "The Kings",
         "extractor": "DIETClassifier"
       }
     ]
@@ -1097,7 +1808,7 @@
         "entity": "movie_name",
         "start": 24,
         "end": 31,
-        "confidence_entity": 0.9990803003311157,
+        "confidence_entity": 0.5224145650863647,
         "value": "Fiddler",
         "extractor": "DIETClassifier"
       },
@@ -1105,74 +1816,731 @@
         "entity": "movie_name",
         "start": 35,
         "end": 43,
-        "confidence_entity": 0.9931215643882751,
+        "confidence_entity": 0.7779651880264282,
         "value": "the Roof",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "what time is The Wolf of Wall Street on at?",
+    "text": "are there any times for Avengers: Endgame today?",
     "entities": [
       {
-        "start": 13,
-        "end": 36,
-        "value": "The Wolf of Wall Street",
+        "start": 24,
+        "end": 41,
+        "value": "Avengers: Endgame",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 13,
-        "end": 24,
-        "confidence_entity": 0.5505254864692688,
-        "value": "The Wolf of",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 25,
-        "end": 29,
-        "confidence_entity": 0.9715142846107483,
-        "value": "Wall",
+        "start": 24,
+        "end": 47,
+        "confidence_entity": 0.9710672497749329,
+        "value": "Avengers: Endgame today",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "times for [Twilight]",
-    "entities": [],
+    "text": "times for The Avengers",
+    "entities": [
+      {
+        "start": 10,
+        "end": 22,
+        "value": "The Avengers",
+        "entity": "movie_name"
+      }
+    ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 11,
-        "end": 19,
-        "confidence_entity": 0.9928955435752869,
-        "value": "Twilight",
+        "start": 14,
+        "end": 22,
+        "confidence_entity": 0.7931016683578491,
+        "value": "Avengers: Infinity War",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I want times for The Shawshank Redemption",
+    "entities": [
+      {
+        "start": 17,
+        "end": 41,
+        "value": "The Shawshank Redemption",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 21,
+        "end": 41,
+        "confidence_entity": 0.9703646302223206,
+        "value": "Shawshank Redemption",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "display V for Vendetta schedule",
+    "text": "what time is A Silent Voice: The Movie on at?",
     "entities": [
       {
-        "start": 8,
-        "end": 22,
-        "value": "V for Vendetta",
+        "start": 13,
+        "end": 38,
+        "value": "A Silent Voice: The Movie",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "I want to know the times for Inception",
+    "text": "time info Hacksaw Ridge",
     "entities": [
       {
-        "start": 29,
+        "start": 10,
+        "end": 23,
+        "value": "Hacksaw Ridge",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.9880157113075256,
+        "value": "Hacksaw",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "times information for The Usual Suspects",
+    "entities": [
+      {
+        "start": 22,
+        "end": 40,
+        "value": "The Usual Suspects",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 26,
+        "end": 31,
+        "confidence_entity": 0.47465935349464417,
+        "value": "Usual",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 32,
+        "end": 40,
+        "confidence_entity": 0.9645253419876099,
+        "value": "Suspects",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "times of Once Upon a Time in America",
+    "entities": [
+      {
+        "start": 9,
+        "end": 36,
+        "value": "Once Upon a Time in America",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 26,
+        "end": 36,
+        "confidence_entity": 0.6365638375282288,
+        "value": "in America",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want the times of King Kong",
+    "entities": [
+      {
+        "start": 20,
+        "end": 29,
+        "value": "King Kong",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.9992314577102661,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 17,
+        "end": 29,
+        "confidence_entity": 0.4647505581378937,
+        "value": "of King Kong",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tell me about Fresh",
+    "entities": [
+      {
+        "start": 14,
+        "end": 19,
+        "value": "Fresh",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Jaws?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 12,
+        "value": "Jaws",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "tell me about Dead Poets Society",
+    "entities": [
+      {
+        "start": 14,
+        "end": 32,
+        "value": "Dead Poets Society",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 14,
+        "end": 18,
+        "confidence_entity": 0.7951464056968689,
+        "value": "Dead",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I need a summary of Some Like it Hot",
+    "entities": [
+      {
+        "start": 20,
+        "end": 36,
+        "value": "Some Like it Hot",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 33,
+        "end": 36,
+        "confidence_entity": 0.8651013970375061,
+        "value": "Hot",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is it possible to get details about 12 Years a Slave",
+    "entities": [
+      {
+        "start": 36,
+        "end": 52,
+        "value": "12 Years a Slave",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 36,
         "end": 38,
-        "value": "Inception",
+        "confidence_entity": 0.7130082845687866,
+        "value": "12",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "is Within Our Gates good",
+    "entities": [
+      {
+        "start": 3,
+        "end": 19,
+        "value": "Within Our Gates",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is Meshes of the Afternoon a bad movie",
+    "entities": [
+      {
+        "start": 3,
+        "end": 26,
+        "value": "Meshes of the Afternoon",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 33,
+        "end": 38,
+        "confidence_entity": 0.9730097651481628,
+        "value": "movie",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Am I old enough to see My Girl",
+    "entities": [
+      {
+        "start": 23,
+        "end": 30,
+        "value": "My Girl",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 5,
+        "end": 8,
+        "confidence_entity": 0.9998455047607422,
+        "value": "old",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 26,
+        "end": 30,
+        "confidence_entity": 0.9994944334030151,
+        "value": "Girl",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Would you be able to provide a summary of Margaret",
+    "entities": [
+      {
+        "start": 42,
+        "end": 50,
+        "value": "Margaret",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 29,
+        "end": 30,
+        "confidence_entity": 0.9943432807922363,
+        "value": "a",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 39,
+        "end": 50,
+        "confidence_entity": 0.9888061285018921,
+        "value": "of Margaret",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "everything you know about Carol",
+    "entities": [
+      {
+        "start": 26,
+        "end": 31,
+        "value": "Carol",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "half 3",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "cvv",
+        "start": 5,
+        "end": 6,
+        "confidence_entity": 0.9937834739685059,
+        "value": "3",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I need tickets for 10-12-12",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "sort_code",
+        "start": 19,
+        "end": 27,
+        "confidence_entity": 0.9804469347000122,
+        "value": "10-12-12",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Which snakcs do you offer",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 16,
+        "end": 19,
+        "confidence_entity": 0.5965933799743652,
+        "value": "you",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I've left my card at home",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 21,
+        "end": 25,
+        "confidence_entity": 0.9549731016159058,
+        "value": "home",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How's life?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 6,
+        "end": 10,
+        "confidence_entity": 0.7107846140861511,
+        "value": "life",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "marhaban",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.7189738750457764,
+        "value": "marhaban",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "au revoir",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.6621566414833069,
+        "value": "au revoir",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I gotta hit the road",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 16,
+        "end": 20,
+        "confidence_entity": 0.999323844909668,
+        "value": "road",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "100% wrong",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.5781241059303284,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Deadpool",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Deadpool",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "We would like to see Tick Tick Boom",
+    "entities": [
+      {
+        "start": 21,
+        "end": 35,
+        "value": "Tick Tick Boom",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is the movie Parasite available to see",
+    "entities": [
+      {
+        "start": 13,
+        "end": 21,
+        "value": "Parasite",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 3,
+        "end": 6,
+        "confidence_entity": 0.9559605121612549,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.5847461223602295,
+        "value": "Parasite",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tickets for Toy Story 3",
+    "entities": [
+      {
+        "start": 12,
+        "end": 23,
+        "value": "Toy Story 3",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want to purchase tickets for The Sixth Sense",
+    "entities": [
+      {
+        "start": 31,
+        "end": 46,
+        "value": "The Sixth Sense",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I think it's called La La Land",
+    "entities": [
+      {
+        "start": 20,
+        "end": 30,
+        "value": "La La Land",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.4738198518753052,
+        "value": "La Land",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "The Pursuit of Happyness, is it available?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 24,
+        "value": "The Pursuit of Happyness",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "it's Donnie Darko, can i see it?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 17,
+        "value": "Donnie Darko",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 12,
+        "end": 17,
+        "confidence_entity": 0.8392213582992554,
+        "value": "Darko",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "its Rain Man, do you have it?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "Rain Man",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 4,
+        "end": 16,
+        "confidence_entity": 0.5388869643211365,
+        "value": "Rain Man, do",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Current showings for What we do in the Shadows",
+    "entities": [
+      {
+        "start": 21,
+        "end": 46,
+        "value": "What we do in the Shadows",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 39,
+        "end": 46,
+        "confidence_entity": 0.9317302703857422,
+        "value": "Shadows",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "The Matrix times",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "The Matrix",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 4,
+        "end": 10,
+        "confidence_entity": 0.43620404601097107,
+        "value": "Matrix",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "schedule Goodfellas",
+    "entities": [
+      {
+        "start": 9,
+        "end": 19,
+        "value": "Goodfellas",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "can you tell me the schedule for Heat",
+    "entities": [
+      {
+        "start": 33,
+        "end": 37,
+        "value": "Heat",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I'm wondering what the times of 28 Days Later are?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 45,
+        "value": "28 Days Later",
         "entity": "movie_name"
       }
     ],
@@ -1193,66 +2561,16 @@
         "entity": "movie_name",
         "start": 21,
         "end": 30,
-        "confidence_entity": 0.3828779458999634,
+        "confidence_entity": 0.8225674629211426,
         "value": "The Devil",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "movie_name",
-        "start": 35,
+        "start": 31,
         "end": 38,
-        "confidence_entity": 0.8510619401931763,
-        "value": "the",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "What is the runtime for Don't Look Up?",
-    "entities": [
-      {
-        "start": 24,
-        "end": 37,
-        "value": "Don't Look Up",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 28,
-        "end": 29,
-        "confidence_entity": 0.9953193068504333,
-        "value": "t",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 30,
-        "end": 37,
-        "confidence_entity": 0.9771023392677307,
-        "value": "Look Up",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Does No Time To Die get good reviews?",
-    "entities": [
-      {
-        "start": 5,
-        "end": 19,
-        "value": "No Time To Die",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 0,
-        "end": 19,
-        "confidence_entity": 0.8367329239845276,
-        "value": "Does No Time To Die",
+        "confidence_entity": 0.8402106165885925,
+        "value": "all the",
         "extractor": "DIETClassifier"
       }
     ]
@@ -1267,92 +2585,249 @@
         "entity": "movie_name"
       }
     ],
+    "predicted_entities": []
+  },
+  {
+    "text": "which person directed Shang-Chi And The Legend Of The Ten Rings",
+    "entities": [
+      {
+        "start": 22,
+        "end": 63,
+        "value": "Shang-Chi And The Legend Of The Ten Rings",
+        "entity": "movie_name"
+      }
+    ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 0,
+        "start": 6,
         "end": 12,
-        "confidence_entity": 0.7408650517463684,
-        "value": "Does Skyfall",
+        "confidence_entity": 0.9316502809524536,
+        "value": "person",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 28,
+        "end": 31,
+        "confidence_entity": 0.8266612887382507,
+        "value": "Chi",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 36,
+        "end": 63,
+        "confidence_entity": 0.8963577747344971,
+        "value": "The Legend Of The Ten Rings",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "do you know anything about Dances with Wolves",
+    "text": "I need to find out the synopsis of Hachi: A Dog's Tale",
     "entities": [
       {
-        "start": 27,
-        "end": 45,
-        "value": "Dances with Wolves",
+        "start": 35,
+        "end": 54,
+        "value": "Hachi: A Dog's Tale",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 34,
-        "end": 45,
-        "confidence_entity": 0.749045193195343,
-        "value": "with Wolves",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "do you know stuff about In the Mood for Love",
-    "entities": [
-      {
-        "start": 24,
-        "end": 44,
-        "value": "In the Mood for Love",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 27,
-        "end": 30,
-        "confidence_entity": 0.976905345916748,
+        "start": 19,
+        "end": 22,
+        "confidence_entity": 0.8700072169303894,
         "value": "the",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "movie_name",
-        "start": 31,
-        "end": 35,
-        "confidence_entity": 0.7960925698280334,
-        "value": "Mood",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "movie_name",
-        "start": 40,
-        "end": 44,
-        "confidence_entity": 0.9892669916152954,
-        "value": "Love",
+        "start": 35,
+        "end": 54,
+        "confidence_entity": 0.8926586508750916,
+        "value": "Hachi: A Dog's Tale",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "I need to see reviews of Children of Men",
+    "text": "please can you tell me about Monsters Inc",
     "entities": [
       {
-        "start": 25,
-        "end": 40,
-        "value": "Children of Men",
+        "start": 29,
+        "end": 41,
+        "value": "Monsters Inc",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "do you happen to know anything about The Terminator",
+    "entities": [
+      {
+        "start": 37,
+        "end": 51,
+        "value": "The Terminator",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 34,
+        "start": 41,
+        "end": 51,
+        "confidence_entity": 0.9717650413513184,
+        "value": "Terminator",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you tell me the synopsis of Guaridans of the Galaxy: Vol 2",
+    "entities": [
+      {
+        "start": 32,
+        "end": 62,
+        "value": "Guaridans of the Galaxy: Vol 2",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 29,
+        "end": 31,
+        "confidence_entity": 0.9977344274520874,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 32,
+        "end": 62,
+        "confidence_entity": 0.952293872833252,
+        "value": "Guaridans of the Galaxy: Vol 2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How many directors were involved with Bicycle Thieves",
+    "entities": [
+      {
+        "start": 38,
+        "end": 53,
+        "value": "Bicycle Thieves",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 24,
+        "end": 53,
+        "confidence_entity": 0.5018718838691711,
+        "value": "involved with Bicycle Thieves",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Would it be possible to find out what Tokyo Story is about?",
+    "entities": [
+      {
+        "start": 38,
+        "end": 49,
+        "value": "Tokyo Story",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 24,
+        "end": 32,
+        "confidence_entity": 0.9693952202796936,
+        "value": "find out",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What do you think of Selma",
+    "entities": [
+      {
+        "start": 21,
+        "end": 26,
+        "value": "Selma",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I wish I had info about Roger & Me",
+    "entities": [
+      {
+        "start": 24,
+        "end": 34,
+        "value": "Roger & Me",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.6614326238632202,
+        "value": "& Me",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "are you able to give more information about Toni Erdmann",
+    "entities": [
+      {
+        "start": 44,
+        "end": 56,
+        "value": "Toni Erdmann",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 49,
+        "end": 56,
+        "confidence_entity": 0.9978843331336975,
+        "value": "Erdmann",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "show me details for When Harry Met Sally",
+    "entities": [
+      {
+        "start": 20,
         "end": 40,
-        "confidence_entity": 0.7135125398635864,
-        "value": "of Men",
+        "value": "When Harry Met Sally",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 35,
+        "end": 40,
+        "confidence_entity": 0.5145484805107117,
+        "value": "Sally",
         "extractor": "DIETClassifier"
       }
     ]
@@ -1362,117 +2837,243 @@
     "entities": [],
     "predicted_entities": [
       {
-        "entity": "sort_code",
-        "start": 8,
-        "end": 29,
-        "confidence_entity": 0.40290799736976624,
-        "value": "[2001 A Space Odyssey",
+        "entity": "movie_name",
+        "start": 9,
+        "end": 30,
+        "confidence_entity": 0.957780122756958,
+        "value": "2001 A Space Odyssey]",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "movie time at 12th October 2022",
+    "text": "family of 3",
     "entities": [],
     "predicted_entities": [
       {
-        "entity": "card_num",
-        "start": 27,
-        "end": 31,
-        "confidence_entity": 0.49172326922416687,
-        "value": "2022",
+        "entity": "cvv",
+        "start": 10,
+        "end": 11,
+        "confidence_entity": 0.8635672926902771,
+        "value": "3",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "456",
+    "text": "Do you sell hotdogs",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.9187435507774353,
+        "value": "hotdogs",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don't think I want to watch those movies",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.9518694877624512,
+        "value": "those",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "booking 3624562YD",
     "entities": [
       {
-        "start": 0,
-        "end": 3,
-        "value": "456",
-        "entity": "cvv"
+        "start": 8,
+        "end": 17,
+        "value": "3624562YD",
+        "entity": "booking_reference"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 8,
+        "end": 15,
+        "confidence_entity": 0.30920377373695374,
+        "value": "3624562",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Is everything the same price",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 14,
+        "end": 22,
+        "confidence_entity": 0.9214877486228943,
+        "value": "the same",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you think you can tell me what this booking reference is 8629340NM",
+    "entities": [
+      {
+        "start": 60,
+        "end": 69,
+        "value": "8629340NM",
+        "entity": "booking_reference"
       }
     ],
     "predicted_entities": [
       {
         "entity": "card_num",
-        "start": 0,
-        "end": 3,
-        "confidence_entity": 0.44291549921035767,
-        "value": "456",
+        "start": 60,
+        "end": 67,
+        "confidence_entity": 0.29902219772338867,
+        "value": "8629340",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "234",
-    "entities": [
-      {
-        "start": 0,
-        "end": 3,
-        "value": "234",
-        "entity": "cvv"
-      }
-    ],
+    "text": "what's crack-a-lackin'?",
+    "entities": [],
     "predicted_entities": [
       {
-        "entity": "card_num",
-        "start": 0,
-        "end": 3,
-        "confidence_entity": 0.44291549921035767,
-        "value": "234",
+        "entity": "movie_name",
+        "start": 14,
+        "end": 22,
+        "confidence_entity": 0.9732216596603394,
+        "value": "-lackin'",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "How's life?",
+    "text": "help",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.9946810603141785,
+        "value": "help",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "sayonara",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.4853462874889374,
+        "value": "sayonara",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "roger",
     "entities": [],
     "predicted_entities": [
       {
         "entity": "movie_name",
         "start": 0,
         "end": 5,
-        "confidence_entity": 0.6757227182388306,
-        "value": "How's",
+        "confidence_entity": 0.557948887348175,
+        "value": "roger",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Watch Finding Nemo",
+    "text": "film Power of the Dog",
     "entities": [
       {
-        "start": 6,
-        "end": 18,
-        "value": "Finding Nemo",
+        "start": 5,
+        "end": 21,
+        "value": "Power of the Dog",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 0,
-        "end": 18,
-        "confidence_entity": 0.8856341242790222,
-        "value": "Watch Finding Nemo",
+        "start": 14,
+        "end": 21,
+        "confidence_entity": 0.8835249543190002,
+        "value": "the Dog",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "would i be able to get tickets for WALL-E",
+    "text": "see Rango",
     "entities": [
       {
-        "start": 35,
-        "end": 41,
-        "value": "WALL-E",
+        "start": 4,
+        "end": 9,
+        "value": "Rango",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": []
+  },
+  {
+    "text": "would like to watch The Theory of Everything",
+    "entities": [
+      {
+        "start": 20,
+        "end": 44,
+        "value": "The Theory of Everything",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 34,
+        "end": 44,
+        "confidence_entity": 0.8552130460739136,
+        "value": "Everything",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Give me tickets for The Green Mile",
+    "entities": [
+      {
+        "start": 20,
+        "end": 34,
+        "value": "The Green Mile",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 24,
+        "end": 34,
+        "confidence_entity": 0.8975490927696228,
+        "value": "Green Mile",
+        "extractor": "DIETClassifier"
+      }
+    ]
   },
   {
     "text": "do u have Joker",
@@ -1499,113 +3100,644 @@
     "predicted_entities": []
   },
   {
-    "text": "Persona",
+    "text": "Let me watch Trainspotting",
     "entities": [
       {
-        "start": 0,
-        "end": 7,
-        "value": "Persona",
+        "start": 13,
+        "end": 26,
+        "value": "Trainspotting",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": []
   },
   {
-    "text": "The Pursuit of Happyness, is it available?",
-    "entities": [
-      {
-        "start": 0,
-        "end": 24,
-        "value": "The Pursuit of Happyness",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "movie_name",
-        "start": 0,
-        "end": 3,
-        "confidence_entity": 0.9637670516967773,
-        "value": "The",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "schedule Goodfellas",
-    "entities": [
-      {
-        "start": 9,
-        "end": 19,
-        "value": "Goodfellas",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "What is Jaws?",
-    "entities": [
-      {
-        "start": 8,
-        "end": 12,
-        "value": "Jaws",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "let me know about Whiplash",
+    "text": "the name of it is The Tale of Princess Kaguya",
     "entities": [
       {
         "start": 18,
-        "end": 26,
-        "value": "Whiplash",
-        "entity": "movie_name"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "I need a summary of Some Like it Hot",
-    "entities": [
-      {
-        "start": 20,
-        "end": 36,
-        "value": "Some Like it Hot",
+        "end": 45,
+        "value": "The Tale of Princess Kaguya",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": [
       {
         "entity": "movie_name",
-        "start": 20,
-        "end": 29,
-        "confidence_entity": 0.5896694660186768,
-        "value": "Some Like",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.7423056960105896,
+        "value": "Tale",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "movie_name",
-        "start": 33,
-        "end": 36,
-        "confidence_entity": 0.6904895305633545,
-        "value": "Hot",
+        "start": 30,
+        "end": 45,
+        "confidence_entity": 0.9940963983535767,
+        "value": "Princess Kaguya",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Can you tell me if Booksmart is any good?",
+    "text": "Blade Runner 2049 is it's name",
     "entities": [
       {
-        "start": 19,
-        "end": 28,
-        "value": "Booksmart",
+        "start": 0,
+        "end": 17,
+        "value": "Blade Runner 2049",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.7378662824630737,
+        "value": "Blade Runner",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "cvv",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9031243324279785,
+        "value": "2049",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 26,
+        "end": 30,
+        "confidence_entity": 0.9752730131149292,
+        "value": "name",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "it is under the moniker The perks of Being a Wallflower",
+    "entities": [
+      {
+        "start": 24,
+        "end": 55,
+        "value": "The perks of Being a Wallflower",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.8149766325950623,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 24,
+        "end": 55,
+        "confidence_entity": 0.9811479449272156,
+        "value": "The perks of Being a Wallflower",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Star Trek it is",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Star Trek",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.5722197890281677,
+        "value": "Star",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Kill Bill: Vol. 2, do you have it?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "Kill Bill: Vol. 2",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 16,
+        "end": 17,
+        "confidence_entity": 0.7762480974197388,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "inform times for Pulp Fiction",
+    "entities": [
+      {
+        "start": 17,
+        "end": 29,
+        "value": "Pulp Fiction",
         "entity": "movie_name"
       }
     ],
     "predicted_entities": []
+  },
+  {
+    "text": "information about Taxi Driver times",
+    "entities": [
+      {
+        "start": 18,
+        "end": 29,
+        "value": "Taxi Driver",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.8790720105171204,
+        "value": "Driver",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Vertigo timings",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "Vertigo",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "display Inside Out times",
+    "entities": [
+      {
+        "start": 8,
+        "end": 18,
+        "value": "Inside Out",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.993655800819397,
+        "value": "Inside",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "when are you showing Tangled?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 28,
+        "value": "Tangled",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "time info for Apocalypse Now",
+    "entities": [
+      {
+        "start": 14,
+        "end": 28,
+        "value": "Apocalypse Now",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "times Boogie Nights",
+    "entities": [
+      {
+        "start": 6,
+        "end": 19,
+        "value": "Boogie Nights",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.6385996341705322,
+        "value": "Nights",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What is the schedule for One Flew Over the Cuckoo's Nest",
+    "entities": [
+      {
+        "start": 25,
+        "end": 56,
+        "value": "One Flew Over the Cuckoo's Nest",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 39,
+        "end": 56,
+        "confidence_entity": 0.43592819571495056,
+        "value": "the Cuckoo's Nest",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you happen to know the times for O Brother, Where Art Thou",
+    "entities": [
+      {
+        "start": 36,
+        "end": 61,
+        "value": "O Brother, Where Art Thou",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 38,
+        "end": 45,
+        "confidence_entity": 0.5749274492263794,
+        "value": "Brother",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 53,
+        "end": 61,
+        "confidence_entity": 0.9603258967399597,
+        "value": "Art Thou",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "knowledge about Good Will Hunting",
+    "entities": [
+      {
+        "start": 16,
+        "end": 33,
+        "value": "Good Will Hunting",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 21,
+        "end": 33,
+        "confidence_entity": 0.7544823884963989,
+        "value": "Will Hunting",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can you inform me about American Psycho",
+    "entities": [
+      {
+        "start": 24,
+        "end": 39,
+        "value": "American Psycho",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the runtime for Don't Look Up?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 37,
+        "value": "Don't Look Up",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is A Quiet Place about?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 21,
+        "value": "A Quiet Place",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 8,
+        "end": 15,
+        "confidence_entity": 0.9678990840911865,
+        "value": "A Quiet",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Does No Time To Die get good reviews?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 19,
+        "value": "No Time To Die",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I want to know who directed Song of the Sea",
+    "entities": [
+      {
+        "start": 28,
+        "end": 43,
+        "value": "Song of the Sea",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 36,
+        "end": 43,
+        "confidence_entity": 0.6514045596122742,
+        "value": "the Sea",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Life of Brian details",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Life of Brian",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 0,
+        "end": 21,
+        "confidence_entity": 0.9443748593330383,
+        "value": "Life of Brian details",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "info of Get Out",
+    "entities": [
+      {
+        "start": 8,
+        "end": 15,
+        "value": "Get Out",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "do you know stuff about In the Mood for Love",
+    "entities": [
+      {
+        "start": 24,
+        "end": 44,
+        "value": "In the Mood for Love",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9789804220199585,
+        "value": "the Mood",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 40,
+        "end": 44,
+        "confidence_entity": 0.9989726543426514,
+        "value": "Love",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I need the synopsis of Psycho",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "Psycho",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Are the reviews negative for Things to Come",
+    "entities": [
+      {
+        "start": 29,
+        "end": 43,
+        "value": "Things to Come",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 39,
+        "end": 43,
+        "confidence_entity": 0.5030493140220642,
+        "value": "Come",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "summarise An American Tail: Fievel Goes West",
+    "entities": [
+      {
+        "start": 10,
+        "end": 44,
+        "value": "An American Tail: Fievel Goes West",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 10,
+        "end": 21,
+        "confidence_entity": 0.8013179898262024,
+        "value": "An American",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_name",
+        "start": 26,
+        "end": 44,
+        "confidence_entity": 0.4106500744819641,
+        "value": ": Fievel Goes West",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you give more information about A Face in the Crowd",
+    "entities": [
+      {
+        "start": 36,
+        "end": 55,
+        "value": "A Face in the Crowd",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 46,
+        "end": 55,
+        "confidence_entity": 0.46510598063468933,
+        "value": "the Crowd",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how much do you have about Punch-Drunk Love",
+    "entities": [
+      {
+        "start": 27,
+        "end": 43,
+        "value": "Punch-Drunk Love",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 32,
+        "end": 43,
+        "confidence_entity": 0.8868473768234253,
+        "value": "-Drunk Love",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do you think Queen & Slim is good?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 25,
+        "value": "Queen & Slim",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How good is Crazy Stupid Love?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 29,
+        "value": "Crazy Stupid Love",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can you show me everything you have on Breakfast At Tiffany's",
+    "entities": [
+      {
+        "start": 39,
+        "end": 61,
+        "value": "Breakfast At Tiffany's",
+        "entity": "movie_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_name",
+        "start": 39,
+        "end": 48,
+        "confidence_entity": 0.49799326062202454,
+        "value": "Breakfast",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I think this is correct 5234112CM",
+    "entities": [
+      {
+        "start": 24,
+        "end": 33,
+        "value": "5234112CM",
+        "entity": "booking_reference"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "booking_reference",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.6313391923904419,
+        "value": "5234112",
+        "extractor": "DIETClassifier"
+      }
+    ]
   }
 ]

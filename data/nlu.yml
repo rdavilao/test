@@ -1,7 +1,6 @@
 version: "3.0"
 nlu:
 
-#192
 - intent: greet
   examples: |
     - hey
@@ -267,7 +266,7 @@ nlu:
     - Have a good one!
     - I’ve got to get going.
     - Peace out!
-    - thanks for you help!
+    - thanks for your help!
     - thanks Cinebot
     - Nice talking with you Cinebot
     - Nice talking with you
@@ -357,7 +356,58 @@ nlu:
     - thanks, you been really helpful
     - bye, you sucked
     - thank youuuu
-    - 
+    - buh bye
+    - c u later
+    - loved talking with you
+    - it's been a pleasure
+    - bye bestie
+    - been wonderful talking
+    - thank yo. its been nice talking
+    - I had a fun time talking
+    - its been nice talking with you
+    - thanks, good bot
+    - you've been very helpful, good bye
+    - well, must be off, see you later
+    - yeah, byee
+    - thinking, thats me off now, seeya
+    - No thats all, bye
+    - Thats everything, see you later
+    - thats me done, good bye
+    - thats me for now, bye bye
+    - nope, you've helped enough
+    - I'm good, thanks. It was really lovely talking with you
+    - it been wonderful talking
+    - nope, bye
+    - nah, see you
+    - alright, good bye
+    - you know what, good bye
+    - that me finished, byee
+    - I've booked everything, good bye
+    - Thats all i wanted to know, see you
+    - thats pretty much all I needed, thanks
+    - that was everything, bye
+    - I don't need you to do anything else, bye bye
+    - I've got everything I need, thanks
+    - I don't need anything else
+    - That was everything, thanks
+    - yeah, thats all, thanks
+    - no thats it, you've been great
+    - cheers pal
+    - no, thats pretty much it, have a good one
+    - pretty much done, bye x
+    - no that will be all 
+    - thats all
+    - nothing further needed, bye
+    - thats all that was needed, bye
+    - thanks for your help, bye
+    - thanks for all your help
+    - you help was appreciated, have a good day
+    - appreciate it, see ya
+    - no problem, see you
+    - You were useless, bye
+    - Well this was frustrating bye
+    - I'm going to speak to staff intstead, bye
+    
 
 
 
@@ -517,6 +567,55 @@ nlu:
     - incontrovertibly
     - irrefutably
     - all right
+    - yeah, no problem
+    - all seems fine
+    - that looks good
+    - seems good
+    - yeah all good
+    - yip, good
+    - I think that all seems fine
+    - thats right, yes
+    - All seems right
+    - Theres no problems that I can see
+    - I think thats all correct
+    - looks pretty good to me
+    - yeah, that all looks fine
+    - fine
+    - Seems fine
+    - yeah, that looks about right
+    - thats, agreeable
+    - not seeing any errors 
+    - correct, well done
+    - seems all correct
+    - everything looks good
+    - yes, good job
+    - yes yes yes
+    - it is adequte
+    - yes, thanks
+    - yeah, that'd be great
+    - Yip, that'd be amazing
+    - 
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    -
+    
+    
+
 - intent: deny
   examples: |
     - no
@@ -670,6 +769,7 @@ nlu:
     - 100% wrong 
     - that is wrong 
     - 
+
 - intent: book_tickets
   examples: |
     - I want to buy tickets
@@ -826,7 +926,6 @@ nlu:
     - Hi, can I get 1 ticket to see [Old Boy](movie_name)
     - I'd like 2 tickets to see [Old Boy](movie_name)
 
-    - I want to boo
 - intent: inform_movie
   examples: |
     - Can I book tickets for [Old Boy](movie_name)?
@@ -906,6 +1005,8 @@ nlu:
     - I want seats for the movie [The Graduate](movie_name)
     - movie title: [Sanjuro](movie_name)
     - I want to book for [](movie_name), can i get the booking number
+    - Think I want tickets for [](), Can i have the booking reference
+    - I need to get tickets to see []()
 - intent: collect_tickets
   examples: |
     - Can I collect tickets here
@@ -988,6 +1089,86 @@ nlu:
     - I bought tickets yesterday and was wondering if this is where I can print them
     - Can you guide me through collecting tickets
     - Can you aid me in ticket collection
+    - print 
+    - tickets printed 
+    - let me collect tickets
+    - I need to collect my tickets 
+    - I need you to help me collect my tickets 
+    - Can I collect my tickets 
+    - I wish to have my tickets printed 
+    - I think I need tickets printed 
+    - I was told I could collect my tickets here
+    - I really need my tickets
+    - I purchesed my tickets before and I need them printed now
+    - I changed my mind I do want them printed
+    - I've decided I want my tickets printed after all
+    - Are you able to provide my tickets to me
+    - Do you think you could print me my tickets
+    - Would it be possible to collect tickets 
+    - would I be able to collect tickets here
+    - I should be able to collect my tickets
+    - ticket collection point
+    - please can i collect my tickets 
+    - can I collect my tickets please 
+    - I wish to collect my tickets 
+    - Give me my tickets
+    - Give me my tickets please
+    - I think you should give me my tickets
+    - How do i collect tickets 
+    - How do I get my tickets printed 
+    - Can you tell me how I collect tickets
+    - I was told this is the ticket collection point
+    - Need my tickets 
+    - give my tickets please 
+    - I had pre-ordered my tickets
+    - I pre-ordered my tickets and I need them printed now 
+    - Do you know how I print tickets that I already ordered 
+    - Do you have information on how to pick-up tickets 
+    - I already bought tickets and now I need to pick them up 
+    - Can you provide information on how I can collect my tickets 
+    - I'd like to collect tickets
+    - I want to know about picking up tickets 
+    - Give me any info you have on collecting tickets 
+    - inform tickets collection 
+    - info on printing tickets 
+    - I'd like to know how to print my tickets 
+    - Can you tell me how I print tickets 
+    - collecting tickets 
+    - I am collecting my tickets
+    - What do you know about collecting tickets 
+    - I wondering how I pick-up my tickets
+    - Please give me tickets
+    - listen, I need to pick up tickets 
+    - hiya, I need to collect tickets
+    - please let me collect tickets 
+    - can I collect tickets
+    - tickets please
+    - Can I get my tickets
+    - get me my tickets 
+    - I bought tickets, can I get them printed?
+    - I already purchased my tickets, Is it possible to pick them up?
+    - my tickets were already purchased and I need them printed 
+    - Can you print my tickets, I already bought them
+    - Is it possible to get my tickets
+    - Is it pissible to get my tickets printed
+    - Can you tell me, is it possible to collect tickets
+    - do you offer ticket collection 
+    - If I already bought tickets can I get them printed
+    - I need my pre-purchased tickets printed
+    - Can you print pre-bought tickets
+    - Would you be able to print my tickets
+    - I already bought some tickets and I need them printed 
+    - print my tickets please
+    - I'm here to pick-up tickets 
+    - Can you tell me where I can pick-up tickets 
+    - Let me know where the ticket collection area is 
+    - I think I can print tickets here?
+    - You can print tickets right?
+    - You are able to print me my tickets right?
+
+
+
+
 - intent: inquire_movie_schedule
   examples: |
     - What movies are you showing?
@@ -1231,6 +1412,36 @@ nlu:
     - Do you happen to know the times for [O Brother, Where Art Thou](movie_name)
     - do you happen to know the schedule of [Dead Alive](movie_name)
     - Can I get the viewing schedule for [Captain America: Civil War](movie_name)
+    - viewing schedule for [](movie_name)
+    - I was wondering if you have times for [](movie_name)
+    - Can you tell me if you have an available times for [](movie_name)
+    - available times for [](movie_name)
+    - Tell me the times available to see [](movie_name)
+    - are there any showings of [](movie_name)
+    - When are there showings for [](movie_name)
+    - When is [](movie_name) on?
+    - What times is [](movie_name) on at?
+    - Tell what the viewing schedule for [](movie_name) is
+    - Can you list the times for [](movie_name)
+    - I was wonding if you have any information on the times for [](movie_name)
+    - Can you provide information on the times for [](movie_name)
+    - Do you have the ability to give me times for [](movie_name)
+    - I need the times for [](movie_name)
+    - I need to obtain the viewing schedule for [](movie_name)
+    - Is it alright if I ask for times to see [](movie_name)
+    - Is it possible to get times for [](movie_name)
+    - Would it be possible to get a list of times that [](movie_name) is available to see?
+    - When is [](movie_name) available?
+    - what times are you showing [](movie_name)
+    - What time are in the schedule for [](movie_name)
+    - what times is [](movie_name) at?
+    - what times is [](movie_name) in?
+    - tell me times for [](movie_name)
+    - Can you give me a list of times for [](movie_name)
+    - what times are [](movie_name)
+    - 
+    
+    
 - intent: inquire_about_movie
   examples: |
     - What can you tell me about [Pirates of the Carribean the Curse of the Black Pearl](movie_name)?
@@ -1462,6 +1673,32 @@ nlu:
     - Would you be able to put me down for 12pm on the 5th January
     - I want to see for the 2:30 showing
     - I want seats for the 9 O'clock showing
+    - Can I see the movie at 3pm
+    - I want to go the the 2:30 showing today
+    - Is there still space in the 1:30 showing tomorrow 
+    - Can I get tickets for the 3 am showing on Wednesday
+    - What about the 9:15pm shoing on the 1st of October 
+    - Is the viewing on the 16th of January still available
+    - Please tell me the showing at 3:30 today is not sold out
+    - Would I be able to book tickets for the movie at 2:30
+    - Can I buy tickets for today 
+    - I think I wanna go to the 2:30pm showing today
+    - I'm thinking about going on wednesday at 10:00 am
+    - What if I went at 2:30pm 
+    - Okay, How about today at 5pm
+    - right, is the 1pm showing available?
+    - if its not sold out can I go to the 9pm showing on the 3rd of May
+    - If theres still seats can I go to the 1pm showing
+    - I want to go the viewing on at 8pm
+    - Can I attend the showing today at 3pm
+    - I'm interested in going to the 10 pm showing
+    - in that case, i'll go at 1pm
+    - I guess, i'll go at 1pm instead
+    - Would be okay if I went at 3pm instead
+    - is there a showing at 2pm
+    - I think there might be a showing for 10pm tomorrow
+    - I really want to see the 9am showing
+
 - intent: no_tickets
   examples: |
     - I would like three seats
@@ -1520,59 +1757,7 @@ nlu:
     - 2 tickets please
     - 11
     - 1
-- intent: booking_reference
-  examples: |
-    - My booking reference is [1234563AB](booking_reference)
-    - Here is my booking reference [5272837VC](booking_reference)
-    - [2935473GH](booking_reference)
-    - [7983949CA](booking_reference)
-    - [1248908XL](booking_reference)
-    - [5968394KQ](booking_reference)
-    - booking reference: [4949494JH](booking_reference)
-    - [7254284VD](booking_reference)
-    - my booking reference [2344552HJ](booking_reference)
-    - booking ref [9283742JK](booking_reference)
-    - I have my booking ref it's [8547263TH](booking_reference)
-    - [6839533RM](booking_reference) is my booking ref
-    - if you need my booking reference it's [6345222JM](booking_reference)
-    - booking ref: [6234566VB](booking_reference)
-    - it's [8623445CW](booking_reference)
-    - it is [1245723BN](booking_reference)
-    - here it is [4829304ML](booking_reference)
-    - yeah, it's [0593903PQ](booking_reference)
-    - yep, it is [1348472QP](booking_reference)
-    - uh huh, my booking reference is [1244254LK](booking_reference)
-    - the booking reference I have is [5736746NB](booking_reference)
-    - [1639455FS](booking_reference), hope its right
-    - i think my booking is [2948232JH](booking_reference)
-    - I hope this is right [0394932LE](booking_reference)
-    - i think it's [4829923XW](booking_reference)
-    - i think [1843942AZ](booking_reference) is right
-    - i think [4316890OP](booking_reference) is correct
-    - I think this might be the right one [1233427KP](booking_reference)
-    - this is definitely my booking reference [9827697LA](booking_reference)
-    - Okay, here you go [1324536AD](booking_reference)
-    - here you go [6445642CR](booking_reference)
-    - there you go [8345433CD](booking_reference)
-    - [9053104AQ](booking_reference) is my booking reference
-    - [1756945LI](booking_reference) booking reference
-    - booking reference [5663521BI](booking_reference)
-    - my reference is [1223452ID](booking_reference)
-    - this is my booking code [4634523LQ](booking_reference)
-    - is this the right thing [7452234PQ](booking_reference)
-    - I think this my booking code [3134243ZA](booking_reference)
-    - booking is [1256858YU](booking_reference)
-    - booking [3624562YD](booking_reference)
-    - my booking is [7465345RL](booking_reference)
-    - the code is [1567445SA](booking_reference)
-    - [0234256AJ](booking_reference) is the booking code
-    - code: [5673534FR](booking_reference)
-    - I think this is the code [7823426LT](booking_reference)
-    - the code is [1232345TK](booking_reference)
-    - pretty sure it's [9234223WX](booking_reference)
-    - booking code is [0784353IO](booking_reference) i think
-    - [1235235SD](booking_reference)
-    - [6743523MD](booking_reference)
+
 - intent: out_of_scope
   examples: |
     - Can I order popcorn?
@@ -1625,6 +1810,60 @@ nlu:
     - do you sell sweet popcorn
     - What types of popcorn do you have
     - what drinks do you sell
+    - Can I buy drinks here 
+    - Will you let me buy food
+    - Are you able to sell food
+    - I want my tickets refunded 
+    - Do you know where I can complain
+    - Can I report a problem here
+    - There is a problem with one of the screens
+    - Can I complain here 
+    - I have a complaint 
+    - Are you able to give out refunds 
+    - refunds
+    - I want my money back
+    - Give me my money back
+    - I want to return my tickets 
+    - I want information about the cinema
+    - What can you tell me about the cinema 
+    - Who is the manager
+    - Can you tell me where I can find the manager
+    - Do you have information about staff
+    - I want to know who works here
+    - Staff member names
+    - What flavour of popcorn do you have
+    - Popcorn flavours
+    - What snacks do you have
+    - Which snakcs do you offer 
+    - Can you tell me about the snacks you have
+    - I want to purchase snacks 
+    - let me purchase snacks
+    - Do you sell sweets
+    - I want candy
+    - What type of drinks do you have
+    - Do you sell water
+    - can I speak with the manager 
+    - would I able able to talk to a member of staff
+    - connect me to a member of satff 
+    - what staff do you have
+    - What chocolate do you sell
+    - how many sweets can I buy
+    - Can I buy sweets here
+    - Do you sell slushes 
+    - I want a slush
+    - Do you sell hotdogs
+    - Can I buy nachos
+    - need to buy food
+    - what about food
+    - Can I get drinks
+    - I need drinks
+    - I want a drink
+    - Get me a drink
+    - Do you sell Ice cream
+    - What type Ice cream is there 
+    - What flavours of Ice cream do you have
+    
+#200
 - intent: stop
   examples: |
     - I'd like to stop
@@ -1783,22 +2022,54 @@ nlu:
     - stop booking 
     - I need to stop booking
     - Can I stop booking
-- intent: inform_card_num
-  examples: |
-    - [1234567891234567](card_num)
-    - [6432857163845856](card_num)
-    - here's my card number [372828494582939](card_num)
-    - here's my credit card number [2346234547641423](card_num)
-    - card num is [7264818182934534](card_num)
-    - bank card is [1139392938492393](card_num)
-    - [6734534534534534](card_num)
-    - [7937492749681054](card_num)
-    - [1209375959939494](card_num)
-    - [9019350501230406](card_num)
-    - [6539823947234110](card_num)
-    - [1238678345345767](card_num)
-    - [1234567890123456](card_num)
-- intent: inform_sort_code
+    - Cancel this booking please 
+    - I don't have any money
+    - I can't pay for that
+    - I'm not able to buy this
+    - Stop, I forgot my card details
+    - I don't have a booking reference
+    - I never got a booking reference
+    - I am unable to provide my booking number
+    - Okay, I'm not buying this anymore
+    - I forgot my card
+    - I don't want to provide my card information 
+    - Can I cancel this purchase
+    - Unfortunately, I seem to have forgotten my card
+    - forget about it
+    - I've left my card at home
+    - oops I have only brought cash
+    - I forgotten my booking number, sorry
+    - Can you cancel this please, I forgot my card
+    - I've left my wallet somewhere
+    - Cancel, this is way too expensive
+    - the price is too high, stop
+    - This is more expensive than I thought, can we cancel
+    - Am I allowed to cancel this?
+    - Is cancelling an options
+    - I don't know my card number
+    - I don't know my sort-code
+    - I have no idea what my card number is
+    - I didn't actually buy tickets 
+    - I didn't know I needed a booking reference
+    - Is it too late to cancel
+    - I hope its not too late to stop buying this
+    - Can I stop this interaction please
+    - I no longer need these tickets 
+    - I'm not buying these
+    - These tickets are extortionate, bye
+    - Honestly, don't want the tickets anymore
+    - Now I've seen the price I want to cancel
+    - Can I cancel this now
+    - I want to delete this purchase
+    - I'm thinking I don't want these tickets anymore
+    - Can you cancel my purchase please
+    - I don't want these anymore, quit please
+    - I can't buy these, I'm gonna leave, sorry
+    - sorry, but cancel
+    
+
+
+- intent: inform_details
   examples: |
     - [12-34-56](sort_code)
     - [21-67-32](sort_code)
@@ -1812,8 +2083,23 @@ nlu:
     - [23-11-94](sort_code)
     - (31-08-71)(sort_code)
     - [12-12-12](sort_code)
-- intent: inform_cvv
-  examples: |
+    - The sort code is [43-11-76](sort_code)
+    - yeah, my sort code is [12-54-10](sort_code)
+    - no problem, it's [12-43-75](sort_code)
+    - it's [12-34-78](sort_code)
+    - it is [34-65-10](sort_code)
+    - of course, my sort code is [12-34-78](sort_code)
+    - yeah I think it's [12-43-56](sort_code)
+    - it is [12-53-86](sort_code)
+    - this is it [02-45-64](sort_code)
+    - the sort code is [51-32-94](sort_code)
+    - is this the right format [12-53-75](sort_code)
+    - I think the sort code is [32-86-23](sort_code)
+    - fairly sure the sort code is [12-23-65](sort_code)
+    - pretty sure this is it [12-43-34](sort_code)
+    - the is right I think [12-65-87](sort_code)
+    - that's fine, here you go [](sort_code)
+    - got it here, [](sort_code)
     - [123](cvv)
     - [657](cvv)
     - my security code is [876](cvv)
@@ -1836,7 +2122,118 @@ nlu:
     - num = [976](cvv)
     - here it is [054](cvv)
     - here you go [129](cvv)
-    - 
+    - I think this right [542](cvv)
+    - Of course, it's [174](cvv)
+    - no problem, it's [063](cvv)
+    - yep, it is [643](cvv)
+    - my cvv is [122](cvv)
+    - Yeah, the three digit code is [823](cvv)
+    - For sure, the code is [812](cvv)
+    - pretty sure [122](cvv) is right
+    - I think it's [345](cvv)
+    - this is the code [867](cvv)
+    - [423](cvv) that is my code
+    - Fairly sure this is right [764](cvv)
+    - Is this right [643](cvv)?
+    - not sure, but I think this is correct [213](cvv)
+    - [646](cvv) if I remember correctly 
+    - If I have remembered right, it should be [123](cvv)
+    - It should be [213](cvv)
+    - think it should be [321](cvv)
+    - this is it [801](cvv)
+    - got it here, [823](cvv)
+    - thats fine, here you go [967](cvv)
+    - alright, my code is [864](cvv)
+    - The security code is [022](cvv)
+    - My secure code is [111](cvv)
+    - The card cvv is [854](cvv)
+    - The number on the back of the card is [123](cvv)
+    - the cvv code is [567](cvv)
+    - the three digit number is [243](cvv)
+    - [1234567891234567](card_num)
+    - [6432857163845856](card_num)
+    - here's my card number [372828494582939](card_num)
+    - here's my credit card number [2346234547641423](card_num)
+    - card num is [7264818182934534](card_num)
+    - bank card is [1139392938492393](card_num)
+    - [6734534534534534](card_num)
+    - [7937492749681054](card_num)
+    - [1209375959939494](card_num)
+    - [9019350501230406](card_num)
+    - [6539823947234110](card_num)
+    - [1238678345345767](card_num)
+    - [1234567890123456](card_num)
+    - My booking reference is [1234563AB](booking_reference)
+    - Here is my booking reference [5272837VC](booking_reference)
+    - [2935473GH](booking_reference)
+    - [7983949CA](booking_reference)
+    - [1248908XL](booking_reference)
+    - [5968394KQ](booking_reference)
+    - booking reference: [4949494JH](booking_reference)
+    - [7254284VD](booking_reference)
+    - my booking reference [2344552HJ](booking_reference)
+    - booking ref [9283742JK](booking_reference)
+    - I have my booking ref it's [8547263TH](booking_reference)
+    - [6839533RM](booking_reference) is my booking ref
+    - if you need my booking reference it's [6345222JM](booking_reference)
+    - booking ref: [6234566VB](booking_reference)
+    - it's [8623445CW](booking_reference)
+    - it is [1245723BN](booking_reference)
+    - here it is [4829304ML](booking_reference)
+    - yeah, it's [0593903PQ](booking_reference)
+    - yep, it is [1348472QP](booking_reference)
+    - uh huh, my booking reference is [1244254LK](booking_reference)
+    - the booking reference I have is [5736746NB](booking_reference)
+    - [1639455FS](booking_reference), hope its right
+    - i think my booking is [2948232JH](booking_reference)
+    - I hope this is right [0394932LE](booking_reference)
+    - i think it's [4829923XW](booking_reference)
+    - i think [1843942AZ](booking_reference) is right
+    - i think [4316890OP](booking_reference) is correct
+    - I think this might be the right one [1233427KP](booking_reference)
+    - this is definitely my booking reference [9827697LA](booking_reference)
+    - Okay, here you go [1324536AD](booking_reference)
+    - here you go [6445642CR](booking_reference)
+    - there you go [8345433CD](booking_reference)
+    - [9053104AQ](booking_reference) is my booking reference
+    - [1756945LI](booking_reference) booking reference
+    - booking reference [5663521BI](booking_reference)
+    - my reference is [1223452ID](booking_reference)
+    - this is my booking code [4634523LQ](booking_reference)
+    - is this the right thing [7452234PQ](booking_reference)
+    - I think this my booking code [3134243ZA](booking_reference)
+    - booking is [1256858YU](booking_reference)
+    - booking [3624562YD](booking_reference)
+    - my booking is [7465345RL](booking_reference)
+    - the code is [1567445SA](booking_reference)
+    - [0234256AJ](booking_reference) is the booking code
+    - code: [5673534FR](booking_reference)
+    - I think this is the code [7823426LT](booking_reference)
+    - the code is [1232345TK](booking_reference)
+    - pretty sure it's [9234223WX](booking_reference)
+    - booking code is [0784353IO](booking_reference) i think
+    - [1235235SD](booking_reference)
+    - [6743523MD](booking_reference)
+    - my booking number is [1243953AZ](booking_reference)
+    - do you need my booking number, it's [1635432ZX](booking_reference)
+    - of course, it's [1231244OP](booking_reference)
+    - I have it right here, [4823734VB](booking_reference)
+    - Hang on, it's [5828428QP](booking_reference)
+    - I think this is it [1683032SD](booking_reference)
+    - [0772821AG](booking_reference), is that right?
+    - is this right? [1236785CX](booking_reference)
+    - I think this is correct [5234112CM](booking_reference)
+    - I'm sure it's [5893218PR](booking_reference)
+    - let me know if this is wrong [3823473DJ](booking_reference)
+    - fairly sure this is right [4384242PL](booking_reference)
+    - confident this is it [3481839AQ](booking_reference)
+    - pretty sure this is my booking number [5294012LM](booking_reference)
+    - the code is [4123121AQ](booking_reference)
+    - the booking number is [1236743VT](booking_reference)
+    - this is my booking code [2123954AL](booking_reference)
+    - code = [3612611ZV](booking_reference)
+
+
 - intent: inquire_prices
   examples: |
     - How much is a ticket
@@ -1994,6 +2391,56 @@ nlu:
     - paying
     - pay
     - payment
+    - payment methods
+    - payment you accept
+    - types of payment
+    - what are your payment types
+    - Can you tell me about your payment options
+    - I want to know about payment options 
+    - payment options
+    - I only have my card, is this okay
+    - I can only pay by cash, it that okay
+    - is it cool if I pay by cash
+    - Is it alright to pay using cash
+    - Its cool to pay wiht card, right?
+    - Do you accept American Express?
+    - What cards do you accept 
+    - How can I pay
+    - What are your payment options
+    - Can you tell me your payment options
+    - I'd like to know how I can pay
+    - What  options are available for payment
+    - Would you be able to tell me how I can pay 
+    - is cash acceptable
+    - is card a payment option
+    - I can pay with cash right?
+    - there's an option to use cash right?
+    - is cash an appropriate payment method?
+    - list of payment methods
+    - payment information
+    - Do you accept bitcoin 
+    - Do you accept any cryptocurrency 
+    - Can I pay with crypto
+    - give me a list of available payment methods
+    - Can you give me any information on payment methods
+    - payment information
+    - do you take cash or can I only pay with card
+    - do you take crypto?
+    - wait, can I pay with cash
+    - Do you take anything other than card
+    - I want to know how I pay
+    - how do I pay, please
+    - Please, tell me how I can pay
+    - I need payment information
+    - I need to pay using cash
+    - I only have cash
+    - What payment do you accept
+    - How am I supposed to pay
+    - I want to know about paying
+    - Tell me about paying
+    - Can i only pay using card
+
+
 - intent: display_booking
   examples: |
     - What did I book with this [1234567FG](booking_reference)
@@ -2056,6 +2503,47 @@ nlu:
     - I forgot which movie I booked
     - I forgot how many tickets I bought
     - I'd like to know the screen my tickets are for
+    - I forgot what movie I booked
+    - What movie did I book again?
+    - Can you tell me what movie this booking reference is for [1234158AS](booking_reference)
+    - I forgot what time the movie I booked is at
+    - What day did I book for tickets for again?
+    - What is this booking reference for [1235245QW](booking_reference)
+    - Can you tell me what movie I booked
+    - I need to know the movie I booked
+    - What is this for [](booking_reference)
+    - What time is the movie I am seeing at?
+    - Can you tell me the time I was supposed to see this movie, the booking reference is [](booking_reference)
+    - Can I ask about my tickets
+    - When did I book my tickets for?
+    - I booked my tickets but I forgot when for
+    - I forgot how many tickets I booked
+    - Could you remind me how many tickets I booked
+    - I need a reminder about when I booked these tickets
+    - information about my tickets
+    - I have forgotten the time I booked my tickets for
+    - I want to know which screen the showing I booked is in
+    - Can I get information about my booking
+    - What can you tell me about my booking
+    - Can I know the seat numbers for my booking
+    - I want to find out the seat numbers for my booking
+    - Can I know the seat numbers I booked
+    - Was wondering if you could tell me about my tickets
+    - Was wondering which screen and seat numbers my booking is for?
+    - Yeah, I'd like to know the screen number for my booking
+    - uh huh, Can I know the screen type for my booking
+    - My booking reference is [](booking_reference), can you tell me my screen number?
+    - My booking reference is [](booking_reference), can you tell me how many seats I booked and the seat numbers please?
+    - Can I know the seat numbers for my booking
+    - Would like the seat numbers for my purchase
+    - Can I know which seats I'm in?
+    - Can I find out the screen number?
+    - How can I find out details about my booking?
+    - Can you provide details about my booking?
+    - I was wondering if you have any information about my booking?
+    - Wondering if you can provided me with details about my booking
+    - Can I get more infotmation about my booking
+
 
 
 

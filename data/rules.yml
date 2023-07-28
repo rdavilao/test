@@ -34,26 +34,14 @@ rules:
   - intent: out_of_scope
   - action: utter_out_of_scope
 
-
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
   - intent: nlu_fallback
   - action: utter_please_rephrase
 
-
-- rule: unexpected intent; payment form
+- rule: unexpected intent; details
   steps:
-  - intent: inform_card_num
-  - action: utter_please_rephrase
- 
-- rule: unexpected intent; payment form
-  steps:
-  - intent: inform_sort_code
-  - action: utter_please_rephrase
-
-- rule: unexpected intent; payment form
-  steps:
-  - intent: inform_cvv
+  - intent: inform_details
   - action: utter_please_rephrase
 
 - rule: unexpected intent; payment form
@@ -65,7 +53,6 @@ rules:
   steps:
   - intent: no_tickets
   - action: utter_please_rephrase
-
 
 - rule: unexpected intent; payment form
   steps:
