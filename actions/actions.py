@@ -58,7 +58,7 @@ class ActionRefineRecipesSearchAsk(Action):
         prop, value = dataset.get_discriminative_properties(recipes_ids)
         logger.info('Refine search by %s with value %s', prop, value)
         if prop is not None: # Ask the user for more details
-            dispatcher.utter_message(response='utter_refine_recipes_search', tag=value)
+            dispatcher.utter_message(response='utter_refine_recipes_search', count=len(recipes_ids), tag=value)
             return [ SlotSet('refine_recipes_search_prop', str(prop)), SlotSet('refine_recipes_search_value', value) ]
         else:  # If not discriminative property was found, return the first recipe
             recipe = dataset.get_recipe(recipes_ids[0])
@@ -106,7 +106,7 @@ class ActionSearchAlternativeRecipe(Action):
         current_recipe_idx = found_recipes_ids.index(current_recipe_id)
         new_recipe_id = found_recipes_ids[(current_recipe_idx + 1) % len(found_recipes_ids)]
         recipe = dataset.get_recipe(new_recipe_id)
-        dispatcher.utter_message(response='utter_search_recipe_found_alternative', recipe_title=recipe.title)
+        dispatcher.utter_message(response='utter_search_recipe_found_alternative', recipe_title=recipe.title, image=recipe.image)
         return [ SlotSet('current_recipe_id', new_recipe_id) ]
         
 
@@ -201,8 +201,7 @@ class ActionTellIngredientAmount(Action):
         if len(asked_ingredients) > 0:
             if people_count is not None: # Update ingredients amount to adapt to the specified people_count
                 recipe.set_servings(w2n.word_to_num(str(people_count)))
-            amounts = [ utils.ingredient_to_str(ingr.name, ingr.amount, ingr.unit, default_amount='some') for ingr in recipe.ingredients 
-                        if any(asked_ingr in ingr.name for asked_ingr in asked_ingredients) ]
+            amounts = [ ingr.to_str(default_amount='some') for ingr in recipe.ingredients if any(asked_ingr in ingr.name for asked_ingr in asked_ingredients) ]
             if len(amounts) > 0:
                 amounts_str = utils.join_list_str(amounts)
                 dispatcher.utter_message(response='utter_ingredient_amount_found', amounts_str=amounts_str)
@@ -236,8 +235,10 @@ class ActionListStepsLoop(FormValidationAction):
             current_step_descr = utils.lower_first_letter(recipe.steps[current_step_idx].description)
             if current_step_idx == 0:
                 dispatcher.utter_message(response='utter_list_steps_first', step_description=current_step_descr)
-            else:
+            elif current_step_idx < len(recipe.steps) - 1:
                 dispatcher.utter_message(response='utter_list_steps_next', step_description=current_step_descr)
+            else:
+                dispatcher.utter_message(response='utter_list_steps_last', step_description=current_step_descr)
             return dict(current_step_idx=current_step_idx, list_steps_done=None)
 
 
