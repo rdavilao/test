@@ -31,7 +31,7 @@
     with the parsley and stir until combined.
 
 - title: Spaghetti Carbonara
-  image: https://i.imgur.com/CaNeTey.jpg
+  image: https://i.imgur.com/TR4KY8P.jpeg
   tags: []
   cuisine: italian
   prep_time: 5
@@ -838,7 +838,7 @@
     until you run out.
 
 - title: Gingersnap Cookies
-  image: https://i.imgur.com/VbIu49t.jpg
+  image: https://i.imgur.com/VPdYlQL.jpeg
   tags: [dairy-free, vegetarian, vegan, sweet]
   cuisine: german
   prep_time: 15
@@ -1299,40 +1299,35 @@
   - Serve as is or add tomato sauce and mozzarella then broil to make chicken parmesan.
 
 - title: Chocolate Cookies
-  image: https://i.imgur.com/frPvz9b.jpg
+  image: https://i.imgur.com/U8HhYbY.jpeg
   tags: [dairy-free, vegetarian, sweet]
   cuisine: null
   prep_time: 15
   cook_time: 12
-  servings: 20
+  servings: 8
   ingredients:
   - name: flour
     amount: 600ml
   - name: butter
-    amount: 113g
+    amount: 120g
   - name: sugar
-    amount: 175ml
+    amount: 140ml
   - name: brown sugar
-    amount: 175ml
+    amount: 140ml
   - name: eggs
     amount: 2
-  - name: baking soda
-    amount: 5ml
   - name: vanilla extract
-    amount: 5ml
+    amount: 10ml
   - name: baking powder
-    amount: 5ml
+    amount: 10ml
   - name: chocolate chips
-    amount: 475ml
+    amount: 400ml
   steps:
-  - Preheat oven to 350°F (175°C).
-  - Combine all ingredients in a large bowl.
-  - Mix ingredients together with a mixer until they are thoroughly combined.
-  - Line two baking sheets with parchment paper and grease with cooking spray.
-  - Form balls of dough with your hands and place them on the baking sheets. You should
-    end up with about 22 balls of dough.
-  - Bake for 10 - 12 minutes.
-  - Remove from oven and let cool for at least 15 minutes.
+  - Combine the flour, sugar and baking powder in a large bowl.
+  - Melt the butter and add to the mixture along the eggs, the vanilla extract and the chocolate chips.
+  - Mix the ingredients together until they are thoroughly combined.
+  - Form small balls of dough with your hands and place them in a baking sheet.
+  - Bake for 10/12 minutes in the oven at 175°C.
 
 - title: Ribeye steak
   image: https://i.imgur.com/zhijVV1.jpg
