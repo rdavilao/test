@@ -14,6 +14,12 @@
 ~[i am]
     [&I]{'m/ am}
 
+~[it is]
+    [&it]{'s/ is}
+
+~[do not]
+    {don't/do not/not}
+
 ~[will]
     {'ll/ will/ going to/ gonna}
 
@@ -40,11 +46,41 @@
     search [for?]
     find [me?]
 
+~[have]
+    {have/possess/own}
+
+~[use]
+    {use/utilize/employ}
+
+~[eat]
+    {eat/try/taste}
+
 ~[cook]
     {cook/prepare/make/bake}
 
-~[can you]
-    {can you/could you/may you/would you}
+~[cooking]
+    {cooking/preparing/making/baking}
+
+~[set]
+    {set/set up/create/activate/configure/add}
+
+~[remind]
+    {remind/remember/notify/alert/warn}
+
+~[needed]
+    {needed/required}
+
+~[need]
+    {need/require}
+
+~[start]
+    {start/begin/initiate/commence}
+
+~[stop]
+    {stop/end/halt/cancel}
+
+~[can]
+    {can/could/may/would/should}
 
 ~[i want to]
     [&I]{'d/ would} [really?] [like|love] to
@@ -53,11 +89,17 @@
 ~[recipe]
     {recipe/something/food}
 
+~[alternative]
+    {alternative/substitute/replacement/surrogate}
+
+~[ingredient]
+    {ingredient/item/thing/compononet}
+
+~[timer]
+    {timer/reminder/countdown/alarm/chronometer}
+
 ~[containing]
     {containing/with/using}
-
-~[eat]
-    {eat/try/taste}
 
 ~[day time]
     {today/tomorrow}
@@ -65,3 +107,6 @@
 
 ~[people]
     {people/person/persons/friends/relatives}
+
+~[alone]
+    {alone/only/by myself}

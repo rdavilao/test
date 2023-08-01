@@ -9,6 +9,16 @@ from actions.dataset import Dataset
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 DATA_DIR = os.path.join(PROJECT_ROOT, 'data')
 
+# Init dataset
+dataset = Dataset()
+
+# Generate entities for recipes names
+print('Generating recipes keyword entities...')
+with open(os.path.join(DATA_DIR, 'chatette', 'recipes.chatette'), 'w', encoding='utf-8') as file:
+    file.write('@[recipe_keyword]\n')
+    for recipe_name in dataset.recipes:
+        file.write(f'    {recipe_name}\n')
+
 # Generate NLU data with Chatette
 print('Generating data with Chatette...')
 chatette = ChatetteFacade(os.path.join(DATA_DIR, 'chatette', 'main.chatette'), '.out', adapter_str='rasa', seed='0', force_overwriting=True, local=True)
@@ -16,15 +26,14 @@ chatette.run()
 
 # Read Chatette output and convert it to the yaml format supported by rasa
 print('Converting data to YAML format...')
-convert_training_data(os.path.join(DATA_DIR, 'chatette', '.out'), os.path.join(DATA_DIR, 'rasa', 'nlu.yml'), 'yml', 'en')
+convert_training_data(os.path.join(DATA_DIR, 'chatette', '.out'), os.path.join(DATA_DIR, 'nlu.yml'), 'yml', 'en')
 shutil.rmtree(os.path.join(DATA_DIR, 'chatette', '.out'))
 
 # Generate base file for chatette with entity synonyms and lookup tables
 print('Generating lookup tables and regex from dataset...')
-dataset = Dataset()
-with open(os.path.join(DATA_DIR, 'rasa', 'ingredients.yml'), 'w', encoding='utf-8') as file:
+with open(os.path.join(DATA_DIR, 'ingredients.yml'), 'w', encoding='utf-8') as file:
     # Write ingredients in rasa format (with yaml.dump is not possible to get the correct formatting)
-    file.write('version: \'3.1\'\n'
+    file.write('version: "2.0"\n'
                'nlu:\n'
                '- lookup: ingredient\n'
                '  examples: |\n')
