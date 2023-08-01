@@ -1,28 +1,39 @@
+// Check https://github.com/SimGus/Chatette/blob/master/syntax-specs.md for syntax specs
+
 |aliases.chatette
 |entities.chatette
 
-//================== Intent definitions =======================
-%[greet](10)
+//================== Intents definitions =======================
+
+%[greet](20)
     ~[&greet]
 
-%[goodbye](10)
+%[goodbye](20)
     ~[&goodbye]
 
-%[affirm](10)
+%[affirm](20)
     ~[&affirm] ~[thanks?]
 
-%[deny](10)
+%[deny](20)
     ~[&deny] ~[thanks?]
 
-%[next](10)
+%[idk](20)
+    ~[&affirm?] ~[idk]
+
+%[next](20)
     ~[&affirm?] ~[next] ~[thanks?]
 
 %[search_by_keyword](50)
-    ~[&greet?] ~[i want to] ~[eat] @[recipe_keyword] ~[time?].
+    ~[&greet?] ~[i want to] ~[eat] @[recipe_keyword] ~[day time?].
     ~[&greet?] ~[can you] ~[please?] ~[search] @[recipe_keyword] recipes?
-    ~[&greet?] ~[can you] ~[please?] ~[search] recipes for @[recipe_keyword]?
+    ~[&greet?] ~[can you] ~[please?] ~[search] ~[recipe] for @[recipe_keyword]?
     ~[&greet?] ~[can you] ~[please?] ~[search] how to ~[cook] [a?] @[recipe_keyword]?
 
 %[search_by_ingredients](50)
-    ~[&greet?] ~[i want to] ~[eat] ~[something] ~[containing] @[ingredient] ~[time?].
+    ~[&greet?] ~[i want to] ~[eat] ~[recipe] ~[containing] @[ingredient][ [and?] @[ingredient]?] ~[day time?].
+    ~[&greet?] ~[can you] ~[please?] ~[search] ~[recipe] ~[containing] @[ingredient]?
 
+%[expected_time](50)
+    ~[thanks?] how {long/much} [time?] [~[will] it take?] to ~[cook]?
+%[people_count](10)
+    ~[thanks?] [&we?] [~[will] be?] @[CARDINAL] ~[people?]

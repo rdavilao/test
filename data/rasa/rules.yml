@@ -1,5 +1,6 @@
 version: "3.1"
 
+# Rules, check https://rasa.com/docs/rasa/rules/ for more info
 rules:
   - rule: Say hello anytime the user says hello
     steps:
@@ -11,3 +12,29 @@ rules:
     - intent: goodbye
     - action: utter_goodbye
 
+  - rule: Search by ingredients
+    steps:
+    - intent: search_by_ingredients
+    - action: action_search_by_ingredients
+    - action: utter_ask_want_more_info
+
+  - rule: Ask for expected preparation time
+    condition:
+    - slot_was_set:
+      - current_recipe
+    steps:
+    - intent: search_by_ingredients
+    - action: action_search_by_ingredients
+    - action: utter_ask_want_more_info
+
+
+
+  # - rule: Interruption on reading step loop
+  #   condition:
+  #   - active_loop: list_steps_loop
+  #   steps:
+  #   - intent: chitchat
+  #   - action: utter_chitchat
+  #   # Return to loop after handling the interruption intent
+  #   - action: list_steps_loop
+  #   - active_loop: list_steps_loop

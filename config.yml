@@ -2,8 +2,12 @@ recipe: default.v1
 
 language: en
 
+# Pipeline components, check https://rasa.com/docs/rasa/components for more info
 pipeline:
-  - name: WhitespaceTokenizer
+  - name: SpacyNLP
+    model: en_core_web_md
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
@@ -11,6 +15,10 @@ pipeline:
     analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
+  - name: SpacyEntityExtractor
+    dimensions: [ CARDINAL ] # Only for numbers
+  - name: RegexEntityExtractor
+    use_lookup_tables: True
   - name: DIETClassifier
     epochs: 100
     constrain_similarities: true
@@ -22,6 +30,7 @@ pipeline:
     threshold: 0.3
     ambiguity_threshold: 0.1
 
+# Policies, check https://rasa.com/docs/rasa/policies/ for more info
 policies:
   - name: MemoizationPolicy
   - name: RulePolicy
