@@ -1,0 +1,48 @@
+language: en
+
+pipeline:
+  - name: SpacyNLP
+    model: en_core_web_md
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: $max_ngram
+  - name: SpacyEntityExtractor
+    dimensions: [ CARDINAL, TIME ]
+  - name: DIETClassifier
+    epochs: $epochs
+    embedding_dimension: $embedding_dimension
+    learning_rate: $learning_rate
+    drop_rate: $drop_rate
+    constrain_similarities: $constrain_similarities
+  - name: ResponseSelector
+    epochs: $epochs
+    embedding_dimension: $embedding_dimension
+    learning_rate: $learning_rate
+    drop_rate: $drop_rate
+    constrain_similarities: $constrain_similarities
+  - name: FallbackClassifier
+    threshold: $fallback_threshold
+    ambiguity_threshold: 0.1
+
+policies:
+  - name: MemoizationPolicy
+  - name: RulePolicy
+    core_fallback_threshold: $fallback_threshold
+  - name: TEDPolicy
+    max_history: $max_history
+    epochs: $epochs
+    embedding_dimension: $embedding_dimension
+    learning_rate: $learning_rate
+    constrain_similarities: $constrain_similarities
+  - name: UnexpecTEDIntentPolicy
+    max_history: $max_history
+    epochs: $epochs
+    embedding_dimension: $embedding_dimension
+    learning_rate: $learning_rate
+    constrain_similarities: $constrain_similarities

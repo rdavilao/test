@@ -14,11 +14,11 @@ class Ingredient:
     name: Text
     amount: Optional[float]
     unit: Optional[Text]
-    def __str__(self) -> str:
+    def __str__(self, sep='') -> str:
         res = ''
-        if not np.isnan(self.amount): res += f'{self.amount:{ ".0f" if self.amount.is_integer() else ".1f"}}'
-        if self.unit is not None: res += f'{self.unit}'
-        if len(res) > 0: res += ' '
+        if not np.isnan(self.amount): 
+            res += f'{self.amount:{ ".0f" if self.amount.is_integer() else ".1f"}}'
+            res += f'{self.unit} {sep}' if self.unit else f' {sep}' if sep else ' x '
         res += self.name
         return res
 
@@ -34,6 +34,7 @@ class Step:
 class Recipe:
     id: int
     title: Text
+    image: Optional[Text]
     prep_time: int
     cook_time: int
     servings: int
@@ -44,6 +45,8 @@ class Recipe:
         for ingredient in self.ingredients:
             ingredient.amount = ingredient.amount * (servings / self.servings)
         self.servings = servings
+
+
 
 class Dataset():
     """Dataset containing the recipes data used by the agent."""
