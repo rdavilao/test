@@ -15,6 +15,12 @@ rules:
     - action: utter_goodbye
 
 
+  - rule: Say you're welcome anytime the user says thank you
+    steps:
+    - intent: thanks
+    - action: utter_you_are_welcome
+
+
   - rule: Two-stage fallback
     steps:
     - intent: nlu_fallback
@@ -33,9 +39,37 @@ rules:
     - intent: ask_to_repeat
     - action: action_repeat_last_utterance
 
-  - rule: Ask for expected preparation time
+
+  - rule: Search recipe by name, ingredients, tags or cuisine
+    steps:
+    - intent: search_recipes
+    - action: action_search_recipes
+    wait_for_user_input: false
+
+
+  - rule: Refine recipe search by asking user additional filters
     condition:
-    - slot_was_set: [ current_recipe ]
+    - slot_was_set: [ found_recipes_ids ]
+    steps:
+    - action: action_refine_recipes_search_ask
+    - or:
+      - intent: affirm
+      - intent: deny
+      - intent: idk
+    - action: action_refine_recipes_search_filter
+
+
+  - rule: Ask for alternative recipe
+    condition:
+    - slot_was_set: [ found_recipes_ids, current_recipe_id ]
+    steps:
+    - intent: ask_alternative_recipe
+    - action: action_search_alternative_recipe
+
+
+  - rule: Ask for expected preparation and cooking time
+    condition:
+    - slot_was_set: [ current_recipe_id ]
     steps:
     - intent: ask_expected_time
     - action: action_tell_expected_time
@@ -44,7 +78,20 @@ rules:
   - rule: Ask for ingredients substitute
     steps:
     - intent: ask_ingredient_substitute
-    - action: action_search_ingredient_substitute
+      entities: [ ingredient ]
+    - action: action_search_ingredients_substitutes
+
+
+  - rule: Ask for ingredients amount
+    condition:
+    - slot_was_set: [ current_recipe_id ]
+    steps:
+    - or:
+      - intent: ask_ingredient_amount
+        entities: [ ingredient]
+      - intent: ask_ingredient_amount
+        entities: [ ingredient, CARDINAL ]
+    - action: action_tell_ingredient_amount
 
 
   - rule: Update number of people
@@ -60,7 +107,7 @@ rules:
 
   - rule: Ask for ingredients list
     condition:
-    - slot_was_set: [ current_recipe ]
+    - slot_was_set: [ current_recipe_id ]
     steps:
     - intent: ask_ingredients_list
     - action: action_list_ingredients
@@ -70,18 +117,19 @@ rules:
   - rule: Set timer
     steps:
     - intent: set_timer
+      entities: [ TIME ]
     - action: action_set_timer
 
 
   - rule: Notify timer has expired
     steps:
     - intent: EXTERNAL_timer_expired
-    - action: utter_set_timer/expired
+    - action: utter_timer_expired
 
 
   - rule: Start cooking (user inititiative)
     condition:
-    - slot_was_set: [ current_recipe ]
+    - slot_was_set: [ current_recipe_id ]
     steps:
     - intent: start_cooking
     - action: list_steps_loop
@@ -90,7 +138,7 @@ rules:
 
   - rule: Start cooking (system inititiative)
     condition:
-    - slot_was_set: [ current_recipe ]
+    - slot_was_set: [ current_recipe_id ]
     steps:
     - action: utter_ask_start_cooking
     - intent: affirm
@@ -100,27 +148,30 @@ rules:
 
   - rule: Finish cooking
     condition:
-    - slot_was_set: [ current_recipe ]
+    - slot_was_set: [ current_recipe_id ]
     - active_loop: list_steps_loop
     steps:
     - action: list_steps_loop
     - active_loop: null
     - slot_was_set:
       - requested_slot: null
-    - action: utter_greet/finish
-    - action: action_restart
+    - action: action_reset_list_steps_loop
+    - action: utter_anything_else
 
 
   - rule: Stop cooking
     condition:
-    - slot_was_set: [ current_recipe ]
+    - slot_was_set: [ current_recipe_id ]
     - active_loop: list_steps_loop
     steps:
     - intent: stop_cooking
+    - action: action_deactivate_loop
     - active_loop: null
     - slot_was_set:
       - requested_slot: null
-    - action: action_restart
+    - action: action_reset_list_steps_loop
+    - action: utter_list_steps_stop
+    - action: utter_anything_else
 
 
   # Reading cooking steps interruptions 
@@ -129,7 +180,22 @@ rules:
     - active_loop: list_steps_loop
     steps:
     - intent: ask_ingredient_substitute
-    - action: action_search_ingredient_substitute
+      entities: [ ingredient ]
+    - action: action_search_ingredients_substitutes
+    - action: list_steps_loop
+    - active_loop: list_steps_loop
+
+
+  - rule: Interruption - ask for ingredient amount
+    condition:
+    - active_loop: list_steps_loop
+    steps:
+    - or:
+      - intent: ask_ingredient_amount
+        entities: [ ingredient]
+      - intent: ask_ingredient_amount
+        entities: [ ingredient, CARDINAL ]
+    - action: action_tell_ingredient_amount
     - action: list_steps_loop
     - active_loop: list_steps_loop
 
@@ -149,6 +215,7 @@ rules:
     - active_loop: list_steps_loop
     steps:
     - intent: set_timer
+      entities: [ TIMER ]
     - action: action_set_timer
     - action: list_steps_loop
     - active_loop: list_steps_loop
