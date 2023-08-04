@@ -1,0 +1,32 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: book tickets
+  steps:
+  - user: |
+      I want to book tickets
+  - intent: book_tickets
+  - action: booking_form
+  - active_loop: booking_form
+  - active_loop: null
+  - action: utter_confirm_booking_info
+  - user: |
+      yes
+  - intent: affirm 
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: collect tickets
+  steps:
+  - user: |
+      I want to collect tickets
+  - intent: collect_tickets
+  - action: collection_form
+  - active_loop: collection_form
+  - active_loop: null  

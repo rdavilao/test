@@ -1,246 +1,194 @@
-version: "2.0"
-
-# Session configs
+version: '3.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
-
-# Intents, check https://rasa.com/docs/rasa/domain/#intents for more info
 intents:
-- EXTERNAL_timer_expired
+- inquire_about_movie
+- book_tickets
 - affirm
-- ask_alternative_recipe
-- ask_expected_time
-- ask_features
-- ask_ingredient_amount:
-    use_entities: [ ingredient, CARDINAL ]
-- ask_ingredient_substitute:
-    use_entities: [ ingredient ]
-- ask_ingredients_list
-- ask_to_repeat
+- set_movie_time
+- no_tickets
 - deny
-- goodbye
+- inform_movie
+- inform_details
 - greet
-- idk
-- next
-- nlu_fallback
-- search_recipes:
-    use_entities: [ recipe, ingredient, tag, cuisine ]
-- set_timer:
-    use_entities: [ TIME ]
-- start_cooking
-- stop_cooking
-- tell_people_count:
-    use_entities: [ CARDINAL ]
-- tell_people_count_one
-- thanks
-
-
-# Entities, check https://rasa.com/docs/rasa/domain/#entities for more info
+- goodbye
+- collect_tickets
+- inquire_movie_schedule
+- inquire_movie_times
+- out_of_scope
+- stop
+- inquire_prices
+- inquire_payment
+- start
+- display_booking
 entities:
-- recipe
-- ingredient
-- tag
-- cuisine
-- CARDINAL
-- TIME
-
-
-# Slots, check https://rasa.com/docs/rasa/domain/#slots for more info
+- booking_reference
+- card_num
+- cvv
+- movie_name
+- number
+- sort_code
+- time
 slots:
-  found_recipes_ids:
-    type: list
+  booking_reference:
+    type: text
     influence_conversation: false
-
-  current_recipe_id:
+    mappings:
+    - type: from_entity
+      entity: booking_reference
+  movie_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: movie_name
+  start_time:
     type: any
     influence_conversation: false
-
-  refine_recipes_search_prop:
-    type: text
-    influence_conversation: true
-  
-  refine_recipes_search_value:
-    type: text
-    influence_conversation: true
-
-  people_count:
-    type: text
-    influence_conversation: true
-
-  current_step_idx:
+    mappings:
+    - type: from_entity
+      entity: time
+      conditions:
+      - active_loop: booking_form
+        requested_slot: start_time
+      - active_loop: movie_schedule_form
+        requested_slot: start_time
+  num_tickets:
     type: any
-    initial_value: -1
     influence_conversation: false
-
-  list_steps_done:
+    mappings:
+    - type: from_entity
+      entity: number
+      conditions:
+      - active_loop: booking_form
+        requested_slot: num_tickets
+  too_many_tickets:
     type: bool
+    influence_conversation: true
+    mappings:
+    - type: custom
+  card_num:
+    type: text
     influence_conversation: false
-
-
-# Responses, check https://rasa.com/docs/rasa/responses for more info
+    mappings:
+    - type: from_entity
+      entity: card_num
+      conditions:
+      - active_loop: payment_form
+  cvv:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: cvv
+      conditions:
+      - active_loop: payment_form
+  sort_code:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: sort_code
+      conditions:
+      - active_loop: payment_form
+  collected:
+    type: bool
+    influence_conversation: true
+    mappings:
+    - type: custom
 responses:
   utter_greet:
-  - text: Hi! What would you like to cook today?
-  - text: Hello! What recipe would you like to try today?
-
-  utter_anything_else:
-  - text: What else can I do for you?
-  - text: Would you like to cook something else?
-
-  utter_you_are_welcome:
-  - text: You're welcome!
-  - text: No problem, I'm here to help you!
-  - text: Happy to help!
-
-  utter_info:
-  - text: I can help you find and prepare cooking recipes! Try to ask me about a specific recipe or tell me the ingredients you want to use.
-
-  utter_please_rephrase:
-  - text: I'm sorry, I didn't understand that. Could you please rephrase?
-
-  utter_default:
-  - text: I'm really sorry, I don't know how to help you.
-
+  - text: Hey! I'm Cinebot! How can I help you today?
+  - text: Hello! I'm Cinebot! I What can I do for you?
+  - text: Hey There! I'm Cinebot! Is there anything I can help you with?
+  utter_ask_booking_form_movie_name:
+  - text: What movie would you like to see? (please remember captal letters and avoid special characters)
+  utter_ask_movie_schedule_form_movie_name:
+  - text: What movie would you like times for?
+  utter_ask_movie_schedule_form_start_time:
+  - text: What day do you want times for?
+  utter_ask_collection_form_booking_reference:
+  - text: What is your booking reference?
+  utter_ask_display_form_booking_reference:
+  - text: What is your booking reference?
+  utter_collection_confirmation:
+  - text: 'To confirm this is your booking reference: {booking_reference}'
+  utter_ask_booking_form_start_time:
+  - text: What time and day would you like to see the movie?
+  utter_ask_booking_form_num_tickets:
+  - text: Can you confirm the number of tickets you'd like?
+  utter_further_help:
+  - text: Is there anything else I can help you with?
   utter_goodbye:
-  - text: Thanks for talking with me. Bye!
-  - text: Bye!
-
-  utter_search_recipe_found:
-  - text: I found a recipe for "{recipe_title}". Would you like to know more?
-
-  utter_refine_recipes_search:
-  - text: I've found {count} recipes. What about something {tag}?
-  - text: I've found {count} recipes. Would you like a {tag} option?
-
-  utter_search_recipe_found_alternative:
-  - text: What about "{recipe_title}"?
-  - text: I also found a recipe for "{recipe_title}".
-
-  utter_search_recipe_not_found:
-  - text: Sorry, I couldn't find any recipe. Would you like to search for something else?
-
-  utter_search_recipe_not_found_alternative:
-  - text: Sorry I wasn't able to find any alternative. Would you like to search for something else?
-
-  utter_ask_people_count:
-  - text: Great! How many people are you cooking for?
-  - text: Thank you. How many people will be eating?
-
-  utter_expected_time:
-  - text: This recipe requires {prep_time} minutes for preparation and {cook_time} minutes for cooking.
-
-  utter_ingredient_substitute_found:
-  - text: You may use {substitute} as substitutes.
-
-  utter_ingredient_substitute_not_found:
-  - text: Sorry, I couldn't find any substitute for {ingredient}.
-
-  utter_ingredient_substitute_no_ingredient:
-  - text: Sorry, I couldn't find any alternative ingredients.
-
-  utter_ingredient_amount_found:
-  - text: You need {amounts_str}.
-  - text: Please use {amounts_str}.
-
-  utter_ingredient_amount_not_found:
-  - text: You don't need any {ingredients_str} for this recipe.
-
-  utter_ingredient_amount_no_ingredient:
-  - text: I'm sorry I couldn't understand which ingredient you are referring to.
-
-  utter_list_ingredients:
-  - text: |-
-      Here are the ingredients you'll need for {people_count_str}:
-      {ingredients_list}
-  - text: |-
-      For {people_count_str} you'll need:
-      {ingredients_list}
-
-  utter_set_timer_done:
-  - text: I've set a timer for {time}.
-  - text: Ok I'll give you a reminder in {time}.
-
-  utter_set_timer_error:
-  - text: I'm sorry, I couldn't undesterstand.
-
-  utter_timer_expired:
-  - text: Are you still there? The timer you set is over!
-  - text: Hey, your cooking timer has expired!
-
-  utter_ask_more_info:
-  - text: Would you like to know more about this recipe?
-  - text: Do you want more information about the recipe?
-
-  utter_ask_start_cooking:
-  - text: Shall we start cooking?
-  - text: Do you have everything ready?
-
-  utter_list_steps_first:
-  - text: Ok, let's start! First, {step_description} Let me know when you're done.
-  - text: Perfect, let's cook! To begin, {step_description} Tell me when you're ready for the next step.
-
-  utter_list_steps_next:
-  - text: Great, now {step_description}
-  - text: Perfect, now {step_description}
-  - text: Okay, now {step_description}
-  - text: After that, {step_description}
-  - text: Then {step_description}
-  - text: Now {step_description}
-  - text: Next {step_description}
-
-  utter_list_steps_last:
-  - text: Almost done! Now {step_description}
-  - text: Last step, {step_description}
-  - text: Finally, {step_description}
-  - text: To finish, {step_description}
-
-  utter_list_steps_end:
-  - text: Great! That was the last step, enjoy your meal!
-  - text: And we are done! Have a nice meal!
-  
-  utter_list_steps_stop:
-  - text: Ok, I'll stop reading the current recipe.
-
-
-# Actions, check https://rasa.com/docs/rasa/actions for more info
+  - text: Okay, Have a great day!
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_printing_tickets:
+  - text: Printing your tickets now.
+  utter_resubmit:
+  - text: Sorry about that, can you please re-enter the details.
+  utter_out_of_scope:
+  - text: Sorry, I am unable to handle that request.
+  utter_ask_payment_form_card_num:
+  - text: What is your card number? (16 digit number) (Example payment)
+  utter_ask_payment_form_sort_code:
+  - text: What is your sort code? (format XX-XX-XX)
+  utter_ask_payment_form_cvv:
+  - text: What is the card security code? (3 digit number on back of card)
+  utter_inform_prices:
+  - text: 'For IMAX screens it is £9.50, for 3D showings it is £7.50 and for 2D showings it is £5.50 '
+  utter_inform_payment:
+  - text: I can only take card at the moment
+  utter_what_do:
+  - text: What are you doing?
+  utter_how_help:
+  - text: How can I help you?
+  utter_continue_booking:
+  - text: Would you like to continue booking?
+  utter_continue_collecting:
+  - text: Would you like to continue ticket colleciton?
+  utter_cancel:
+  - text: Cancelling transaction
+  utter_want_printed:
+  - text: Do you want your tickets printed now?
+  utter_want_times:
+  - text: Do you want times for a movie?
 actions:
-- action_search_recipes
-- action_refine_recipes_search_ask
-- action_refine_recipes_search_filter
-- action_search_alternative_recipe
-- action_tell_expected_time
-- action_tell_ingredient_amount
-- action_update_people_count
-- action_search_ingredients_substitutes
-- action_list_ingredients
-- validate_list_steps_loop
-- action_reset_list_steps_loop
-- action_set_timer
-- action_repeat_last_utterance
-
-
-# Forms, check https://rasa.com/docs/rasa/forms for more info
+- action_clear_slots
+- action_display_booking
+- action_display_schedule
+- action_input_booking
+- action_input_collection
+- action_input_payment
+- action_print_ticket
+- action_query_movie
+- action_utter_confirmation
+- action_utter_movie_schedule
+- action_utter_movies
+- action_utter_total_price
+- validate_booking_form
+- validate_collection_form
+- validate_movie_schedule_form
+- validate_payment_form
 forms:
-  list_steps_loop:
+  booking_form:
     required_slots:
-      list_steps_done:  # Set slot values based on intents so that validate_list_steps_loop is triggered
-      # Trigger validation when the form is activated 
-      - type: from_trigger_intent
-        intent: affirm
-        value: false
-      - type: from_trigger_intent
-        intent: start_cooking
-        value: false
-      # Trigger validation when the user asks for the next step
-      - type: from_intent
-        intent: next
-        value: false
-        conditions:
-        - active_loop: list_steps_loop
-      - type: from_intent
-        intent: affirm
-        value: false
-        conditions:
-        - active_loop: list_steps_loop
+    - movie_name
+    - num_tickets
+    - start_time
+  collection_form:
+    required_slots:
+    - booking_reference
+  payment_form:
+    required_slots:
+    - card_num
+    - sort_code
+    - cvv
+  movie_schedule_form:
+    required_slots:
+    - movie_name
+    - start_time
+  display_form:
+    required_slots:
+    - booking_reference
