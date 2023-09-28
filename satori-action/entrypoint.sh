@@ -119,19 +119,8 @@ function getResult(){
 function getRanges(){
     max=$1
     min=$2
-    if [ $min -eq 0 ] || [ $max -eq 9999999 ]; then
-        if [ $min -gt 0 ]; then
-            echo "[ $min,  ∞ ["
-        else 
-            if [ $max -lt 9999999 ]; then
-                echo "[ 0 , $max ] "
-            else
-                echo "[ 0 , ∞ ["
-            fi
-        fi           
-    else
-        echo "[ $min, $max ]"
-    fi    
+    echo "[ $min, $max ]"
+       
 }
 
 function getDescription() {
