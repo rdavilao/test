@@ -144,7 +144,7 @@ function getDescription() {
                     ;;
                     
                     NL)
-                        echo $value+" supported language is OK (but in the lower limit)"
+                        echo $value" supported language is OK (but in the lower limit)"
                     ;;
                     
                     FLOW)
@@ -160,7 +160,7 @@ function getDescription() {
                     ;;
                     
                     SPL)
-                        echo $value+" synonyms/literal is OK (but in the lower limit)"
+                        echo $value" synonyms/literal is OK (but in the lower limit)"
                     ;;
                     
                     WL)
@@ -168,11 +168,11 @@ function getDescription() {
                     ;;
                     
                     CL)
-                        echo $value+" steps/conversation is OK (but in the lower limit)"
+                        echo $value" steps/conversation is OK (but in the lower limit)"
                     ;;
                     
                     FPATH)
-                        echo $value+" path/flow is OK (but in the lower limit)"
+                        echo $value" path/flow is OK (but in the lower limit)"
                     ;;
                     
                     FACT)
@@ -188,7 +188,7 @@ function getDescription() {
                     ;;
                     
                     PPTP)
-                        echo $value+" parameters/phrase is OK (but in the lower limit)"
+                        echo $value" parameters/phrase is OK (but in the lower limit)"
                     ;;
                     
                     CPOP)
@@ -263,63 +263,63 @@ function getDescription() {
             case $metric in
                 
                 ENT)
-                    echo $value+" entities is fine!"
+                    echo $value" entities is fine!"
                 ;;
                 
                 INT)
-                    echo $value+" intents is fine!"
+                    echo $value" intents is fine!"
                 ;;
                 
                 NL)
-                    echo $value+" supported languages is fine!"
+                    echo $value" supported languages is fine!"
                 ;;
                 
                 FLOW)
-                    echo $value+" flows are fine!"
+                    echo $value" flows are fine!"
                 ;;
                 
                 PATH)
-                    echo $value+" paths are fine!"
+                    echo $value" paths are fine!"
                 ;;
                 
                 LPE)
-                    echo $value+" literals/entity is fine!"
+                    echo $value" literals/entity is fine!"
                 ;;
                 
                 SPL)
-                    echo $value+" synonyms/literal is fine!"
+                    echo $value" synonyms/literal is fine!"
                 ;;
                 
                 WL)
-                    echo $value+" chars/literal is fine!"
+                    echo $value" chars/literal is fine!"
                 ;;
                 
                 CL)
-                    echo $value+" steps/conversation is fine!"
+                    echo $value" steps/conversation is fine!"
                 ;;
                 
                 FPATH)
-                    echo $value+" path/flow is fine!"
+                    echo $value" path/flow is fine!"
                 ;;
                 
                 FACT)
-                    echo $value+" actions/flow is fine!"
+                    echo $value" actions/flow is fine!"
                 ;;
                 
                 TPI)
-                    echo $value+" phrases/intent is fine!"
+                    echo $value" phrases/intent is fine!"
                 ;;
                 
                 WPTP)
-                    echo $value+" words/phrase is fine!"
+                    echo $value" words/phrase is fine!"
                 ;;
                 
                 PPTP)
-                    echo $value+" parameters/phrase is fine!"
+                    echo $value" parameters/phrase is fine!"
                 ;;
                 
                 CPOP)
-                    echo $value+" chars/output is fine!"
+                    echo $value" chars/output is fine!"
                 ;;
             esac
         fi
@@ -348,7 +348,7 @@ function getDescription() {
                 ;;
                 
                 LPE)
-                    echo $value+" literals/entity is too low: at least 3 required"
+                    echo $value" literals/entity is too low: at least 3 required"
                 ;;
                 
                 SPL)
@@ -356,7 +356,7 @@ function getDescription() {
                 ;;
                 
                 WL)
-                    echo $value+" chars/literal is too low: at least 3 required"
+                    echo $value" chars/literal is too low: at least 3 required"
                 ;;
                 
                 CL)
@@ -372,7 +372,7 @@ function getDescription() {
                 ;;
                 
                 TPI)
-                    echo $value+" phrases/intent is too low: at least 8 required"
+                    echo $value" phrases/intent is too low: at least 8 required"
                 ;;
                 
                 WPTP)
