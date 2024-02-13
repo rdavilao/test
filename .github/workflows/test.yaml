@@ -1,12 +1,13 @@
 name: test-satori-validation-action
 run-name: ${{ github.actor }} is checking chatbots with SATORI
 on: [push]
-jobs:  
+jobs:
   check-chatbot:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - uses: ./satori-action/.
         with:
-          format: "Dialogflow"
+          format: "Rasa"
+          version: 2.0
