@@ -39,7 +39,6 @@ nlu:
     - hows it hanging
     - yo yo
     - ohayo
-    - helo
     - hiya
     - bonjour
     - hi, mate
@@ -110,7 +109,6 @@ nlu:
     - evening
     - what's your name
     - hi hi
-    - hellooo
     - guten tag
     - Hello, its good to meet you, whats your name?
     - annyeong haseyo
@@ -163,7 +161,6 @@ nlu:
     - Who am I speaking to 
     - I need some help 
     - Do you think you could help me
-    - hiya 
     - hey hey
     - heyya
     - hey, what's up
@@ -250,7 +247,6 @@ nlu:
     - until next time
     - cheery-bye
     - see ya later
-    - c u later
     - see u later
     - toodleloo
     - bye for now
@@ -354,7 +350,6 @@ nlu:
     - Thanks Cinebot, I'm gonna take off
     - you've been a real help, bye
     - thanks, you been really helpful
-    - bye, you sucked
     - thank youuuu
     - buh bye
     - c u later
@@ -523,7 +518,6 @@ nlu:
     - go ahead
     - get on with it
     - yes, thank you
-    - yes, thanks
     - lit
     - you betcha
     - yas
@@ -674,7 +668,6 @@ nlu:
     - absolutely not
     - thats definitely not right
     - absolutely wrong
-    - yeah, thats not right
     - yeah, wrong
     - doubtful
     - very incorrect
@@ -707,7 +700,6 @@ nlu:
     - get it right next time
     - you didn't get the right date
     - You didn't get the right time
-    - the movie is wrong
     - the time is wrong
     - the date is wrong
     - The number of tickets is wrong
@@ -764,8 +756,7 @@ nlu:
     - no, I think you made a mistake 
     - nope, thats wrong
     - 100% wrong 
-    - that is wrong 
-    - you got it wrong
+    - that is wrong
     - That date is wrong
     - you've got the wrong movie
     - I asked to see a different movie
@@ -1033,11 +1024,11 @@ nlu:
     - I want to watch [Avengers](movie_name)
     - Can I see [Captain America Civil War](movie_name)
     - I would like to watch the movie [Your name](movie_name)
-    - [Deadpool](movie_name)
-    - [Baby Driver](movie_name)
-    - [Bram Stockers Dracula](movie_name)
-    - [Moonlight](movie_name)
-    - [Dispicable me](movie_name)
+    - [Deadpool](movie_name) movie
+    - [Baby Driver](movie_name) movie
+    - [Bram Stockers Dracula](movie_name) movie
+    - [Moonlight](movie_name) movie
+    - [Dispicable me](movie_name) movie
     - Watch [Finding Nemo](movie_name)
     - we would like to watch [The Jungle Book](movie_name)
     - I want to see the movie [Harry Potter and the Goblet of Fire](movie_name)
@@ -1069,13 +1060,13 @@ nlu:
     - Can I watch [Fargo](movie_name) here
     - Let me watch [Trainspotting](movie_name)
     - see [My Neighbor Totoro](movie_name)
-    - [Groundhog Day](movie_name)
-    - [Life of Brian](movie_name)
-    - [Persona](movie_name)
-    - [The Help](movie_name)
-    - [Nosferatu](movie_name)
-    - [The Silence of the Lambs](movie_name)
-    - [Snakes on a Plane](movie_name)
+    - [Groundhog Day](movie_name) movie
+    - [Life of Brian](movie_name) movie
+    - [Persona](movie_name) movie
+    - [The Help](movie_name) movie
+    - [Nosferatu](movie_name) movie
+    - [The Silence of the Lambs](movie_name) movie
+    - [Snakes on a Plane](movie_name) movie
     - I need tickets for [The Sound of Music](movie_name)
     - Can I have tickets for [The Wizard of OZ](movie_name)
     - [All Quite on the Western Front](movie_name) is the title
@@ -1163,7 +1154,6 @@ nlu:
     - I need to collect my tickets
     - Have pre-purchased some tickets
     - ticket pick-up
-    - would I be able to collect tickets here
     - help me collect my tickets
     - tell me how to collect tickets
     - infromation on how to collect tickets
@@ -1187,9 +1177,7 @@ nlu:
     - Can you guide me through collecting tickets
     - Can you aid me in ticket collection
     - print 
-    - tickets printed 
-    - let me collect tickets
-    - I need to collect my tickets 
+    - tickets printed
     - I need you to help me collect my tickets 
     - Can I collect my tickets 
     - I wish to have my tickets printed 
@@ -1239,7 +1227,6 @@ nlu:
     - hiya, I need to collect tickets
     - please let me collect tickets 
     - can I collect tickets
-    - tickets please
     - Can I get my tickets
     - get me my tickets 
     - I bought tickets, can I get them printed?
@@ -2091,7 +2078,6 @@ nlu:
     - The screen for my viewing keeps jumping
     - The are problems with the screen in my showing
     - Where can I get a refund
-    - I want to return my tickets
     - I'm no longer able to see the movie, can I get my money back
     - I'm confused about where to buy food
     - Do you offer pick'n'mix sweets
@@ -2260,7 +2246,6 @@ nlu:
     - Can you forget about this
     - Drop this
     - Can you drop it
-    - forget about it
     - wait never mind
     - hang on never mind
     - wait ignore everything I've said
@@ -2282,7 +2267,6 @@ nlu:
     - I did it wrong
     - cancel booking 
     - stop purchase
-    - cancel purchase 
     - I don't want to book any more 
     - I don't want to see this movie anymore 
     - I've changed my mind, I don't want this
@@ -2531,7 +2515,6 @@ nlu:
     - price of available tickets
     - What can you tell me about ticket prices
     - I wish to know ticket costs
-    - how much is a ticket
     - what's the price of a ticket
     - what does a ticket cost
     - I need to know how much is ticket
@@ -2544,7 +2527,6 @@ nlu:
     - 3D price
     - Standard price
     - 2D price
-    - What is your most expensive ticket
     - What ticket is cheapest
     - What screen types do you offer
     - Can you tell me how expensive your tickets are
@@ -2621,7 +2603,6 @@ nlu:
     - Could you please tell me the ticket prices
     - I was wondering what the price of your tickets are
     - Are the prices different for each screen
-    - How much is a ticket 
     - Could I get information on the ticket prices
     - Could you please tell me about the ticket prices
     - I need to know the ticket prices
@@ -2734,7 +2715,6 @@ nlu:
     - give me payment method info
     - information about payment methods
     - I want to know how I can pay
-    - How can I pay
     - What are the payment methods you take
     - available payment methods
     - I want to pay with cash
@@ -2762,7 +2742,6 @@ nlu:
     - paying
     - pay
     - payment
-    - payment methods
     - payment you accept
     - types of payment
     - what are your payment types
@@ -2976,7 +2955,6 @@ nlu:
     - I forgot how many tickets I bought
     - I'd like to know the screen my tickets are for
     - I forgot what movie I booked
-    - What movie did I book again?
     - Can you tell me what movie this booking reference is for [1234158AS](booking_reference)
     - I forgot what time the movie I booked is at
     - What day did I book for tickets for again?
@@ -2997,7 +2975,6 @@ nlu:
     - I want to know which screen the showing I booked is in
     - Can I get information about my booking
     - What can you tell me about my booking
-    - Can I know the seat numbers for my booking
     - I want to find out the seat numbers for my booking
     - Can I know the seat numbers I booked
     - Was wondering if you could tell me about my tickets
