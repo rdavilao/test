@@ -1,0 +1,14 @@
+.vscode
+__pycache__
+env
+
+.rasa
+.rasactl
+.cache
+models
+results
+hyperopts
+data/chatette/.out
+story_graph.dot
+events.db*
+rasa.db*
