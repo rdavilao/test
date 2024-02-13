@@ -765,6 +765,7 @@ fi
 
 echo -e "Testing chat-bot from ${BYELLOW}$GITHUB_REPOSITORY${NC} with:"
 echo -e " - format: ${BYELLOW}[$INPUT_FORMAT]${NC}"
+echo -e " - version: ${BYELLOW}[$INPUT_VERSION]${NC}"
 
 repo=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
 
@@ -805,7 +806,7 @@ if [ "$INPUT_FORMAT" = "conga" ]; then
 else
     echo "::debug::{Running CONGA with $INPUT_FILES}"
     ls
-    java -jar /CongaReverse3.4_pUML.jar $INPUT_FILES Rasa 3.0
+    java -jar /CongaReverse3.4_pUML.jar $INPUT_FILES $INPUT_FORMAT $INPUT_VERSION
     
     XMI_FILE=./chatbot.xmi
     
