@@ -1,0 +1,134 @@
+//================== Alias definitions =======================
+
+~[greet]
+    [hi|hello|hey|hello there|good morning|good evening]
+
+~[goodbye]
+    [goodbye|bye|see you|that's it]
+
+~[affirm]
+    [y|yes|yeah|yep|sure|ok|okay]
+
+~[deny]
+   [n|no|nope|nah|not]
+
+~[i am]
+    [&I]['m| am]
+
+~[it is]
+    [&it]['s| is]
+
+~[do not]
+    [don't|do not|not]
+
+~[will]
+    ['ll| will| going to| gonna]
+
+~[idk]
+    [idk|boh]
+    [&I?] [don't|do not] [know|care]
+    ~[i am?] not sure
+    ~[it is?] [the same|equal|not important]
+
+~[next]
+    [next [step?]|finished|proceed|go on|after [that?]]
+
+~[please]
+    [please]
+
+~[sorry]
+    [excuse me]
+    ~[i am?] sorry
+
+~[thanks]
+    [thanks [a lot?]|thank you]
+
+~[search]
+    search [for?]
+    find [me?]
+
+~[have]
+    [have|own]
+
+~[use]
+    [use|utilize|employ]
+
+~[help]
+    [help|assist]
+
+~[eat]
+    [eat|try]
+
+~[cook]
+    [cook|prepare|make|bake]
+
+~[cooking]
+    [cooking|preparing|making|baking]
+
+~[set]
+    [set|set up|create|activate|configure|add]
+
+~[remind]
+    [remind|remember|notify|alert|warn]
+
+~[repeat]
+    [repeat|say it again]
+
+~[give]
+    [give|deliver|send|tell|share with|read]
+
+~[needed]
+    [needed|required]
+
+~[need]
+    [need|require]
+
+~[ready]
+    [ready|set|all set]
+
+~[start]
+    [start|begin|initiate|commence]
+
+~[stop]
+    [stop|end|halt|cancel]
+
+~[can]
+    [can|could|may|would]
+
+~[i want]
+    [&I]['d| would] [really?] [like|love]
+    [&I] want
+
+~[recipe]
+    [recipe|something|food]
+
+~[alternative]
+    [alternative|substitute|replacement|surrogate]
+
+~[ingredient]
+    [ingredient|item|thing|compononet]
+
+~[timer]
+    [timer|reminder|countdown|alarm|chronometer]
+
+~[features]
+    [features|functions|functionalities|capabilities]
+
+~[containing]
+    [containing|with|using]
+
+~[only]
+    [only|just|solely|exclusively]
+
+~[day time]
+    [today|tomorrow]
+    [for|this] [breakfast|launch|dinner|morning|evening]
+
+~[people]
+    [people|person|persons|friends|relatives]
+
+~[instructions]
+    [instructions|steps|points]
+
+~[alone]
+    [alone|only|by myself]
