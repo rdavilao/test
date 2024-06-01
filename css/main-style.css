@@ -1,0 +1,589 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../fonts/Roboto-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url('../fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito-Medium';
+    src: url('../fonts/Nunito-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nunito-Black';
+    src: url('../fonts/Nunito-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton-Regular';
+    src: url('../fonts/Anton-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lutschine-Bold';
+    src: url('../fonts/Lutschine-BoldNarx3.otf') format('opentype');
+}
+
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-home-wrap {
+    margin-top: 54px;
+    width: 100%;
+    height: 565px;
+    height: 100%;
+}
+
+.header-wrap {
+    -webkit-box-shadow: 0 4px 6px -6px #444;
+    -moz-box-shadow: 0 4px 6px -6px #444;
+    box-shadow: 0 4px 6px -6px #444;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #181f33;
+    z-index: 1000;
+    font-family: 'Nunito-Regular', sans-serif;
+}
+
+.header-inner {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+}
+
+.header-left {
+    height: 60px;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo {
+    margin-left: 50%;
+    margin-top: 2%;
+}
+
+.home-engine-part {
+    width: 75%;
+}
+
+.header-right {
+    text-align: right;
+    height: 100%;
+    width: 75%;
+}
+
+.header-menu {
+    margin: 0;
+    margin-right: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    float: right;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-menu li {
+    font-size: 15px;
+    display: inline;
+    height: 100%;
+    line-height: 60px;
+}
+
+.header-menu li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-menu li a:hover {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: color 0.6s, border-color 0.6s;
+    color: #ff9f00;
+    border-bottom: 2px solid #ff9f00;
+}
+
+.header-book-service {
+    padding-left: 1.5%;
+    height: 60px;
+    white-space: nowrap;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #ff9f00;
+    padding-right: 1%;
+    color: #181f33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-book-service-divider {
+    width: 1px;
+    height: 40px;
+    background-color: #181f33;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    margin: 0 10px;
+}
+
+.quality-service-section {
+    background-image: url('../assets/images/home-background-part1.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.services-up-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1%;
+}
+
+.service {
+    color: white;
+    display: flex;
+    background-color: #181f33;
+    margin-right: 3%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 2%;
+    font-family: 'Nunito-Regular', sans-serif;
+}
+
+.service h2 {
+    margin-left: 10%;
+    font-weight: 1;
+}
+
+.quality-service-section-text {
+    display: flex;
+    margin-top: 2%;
+}
+
+.quality-service-section-text-left {
+    flex: 0 0 45%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quality-service-section-text-right {
+    flex: 0 0 50%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.quality-service-section-text-right h1 {
+    font-family: 'Anton-Regular', sans-serif;
+    color: #181f33;
+    font-size: xx-large;
+    margin-left: 0;
+}
+
+.quality-service-section-text-right h2 {
+    margin-right: 15%;
+    font-family: 'Nunito-Regular', sans-serif;
+    font-weight: 1;
+    color: #181f33;
+}
+
+.inline-block-container img,
+.inline-block-container h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inline-block-container img {
+    margin-right: 1px;
+    /* Ajusta el espacio entre la imagen y el encabezado */
+}
+
+.comprehensive-service-section {
+    display: flex;
+    margin-top: -1%;
+}
+
+.comprehensive-service-section h1 {
+    font-family: 'Anton-Regular', sans-serif;
+    color: #181f33;
+    font-size: xx-large;
+    margin-left: 0;
+}
+
+.compr-service-left {
+    flex: 0 0 50%;
+    padding-top: 5%;
+    background-color: #eceaeb;
+}
+
+.marg-left {
+    margin-left: 10%;
+}
+
+.compr-service-left h2,
+h1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Nunito-Regular', sans-serif;
+    font-weight: 1;
+    color: #181f33;
+}
+
+.compr-service-right {
+    flex: 0 0 50%;
+}
+
+.book-now-btn {
+    font-size: xx-large;
+    background-color: #f99b3a;
+    color: #181f33;
+    border: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    float: right;
+    margin-right: 20%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.book-now-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.car-brands-section {
+    background-color: white;
+    display: flex;
+}
+
+.qualified-experienced-section {
+    padding-top: 5%;
+    background-image: url('../assets/images/home-background-part3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.qualif-exp-left {
+    flex: 0 0 50%;
+    display: flex;
+}
+
+.qualif-exp-right {
+    flex: 0 0 50%;
+}
+
+.yellow-line {
+    width: 100%;
+    background-color: #ff9f00;
+    height: 1rem;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+    background-color: #181f33;
+    color: white;
+    text-align: center;
+    font-family: "Roboto-Regular", sans-serif;
+
+    background-image: url('../assets/images/home-texture-footer.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 100%;
+}
+
+.footer-divider {
+    height: 60px;
+    width: 1px;
+    color: white;
+}
+
+.footer-first-sub-section {
+    display: flex;
+    padding-top: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-second-sub-section {
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+
+.footer-section-1 {
+    flex: 0 0 20%;
+}
+
+.footer-section-2 {
+    flex: 0 0 60%;
+    display: flex;
+}
+
+.footer-section-3 {
+    flex: 0 0 20%;
+}
+
+.ul-footer {
+    text-align: left;
+}
+
+.ul-footer li {
+    margin-top: 10%;
+}
+
+.footer-book-service {
+    padding-left: 1.5%;
+    white-space: nowrap;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+    background-color: #f99b3a;
+    padding-right: 1%;
+    color: #181f33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 50%;
+    height: fit-content;
+    margin-top: 2%;
+}
+
+.footer-book-service-space {
+    min-width: 30%;
+}
+
+.qualif-exp-rigth {
+    margin-left: 3%;
+}
+
+.qualif-exp-rigth h1 {
+    font-family: 'Anton-Regular', sans-serif;
+    color: #181f33;
+    font-size: xx-large;
+    margin-left: 0;
+}
+
+.qualif-exp-rigth h2 {
+    color: #181f33;
+    font-family: 'Nunito-Regular', sans-serif;
+    font-weight: 1;
+    margin-right: 10%;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.home-mechanic-img {
+    width: 50%;
+    height: 50%;
+}
+
+@media (max-width: 768px) {
+
+    .header-logo {
+        margin: 0;
+        margin-left: 5%;
+        width: 250px;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
+    .header-book-service {
+        display: none;
+    }
+
+    .quality-service-section-text {
+        flex-direction: column;
+    }
+
+    .home-engine-part {
+        width: 75%;
+    }
+
+    .services-up-section {
+        flex-direction: column;
+    }
+
+    .comprehensive-service-section {
+        flex-direction: column;
+    }
+
+    .car-brands-section-img {
+        display: none;
+    }
+
+    .car-brands-section-img-show {
+        width: 25%;
+    }
+
+    .ul-footer {
+        display: none;
+    }
+
+    .qualified-experienced-section {
+        flex-direction: column;
+    }
+
+    .cp-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .service {
+        min-width: 60%;
+        margin-top: 5%;
+        align-items: center;
+    }
+
+    .service h2 {
+        font-size: medium;
+    }
+
+    .quality-service-section-text-left {
+        order: 1;
+    }
+
+    .quality-service-section-text-right {
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .quality-service-section-text-right h1 {
+        font-size: x-large;
+        margin-right: 1%;
+    }
+
+    .quality-service-section-text-right h2 {
+        font-size: medium;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+    }
+
+    .book-now-btn {
+        font-size: small;
+        margin-right: 5%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .compr-service-left {
+        padding-bottom: 5%;
+    }
+
+    .comprehensive-service-section h1 {
+        font-size: x-large;
+        margin-right: 1%;
+    }
+
+    .comprehensive-service-section h2 {
+        font-size: medium;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+    }
+
+    .qualif-exp-rigth h1 {
+        font-size: x-large;
+        margin-right: 1%;
+    }
+
+    .qualif-exp-rigth h2 {
+        font-size: medium;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: left;
+    }
+
+    .qualif-exp-left {
+        order: 1;
+    }
+
+    .home-mechanic-img {
+        width: 25%;
+    }
+
+    .home-car-img {
+        width: 50%;
+    }
+
+    .footer-book-service {
+        width: 80%;
+    }
+
+    .footer-book-service h2 {
+        font-size: x-small;
+    }
+
+    .footer-book-service-space {
+        min-width: 20%;
+    }
+
+    .footer-section-3 h2 {
+        font-size: x-small;
+    }
+
+    .footer-section-3 img {
+        width: 25%;
+    }
+
+    .footer-section-2 {
+        text-align: center;
+        align-items: center;
+    }
+
+    .yellow-line {
+        height: 0.5rem;
+    }
+
+    .footer-section-1 img {
+        width: 100%;
+    }
+
+    .footer-second-sub-section {
+        font-size: x-small;
+        padding-bottom: 5%;
+    }
+
+    .footer {
+        background-image: url('../assets/images/R-yellow-texture--footer.png');
+    }
+}
