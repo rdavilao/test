@@ -33,6 +33,7 @@
   <!-- material icons -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- scripts -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -79,15 +80,235 @@
 
           <?php break;
 
-        case 'canton-fair': ?>
-          .red-text {
+        case 'logbook-service': ?>
+          .services {
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
-            color: #ffc546;
+            color: #ff9f00 !important;
             border-bottom: 3px solid #ffc546;
           }
+
+          .logbook-service-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'standar-service': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .standar-service-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'tyres': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .tyres-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'brakes': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .brakes-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'maintenance': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .maintenance-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'registration': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .registration-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'suspension': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .suspension-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'wheels': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .wheels-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'cooling': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .cooling-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case 'electrical': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .electrical-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          <?php break;
+
+        case '4wd': ?>
+          .services {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+
+          .wd-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ffc546;
+          }
+        
 
           <?php break;
 
@@ -99,18 +320,6 @@
             transition: color 0.6s, border-color 0.6s;
             color: #ffc546;
             border-bottom: 3px solid #ffc546;
-          }
-
-          <?php break;
-
-        default: ?>
-          .home-opt {
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            transition: color 0.6s, border-color 0.6s;
-            color: #ff9f00 !important;
-            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -133,25 +342,40 @@
   <div class="header-wrap">
     <div class="header-inner">
       <div class="header-left">
-        <a href="#">
+        <a href="/">
           <img class="header-logo" src="assets/images/home-logo.png" alt="Workshop City" width="100%">
         </a>
       </div>
       <div class="header-right">
         <ul class="header-menu">
           <li><a href="/" class="home-opt">HOME</a></li>
-          <li><a href="/canton-fair" class="red-text"><strong>SERVICES</strong></a></li>
-          <li><a href="/contact-us" class="contact-us-opt">MOBILE SERVICES</a></li>
-          <li><a href="/join-us" class="join-us-opt">FAQS</a></li>
-          <li><a href="/join-us" class="join-us-opt">ABOUT US</a></li>
-          <li><a href="/join-us" class="join-us-opt">CONTACT US</a></li>
+          <li><a href="#" id="toggleButton-Service" class="services">SERVICES</a></li>
+          <li><a href="/mobile-services" class="mobile-services-opt">MOBILE SERVICES</a></li>
+          <li><a href="/faqs" class="faqs-opt">FAQS</a></li>
+          <li><a href="/about-us" class="about-us-opt">ABOUT US</a></li>
+          <li><a href="/contact-us" class="contact-us-opt">CONTACT US</a></li>
         </ul>
       </div>
       <div class="header-book-service">
-        <h2>BOOK A SERVICE</h2>
+        <h2 class="book-a-service" data-url="/book-service">BOOK A SERVICE</h2>
         <div class="header-book-service-divider"></div>
         <h2>0430 003 880</h2>
       </div>
+    </div>    
+    <div id="hiddenService-menu" class="service-menu hidden">
+      <ul class="header-menu-service">
+            <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
+            <li><a href="/standar-service" class="standar-service-opt"><strong>STANDAR SERVICING</strong></a></li>
+            <li><a href="/tyres" class="tyres-opt">TYRES AND BALANCE</a></li>
+            <li><a href="/brakes" class="brakes-opt">BRAKES</a></li>
+            <li><a href="/maintenance" class="maintenance-opt">MAINTENANCE & REPAIRS</a></li>
+            <li><a href="/registration" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
+            <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK ABSORBERS</a></li>
+            <li><a href="/wheels" class="wheels-opt">WHEELS ALIGNMENT</a></li>
+            <li><a href="/cooling" class="cooling-opt">COOLING SISTEM</a></li>
+            <li><a href="/electrical" class="electrical-opt">ELECTRICAL</a></li>
+            <li><a href="/4wd" class="wd-opt">4WD ACCESORIES</a></li>
+      </ul>
     </div>
   </div>
   <div class="content-wrap">
@@ -165,12 +389,36 @@
         case 'contact-us':
           @include ('pages/contactus.php');
           break;
-        case 'canton-fair':
-          @include ('pages/cantonfair.php');
+        case 'logbook-service':          
+          @include ('pages/logbook.php');
           break;
         case 'join-us':
           @include ('pages/joinus.php');
           break;
+        case 'book-service':
+            @include ('pages/book-a-service.php');
+            break;
+        case 'standar-service':
+            @include ('pages/standar.php');
+            break;
+        case 'tyres':
+            @include ('pages/tyres.php');
+            break;
+        case 'suspension':
+            @include ('pages/suspension.php');
+            break;
+        case 'wheels':
+            @include ('pages/wheels.php');
+            break;
+        case 'cooling':
+            @include ('pages/cooling.php');
+            break;
+        case 'electrical':
+            @include ('pages/electrical.php');
+            break;
+        case '4wd':
+             @include ('pages/4wd.php');
+             break;
         default:
           @include ('pages/home.php');
           break;
@@ -193,7 +441,7 @@
           <li>MOBILE SERVICES</li>
         </ul>        
         <div class="footer-book-service">
-          <span><h2 style="margin:0;">BOOK A</h2><br /><h2 style="margin:0; margin-top:-1.5rem">SERVICE</h2></span>
+          <span class="book-a-service" data-url="/book-service"><h2 style="margin:0;">BOOK A</h2><br /><h2 style="margin:0; margin-top:-1.5rem">SERVICE</h2></span>
           <div class="footer-book-service-space"></div>
           <span><h2 style="margin:0; font-style: italic; font-weight:1">CALL US</h2><br /><h2 style="margin:0; margin-top:-1.5rem">0430 003 880</h2></span>
         </div>
@@ -210,6 +458,7 @@
       </div>      
     </div>        
   </div>
+  <script src="./js/main-script.js"></script>
 </body>
 
 </html>

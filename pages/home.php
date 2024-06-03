@@ -5,11 +5,11 @@
     </div>
     <div class="quality-service-section">
         <div class="services-up-section">
-            <div class="service">
+            <div class="service" data-url="/logbook-service">
                 <img src="../assets/images/home-icon-tool.png">
                 <h2 style="margin-bottom:2%; margin-top:2%;">LOGBOOK SERVICES</h2>
             </div>
-            <div class="service">
+            <div class="service" data-url="/standar-service">
                 <img src="../assets/images/home-icon-car.png">
                 <h2 style="margin-bottom:2%; margin-top:2%;">STANDAR SERVICES</h2>
             </div>
@@ -38,7 +38,7 @@
                     you would prefer genuine or aftermarket parts for your vehicle and we will accommodate
                     were applicable.</h2>
                 <br class="cp-img"><br class="cp-img"><br class="cp-img">
-                <button class="book-now-btn">BOOK NOW</button>
+                <button class="book-now-btn" data-url="/book-service">BOOK NOW</button>
             </div>
         </div>
 
@@ -59,7 +59,7 @@
             <h2>From oil changes and brake inspections to engine diagnostics and suspension repairs, we
                 have you covered.</h2>
             <br class="cp-img"><br class="cp-img"><br class="cp-img">
-            <button class="book-now-btn">BOOK NOW</button>
+            <button class="book-now-btn" data-url="/book-service">BOOK NOW</button>
         </div>
         <div class="compr-service-right">
             <img src="../assets/images/home-mechanic-under-car.png" alt="Workshop City Comprehensive Services"
@@ -93,8 +93,11 @@
             </div>
             <div class="inline-block-container mobile-img">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
-                
-                <span><h1>Qualified and Experienced</h1><br><h1 style="margin: 0; margin-left:10%; margin-top: -5%">Technicians</h1></span>
+
+                <span>
+                    <h1>Qualified and Experienced</h1><br>
+                    <h1 style="margin: 0; margin-left:10%; margin-top: -5%">Technicians</h1>
+                </span>
             </div>
             <h2>When it comes to servicing your vehicle, you want to trust it in the hands of experts. Our workshop
                 boasts a team of qualified and experienced technicians who have extensive knowledge of various makes and
@@ -103,7 +106,7 @@
             <h2>They are well-versed in the specific service requirements of different vehicles and use the latest
                 diagnostic tools and equipment to ensure accurate and efficient servicing.</h2>
             <br class="cp-img"><br class="cp-img"><br class="cp-img">
-            <button class="book-now-btn">BOOK NOW</button>
+            <button class="book-now-btn" data-url="/book-service">BOOK NOW</button>
         </div>
     </div>
 
