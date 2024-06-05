@@ -60,7 +60,10 @@
         </div>
     </div>
     <img src="../assets/images/banner-mobile.png" alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;"
-        width="100%" height="100%">
+        width="100%" height="100%" class="cp-img">
+    <img src="../assets/images/Mobile-banner--about-us-wc-responsive--copia.png"
+        alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;" width="100%" height="100%"
+        class="mobile-img">
     <br class="mobile-img"><br class="mobile-img">
     <div class="service-section-2 cp-img">
         <div class="review">

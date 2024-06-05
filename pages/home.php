@@ -1,7 +1,12 @@
 <div class="main-home-wrap">
-
     <div class="home-banner-section">
-        <img src="../assets/images/home-banner2.png" alt="Workshop City Services" width="100%" height="100%">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="../assets/images/home-banner1.png" alt="Workshop City Services" width="100%" height="100%">
+                <img src="../assets/images/home-banner2.png" alt="Workshop City Services" width="100%" height="100%">
+                <img src="../assets/images/home-banner3.png" alt="Workshop City Services" width="100%" height="100%">
+            </div>
+        </div>
     </div>
     <div class="quality-service-section">
         <div class="services-up-section">
@@ -13,7 +18,7 @@
                 <img src="../assets/images/home-icon-car.png">
                 <h2 style="margin-bottom:2%; margin-top:2%;">STANDAR SERVICES</h2>
             </div>
-            <div class="service">
+            <div class="service" data-url="/mobile-services">
                 <img src="../assets/images/home-icon-tuercas.png">
                 <h2 style="margin-bottom:2%; margin-top:2%;">MOBILE SERVICES</h2>
             </div>

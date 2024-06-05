@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Workshop City Australia</title>
+  <title>Workshop City WA</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-barstyle" content="default">
   <meta name="theme-color" content="#ffffff">
-  <link rel="apple-touch-icon" href="./assets/images/biglogo.png">
+  <link rel="apple-touch-icon" href="./assets/images/favicon2.png">
   <meta name="apple-mobile-web-app-title" content="Workshop City">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
@@ -24,7 +24,7 @@
     rel="stylesheet">
 
   <!-- favicon -->
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="./assets/images/favicon2.png" type="image/x-icon">
 
   <!-- styles -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
@@ -87,7 +87,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .logbook-service-opt {
@@ -96,7 +96,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -108,7 +108,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .standar-service-opt {
@@ -117,7 +117,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -129,7 +129,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .tyres-opt {
@@ -138,7 +138,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -150,7 +150,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .brakes-opt {
@@ -159,7 +159,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -171,7 +171,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .maintenance-opt {
@@ -180,19 +180,19 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
 
-        case 'registration': ?>
+        case 'inspection': ?>
           .services {
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .registration-opt {
@@ -201,7 +201,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -213,7 +213,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .suspension-opt {
@@ -222,7 +222,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -234,7 +234,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .wheels-opt {
@@ -243,7 +243,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -255,7 +255,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .cooling-opt {
@@ -264,7 +264,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -276,7 +276,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .electrical-opt {
@@ -285,7 +285,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -297,7 +297,7 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
+            border-bottom: 3px solid #ff9f00;
           }
 
           .wd-opt {
@@ -306,8 +306,8 @@
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
-            border-bottom: 3px solid #ffc546;
-          }
+            border-bottom: 3px solid #ff9f00;
+          }mobile-services
         
 
           <?php break;
@@ -318,8 +318,31 @@
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             transition: color 0.6s, border-color 0.6s;
-            color: #ffc546;
-            border-bottom: 3px solid #ffc546;
+            color: #ff9f00;
+            border-bottom: 3px solid #ff9f00;
+          }book-opt
+
+          <?php break;
+
+        case 'mobile-services': ?>
+          .mobile-services-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00;
+            border-bottom: 3px solid #ff9f00;
+          }
+          <?php break;
+
+        case 'book-service': ?>
+          .book-opt {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            transition: color 0.6s, border-color 0.6s;
+            color: #ff9f00 !important;
+            border-bottom: 3px solid #ff9f00;
           }
 
           <?php break;
@@ -345,31 +368,55 @@
         <a href="/">
           <img class="header-logo" src="assets/images/home-logo.png" alt="Workshop City" width="100%">
         </a>
+        <div class="mobile-menu mobile-img">
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul class="menu">
+                <li><a href="/" class="home-opt">HOME</a></li>
+                <li><a href="/mobile-services" class="mobile-services-opt">MOBILE SERVICES</a></li>
+                <li><a href="/about-us" class="about-us-opt">ABOUT US</a></li>
+                <li><a href="/contact-us" class="contact-us-opt">CONTACT US & FAQS</a></li>
+                <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
+                <li><a href="/standar-service" class="standar-service-opt">STANDAR SERVICING</a></li>
+                <li><a href="/tyres" class="tyres-opt">TYRES AND BALANCE</a></li>
+                <li><a href="/brakes" class="brakes-opt">BRAKES</a></li>
+                <li><a href="/maintenance" class="maintenance-opt">MAINTENANCE & REPAIRS</a></li>
+                <li><a href="/inspection" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
+                <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK ABSORBERS</a></li>
+                <li><a href="/wheels" class="wheels-opt">WHEELS ALIGNMENT</a></li>
+                <li><a href="/cooling" class="cooling-opt">COOLING SISTEM</a></li>
+                <li><a href="/electrical" class="electrical-opt">ELECTRICAL</a></li>
+                <li><a href="/4wd" class="wd-opt">4WD ACCESORIES</a></li>
+                <li><a href="/book-service" class="book-opt">BOOK NOW</a></li>
+            </ul>
+        </nav>
+        </div>
       </div>
       <div class="header-right">
         <ul class="header-menu">
           <li><a href="/" class="home-opt">HOME</a></li>
           <li><a href="#" id="toggleButton-Service" class="services">SERVICES</a></li>
           <li><a href="/mobile-services" class="mobile-services-opt">MOBILE SERVICES</a></li>
-          <li><a href="/faqs" class="faqs-opt">FAQS</a></li>
           <li><a href="/about-us" class="about-us-opt">ABOUT US</a></li>
-          <li><a href="/contact-us" class="contact-us-opt">CONTACT US</a></li>
+          <li><a href="/contact-us" class="contact-us-opt">CONTACT US & FAQS</a></li>
         </ul>
       </div>
       <div class="header-book-service">
         <h2 class="book-a-service" data-url="/book-service">BOOK A SERVICE</h2>
         <div class="header-book-service-divider"></div>
-        <h2>0430 003 880</h2>
+        <a href="tel:+610430033880"><h2>0430 003 880</h2></a>
       </div>
     </div>    
     <div id="hiddenService-menu" class="service-menu hidden">
       <ul class="header-menu-service">
             <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
-            <li><a href="/standar-service" class="standar-service-opt"><strong>STANDAR SERVICING</strong></a></li>
+            <li><a href="/standar-service" class="standar-service-opt">STANDAR SERVICING</a></li>
             <li><a href="/tyres" class="tyres-opt">TYRES AND BALANCE</a></li>
             <li><a href="/brakes" class="brakes-opt">BRAKES</a></li>
             <li><a href="/maintenance" class="maintenance-opt">MAINTENANCE & REPAIRS</a></li>
-            <li><a href="/registration" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
+            <li><a href="/inspection" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
             <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK ABSORBERS</a></li>
             <li><a href="/wheels" class="wheels-opt">WHEELS ALIGNMENT</a></li>
             <li><a href="/cooling" class="cooling-opt">COOLING SISTEM</a></li>
@@ -384,10 +431,10 @@
       $page = $_GET['page'];
       switch ($page) {
         case 'about-us':
-          @include ('pages/aboutus.php');
+          @include ('pages/about-us.php');
           break;
         case 'contact-us':
-          @include ('pages/contactus.php');
+          @include ('pages/contact-us.php');
           break;
         case 'logbook-service':          
           @include ('pages/logbook.php');
@@ -416,6 +463,18 @@
         case 'electrical':
             @include ('pages/electrical.php');
             break;
+        case 'brakes':
+            @include ('pages/brakes.php');
+            break;
+        case 'maintenance':
+            @include ('pages/maintenance.php');
+            break;
+        case 'inspection':
+            @include ('pages/inspection.php');
+            break;
+        case 'mobile-services':
+            @include ('pages/mobile-services.php');
+            break;
         case '4wd':
              @include ('pages/4wd.php');
              break;
@@ -436,14 +495,15 @@
       </div>
       <div class="footer-section-2">
       <div class="footer-divider"></div>
-        <ul class="ul-footer"> 
-          <li>SERVICES</li>
-          <li>MOBILE SERVICES</li>
+        <ul class="ul-footer" style="color:white !important"> 
+          <li><a href="/logbook-service">SERVICES</a></li>
+          <li><a href="/mobile-services" >MOBILE SERVICES</a></li>
         </ul>        
         <div class="footer-book-service">
           <span class="book-a-service" data-url="/book-service"><h2 style="margin:0;">BOOK A</h2><br /><h2 style="margin:0; margin-top:-1.5rem">SERVICE</h2></span>
           <div class="footer-book-service-space"></div>
-          <span><h2 style="margin:0; font-style: italic; font-weight:1">CALL US</h2><br /><h2 style="margin:0; margin-top:-1.5rem">0430 003 880</h2></span>
+          <a href="tel:+610430033880"><span><h2 style="margin:0; font-style: italic; font-weight:1">CALL US</h2><img src="../assets/images/phone-menu-home-top-A.png"
+                            alt="Workshop City Phone Number" class="phone-numer-footer"></span></a>
         </div>
       </div>
       <div class="footer-section-3">
@@ -457,8 +517,8 @@
         <span>Copyright &copy; 2024 <span style="font-weight:bold"> WORKSHOP CITY - WA</span><br />All Rights Reserved</span>
       </div>      
     </div>        
-  </div>
+  </div> 
+  <div id="overlay" class="overlay"></div>
   <script src="./js/main-script.js"></script>
 </body>
-
 </html>
