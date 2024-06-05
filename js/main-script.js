@@ -55,8 +55,15 @@ document.addEventListener("DOMContentLoaded", function () {
 function toggleMenu() {
   var menu = document.querySelector(".menu");
   var overlay = document.getElementById("overlay");
+
   menu.classList.toggle("show");
   overlay.classList.toggle("show");
+
+  if (menu.classList.contains("show")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
 }
 
 let currentIndex = 0;
