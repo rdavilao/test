@@ -836,6 +836,7 @@ nav {
     .menu li a {
         display: block;
         padding: 10px;
+        padding-bottom: 7px;
         text-align: left;
     }
 

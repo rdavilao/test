@@ -101,7 +101,7 @@
 
           <?php break;
 
-        case 'standar-service': ?>
+        case 'standard-service': ?>
           .services {
             box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -111,7 +111,7 @@
             border-bottom: 3px solid #ff9f00;
           }
 
-          .standar-service-opt {
+          .standard-service-opt {
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
@@ -379,14 +379,14 @@
                 <li><a href="/about-us" class="about-us-opt">ABOUT US</a></li>
                 <li><a href="/contact-us" class="contact-us-opt">CONTACT US & FAQS</a></li>
                 <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
-                <li><a href="/standar-service" class="standar-service-opt">STANDAR SERVICING</a></li>
+                <li><a href="/standard-service" class="standard-service-opt">STANDARD SERVICING</a></li>
                 <li><a href="/tyres" class="tyres-opt">TYRES AND BALANCE</a></li>
                 <li><a href="/brakes" class="brakes-opt">BRAKES</a></li>
                 <li><a href="/maintenance" class="maintenance-opt">MAINTENANCE & REPAIRS</a></li>
                 <li><a href="/inspection" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
                 <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK ABSORBERS</a></li>
                 <li><a href="/wheels" class="wheels-opt">WHEELS ALIGNMENT</a></li>
-                <li><a href="/cooling" class="cooling-opt">COOLING SISTEM</a></li>
+                <li><a href="/cooling" class="cooling-opt">COOLING SYSTEM</a></li>
                 <li><a href="/electrical" class="electrical-opt">ELECTRICAL</a></li>
                 <li><a href="/4wd" class="wd-opt">4WD ACCESORIES</a></li>
                 <li><a href="/book-service" class="book-opt">BOOK NOW</a></li>
@@ -412,14 +412,14 @@
     <div id="hiddenService-menu" class="service-menu hidden">
       <ul class="header-menu-service">
             <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
-            <li><a href="/standar-service" class="standar-service-opt">STANDAR SERVICING</a></li>
+            <li><a href="/standard-service" class="standard-service-opt">STANDARD SERVICING</a></li>
             <li><a href="/tyres" class="tyres-opt">TYRES AND BALANCE</a></li>
             <li><a href="/brakes" class="brakes-opt">BRAKES</a></li>
             <li><a href="/maintenance" class="maintenance-opt">MAINTENANCE & REPAIRS</a></li>
             <li><a href="/inspection" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
             <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK ABSORBERS</a></li>
             <li><a href="/wheels" class="wheels-opt">WHEELS ALIGNMENT</a></li>
-            <li><a href="/cooling" class="cooling-opt">COOLING SISTEM</a></li>
+            <li><a href="/cooling" class="cooling-opt">COOLING SYSTEM</a></li>
             <li><a href="/electrical" class="electrical-opt">ELECTRICAL</a></li>
             <li><a href="/4wd" class="wd-opt">4WD ACCESORIES</a></li>
       </ul>
@@ -445,8 +445,8 @@
         case 'book-service':
             @include ('pages/book-a-service.php');
             break;
-        case 'standar-service':
-            @include ('pages/standar.php');
+        case 'standard-service':
+            @include ('pages/standard.php');
             break;
         case 'tyres':
             @include ('pages/tyres.php');

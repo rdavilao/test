@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(contact-us|logbook-service|book-service|standar-service|tyres|suspension|wheels|cooling|electrical|4wd|contact-us|about-us|brakes|maintenance|inspection|mobile-services) ./index.php?page=$1
+RewriteRule ^(contact-us|logbook-service|book-service|standard-service|tyres|suspension|wheels|cooling|electrical|4wd|contact-us|about-us|brakes|maintenance|inspection|mobile-services) ./index.php?page=$1

@@ -39,10 +39,6 @@
                 </div>
                 <div class="inline-block-container block-container-section-2">
                     <img src="../assets/images/home-blue-flag.png" class="yellow-flag" alt="Flag">
-                    <h1>Customer Satisfaction</h1>
-                </div>
-                <div class="inline-block-container block-container-section-2">
-                    <img src="../assets/images/home-blue-flag.png" class="yellow-flag" alt="Flag">
                     <h1>Convenience and Customer Satisfaction</h1>
                 </div>
                 <div class="inline-block-container block-container-section-2">

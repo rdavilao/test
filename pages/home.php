@@ -35,7 +35,7 @@
                     <h1>Genuine Parts and Quality Service</h1>
                 </div>
                 <h2>We understand the importance of using genuine parts and high-quality materials in your vehicle. Our
-                    workshop uses manufactures approved aftermarket parts and or genuine or OEM (Original Equipment
+                    workshop uses manufacturers approved aftermarket parts and or genuine or OEM (Original Equipment
                     Manufacturer) parts that are specifically designed for your vehicle's make and model.
                 </h2>
                 <h2>This ensures optimal performance, longevity, and compatibility with your vehicle. Simply advise us

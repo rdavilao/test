@@ -1,7 +1,7 @@
 <div class="main-logbook-wrap">
     <img src="../assets/images/services-1-img-section.png" alt="Workshop City Services" width="100%" height="100%">
     <div class="service-title cp-img">
-        <h2 style="margin-top:5%; margin-bottom:5% ">COOLING SISTEM</h2>
+        <h2 style="margin-top:5%; margin-bottom:5% ">COOLING SYSTEM</h2>
     </div>
     <div class="service-section-1">
         <div class="service-section-1-inner">
@@ -12,7 +12,7 @@
             <div class="service-section-1-inner-right">
                 <div class="inline-block-container" style="margin-left:5%;">
                     <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
-                    <h1>COOLING SISTEM</h1>
+                    <h1>COOLING SYSTEM</h1>
                 </div>
                 <h2>Cutting-edge solutions for optimal vehicle cooling performance</h2>
                 <h3>At Workshop City WA, we understand the crucial importance of an efficient cooling system for the
