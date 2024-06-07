@@ -74,7 +74,7 @@
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
-                <h1>Jhon Doe</h1>
+                <h1>Ann Chan</h1>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -82,17 +82,14 @@
                 <span class="fa fa-star checked"></span>
             </div>
             <div class="review-comment">
-                <blockquote class="comment"><span class="first-quote">“</span>Bh pulvinar, pharetra metus eget, pulvinar
-                    dui.
-                    Bh pulvinar, pharetra metus eget, pulvinar dui.
-                    Sed finibus euismod egestas. Aliquam vel orci vitae magna pharetra tristique quis ut est.<span
-                        class="end-quote">”</span></blockquote>
+                <blockquote class="comment"><span class="first-quote">“</span>Professional service and amazing customer
+                    service at Workshop City. Thanks Diego and team!<span class="end-quote">”</span></blockquote>
             </div>
         </div>
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
-                <h1>Jhon Doe</h1>
+                <h1>Carlos Pabon</h1>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -100,11 +97,8 @@
                 <span class="fa fa-star checked"></span>
             </div>
             <div class="review-comment">
-                <blockquote class="comment"><span class="first-quote">“</span>Bh pulvinar, pharetra metus eget, pulvinar
-                    dui.
-                    Bh pulvinar, pharetra metus eget, pulvinar dui.
-                    Sed finibus euismod egestas. Aliquam vel orci vitae magna pharetra tristique quis ut est.<span
-                        class="end-quote">”</span></blockquote>
+                <blockquote class="comment"><span class="first-quote">“</span>Best workshop in Perth, honest
+                    recommendation.<span class="end-quote">”</span></blockquote>
             </div>
         </div>
     </div>

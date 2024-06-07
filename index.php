@@ -406,7 +406,8 @@
       <div class="header-book-service">
         <h2 class="book-a-service" data-url="/book-service">BOOK A SERVICE</h2>
         <div class="header-book-service-divider"></div>
-        <a href="tel:+610430033880"><h2>0430 003 880</h2></a>
+        <a href="tel:+61430033880"><img src="../assets/images/PHONE-TEST1.png"
+        alt="Workshop City Phone Number" class="phone-number-header"></a>
       </div>
     </div>    
     <div id="hiddenService-menu" class="service-menu hidden">
@@ -502,8 +503,10 @@
         <div class="footer-book-service">
           <span class="book-a-service" data-url="/book-service"><h2 style="margin:0;">BOOK A</h2><br /><h2 style="margin:0; margin-top:-1.5rem">SERVICE</h2></span>
           <div class="footer-book-service-space"></div>
-          <a href="tel:+610430033880"><span><h2 style="margin:0; font-style: italic; font-weight:1">CALL US</h2><img src="../assets/images/phone-menu-home-top-A.png"
-                            alt="Workshop City Phone Number" class="phone-numer-footer"></span></a>
+          <a href="tel:+61430033880" class="a-footer">
+            <h2>CALL US</h2>
+            <img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number" class="phone-numer-footer">       
+    </a>
         </div>
       </div>
       <div class="footer-section-3">

@@ -467,6 +467,10 @@ h1 {
     color: #181f33;
 }
 
+.service-section-1-inner .inline-block-container h1,h2 {
+    margin-left: 2% !important;
+}
+
 .service-title {
     position: absolute;
     color: white;
@@ -704,6 +708,7 @@ h1 {
 
 .book-a-service {
     cursor: pointer;
+    margin-left: 10%;
 }
 
 .margin-img {
@@ -732,7 +737,7 @@ a {
 }
 
 .phone-numer-footer {
-    width: 130%;
+    width: 80%;
 }
 
 .mobile-menu {
@@ -754,7 +759,7 @@ nav {
     margin-right: 10px;
 }
 
-.menu {    
+.menu {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -814,6 +819,37 @@ nav {
     height: auto;
     flex-shrink: 0;
     object-fit: cover;
+}
+
+.phone-number-header {
+    width: 100%;
+}
+
+.a-footer {
+    display: inline-block;
+    max-width: fit-content;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.a-footer span {
+    display: inline-block;
+    max-width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.phone-numer-footer {
+    width: 70%;
+    height: auto;
+}
+
+.a-footer h2 {
+    margin: 0;
+    font-style: italic;
+    font-weight: 1;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -1118,6 +1154,6 @@ nav {
     }
 
     .phone-numer-footer {
-        width: 60%;
+        width: 55%;
     }
 }
