@@ -1,5 +1,6 @@
 <div class="main-logbook-wrap">
-    <img src="../assets/images/about-us-img-section.jpg" alt="Workshop City About Us" width="100%" height="100%">
+    <img src="../assets/images/R-banner-about-us-wc-responsive.png" alt="Workshop City About Us" width="100%" height="100%" class="mobile-img">
+    <img src="../assets/images/about-us-img-section.jpg" alt="Workshop City About Us" width="100%" height="100%" class="cp-img">
     <div class="service-title cp-img">
         <h2 style="margin-top:5%; margin-bottom:5% ">ABOUT US</h2>
     </div>

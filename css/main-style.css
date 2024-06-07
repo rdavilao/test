@@ -474,7 +474,6 @@ h1 {
 .service-title {
     position: absolute;
     color: white;
-    display: flex;
     background-color: #181f33;
     padding-right: 8%;
     padding-left: 2%;
@@ -485,6 +484,7 @@ h1 {
     text-align: center;
     align-items: center;
     z-index: 1;
+    white-space: nowrap;
 }
 
 .main-logbook-wrap {
