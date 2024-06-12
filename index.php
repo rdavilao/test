@@ -409,7 +409,7 @@
         <a href="tel:+61430033880"><img src="../assets/images/PHONE-TEST1.png"
         alt="Workshop City Phone Number" class="phone-number-header"></a>
       </div>
-    </div>    
+    </div>
     <div id="hiddenService-menu" class="service-menu hidden">
       <ul class="header-menu-service">
             <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
