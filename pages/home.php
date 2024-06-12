@@ -58,10 +58,10 @@
                 <img src="../assets/images/home-blue-flag.png" alt="Flag">
                 <h1>Comprehensive Services</h1>
             </div>
-            <h2>Whether you need routine maintenance, major repairs, or custom modifications, our workshop offers a
+            <h2 style="margin-left:10% !important">Whether you need routine maintenance, major repairs, or custom modifications, our workshop offers a
                 comprehensive range of services to meet your needs.
             </h2>
-            <h2>From oil changes and brake inspections to engine diagnostics and suspension repairs, we
+            <h2 style="margin-left:10% !important">From oil changes and brake inspections to engine diagnostics and suspension repairs, we
                 have you covered.</h2>
             <br class="cp-img"><br class="cp-img"><br class="cp-img">
             <button class="book-now-btn" data-url="/book-service">BOOK NOW</button>
