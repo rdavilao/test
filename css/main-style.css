@@ -725,8 +725,13 @@ h1 {
     text-align: center;
 }
 
+.center h1,h2{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
 .phone-contact-us {
-    width: 30%;
+    width: 25%;
 }
 
 a {

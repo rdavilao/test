@@ -1,6 +1,8 @@
 <div class="main-logbook-wrap">
-    <img src="../assets/images/banner-contact-us-responsive.png" alt="Workshop City Services" width="100%" height="100%" class="mobile-img">
-    <img src="../assets/images/banner-contact-us.png" alt="Workshop City Services" width="100%" height="100%" class="cp-img">
+    <img src="../assets/images/banner-contact-us-responsive.png" alt="Workshop City Services" width="100%" height="100%"
+        class="mobile-img">
+    <img src="../assets/images/banner-contact-us.png" alt="Workshop City Services" width="100%" height="100%"
+        class="cp-img">
     <div class="service-title cp-img">
         <h2 style="margin-top:5%; margin-bottom:5% ">CONTACT US & FAQS</h2>
     </div>
@@ -18,13 +20,10 @@
                 <h3>We're here to serve you. Get in touch with us for any questions, appointments, or inquiries you may
                     have. We look forward to hearing from you soon.
                 </h3>
-                <br class="mobile-img">
-                <br class="mobile-img">
-                <br class="mobile-img">
-                <br class="mobile-img">
-                <br class="mobile-img">
+                <br>
+                <br class="cp-img">
                 <div class="center">
-                    <a href="tel:+610430033880"><img src="../assets/images/phone-menu-home-top-B.png"
+                    <a href="tel:+610430033880"><img src="../assets/images/PHONE-TEST1.png"
                             alt="Workshop City Services" class="phone-contact-us"></a>
                     <a href="mailto:info@workshopcitywa.com.au">
                         <h2 style="margin-top:0">info@workshopcitywa.com.au</h2>
@@ -37,11 +36,7 @@
                     <img src="../assets/images/contact-us---logo-workshop.png" alt="Workshop City Services"
                         class="wc-contact-us">
                 </div>
-            </div>
-            <br class="mobile-img">
-            <br class="mobile-img">
-            <br class="mobile-img">
-            <br class="mobile-img">
+            </div>  
             <br class="mobile-img">
             <img src="../assets/images/contact-us-img1.png" alt="Workshop City Contact Us" class="mobile-img">
         </div>
@@ -126,7 +121,7 @@
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
-                <h1>Jhon Doe</h1>
+                <h1>Ann Chan</h1>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -134,17 +129,14 @@
                 <span class="fa fa-star checked"></span>
             </div>
             <div class="review-comment">
-                <blockquote class="comment"><span class="first-quote">“</span>Bh pulvinar, pharetra metus eget, pulvinar
-                    dui.
-                    Bh pulvinar, pharetra metus eget, pulvinar dui.
-                    Sed finibus euismod egestas. Aliquam vel orci vitae magna pharetra tristique quis ut est.<span
-                        class="end-quote">”</span></blockquote>
+                <blockquote class="comment"><span class="first-quote">“</span>Professional service and amazing customer
+                    service at Workshop City. Thanks Diego and team!<span class="end-quote">”</span></blockquote>
             </div>
         </div>
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
-                <h1>Jhon Doe</h1>
+                <h1>Carlos Pabon</h1>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -152,11 +144,8 @@
                 <span class="fa fa-star checked"></span>
             </div>
             <div class="review-comment">
-                <blockquote class="comment"><span class="first-quote">“</span>Bh pulvinar, pharetra metus eget, pulvinar
-                    dui.
-                    Bh pulvinar, pharetra metus eget, pulvinar dui.
-                    Sed finibus euismod egestas. Aliquam vel orci vitae magna pharetra tristique quis ut est.<span
-                        class="end-quote">”</span></blockquote>
+                <blockquote class="comment"><span class="first-quote">“</span>Best workshop in Perth, honest
+                    recommendation.<span class="end-quote">”</span></blockquote>
             </div>
         </div>
     </div>

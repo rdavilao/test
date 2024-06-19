@@ -14,9 +14,9 @@
                 <img src="../assets/images/home-icon-tool.png">
                 <h2 style="margin-bottom:2%; margin-top:2%;">LOGBOOK SERVICES</h2>
             </div>
-            <div class="service" data-url="/standar-service">
+            <div class="service" data-url="/standard-service">
                 <img src="../assets/images/home-icon-car.png">
-                <h2 style="margin-bottom:2%; margin-top:2%;">STANDAR SERVICES</h2>
+                <h2 style="margin-bottom:2%; margin-top:2%;">STANDARD SERVICES</h2>
             </div>
             <div class="service" data-url="/mobile-services">
                 <img src="../assets/images/home-icon-tuercas.png">
