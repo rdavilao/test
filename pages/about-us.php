@@ -1,6 +1,6 @@
 <div class="main-logbook-wrap">
-    <img src="../assets/images/R-banner-about-us-wc-responsive.png" alt="Workshop City About Us" width="100%" height="100%" class="mobile-img">
-    <img src="../assets/images/about-us-img-section.jpg" alt="Workshop City About Us" width="100%" height="100%" class="cp-img">
+    <img src="../assets/images/banner-About-us.jpg" alt="Workshop City About Us" width="100%" height="100%" class="cp-img">
+    <img src="../assets/images/about-us-wc-responsive.jpg" alt="Workshop City About Us" width="100%" height="100%" class="mobile-img">
     <div class="service-title cp-img">
         <h2 style="margin-top:5%; margin-bottom:5% ">ABOUT US</h2>
     </div>
@@ -66,7 +66,7 @@
         alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;" width="100%" height="100%"
         class="mobile-img">
     <br class="mobile-img"><br class="mobile-img">
-    <div class="service-section-2 cp-img">
+    <div class="service-section-2">
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
@@ -86,7 +86,7 @@
         </div>
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
-                <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
+                <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
                 <h1>Taniatan</h1>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>

@@ -1,6 +1,8 @@
 <div class="main-logbook-wrap">
-    <img src="../assets/images/services-1-img-section.png" alt="Workshop City Services" width="100%" height="100%" class="cp-img">
-    <img src="../assets/images/R-banner-mobile-wc-responsive-.png" alt="Workshop City Services" width="100%" height="100%" class="mobile-img">
+    <img class="cp-img" src="../assets/images/banner-mobile-services.jpg" alt="Workshop City Services" width="100%"
+        height="100%">
+    <img class="mobile-img" src="../assets/images/mobile-services-wc-responsive-.jpg" alt="Workshop City Services"
+        width="100%" height="100%">
     <div class="service-title cp-img">
         <h2 style="margin-top:5%; margin-bottom:5% ">MOBILE SERVICES</h2>
     </div>
@@ -21,7 +23,7 @@
                 <br class="cp-img">
                 <a href="tel:+61430033880">
                     <button class="book-now-btn" style="padding: 0"><img src="../assets/images/PHONE-TEST1.png"
-                            alt="Workshop City Phone Number" class="phone-numer-footer"></button>
+                            alt="Workshop City Phone Number" class="phone-number-btn"></button>
                 </a>
                 <br><br><br><br class="cp-img">
                 <br class="cp-img">
@@ -75,11 +77,11 @@
         alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;" width="100%" height="100%"
         class="mobile-img">
     <br class="mobile-img"><br class="mobile-img">
-    <div class="service-section-2 cp-img">
+    <div class="service-section-2">
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
-                <h1>Andrew Jonathan Lou Caviedes</h1>
+                <h1>Andrew Lou</h1>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>

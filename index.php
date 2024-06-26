@@ -33,7 +33,7 @@
   <!-- material icons -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- scripts -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -307,8 +307,9 @@
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00 !important;
             border-bottom: 3px solid #ff9f00;
-          }mobile-services
-        
+          }
+
+          mobile-services
 
           <?php break;
 
@@ -320,7 +321,9 @@
             transition: color 0.6s, border-color 0.6s;
             color: #ff9f00;
             border-bottom: 3px solid #ff9f00;
-          }book-opt
+          }
+
+          book-opt
 
           <?php break;
 
@@ -333,6 +336,7 @@
             color: #ff9f00;
             border-bottom: 3px solid #ff9f00;
           }
+
           <?php break;
 
         case 'book-service': ?>
@@ -365,33 +369,38 @@
   <div class="header-wrap">
     <div class="header-inner">
       <div class="header-left">
-        <a href="/">
-          <img class="header-logo" src="assets/images/home-logo.png" alt="Workshop City" width="100%">
-        </a>
-        <div class="mobile-menu mobile-img">
-        <nav>
-            <div class="menu-icon" onclick="toggleMenu()">
+        <div class="header-left-1">
+          <a href="/">
+            <img class="header-logo" src="assets/images/home-logo.png" alt="Workshop City" width="100%">
+          </a>
+        </div>
+        <div class="header-left-2">
+          <a href="tel:+61430033880"><img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number"
+              class="phone-number-header"></a>
+          <div class="mobile-menu mobile-img">
+            <nav>
+              <div class="menu-icon" onclick="toggleMenu()">
                 &#9776;
-            </div>
-            <ul class="menu">
-                <li><a href="/" class="home-opt">HOME</a></li>
-                <li><a href="/mobile-services" class="mobile-services-opt">MOBILE SERVICES</a></li>
-                <li><a href="/about-us" class="about-us-opt">ABOUT US</a></li>
-                <li><a href="/contact-us" class="contact-us-opt">CONTACT US & FAQS</a></li>
+              </div>
+              <ul class="menu">
                 <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
                 <li><a href="/standard-service" class="standard-service-opt">STANDARD SERVICING</a></li>
                 <li><a href="/tyres" class="tyres-opt">TYRES AND BALANCE</a></li>
                 <li><a href="/brakes" class="brakes-opt">BRAKES</a></li>
                 <li><a href="/maintenance" class="maintenance-opt">MAINTENANCE & REPAIRS</a></li>
-                <li><a href="/inspection" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
-                <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK ABSORBERS</a></li>
+                <li><a href="/inspection" class="registration-opt">REGISTRATION & PRE PITS <br>INSPECTION</a></li>
+                <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK<br>ABSORBERS</a></li>
                 <li><a href="/wheels" class="wheels-opt">WHEELS ALIGNMENT</a></li>
                 <li><a href="/cooling" class="cooling-opt">COOLING SYSTEM</a></li>
                 <li><a href="/electrical" class="electrical-opt">ELECTRICAL</a></li>
                 <li><a href="/4wd" class="wd-opt">4WD ACCESORIES</a></li>
+                <li><a href="/mobile-services" class="mobile-services-opt">MOBILE SERVICES</a></li>
+                <li><a href="/about-us" class="about-us-opt">ABOUT US</a></li>
+                <li><a href="/contact-us" class="contact-us-opt">CONTACT US & FAQS</a></li>
                 <li><a href="/book-service" class="book-opt">BOOK NOW</a></li>
-            </ul>
-        </nav>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
       <div class="header-right">
@@ -404,25 +413,25 @@
         </ul>
       </div>
       <div class="header-book-service">
-        <h2 class="book-a-service" data-url="/book-service">BOOK A SERVICE</h2>
+        <h2 class="book-a-service" data-url="/book-service" style="margin-left:0">BOOK A SERVICE</h2>
         <div class="header-book-service-divider"></div>
-        <a href="tel:+61430033880"><img src="../assets/images/PHONE-TEST1.png"
-        alt="Workshop City Phone Number" class="phone-number-header"></a>
+        <a href="tel:+61430033880"><img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number"
+            class="phone-number-header"></a>
       </div>
     </div>
     <div id="hiddenService-menu" class="service-menu hidden">
       <ul class="header-menu-service">
-            <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
-            <li><a href="/standard-service" class="standard-service-opt">STANDARD SERVICING</a></li>
-            <li><a href="/tyres" class="tyres-opt">TYRES AND BALANCE</a></li>
-            <li><a href="/brakes" class="brakes-opt">BRAKES</a></li>
-            <li><a href="/maintenance" class="maintenance-opt">MAINTENANCE & REPAIRS</a></li>
-            <li><a href="/inspection" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
-            <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK ABSORBERS</a></li>
-            <li><a href="/wheels" class="wheels-opt">WHEELS ALIGNMENT</a></li>
-            <li><a href="/cooling" class="cooling-opt">COOLING SYSTEM</a></li>
-            <li><a href="/electrical" class="electrical-opt">ELECTRICAL</a></li>
-            <li><a href="/4wd" class="wd-opt">4WD ACCESORIES</a></li>
+        <li><a href="/logbook-service" class="logbook-service-opt">LOGBOOK SERVICING</a></li>
+        <li><a href="/standard-service" class="standard-service-opt">STANDARD SERVICING</a></li>
+        <li><a href="/tyres" class="tyres-opt">TYRES AND BALANCE</a></li>
+        <li><a href="/brakes" class="brakes-opt">BRAKES</a></li>
+        <li><a href="/maintenance" class="maintenance-opt">MAINTENANCE & REPAIRS</a></li>
+        <li><a href="/inspection" class="registration-opt">REGISTRATION & PRE PITS INSPECTION</a></li>
+        <li><a href="/suspension" class="suspension-opt">SUSPENSION & SHOCK ABSORBERS</a></li>
+        <li><a href="/wheels" class="wheels-opt">WHEELS ALIGNMENT</a></li>
+        <li><a href="/cooling" class="cooling-opt">COOLING SYSTEM</a></li>
+        <li><a href="/electrical" class="electrical-opt">ELECTRICAL</a></li>
+        <li><a href="/4wd" class="wd-opt">4WD ACCESORIES</a></li>
       </ul>
     </div>
   </div>
@@ -437,48 +446,48 @@
         case 'contact-us':
           @include ('pages/contact-us.php');
           break;
-        case 'logbook-service':          
+        case 'logbook-service':
           @include ('pages/logbook.php');
           break;
         case 'join-us':
           @include ('pages/joinus.php');
           break;
         case 'book-service':
-            @include ('pages/book-a-service.php');
-            break;
+          @include ('pages/book-a-service.php');
+          break;
         case 'standard-service':
-            @include ('pages/standard.php');
-            break;
+          @include ('pages/standard.php');
+          break;
         case 'tyres':
-            @include ('pages/tyres.php');
-            break;
+          @include ('pages/tyres.php');
+          break;
         case 'suspension':
-            @include ('pages/suspension.php');
-            break;
+          @include ('pages/suspension.php');
+          break;
         case 'wheels':
-            @include ('pages/wheels.php');
-            break;
+          @include ('pages/wheels.php');
+          break;
         case 'cooling':
-            @include ('pages/cooling.php');
-            break;
+          @include ('pages/cooling.php');
+          break;
         case 'electrical':
-            @include ('pages/electrical.php');
-            break;
+          @include ('pages/electrical.php');
+          break;
         case 'brakes':
-            @include ('pages/brakes.php');
-            break;
+          @include ('pages/brakes.php');
+          break;
         case 'maintenance':
-            @include ('pages/maintenance.php');
-            break;
+          @include ('pages/maintenance.php');
+          break;
         case 'inspection':
-            @include ('pages/inspection.php');
-            break;
+          @include ('pages/inspection.php');
+          break;
         case 'mobile-services':
-            @include ('pages/mobile-services.php');
-            break;
+          @include ('pages/mobile-services.php');
+          break;
         case '4wd':
-             @include ('pages/4wd.php');
-             break;
+          @include ('pages/4wd.php');
+          break;
         default:
           @include ('pages/home.php');
           break;
@@ -492,36 +501,43 @@
     <div class="yellow-line"></div>
     <div class="footer-first-sub-section">
       <div class="footer-section-1">
-        <img src="../assets/images/home-logo-wc-footer.png" alt="Workshop City White Logo">              
+        <img src="../assets/images/home-logo-wc-footer.png" alt="Workshop City White Logo">
       </div>
       <div class="footer-section-2">
-      <div class="footer-divider"></div>
-        <ul class="ul-footer" style="color:white !important"> 
+        <div class="footer-divider"></div>
+        <ul class="ul-footer" style="color:white !important">
           <li><a href="/logbook-service">SERVICES</a></li>
-          <li><a href="/mobile-services" >MOBILE SERVICES</a></li>
-        </ul>        
+          <li><a href="/mobile-services">MOBILE SERVICES</a></li>
+        </ul>
         <div class="footer-book-service">
-          <span class="book-a-service" data-url="/book-service"><h2 style="margin:0;">BOOK A</h2><br /><h2 style="margin:0; margin-top:-1.5rem">SERVICE</h2></span>
+          <span class="book-a-service" data-url="/book-service">
+            <h3 style="margin:0;">BOOK A</h3><br />
+            <h3 style="margin:0; margin-top:-1.5rem">SERVICE</h3>
+          </span>
           <div class="footer-book-service-space"></div>
           <a href="tel:+61430033880" class="a-footer">
-            <h2>CALL US</h2>
-            <img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number" class="phone-numer-footer">       
-    </a>
+            <h3>CALL US</h3>
+            <img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number" class="phone-numer-footer">
+          </a>
         </div>
       </div>
       <div class="footer-section-3">
-      <span><h2 style="margin:0; font-style: italic; font-weight:1">FOLLOW US</h2><br class="cp-img"/> 
-      <a href="#"> <img src="../assets/images/home-fb-footer.png" alt="Workshop City Facebook"></a>
-      <a href="#"> <img src="../assets/images/home-insta-footer.png" alt="Workshop City Instagram"></span></a>      
-      </div>    
+        <span>
+          <h3 style="margin:0; font-style: italic; font-weight:1">FOLLOW US</h3><br class="cp-img" />
+          <a href="#"> <img src="../assets/images/home-fb-footer.png" alt="Workshop City Facebook"></a>
+          <a href="#"> <img src="../assets/images/home-insta-footer.png" alt="Workshop City Instagram">
+        </span></a>
+      </div>
     </div>
     <div class="footer-second-sub-section">
       <div class="section footer-copyright">
-        <span>Copyright &copy; 2024 <span style="font-weight:bold"> WORKSHOP CITY - WA</span><br />All Rights Reserved</span>
-      </div>      
-    </div>        
-  </div> 
+        <span>Copyright &copy; 2024 <span style="font-weight:bold"> WORKSHOP CITY - WA</span><br />All Rights
+          Reserved</span>
+      </div>
+    </div>
+  </div>
   <div id="overlay" class="overlay"></div>
   <script src="./js/main-script.js"></script>
 </body>
+
 </html>

@@ -1,10 +1,26 @@
 <div class="main-home-wrap">
     <div class="home-banner-section">
-        <div class="carousel">
+        <div class="carousel mobile-img">
             <div class="carousel-images">
-                <img src="../assets/images/home-banner1.png" alt="Workshop City Services" width="100%" height="100%">
-                <img src="../assets/images/home-banner2.png" alt="Workshop City Services" width="100%" height="100%">
-                <img src="../assets/images/home-banner3.png" alt="Workshop City Services" width="100%" height="100%">
+                <img src="../assets/images/home-banner0---r.jpg" class="mobile-img" alt="Workshop City Services"
+                    width="100%" height="100%">
+                <img src="../assets/images/home-banner1---r.jpg" class="mobile-img" alt="Workshop City Services"
+                    width="100%" height="100%">
+                <img src="../assets/images/home-banner2---r.jpg" class="mobile-img" alt="Workshop City Services"
+                    width="100%" height="100%">
+                <img src="../assets/images/home-banner3---r.jpg" class="mobile-img" alt="Workshop City Services"
+                    width="100%" height="100%">
+            </div>
+        </div>
+        <div class="carousel cp-img">
+            <div class="carousel-images">
+                <img src="../assets/images/home-banner0.jpg" class="cp-img" alt="Workshop City Services" width="100%"
+                    height="100%">
+                <img src="../assets/images/home-banner1.jpg" alt="Workshop City Services" width="100%" height="100%">
+                <img src="../assets/images/home-banner2.jpg" class="cp-img" alt="Workshop City Services" width="100%"
+                    height="100%">
+                <img src="../assets/images/home-banner3.jpg" class="cp-img" alt="Workshop City Services" width="100%"
+                    height="100%">
             </div>
         </div>
     </div>
@@ -12,7 +28,7 @@
         <div class="services-up-section">
             <div class="service" data-url="/logbook-service">
                 <img src="../assets/images/home-icon-tool.png">
-                <h2 style="margin-bottom:2%; margin-top:2%;">LOGBOOK SERVICES</h2>
+                <h2 style="margin-bottom:2%; margin-top:2%; margin-right:2%">LOGBOOK SERVICES</h2>
             </div>
             <div class="service" data-url="/standard-service">
                 <img src="../assets/images/home-icon-car.png">
@@ -34,14 +50,14 @@
                     <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
                     <h1>Genuine Parts and Quality Service</h1>
                 </div>
-                <h2>We understand the importance of using genuine parts and high-quality materials in your vehicle. Our
+                <h3>We understand the importance of using genuine parts and high-quality materials in your vehicle. Our
                     workshop uses manufacturers approved aftermarket parts and or genuine or OEM (Original Equipment
                     Manufacturer) parts that are specifically designed for your vehicle's make and model.
-                </h2>
-                <h2>This ensures optimal performance, longevity, and compatibility with your vehicle. Simply advise us
+                </h3>
+                <h3>This ensures optimal performance, longevity, and compatibility with your vehicle. Simply advise us
                     if
                     you would prefer genuine or aftermarket parts for your vehicle and we will accommodate
-                    were applicable.</h2>
+                    were applicable.</h3>
                 <br class="cp-img"><br class="cp-img"><br class="cp-img">
                 <button class="book-now-btn" data-url="/book-service">BOOK NOW</button>
             </div>
@@ -58,32 +74,50 @@
                 <img src="../assets/images/home-blue-flag.png" alt="Flag">
                 <h1>Comprehensive Services</h1>
             </div>
-            <h2 style="margin-left:10% !important">Whether you need routine maintenance, major repairs, or custom modifications, our workshop offers a
+            <h3 style="margin-left:10% !important">Whether you need routine maintenance, major repairs, or custom
+                modifications, our workshop offers a
                 comprehensive range of services to meet your needs.
-            </h2>
-            <h2 style="margin-left:10% !important">From oil changes and brake inspections to engine diagnostics and suspension repairs, we
-                have you covered.</h2>
+            </h3>
+            <h3 style="margin-left:10% !important">From oil changes and brake inspections to engine diagnostics and
+                suspension repairs, we
+                have you covered.</h3>
             <br class="cp-img"><br class="cp-img"><br class="cp-img">
             <button class="book-now-btn" data-url="/book-service">BOOK NOW</button>
         </div>
         <div class="compr-service-right">
             <img src="../assets/images/home-mechanic-under-car.png" alt="Workshop City Comprehensive Services"
-                width="100%" height="100%">
+                width="100%">
         </div>
     </div>
     <div class="car-brands-section">
-        <img src="../assets/images/home-logo-subaru.png" class="car-brands-section-img-show"
-            alt="Workshop City Subaru Car Brand" width="100%" height="100%">
-        <img src="../assets/images/home-logo-mazda.png" class="car-brands-section-img-show"
-            alt="Workshop City Mazda Car Brand" width="100%" height="100%">
-        <img src="../assets/images/home-logo-toyota.png" class="car-brands-section-img-show"
-            alt="Workshop City Toyota Car Brand" width="100%" height="100%">
-        <img src="../assets/images/home-logo-mitsubishi.png" class="car-brands-section-img-show"
-            alt="Workshop City Mitsubishi Car Brand" width="100%" height="100%">
-        <img src="../assets/images/home-logo-ford.png" class="car-brands-section-img" alt="Workshop City Ford Car Brand"
-            width="100%" height="100%">
-        <img src="../assets/images/home-logo-hyndai.png" class="car-brands-section-img"
-            alt="Workshop City Hyndai Car Brand" width="100%" height="100%">
+        <div class="carousel-brands">
+            <div class="carousel-images-brands">
+                <img src="../assets/images/home-logo-audi.png" alt="Audi">
+                <img src="../assets/images/home-logo-bmw.png" alt="BMW">
+                <img src="../assets/images/home-logo-cadilac.png" alt="Cadilac">
+                <img src="../assets/images/home-logo-chevrolet.png" alt="Chevrolet">
+                <img src="../assets/images/home-logo-dodge.png" alt="Dodge">
+                <img src="../assets/images/home-logo-ford.png" alt="Ford">
+                <img src="../assets/images/home-logo-holden.png" alt="Holden">
+                <img src="../assets/images/home-logo-honda.png" alt="Honda">
+                <img src="../assets/images/home-logo-hyndai.png" alt="Hyundai">
+                <img src="../assets/images/home-logo-isuzu.png" alt="Isuzu">
+                <img src="../assets/images/home-logo-jeep.png" alt="Jeep">
+                <img src="../assets/images/home-logo-kia.png" alt="Kia">
+                <img src="../assets/images/home-logo-land-rover.png" alt="Land Rover">
+                <img src="../assets/images/home-logo-LDV.png" alt="LDV">
+                <img src="../assets/images/home-logo-lexus.png" alt="Lexus">
+                <img src="../assets/images/home-logo-mazda.png" alt="Mazda">
+                <img src="../assets/images/home-logo-mercedes.png" alt="Mercedes">
+                <img src="../assets/images/home-logo-mitsubishi.png" alt="Mitsubishi">
+                <img src="../assets/images/home-logo-nissan.png" alt="Nissan">
+                <img src="../assets/images/home-logo-subaru.png" alt="Subaru">
+                <img src="../assets/images/home-logo-suzuki.png" alt="Suzuki">
+                <img src="../assets/images/home-logo-toyota.png" alt="Toyota">
+                <img src="../assets/images/home-logo-volkswagen.png" alt="Volkswagen">
+                <img src="../assets/images/home-logo-volvo.png" alt="Volvo">
+            </div>
+        </div>
     </div>
     <div class="qualified-experienced-section">
         <div class="qualif-exp-left">
@@ -104,12 +138,12 @@
                     <h1 style="margin: 0; margin-left:10%; margin-top: -5%">Technicians</h1>
                 </span>
             </div>
-            <h2>When it comes to servicing your vehicle, you want to trust it in the hands of experts. Our workshop
+            <h3>When it comes to servicing your vehicle, you want to trust it in the hands of experts. Our workshop
                 boasts a team of qualified and experienced technicians who have extensive knowledge of various makes and
                 models.
-            </h2>
-            <h2>They are well-versed in the specific service requirements of different vehicles and use the latest
-                diagnostic tools and equipment to ensure accurate and efficient servicing.</h2>
+            </h3>
+            <h3 -5%>They are well-versed in the specific service requirements of different vehicles and use the latest
+                diagnostic tools and equipment to ensure accurate and efficient servicing.</h3>
             <br class="cp-img"><br class="cp-img"><br class="cp-img">
             <button class="book-now-btn" data-url="/book-service">BOOK NOW</button>
         </div>

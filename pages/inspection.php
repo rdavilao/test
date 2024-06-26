@@ -1,5 +1,8 @@
 <div class="main-logbook-wrap">
-    <img src="../assets/images/services-1-img-section.png" alt="Workshop City Services" width="100%" height="100%">
+    <img class="cp-img" src="../assets/images/services-1-img-section.jpg" alt="Workshop City Services" width="100%"
+        height="100%">
+    <img class="mobile-img" src="../assets/images/services-6-pre-pur-responsive.jpg" alt="Workshop City Services"
+        width="100%" height="100%">
     <div class="service-title cp-img">
         <h2 style="margin-top:5%; margin-bottom:5% ">PRE PURCHASE INSPECTION</h2>
     </div>
@@ -62,11 +65,11 @@
         alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;" width="100%" height="100%"
         class="mobile-img">
     <br class="mobile-img"><br class="mobile-img">
-    <div class="service-section-2 cp-img">
+    <div class="service-section-2">
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
-                <h1>Andrew Jonathan Lou Caviedes</h1>
+                <h1>Andrew Lou</h1>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>

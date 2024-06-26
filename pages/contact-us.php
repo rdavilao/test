@@ -1,8 +1,8 @@
 <div class="main-logbook-wrap">
-    <img src="../assets/images/banner-contact-us-responsive.png" alt="Workshop City Services" width="100%" height="100%"
-        class="mobile-img">
-    <img src="../assets/images/banner-contact-us.png" alt="Workshop City Services" width="100%" height="100%"
+    <img src="../assets/images/banner-contact-us.jpg" alt="Workshop City About Us" width="100%" height="100%"
         class="cp-img">
+    <img src="../assets/images/contact-us-wc-responsive-.jpg" alt="Workshop City About Us" width="100%" height="100%"
+        class="mobile-img">
     <div class="service-title cp-img">
         <h2 style="margin-top:5%; margin-bottom:5% ">CONTACT US & FAQS</h2>
     </div>
@@ -23,20 +23,20 @@
                 <br>
                 <br class="cp-img">
                 <div class="center">
-                    <a href="tel:+610430033880"><img src="../assets/images/PHONE-TEST1.png"
-                            alt="Workshop City Services" class="phone-contact-us"></a>
+                    <a href="tel:+610430033880"><img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Services"
+                            class="phone-contact-us"></a>
                     <a href="mailto:info@workshopcitywa.com.au">
-                        <h2 style="margin-top:0">info@workshopcitywa.com.au</h2>
+                        <h2 style="margin-top:0; margin-right: 0; margin-left: 0;">info@workshopcitywa.com.au</h2>
                     </a>
 
                     <a href="https://maps.app.goo.gl/6NggqMrNbB4L7oVS6" target="_blank">
                         <h2 style="margin-top:0">Unit 2/56 Division Street Welshpool WA</h2>
                     </a>
-                    <h1>WE'RE HERE TO HELP!</h1>
+                    <h1 style="margin-right: 0; margin-left: 0;">WE'RE HERE TO HELP!</h1>
                     <img src="../assets/images/contact-us---logo-workshop.png" alt="Workshop City Services"
                         class="wc-contact-us">
                 </div>
-            </div>  
+            </div>
             <br class="mobile-img">
             <img src="../assets/images/contact-us-img1.png" alt="Workshop City Contact Us" class="mobile-img">
         </div>
@@ -117,7 +117,7 @@
         alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;" width="100%" height="100%"
         class="mobile-img">
     <br class="mobile-img"><br class="mobile-img">
-    <div class="service-section-2 cp-img">
+    <div class="service-section-2">
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
                 <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
@@ -135,7 +135,7 @@
         </div>
         <div class="review">
             <div class="inline-block-container block-container-section-2 review-final">
-                <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
+                <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
                 <h1>Carlos Pabon</h1>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
