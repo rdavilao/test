@@ -76,61 +76,8 @@ function toggleMenu() {
   }
 }
 
-let currentIndexMobile = 0;
-let currentIndexPC = 0;
-
-function showImageMobile(index) {
-  const imagesContainer = document.querySelector(
-    ".carousel.mobile-img .carousel-images"
-  );
-  const totalImages = imagesContainer.querySelectorAll("img").length;
-
-  if (index >= totalImages) {
-    currentIndexMobile = 0;
-  } else if (index < 0) {
-    currentIndexMobile = totalImages - 1;
-  } else {
-    currentIndexMobile = index;
-  }
-
-  const translateX = -currentIndexMobile * 100;
-  imagesContainer.style.transform = `translateX(${translateX}%)`;
-}
-
-function showImagePC(index) {
-  const imagesContainer = document.querySelector(
-    ".carousel.cp-img .carousel-images"
-  );
-  const totalImages = imagesContainer.querySelectorAll("img").length;
-
-  if (index >= totalImages) {
-    currentIndexPC = 0;
-  } else if (index < 0) {
-    currentIndexPC = totalImages - 1;
-  } else {
-    currentIndexPC = index;
-  }
-
-  const translateX = -currentIndexPC * 100;
-  imagesContainer.style.transform = `translateX(${translateX}%)`;
-}
-
-function nextImageMobile() {
-  showImageMobile(currentIndexMobile + 1);
-}
-
-function nextImagePC() {
-  showImagePC(currentIndexPC + 1);
-}
-
-showImageMobile(currentIndexMobile);
-showImagePC(currentIndexPC);
-
-setInterval(nextImageMobile, 5000);
-setInterval(nextImagePC, 5000);
-
-const carouselImages = document.querySelector('.carousel-images-brands');
-const images = carouselImages.querySelectorAll('img');
+const carouselImages = document.querySelector(".carousel-images-brands");
+const images = carouselImages.querySelectorAll("img");
 
 let currentIndex = 0;
 const totalImages = images.length;
@@ -138,19 +85,49 @@ const imageWidth = images[0].clientWidth;
 const transitionTime = 0.5;
 
 function nextImage() {
-    currentIndex = (currentIndex + 1) % totalImages;
-    const translateX = -currentIndex * imageWidth;
+  currentIndex = (currentIndex + 1) % totalImages;
+  const translateX = -currentIndex * imageWidth;
 
-    carouselImages.style.transition = `transform ${transitionTime}s ease`;
-    carouselImages.style.transform = `translateX(${translateX}px)`;
+  carouselImages.style.transition = `transform ${transitionTime}s ease`;
+  carouselImages.style.transform = `translateX(${translateX}px)`;
 
-    if (currentIndex === totalImages - 1) {
-        setTimeout(() => {
-            carouselImages.style.transition = 'none';
-            carouselImages.style.transform = `translateX(0)`;
-            currentIndex = 0;
-        }, transitionTime * 1000);
-    }
+  if (currentIndex === totalImages - 1) {
+    setTimeout(() => {
+      carouselImages.style.transition = "none";
+      carouselImages.style.transform = `translateX(0)`;
+      currentIndex = 0;
+    }, transitionTime * 1000);
+  }
 }
 
-setInterval(nextImage, 2000);
+function waitForImages() {
+  return new Promise((resolve, reject) => {
+    let imagesLoaded = 0;
+    images.forEach((img) => {
+      if (img.complete) {
+        imagesLoaded++;
+      } else {
+        img.addEventListener("load", () => {
+          imagesLoaded++;
+          if (imagesLoaded === totalImages) {
+            resolve();
+          }
+        });
+        img.addEventListener("error", () => {
+          reject(new Error("Error al cargar una imagen."));
+        });
+      }
+    });
+    if (imagesLoaded === totalImages) {
+      resolve();
+    }
+  });
+}
+
+waitForImages()
+  .then(() => {
+    setInterval(nextImage, 2000);
+  })
+  .catch((error) => {
+    console.error("Error al esperar imágenes:", error);
+  });

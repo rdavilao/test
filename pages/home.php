@@ -1,28 +1,65 @@
 <div class="main-home-wrap">
     <div class="home-banner-section">
-        <div class="carousel mobile-img">
-            <div class="carousel-images">
-                <img src="../assets/images/home-banner0---r.jpg" class="mobile-img" alt="Workshop City Services"
-                    width="100%" height="100%">
-                <img src="../assets/images/home-banner1---r.jpg" class="mobile-img" alt="Workshop City Services"
-                    width="100%" height="100%">
-                <img src="../assets/images/home-banner2---r.jpg" class="mobile-img" alt="Workshop City Services"
-                    width="100%" height="100%">
-                <img src="../assets/images/home-banner3---r.jpg" class="mobile-img" alt="Workshop City Services"
-                    width="100%" height="100%">
+        <div id="myCarousel" class="carousel slide cp-img" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../assets/images/home-banner0.jpg" alt="Workshop City" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="../assets/images/home-banner1.jpg" alt="Workshop City" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="../assets/images/home-banner2.jpg" alt="Workshop City" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="../assets/images/home-banner3.jpg" alt="Workshop City" style="width:100%;">
+                </div>
             </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="carousel cp-img">
-            <div class="carousel-images">
-                <img src="../assets/images/home-banner0.jpg" class="cp-img" alt="Workshop City Services" width="100%"
-                    height="100%">
-                <img src="../assets/images/home-banner1.jpg" alt="Workshop City Services" width="100%" height="100%">
-                <img src="../assets/images/home-banner2.jpg" class="cp-img" alt="Workshop City Services" width="100%"
-                    height="100%">
-                <img src="../assets/images/home-banner3.jpg" class="cp-img" alt="Workshop City Services" width="100%"
-                    height="100%">
+        <div id="myCarouselMobile" class="carousel slide mobile-img" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarouselMobile" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarouselMobile" data-slide-to="1"></li>
+                <li data-target="#myCarouselMobile" data-slide-to="2"></li>
+                <li data-target="#myCarouselMobile" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../assets/images/home-banner0---r.jpg" alt="Workshop City" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="../assets/images/home-banner1---r.jpg" alt="Workshop City" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="../assets/images/home-banner2---r.jpg" alt="Workshop City" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="../assets/images/home-banner3---r.jpg" alt="Workshop City" style="width:100%;">
+                </div>
             </div>
-        </div>
+            <a class="left carousel-control" href="#myCarouselMobile" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarouselMobile" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>        
     </div>
     <div class="quality-service-section">
         <div class="services-up-section">
@@ -46,8 +83,8 @@
             </div>
             <div class="quality-service-section-text-right">
 
-                <div class="inline-block-container">
-                    <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
+                <div class="inline-block-container marg-left-1">
+                    <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
                     <h1>Genuine Parts and Quality Service</h1>
                 </div>
                 <h3>We understand the importance of using genuine parts and high-quality materials in your vehicle. Our
@@ -71,7 +108,7 @@
     <div class="comprehensive-service-section">
         <div class="compr-service-left">
             <div class="inline-block-container marg-left">
-                <img src="../assets/images/home-blue-flag.png" alt="Flag">
+                <img src="../assets/images/home-blue-flag.png" class="yellow-flag" alt="Flag">
                 <h1>Comprehensive Services</h1>
             </div>
             <h3 style="margin-left:10% !important">Whether you need routine maintenance, major repairs, or custom
@@ -127,11 +164,11 @@
         </div>
         <div class="qualif-exp-rigth">
             <div class="inline-block-container cp-img">
-                <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
+                <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
                 <h1>Qualified and Experienced Technicians</h1>
             </div>
             <div class="inline-block-container mobile-img">
-                <img src="../assets/images/home-yellow-flag-part1-3.png" alt="Flag">
+                <img src="../assets/images/home-yellow-flag-part1-3.png" class="yellow-flag" alt="Flag">
 
                 <span>
                     <h1>Qualified and Experienced</h1><br>

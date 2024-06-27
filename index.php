@@ -26,10 +26,6 @@
   <!-- favicon -->
   <link rel="icon" href="./assets/images/favicon2.png" type="image/x-icon">
 
-  <!-- styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main-style.css" type="text/css" />
-
   <!-- material icons -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -37,6 +33,13 @@
 
   <!-- scripts -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main-style.css" type="text/css" />
   <!-- Google tag (gtag.js) 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1KN31ZMGJ"></script>
   <script>
@@ -520,6 +523,7 @@
             <img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number" class="phone-numer-footer">
           </a>
         </div>
+        <div class="footer-divider"></div>
       </div>
       <div class="footer-section-3">
         <span>
