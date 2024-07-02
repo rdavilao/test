@@ -111,9 +111,9 @@
                 organize a tow service for you (fee may apply).</h3>
         </div>
     </div>
-    <img src="../assets/images/banner-mobile.png" alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;"
+    <img src="../assets/images/banner-mobile-1.png" alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;"
         width="100%" height="100%" class="cp-img">
-    <img src="../assets/images/Mobile-banner--about-us-wc-responsive--copia.png"
+    <img src="../assets/images/banner-mobile-1.png"
         alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;" width="100%" height="100%"
         class="mobile-img">
     <br class="mobile-img"><br class="mobile-img">

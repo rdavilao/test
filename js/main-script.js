@@ -76,58 +76,44 @@ function toggleMenu() {
   }
 }
 
-const carouselImages = document.querySelector(".carousel-images-brands");
-const images = carouselImages.querySelectorAll("img");
+let carouselImages;
+let images;
 
 let currentIndex = 0;
-const totalImages = images.length;
-const imageWidth = images[0].clientWidth;
+let totalImages;
+let imageWidth;
 const transitionTime = 0.5;
+let visibleImages;
+let flagDirection = true;
+let translateX;
 
 function nextImage() {
-  currentIndex = (currentIndex + 1) % totalImages;
-  const translateX = -currentIndex * imageWidth;
-
+  if (flagDirection) {
+    currentIndex = (currentIndex + 1) % totalImages;
+    translateX = -currentIndex * imageWidth;
+  } else {
+    currentIndex = (currentIndex - 1) % totalImages;
+    translateX = -currentIndex * imageWidth;
+  }
   carouselImages.style.transition = `transform ${transitionTime}s ease`;
   carouselImages.style.transform = `translateX(${translateX}px)`;
 
-  if (currentIndex === totalImages - 1) {
-    setTimeout(() => {
-      carouselImages.style.transition = "none";
-      carouselImages.style.transform = `translateX(0)`;
-      currentIndex = 0;
-    }, transitionTime * 1000);
+  if (currentIndex + visibleImages === totalImages) {
+    flagDirection = false;
+  }
+
+  if (currentIndex === 0) {
+    flagDirection = true;
   }
 }
 
-function waitForImages() {
-  return new Promise((resolve, reject) => {
-    let imagesLoaded = 0;
-    images.forEach((img) => {
-      if (img.complete) {
-        imagesLoaded++;
-      } else {
-        img.addEventListener("load", () => {
-          imagesLoaded++;
-          if (imagesLoaded === totalImages) {
-            resolve();
-          }
-        });
-        img.addEventListener("error", () => {
-          reject(new Error("Error al cargar una imagen."));
-        });
-      }
-    });
-    if (imagesLoaded === totalImages) {
-      resolve();
-    }
-  });
+function imageWait() {
+  carouselImages = document.querySelector(".carousel-images-brands");
+  images = carouselImages.querySelectorAll("img");
+  totalImages = images.length;
+  imageWidth = images[0].clientWidth;
+  visibleImages = Math.trunc(screen.width / imageWidth);
+  setInterval(nextImage, 2000);
 }
 
-waitForImages()
-  .then(() => {
-    setInterval(nextImage, 2000);
-  })
-  .catch((error) => {
-    console.error("Error al esperar imágenes:", error);
-  });
+setTimeout(imageWait, 5000);
