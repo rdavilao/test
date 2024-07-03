@@ -539,9 +539,8 @@
           Reserved</span>
       </div>
     </div>
-  </div>
-  <div id="overlay" class="overlay"></div>
-  <script src="./js/main-script.js"></script>
+    <div id="overlay" class="overlay"></div>
+    <script src="./js/main-script.js"></script>
 </body>
 
 </html>

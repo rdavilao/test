@@ -234,7 +234,6 @@ body {
 .inline-block-container img,
 .inline-block-container h1 {
     display: inline-block;
-    vertical-align: middle;
 }
 
 .inline-block-container img {
@@ -243,7 +242,7 @@ body {
 
 .inline-block-container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .comprehensive-service-section {

@@ -82,38 +82,38 @@ let images;
 let currentIndex = 0;
 let totalImages;
 let imageWidth;
-const transitionTime = 0.5;
+const transitionTime = 3;
 let visibleImages;
-let flagDirection = true;
 let translateX;
 
 function nextImage() {
-  if (flagDirection) {
-    currentIndex = (currentIndex + 1) % totalImages;
-    translateX = -currentIndex * imageWidth;
-  } else {
-    currentIndex = (currentIndex - 1) % totalImages;
-    translateX = -currentIndex * imageWidth;
-  }
-  carouselImages.style.transition = `transform ${transitionTime}s ease`;
+  currentIndex = (currentIndex + 1) % totalImages;
+  translateX = -currentIndex * imageWidth;
+
+  carouselImages.style.transition = `transform ${transitionTime}s linear`;
   carouselImages.style.transform = `translateX(${translateX}px)`;
 
   if (currentIndex + visibleImages === totalImages) {
-    flagDirection = false;
-  }
-
-  if (currentIndex === 0) {
-    flagDirection = true;
+    currentIndex = 0;
   }
 }
 
 function imageWait() {
   carouselImages = document.querySelector(".carousel-images-brands");
-  images = carouselImages.querySelectorAll("img");
+  images = Array.from(carouselImages.querySelectorAll("img"));
+
+  for (let i = 0; i < 25; i++) {
+    images.forEach((img) => {
+      const clone = img.cloneNode(true);
+      carouselImages.appendChild(clone);
+    });
+  }
+  images = Array.from(carouselImages.querySelectorAll("img"));
   totalImages = images.length;
+  console.log(totalImages);
   imageWidth = images[0].clientWidth;
   visibleImages = Math.trunc(screen.width / imageWidth);
-  setInterval(nextImage, 2000);
+  setInterval(nextImage, 3000);
 }
 
-setTimeout(imageWait, 5000);
+setTimeout(imageWait, 3000);
