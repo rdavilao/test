@@ -110,7 +110,6 @@ function imageWait() {
   }
   images = Array.from(carouselImages.querySelectorAll("img"));
   totalImages = images.length;
-  console.log(totalImages);
   imageWidth = images[0].clientWidth;
   visibleImages = Math.trunc(screen.width / imageWidth);
   setInterval(nextImage, 3000);

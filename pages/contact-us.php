@@ -30,7 +30,7 @@
                     </a>
 
                     <a href="https://maps.app.goo.gl/6NggqMrNbB4L7oVS6" target="_blank">
-                        <h2 style="margin-top:0">Unit 2/56 Division Street Welshpool WA</h2>
+                        <h2 style="margin-top:0">UNIT 2, 56 DIVISION STREET, WELSHPOOL WA</h2>
                     </a>
                     <h1 style="margin-right: 0; margin-left: 0;">WE'RE HERE TO HELP!</h1>
                     <img src="../assets/images/contact-us---logo-workshop.png" alt="Workshop City Services"
@@ -111,11 +111,10 @@
                 organize a tow service for you (fee may apply).</h3>
         </div>
     </div>
-    <img src="../assets/images/banner-mobile-1.png" alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;"
-        width="100%" height="100%" class="cp-img">
-    <img src="../assets/images/banner-mobile-1.png"
-        alt="Workshop City Mobile Mechanic Services" style="margin-top: -4%;" width="100%" height="100%"
-        class="mobile-img">
+    <img src="../assets/images/banner-mobile-1.png" alt="Workshop City Mobile Mechanic Services"
+        style="margin-top: -4%;" width="100%" height="100%" class="cp-img">
+    <img src="../assets/images/banner-mobile-1.png" alt="Workshop City Mobile Mechanic Services"
+        style="margin-top: -4%;" width="100%" height="100%" class="mobile-img">
     <br class="mobile-img"><br class="mobile-img">
     <div class="service-section-2">
         <div class="review">

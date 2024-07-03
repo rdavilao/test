@@ -512,16 +512,36 @@
           <li><a href="/logbook-service">SERVICES</a></li>
           <li><a href="/mobile-services">MOBILE SERVICES</a></li>
         </ul>
-        <div class="footer-book-service">
-          <span class="book-a-service" data-url="/book-service">
-            <h3 style="margin:0;">BOOK A</h3><br />
-            <h3 style="margin:0; margin-top:-1.5rem">SERVICE</h3>
-          </span>
-          <div class="footer-book-service-space"></div>
-          <a href="tel:+61430033880" class="a-footer">
-            <h3>CALL US</h3>
-            <img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number" class="phone-numer-footer">
-          </a>
+        <div class="mobile-img">
+          <div class="footer-book-service">
+            <span class="book-a-service" data-url="/book-service">
+              <h3 style="margin:0;">BOOK A</h3><br />
+              <h3 style="margin:0; margin-top:-1.5rem">SERVICE</h3>
+            </span>
+            <div class="footer-book-service-space"></div>
+            <a href="tel:+61430033880" class="a-footer">
+              <h3>CALL US</h3>
+              <img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number" class="phone-numer-footer">
+            </a>
+          </div>
+        </div>
+        <div class="footer-book-service-cp cp-img">
+          <div class="footer-book-service">
+            <span class="book-a-service" data-url="/book-service">
+              <h3 style="margin:0;">BOOK A</h3><br />
+              <h3 style="margin:0; margin-top:-1.5rem">SERVICE</h3>
+            </span>
+            <div class="footer-book-service-space"></div>
+            <a href="tel:+61430033880" class="a-footer">
+              <h3>CALL US</h3>
+              <img src="../assets/images/PHONE-TEST1.png" alt="Workshop City Phone Number" class="phone-numer-footer">
+            </a>
+          </div>
+          <div class="section footer-copyright cp-img" style="text-align: end; ">
+            <span><a href="https://maps.app.goo.gl/6NggqMrNbB4L7oVS6" target="_blank" style="margin-right:10%">
+                UNIT 2, 56 DIVISION STREET, WELSHPOOL WA
+              </a></span>
+          </div>
         </div>
         <div class="footer-divider"></div>
       </div>
@@ -534,6 +554,11 @@
       </div>
     </div>
     <div class="footer-second-sub-section">
+      <div class="section footer-copyright mobile-img">
+        <span><a href="https://maps.app.goo.gl/6NggqMrNbB4L7oVS6" target="_blank">
+            UNIT 2, 56 DIVISION STREET, WELSHPOOL WA
+          </a></span>
+      </div>
       <div class="section footer-copyright">
         <span>Copyright &copy; 2024 <span style="font-weight:bold"> WORKSHOP CITY - WA</span><br />All Rights
           Reserved</span>
